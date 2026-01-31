@@ -4,154 +4,87 @@
  */
 
 export default class AboutPage {
-    constructor(container) {
-        this.container = container;
-    }
+  constructor(container) {
+    this.container = container;
+  }
 
-    async render() {
-        this.container.innerHTML = this.getTemplate();
-    }
+  async render() {
+    this.container.innerHTML = this.getTemplate();
+  }
 
-    getTemplate() {
-        return `
+  getTemplate() {
+    return `
       <div class="page about-page">
         <header class="page-header">
           <h1 class="page-title">About LLM DNA</h1>
           <p class="page-subtitle">
-            Understanding the genetic fingerprints of Large Language Models
+            Tracing Model Evolution via Functional Representations
           </p>
         </header>
 
-        <!-- Overview -->
-        <section class="card">
-          <div class="card-header">
-            <h2 class="card-title">🧬 What is LLM DNA?</h2>
-          </div>
-          <div class="prose">
-            <p>
-              <strong>LLM DNA</strong> is a novel approach to characterizing and comparing Large Language Models 
-              based on their behavioral patterns. Just as biological DNA encodes the instructions for an organism, 
-              LLM DNA captures the unique "personality" of a model—how it responds to diverse stimuli.
-            </p>
-            <p>
-              This project visualizes these DNA signatures, allowing researchers and practitioners to:
-            </p>
-            <ul>
-              <li><strong>Discover model families:</strong> See how models cluster based on shared training data or architectures</li>
-              <li><strong>Find similar models:</strong> Identify which models behave most alike</li>
-              <li><strong>Track model evolution:</strong> Observe how fine-tuning changes a model's DNA</li>
-              <li><strong>Detect model origins:</strong> Uncover potential lineage relationships</li>
-            </ul>
-          </div>
-        </section>
+        <!-- Definition & Theory Grid -->
+        <div class="stats-grid mt-4">
+          <section class="card">
+            <div class="card-header">
+              <h2 class="card-title text-accent">🧬 Definition</h2>
+            </div>
+            <div class="prose">
+              <p>
+                We define the DNA of language models as a <strong>bi-Lipschitz embedding</strong> 
+                in the function space of models.
+              </p>
+            </div>
+          </section>
 
-        <!-- Methodology -->
+          <section class="card">
+            <div class="card-header">
+              <h2 class="card-title text-accent">√x Theory</h2>
+            </div>
+            <div class="prose">
+              <p>
+                We prove the <strong>existence</strong> of such embedding for any LLM with a 
+                finite context window.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- Extraction Method -->
         <section class="card mt-8">
           <div class="card-header">
-            <h2 class="card-title">🔬 RepTrace Methodology</h2>
+            <h2 class="card-title">⚙️ Extraction Method: Random-projection based DNA extraction</h2>
           </div>
           <div class="prose">
-            <p>
-              We extract DNA signatures using <strong>RepTrace</strong> (Response Pattern Tracing), 
-              a methodology developed for characterizing LLM behavior:
-            </p>
-
-            <div class="method-steps">
-              <div class="method-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                  <h4>Probe Generation</h4>
-                  <p>
-                    We create a standardized set of 100 random word prompts. These prompts are 
-                    carefully designed to elicit diverse responses without biasing toward specific 
-                    capabilities or domains.
-                  </p>
-                  <code class="code-block">
-                    "disdain chapel intention gymnast activation..."
-                  </code>
-                </div>
+            <div class="method-flow">
+              <div class="flow-step">
+                <div class="flow-icon">⌨️</div>
+                <div class="flow-label">Random input text</div>
               </div>
-
-              <div class="method-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                  <h4>Response Collection</h4>
-                  <p>
-                    Each model generates responses to all probes. We capture the full response 
-                    text, which reflects the model's learned patterns and biases.
-                  </p>
-                </div>
+              <div class="flow-arrow">→</div>
+              
+              <div class="flow-step">
+                <div class="flow-icon">📦</div>
+                <div class="flow-label">Static sentence embedding model</div>
               </div>
+              <div class="flow-arrow">→</div>
 
-              <div class="method-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                  <h4>Embedding Extraction</h4>
-                  <p>
-                    Responses are encoded using <strong>Qwen3-Embedding-8B</strong>, a high-quality 
-                    sentence embedding model. This converts variable-length text into fixed-dimension 
-                    vectors.
-                  </p>
-                </div>
+              <div class="flow-step">
+                <div class="flow-icon">🔗</div>
+                <div class="flow-label">Concatenation</div>
               </div>
+              <div class="flow-arrow">→</div>
 
-              <div class="method-step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                  <h4>Aggregation & Reduction</h4>
-                  <p>
-                    All 100 response embeddings are concatenated and reduced to a compact 
-                    <strong>128-dimensional signature</strong> using random projection. This final 
-                    vector is the model's DNA.
-                  </p>
-                </div>
+              <div class="flow-step">
+                <div class="flow-icon">🔀</div>
+                <div class="flow-label">Random projection</div>
               </div>
+              <div class="flow-arrow">→</div>
 
-              <div class="method-step">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                  <h4>Visualization</h4>
-                  <p>
-                    For the Galaxy view, we apply t-SNE dimensionality reduction to project all 
-                    DNA vectors into 2D space, where similar models appear close together.
-                  </p>
-                </div>
+              <div class="flow-step step-final">
+                <div class="flow-icon">🧬</div>
+                <div class="flow-label">DNA</div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <!-- DNA Structure -->
-        <section class="card mt-8">
-          <div class="card-header">
-            <h2 class="card-title">📊 DNA Vector Structure</h2>
-          </div>
-          <div class="prose">
-            <p>Each model's DNA is a 128-dimensional floating-point vector:</p>
-            
-            <code class="code-block">
-{
-  "signature": [0.034, 0.028, -0.150, 0.164, ...],  // 128 values
-  "metadata": {
-    "model_name": "Qwen/Qwen2.5-7B-Instruct",
-    "dna_dimension": 128,
-    "probe_count": 100,
-    "extraction_method": "text_embeddings_random_projection"
-  }
-}
-            </code>
-
-            <h4 class="mt-6">Distance Metrics</h4>
-            <p>
-              We measure similarity between models using <strong>Euclidean distance</strong>:
-            </p>
-            <div class="formula">
-              d(A, B) = √(Σ(Aᵢ - Bᵢ)²)
-            </div>
-            <p>
-              Lower distance = more similar behavior. Models with distance &lt; 0.5 typically 
-              share significant architectural or training similarities.
-            </p>
           </div>
         </section>
 
@@ -185,14 +118,24 @@ export default class AboutPage {
                 sharing or architecture borrowing.
               </p>
             </div>
-            <div class="insight-card">
-              <div class="insight-icon">📏</div>
-              <h4>Size Independence</h4>
-              <p>
-                Model size doesn't determine DNA similarity—a 7B model can be closer to 
-                a 70B sibling than to another 7B from a different family.
-              </p>
-            </div>
+          </div>
+        </section>
+
+        <!-- Citation -->
+        <section class="card mt-8">
+          <div class="card-header">
+            <h2 class="card-title">📝 Citation</h2>
+          </div>
+          <div class="prose">
+            <p>If you find this work useful, please cite our paper:</p>
+            <pre class="code-block" style="white-space: pre-wrap;">
+@inproceedings{wu2026llmdna,
+  title        = {{LLM} {DNA}: Tracing Model Evolution via Functional Representations},
+  author       = {Wu, Zhaomin and Zhao, Haodong and Wang, Ziyang and Guo, Jizhou and Wang, Qian and He, Bingsheng},
+  booktitle    = {The Fourteenth International Conference on Learning Representations, {ICLR} 2026},
+  publisher    = {OpenReview.net},
+  year         = {2026}
+}</pre>
           </div>
         </section>
 
@@ -209,7 +152,6 @@ export default class AboutPage {
             <ul>
               <li><strong>GitHub:</strong> <a href="https://github.com/your-org/dna-web" target="_blank">your-org/dna-web</a></li>
               <li><strong>Issues:</strong> Report bugs or request features on GitHub Issues</li>
-              <li><strong>Paper:</strong> Read our research paper (coming soon)</li>
             </ul>
             
             <div class="cta-box mt-6">
@@ -224,27 +166,11 @@ export default class AboutPage {
             </div>
           </div>
         </section>
-
-        <!-- Credits -->
-        <section class="card mt-8">
-          <div class="card-header">
-            <h2 class="card-title">🙏 Acknowledgments</h2>
-          </div>
-          <div class="prose">
-            <p>This project builds on the work of many:</p>
-            <ul>
-              <li><strong>D3.js</strong> for interactive visualizations</li>
-              <li><strong>Sentence Transformers</strong> for text embeddings</li>
-              <li><strong>HuggingFace</strong> for model hosting and access</li>
-              <li>The open-source LLM community for making models accessible</li>
-            </ul>
-          </div>
-        </section>
       </div>
     `;
-    }
+  }
 
-    destroy() {
-        // No cleanup needed
-    }
+  destroy() {
+    // No cleanup needed
+  }
 }
