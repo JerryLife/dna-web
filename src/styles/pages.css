@@ -1129,8 +1129,6 @@
 
 .workbench-panel-config {
     align-self: start;
-    position: sticky;
-    top: calc(var(--nav-height, 64px) + 1rem);
 }
 
 .workbench-panel-results {
