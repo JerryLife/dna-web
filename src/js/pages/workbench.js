@@ -270,7 +270,7 @@ export default class WorkbenchPage {
             <div id="results-container" class="results-container">
               <div class="empty-state">
                 <div class="empty-icon">🔍</div>
-                <p>Select a reference model and click "Analyze DNA" to see results</p>
+                <p class="empty-state-hint">Select a reference model and click "Analyze DNA" to see results</p>
               </div>
             </div>
           </section>

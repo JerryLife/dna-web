@@ -867,14 +867,21 @@
     letter-spacing: 0.5px;
 }
 
+/* Workbench: two cards with gap */
+.workbench-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .tags-input-container {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
     padding: 6px;
-    border: 1px solid var(--color-border-primary);
+    border: none;
     border-radius: 8px;
-    background: white;
+    background: transparent;
     min-height: 42px;
 }
 
@@ -897,6 +904,12 @@
 
 .tag-remove:hover {
     color: var(--color-error);
+}
+
+/* Workbench empty state hint - lighter text */
+.results-container .empty-state-hint {
+    color: var(--color-text-muted);
+    font-size: 14px;
 }
 
 /* Heatmap & Comparison Styles - Added for visual fix */
