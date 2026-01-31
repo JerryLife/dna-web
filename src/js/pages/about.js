@@ -149,11 +149,9 @@ export default class AboutPage {
               We'd love to hear from you! Whether you have questions, suggestions, or want 
               to report an issue:
             </p>
-            <ul>
-              <li><strong>GitHub:</strong> <a href="https://github.com/your-org/dna-web" target="_blank">your-org/dna-web</a></li>
-              <li><strong>Issues:</strong> Report bugs or request features on GitHub Issues</li>
-            </ul>
-            
+            <a href="https://github.com/JerryLife/dna-web/issues/new" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Open GitHub Issues (New Issue) <span aria-hidden="true">↗</span>
+            </a>
             <div class="cta-box mt-6">
               <h4>Want a model added?</h4>
               <p>
