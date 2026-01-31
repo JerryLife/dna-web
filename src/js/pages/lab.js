@@ -4,23 +4,23 @@
  */
 
 export default class LabPage {
-    constructor(container) {
-        this.container = container;
-        this.dataLoader = window.dataLoader;
-        this.proposals = [];
-    }
+  constructor(container) {
+    this.container = container;
+    this.dataLoader = window.dataLoader;
+    this.proposals = [];
+  }
 
-    async render() {
-        this.container.innerHTML = this.getTemplate();
+  async render() {
+    this.container.innerHTML = this.getTemplate();
 
-        // Load proposals from local storage (demo) or backend
-        await this.loadProposals();
-        this.renderProposals();
-        this.setupEventListeners();
-    }
+    // Load proposals from local storage (demo) or backend
+    await this.loadProposals();
+    this.renderProposals();
+    this.setupEventListeners();
+  }
 
-    getTemplate() {
-        return `
+  getTemplate() {
+    return `
       <div class="page">
         <header class="page-header">
           <h1 class="page-title">Community Lab</h1>
@@ -37,6 +37,20 @@ export default class LabPage {
             </div>
             
             <form id="proposal-form" class="proposal-form">
+              <div class="form-group">
+                <label class="form-label" for="email">Your Email (Submitter ID)</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  class="form-input"
+                  placeholder="name@example.com"
+                  required
+                >
+                <small class="form-hint">
+                  Used as your ID. We may contact you if there are issues executing your model.
+                </small>
+              </div>
+
               <div class="form-group">
                 <label class="form-label" for="model-id">HuggingFace Model ID</label>
                 <input 
@@ -62,7 +76,7 @@ export default class LabPage {
               </div>
 
               <div class="form-actions">
-                <button type="submit" class="btn btn-primary btn-lg">
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-lg">
                   <span>🧬</span>
                   Add to Trace Queue
                 </button>
@@ -124,90 +138,95 @@ export default class LabPage {
         </section>
       </div>
     `;
+  }
+
+  async loadProposals() {
+    // In production, this would fetch from Supabase
+    // For demo, use localStorage
+    try {
+      const stored = localStorage.getItem('dna-proposals');
+      this.proposals = stored ? JSON.parse(stored) : this.getDefaultProposals();
+    } catch {
+      this.proposals = this.getDefaultProposals();
     }
+  }
 
-    async loadProposals() {
-        // In production, this would fetch from Supabase
-        // For demo, use localStorage
-        try {
-            const stored = localStorage.getItem('dna-proposals');
-            this.proposals = stored ? JSON.parse(stored) : this.getDefaultProposals();
-        } catch {
-            this.proposals = this.getDefaultProposals();
-        }
-    }
+  getDefaultProposals() {
+    return [
+      {
+        id: '1',
+        modelId: 'google/gemma-2-27b-it',
+        votes: 42,
+        status: 'pending',
+        createdAt: '2026-01-29T10:00:00Z',
+        reason: 'Largest Gemma 2 model, would be great to see family clustering',
+        submitter: 'demo@example.com'
+      },
+      {
+        id: '2',
+        modelId: 'Nexusflow/Athene-V2-Chat',
+        votes: 38,
+        status: 'scanning',
+        createdAt: '2026-01-28T15:30:00Z',
+        reason: 'Top model on various benchmarks',
+        submitter: 'researcher@univ.edu'
+      },
+      {
+        id: '3',
+        modelId: 'deepseek-ai/DeepSeek-V3',
+        votes: 65,
+        status: 'pending',
+        createdAt: '2026-01-27T08:45:00Z',
+        reason: 'Breakthrough MoE architecture',
+        submitter: 'community@ai.org'
+      },
+      {
+        id: '4',
+        modelId: 'Qwen/Qwen2.5-72B-Instruct',
+        votes: 29,
+        status: 'completed',
+        createdAt: '2026-01-25T12:00:00Z',
+        submitter: 'qwen-fan@mail.com'
+      },
+      {
+        id: '5',
+        modelId: 'microsoft/phi-4',
+        votes: 51,
+        status: 'pending',
+        createdAt: '2026-01-26T09:15:00Z',
+        reason: 'New Phi series, interesting for small model comparison',
+        submitter: 'msft-watcher@tech.com'
+      }
+    ];
+  }
 
-    getDefaultProposals() {
-        return [
-            {
-                id: '1',
-                modelId: 'google/gemma-2-27b-it',
-                votes: 42,
-                status: 'pending',
-                createdAt: '2026-01-29T10:00:00Z',
-                reason: 'Largest Gemma 2 model, would be great to see family clustering'
-            },
-            {
-                id: '2',
-                modelId: 'Nexusflow/Athene-V2-Chat',
-                votes: 38,
-                status: 'scanning',
-                createdAt: '2026-01-28T15:30:00Z',
-                reason: 'Top model on various benchmarks'
-            },
-            {
-                id: '3',
-                modelId: 'deepseek-ai/DeepSeek-V3',
-                votes: 65,
-                status: 'pending',
-                createdAt: '2026-01-27T08:45:00Z',
-                reason: 'Breakthrough MoE architecture'
-            },
-            {
-                id: '4',
-                modelId: 'Qwen/Qwen2.5-72B-Instruct',
-                votes: 29,
-                status: 'completed',
-                createdAt: '2026-01-25T12:00:00Z'
-            },
-            {
-                id: '5',
-                modelId: 'microsoft/phi-4',
-                votes: 51,
-                status: 'pending',
-                createdAt: '2026-01-26T09:15:00Z',
-                reason: 'New Phi series, interesting for small model comparison'
-            }
-        ];
-    }
+  saveProposals() {
+    localStorage.setItem('dna-proposals', JSON.stringify(this.proposals));
+  }
 
-    saveProposals() {
-        localStorage.setItem('dna-proposals', JSON.stringify(this.proposals));
-    }
+  renderProposals() {
+    const container = document.getElementById('proposals-list');
+    if (!container) return;
 
-    renderProposals() {
-        const container = document.getElementById('proposals-list');
-        if (!container) return;
-
-        if (this.proposals.length === 0) {
-            container.innerHTML = `
+    if (this.proposals.length === 0) {
+      container.innerHTML = `
         <div class="empty-state">
           <p>No proposals yet. Be the first to suggest a model!</p>
         </div>
       `;
-            return;
-        }
+      return;
+    }
 
-        // Sort proposals
-        const sortBy = document.getElementById('sort-by')?.value || 'votes';
-        const sorted = [...this.proposals].sort((a, b) => {
-            if (sortBy === 'votes') return b.votes - a.votes;
-            if (sortBy === 'recent') return new Date(b.createdAt) - new Date(a.createdAt);
-            if (sortBy === 'name') return a.modelId.localeCompare(b.modelId);
-            return 0;
-        });
+    // Sort proposals
+    const sortBy = document.getElementById('sort-by')?.value || 'votes';
+    const sorted = [...this.proposals].sort((a, b) => {
+      if (sortBy === 'votes') return b.votes - a.votes;
+      if (sortBy === 'recent') return new Date(b.createdAt) - new Date(a.createdAt);
+      if (sortBy === 'name') return a.modelId.localeCompare(b.modelId);
+      return 0;
+    });
 
-        container.innerHTML = sorted.map((proposal, index) => `
+    container.innerHTML = sorted.map((proposal, index) => `
       <div class="proposal-card" data-id="${proposal.id}">
         <div class="proposal-rank">${index + 1}</div>
         
@@ -223,11 +242,12 @@ export default class LabPage {
             </span>
           </div>
           
-          ${proposal.reason ? `<p class="proposal-reason">${proposal.reason}</p>` : ''}
+
           
           <div class="proposal-meta">
             <span class="proposal-date">
-              ${this.formatDate(proposal.createdAt)}
+              ${this.formatDate(proposal.createdAt)} 
+              ${proposal.submitter ? `• by ${this.maskEmail(proposal.submitter)}` : ''}
             </span>
           </div>
         </div>
@@ -245,151 +265,199 @@ export default class LabPage {
       </div>
     `).join('');
 
-        // Attach vote handlers
-        container.querySelectorAll('.vote-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const id = btn.dataset.id;
-                this.handleVote(id);
-            });
-        });
+    // Attach vote handlers
+    container.querySelectorAll('.vote-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const id = btn.dataset.id;
+        this.handleVote(id);
+      });
+    });
+  }
+
+  maskEmail(email) {
+    if (!email) return 'Anonymous';
+    const [name, domain] = email.split('@');
+    return `${name.substring(0, 3)}***@${domain}`;
+  }
+
+  getStatusClass(status) {
+    const classes = {
+      pending: 'badge-warning',
+      scanning: 'badge-info',
+      completed: 'badge-success',
+      failed: 'badge-error'
+    };
+    return classes[status] || '';
+  }
+
+  getStatusText(status) {
+    const texts = {
+      pending: '⏳ Pending',
+      scanning: '🔄 Scanning',
+      completed: '✓ Completed',
+      failed: '✕ Failed'
+    };
+    return texts[status] || status;
+  }
+
+  formatDate(dateStr) {
+    const date = new Date(dateStr);
+    const now = new Date();
+    const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
+
+    if (diffDays === 0) return 'Today';
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays < 7) return `${diffDays} days ago`;
+    return date.toLocaleDateString();
+  }
+
+  handleVote(id) {
+    const proposal = this.proposals.find(p => p.id === id);
+    if (!proposal || proposal.status === 'completed') return;
+
+    // Toggle vote
+    if (proposal.voted) {
+      proposal.votes--;
+      proposal.voted = false;
+    } else {
+      proposal.votes++;
+      proposal.voted = true;
     }
 
-    getStatusClass(status) {
-        const classes = {
-            pending: 'badge-warning',
-            scanning: 'badge-info',
-            completed: 'badge-success',
-            failed: 'badge-error'
-        };
-        return classes[status] || '';
+    this.saveProposals();
+    this.renderProposals();
+
+    window.showToast(
+      proposal.voted ? 'Vote recorded!' : 'Vote removed',
+      proposal.voted ? 'success' : 'info'
+    );
+  }
+
+  async handleSubmit(e) {
+    e.preventDefault();
+
+    const modelIdInput = document.getElementById('model-id');
+    const emailInput = document.getElementById('email');
+    const reasonInput = document.getElementById('reason');
+    const submitBtn = document.getElementById('submit-btn');
+
+    const modelId = modelIdInput.value.trim();
+    const email = emailInput.value.trim();
+    const reason = reasonInput.value.trim();
+
+    if (!modelId) {
+      this.showStatus('Please enter a model ID', 'error');
+      return;
     }
 
-    getStatusText(status) {
-        const texts = {
-            pending: '⏳ Pending',
-            scanning: '🔄 Scanning',
-            completed: '✓ Completed',
-            failed: '✕ Failed'
-        };
-        return texts[status] || status;
+    if (!email) {
+      this.showStatus('Please enter your email', 'error');
+      return;
     }
 
-    formatDate(dateStr) {
-        const date = new Date(dateStr);
-        const now = new Date();
-        const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
-
-        if (diffDays === 0) return 'Today';
-        if (diffDays === 1) return 'Yesterday';
-        if (diffDays < 7) return `${diffDays} days ago`;
-        return date.toLocaleDateString();
+    // Check if already exists in proposals
+    if (this.proposals.some(p => p.modelId.toLowerCase() === modelId.toLowerCase())) {
+      this.showStatus('This model has already been proposed', 'warning');
+      return;
     }
 
-    handleVote(id) {
-        const proposal = this.proposals.find(p => p.id === id);
-        if (!proposal || proposal.status === 'completed') return;
+    // Check if already in database (existing galaxy models)
+    const existingModel = this.dataLoader.getModels().find(m =>
+      m.name.toLowerCase() === modelId.toLowerCase() ||
+      m.id.toLowerCase().replace('_', '/') === modelId.toLowerCase()
+    );
 
-        // Toggle vote
-        if (proposal.voted) {
-            proposal.votes--;
-            proposal.voted = false;
+    if (existingModel) {
+      this.showStatus('This model is already in the Galaxy! 🎉', 'info');
+      return;
+    }
+
+    // Validate via HuggingFace API
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>⏳</span> Verifying...';
+
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5s timeout
+
+      const response = await fetch(`https://huggingface.co/api/models/${modelId}`, {
+        method: 'HEAD',
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+
+      if (!response.ok) {
+        if (response.status === 404) {
+          throw new Error(`Model not found. The URL https://huggingface.co/${modelId} returned 404.`);
         } else {
-            proposal.votes++;
-            proposal.voted = true;
+          throw new Error(`Verification failed. The URL https://huggingface.co/${modelId} returned ${response.status}.`);
         }
-
-        this.saveProposals();
-        this.renderProposals();
-
-        window.showToast(
-            proposal.voted ? 'Vote recorded!' : 'Vote removed',
-            proposal.voted ? 'success' : 'info'
-        );
+      }
+    } catch (error) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span>🧬</span> Add to Trace Queue';
+      this.showStatus(error.message, 'error');
+      return;
     }
 
-    async handleSubmit(e) {
-        e.preventDefault();
+    // Restore button
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = '<span>🧬</span> Add to Trace Queue';
 
-        const modelIdInput = document.getElementById('model-id');
-        const reasonInput = document.getElementById('reason');
-        const statusEl = document.getElementById('form-status');
+    // Add proposal
+    const newProposal = {
+      id: Date.now().toString(),
+      modelId,
+      reason,
+      submitter: email,
+      votes: 1,
+      voted: true,
+      status: 'pending',
+      createdAt: new Date().toISOString()
+    };
 
-        const modelId = modelIdInput.value.trim();
-        const reason = reasonInput.value.trim();
+    this.proposals.unshift(newProposal);
+    this.saveProposals();
+    this.renderProposals();
 
-        if (!modelId) {
-            this.showStatus('Please enter a model ID', 'error');
-            return;
-        }
+    // Clear form
+    modelIdInput.value = '';
+    reasonInput.value = '';
+    // Keep email for convenience? No, clear for fresh start or keep per session. 
+    // Let's keep it if they want to submit another.
 
-        // Check if already exists
-        if (this.proposals.some(p => p.modelId.toLowerCase() === modelId.toLowerCase())) {
-            this.showStatus('This model has already been proposed', 'warning');
-            return;
-        }
+    this.showStatus('Model verified and added to the queue! 🧬', 'success');
+    window.showToast('Proposal submitted successfully!', 'success');
+  }
 
-        // Check if already in database
-        const existingModel = this.dataLoader.getModels().find(m =>
-            m.name.toLowerCase() === modelId.toLowerCase() ||
-            m.id.toLowerCase().replace('_', '/') === modelId.toLowerCase()
-        );
+  showStatus(message, type = 'info') {
+    const statusEl = document.getElementById('form-status');
+    if (!statusEl) return;
 
-        if (existingModel) {
-            this.showStatus('This model is already in the Galaxy! 🎉', 'info');
-            return;
-        }
+    statusEl.className = `form-status status-${type}`;
+    statusEl.textContent = message;
+    statusEl.style.display = 'block';
 
-        // Add proposal
-        const newProposal = {
-            id: Date.now().toString(),
-            modelId,
-            reason,
-            votes: 1,
-            voted: true,
-            status: 'pending',
-            createdAt: new Date().toISOString()
-        };
+    setTimeout(() => {
+      statusEl.style.display = 'none';
+    }, 5000);
+  }
 
-        this.proposals.unshift(newProposal);
-        this.saveProposals();
-        this.renderProposals();
-
-        // Clear form
-        modelIdInput.value = '';
-        reasonInput.value = '';
-
-        this.showStatus('Model added to the queue! 🧬', 'success');
-        window.showToast('Proposal submitted successfully!', 'success');
+  setupEventListeners() {
+    // Form submission
+    const form = document.getElementById('proposal-form');
+    if (form) {
+      form.addEventListener('submit', (e) => this.handleSubmit(e));
     }
 
-    showStatus(message, type = 'info') {
-        const statusEl = document.getElementById('form-status');
-        if (!statusEl) return;
-
-        statusEl.className = `form-status status-${type}`;
-        statusEl.textContent = message;
-        statusEl.style.display = 'block';
-
-        setTimeout(() => {
-            statusEl.style.display = 'none';
-        }, 5000);
+    // Sort change
+    const sortSelect = document.getElementById('sort-by');
+    if (sortSelect) {
+      sortSelect.addEventListener('change', () => this.renderProposals());
     }
+  }
 
-    setupEventListeners() {
-        // Form submission
-        const form = document.getElementById('proposal-form');
-        if (form) {
-            form.addEventListener('submit', (e) => this.handleSubmit(e));
-        }
-
-        // Sort change
-        const sortSelect = document.getElementById('sort-by');
-        if (sortSelect) {
-            sortSelect.addEventListener('change', () => this.renderProposals());
-        }
-    }
-
-    destroy() {
-        // Cleanup if needed
-    }
+  destroy() {
+    // Cleanup if needed
+  }
 }
