@@ -36,40 +36,32 @@ This platform enables researchers and enthusiasts to:
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 18+ (with npm)
-- Python 3.10+ (for data processing)
-- WSL (on Windows) or Linux/macOS
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-org/dna-web.git
-cd dna-web
-
-# Install dependencies
-npm install
-```
-
 ### Running the Development Server
+
+The recommended way to run the project is using the clean restart script, which ensures a fresh state by clearing the Vite cache and killing any stale server processes.
 
 **On Windows (WSL):**
 ```bash
+# Recommended: Full reset and start
+wsl bash scripts/restart_clean.sh
+
+# Standard start:
 wsl bash scripts/start_dev.sh
 ```
 
 **On Linux/macOS:**
 ```bash
-npm run dev
+bash scripts/restart_clean.sh
 ```
 
-Open http://localhost:5173 in your browser.
+Once started, open [http://localhost:5173](http://localhost:5173) in your browser.
+
+> [!IMPORTANT]
+> If you see a message saying "Port 5173 is in use, trying another one...", it means a ghost process is still holding the port. Always use `scripts/restart_clean.sh` to resolve this.
 
 ### Keyboard Shortcuts
 - **Ctrl+0**: Reset zoom on Galaxy view
+- **Interaction**: Organization labels and flavored areas are now interactive—hover to see model counts and details.
 
 ### Data Processing (Optional)
 
