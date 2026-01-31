@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.017529193311929703,
+    -0.005506312008947134,
+    0.00016647225129418075,
+    -0.016323067247867584
+  ],
+  "metadata": {
+    "model_name": "OpenBuddy/openbuddy-codellama2-34b-v11.1-bf16",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_532",
+    "probe_count": 532,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T18:53:21",
+    "computation_time_seconds": 0.005562543869018555,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

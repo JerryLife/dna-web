@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.031015455722808838,
+    0.020220395177602768,
+    -0.057945214211940765,
+    0.013225710950791836
+  ],
+  "metadata": {
+    "model_name": "bigscience/bloomz-560m",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_370",
+    "probe_count": 370,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:31:16",
+    "computation_time_seconds": 0.0052754878997802734,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

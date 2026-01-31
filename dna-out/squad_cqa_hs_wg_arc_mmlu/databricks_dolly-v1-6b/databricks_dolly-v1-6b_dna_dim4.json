@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.0055342745035886765,
+    0.047428376972675323,
+    -0.004613233730196953,
+    0.009522839449346066
+  ],
+  "metadata": {
+    "model_name": "databricks/dolly-v1-6b",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:43:35",
+    "computation_time_seconds": 0.0029325485229492188,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

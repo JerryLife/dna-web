@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.008619253523647785,
+    0.024738168343901634,
+    -0.010569650679826736,
+    -0.011351482011377811
+  ],
+  "metadata": {
+    "model_name": "ibivibiv/alpaca-dragon-72b-v1",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_599",
+    "probe_count": 599,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:05:53",
+    "computation_time_seconds": 0.00289154052734375,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

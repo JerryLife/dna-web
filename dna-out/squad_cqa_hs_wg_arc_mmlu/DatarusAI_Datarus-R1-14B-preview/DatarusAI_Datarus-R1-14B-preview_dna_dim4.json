@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.022053463384509087,
+    0.026589248329401016,
+    -0.008462727069854736,
+    0.014370405115187168
+  ],
+  "metadata": {
+    "model_name": "DatarusAI/Datarus-R1-14B-preview",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_6",
+    "probe_count": 6,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T16:15:08",
+    "computation_time_seconds": 0.0017104148864746094,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

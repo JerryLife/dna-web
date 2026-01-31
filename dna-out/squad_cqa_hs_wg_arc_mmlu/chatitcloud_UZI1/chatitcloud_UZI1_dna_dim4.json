@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.010469483211636543,
+    0.010506782680749893,
+    -0.007580485660582781,
+    -0.007946141995489597
+  ],
+  "metadata": {
+    "model_name": "chatitcloud/UZI1",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_597",
+    "probe_count": 597,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:32:29",
+    "computation_time_seconds": 0.002892017364501953,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

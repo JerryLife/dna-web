@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.02562921680510044,
+    0.006618677172809839,
+    0.017993327230215073,
+    -0.005612335633486509
+  ],
+  "metadata": {
+    "model_name": "golaxy/gowizardlm",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_579",
+    "probe_count": 579,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:00:26",
+    "computation_time_seconds": 0.006323337554931641,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

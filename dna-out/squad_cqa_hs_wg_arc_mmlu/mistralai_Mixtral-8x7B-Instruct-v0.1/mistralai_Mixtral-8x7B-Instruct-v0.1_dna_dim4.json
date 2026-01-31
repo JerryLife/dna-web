@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0015960755990818143,
+    -0.0036749860737472773,
+    0.019012341275811195,
+    0.005329732783138752
+  ],
+  "metadata": {
+    "model_name": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_584",
+    "probe_count": 584,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:35:45",
+    "computation_time_seconds": 0.0029387474060058594,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

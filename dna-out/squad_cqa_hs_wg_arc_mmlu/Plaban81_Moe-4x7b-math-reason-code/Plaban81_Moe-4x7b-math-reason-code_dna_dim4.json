@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0022434121929109097,
+    0.015459605492651463,
+    -0.0011338770855218172,
+    -0.0021689676214009523
+  ],
+  "metadata": {
+    "model_name": "Plaban81/Moe-4x7b-math-reason-code",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T18:58:30",
+    "computation_time_seconds": 0.00293731689453125,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

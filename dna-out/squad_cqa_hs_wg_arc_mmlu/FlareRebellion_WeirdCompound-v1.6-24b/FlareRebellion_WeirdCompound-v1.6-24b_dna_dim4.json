@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.009013975039124489,
+    0.02195759117603302,
+    -0.004020226188004017,
+    -0.028938239440321922
+  ],
+  "metadata": {
+    "model_name": "FlareRebellion/WeirdCompound-v1.6-24b",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T17:25:40",
+    "computation_time_seconds": 0.0026962757110595703,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

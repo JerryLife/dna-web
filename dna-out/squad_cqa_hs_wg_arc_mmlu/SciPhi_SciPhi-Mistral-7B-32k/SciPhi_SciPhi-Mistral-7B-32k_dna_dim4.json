@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.002495046006515622,
+    0.03388511762022972,
+    -0.0018725697882473469,
+    0.00118883210234344
+  ],
+  "metadata": {
+    "model_name": "SciPhi/SciPhi-Mistral-7B-32k",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T19:59:47",
+    "computation_time_seconds": 0.0040585994720458984,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

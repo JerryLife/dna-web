@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.019596010446548462,
+    -0.00392697099596262,
+    0.0021475881803780794,
+    -0.014381441287696362
+  ],
+  "metadata": {
+    "model_name": "knifeayumu/Cydonia-v4.1-MS3.2-Magnum-Diamond-24B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_599",
+    "probe_count": 599,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:14:43",
+    "computation_time_seconds": 0.0029268264770507812,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

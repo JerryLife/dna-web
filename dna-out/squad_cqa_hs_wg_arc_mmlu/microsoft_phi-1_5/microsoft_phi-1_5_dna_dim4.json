@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0025853293482214212,
+    -0.00826797541230917,
+    -0.015451354905962944,
+    0.024354297667741776
+  ],
+  "metadata": {
+    "model_name": "microsoft/phi-1_5",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_501",
+    "probe_count": 501,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:32:46",
+    "computation_time_seconds": 0.006852388381958008,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.004749767482280731,
+    0.01627148874104023,
+    0.009657969698309898,
+    0.006605764385312796
+  ],
+  "metadata": {
+    "model_name": "BioMistral/BioMistral-7B-DARE",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T15:58:12",
+    "computation_time_seconds": 0.002252817153930664,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

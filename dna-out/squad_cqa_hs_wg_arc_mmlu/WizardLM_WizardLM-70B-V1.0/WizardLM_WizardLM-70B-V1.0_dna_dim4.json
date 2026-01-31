@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0072485399432480335,
+    0.019249945878982544,
+    0.008734337985515594,
+    -0.013082710094749928
+  ],
+  "metadata": {
+    "model_name": "WizardLM/WizardLM-70B-V1.0",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_575",
+    "probe_count": 575,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:20:06",
+    "computation_time_seconds": 0.006380319595336914,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

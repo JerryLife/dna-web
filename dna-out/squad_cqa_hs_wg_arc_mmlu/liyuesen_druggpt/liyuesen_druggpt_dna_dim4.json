@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0016995691694319248,
+    0.02713271789252758,
+    -0.0027034711092710495,
+    -0.02720397152006626
+  ],
+  "metadata": {
+    "model_name": "liyuesen/druggpt",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_599",
+    "probe_count": 599,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:16:11",
+    "computation_time_seconds": 0.0030863285064697266,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.032289836555719376,
+    0.015560372732579708,
+    0.005788212642073631,
+    0.00753130903467536
+  ],
+  "metadata": {
+    "model_name": "LLM360/Amber",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_595",
+    "probe_count": 595,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T18:02:38",
+    "computation_time_seconds": 0.002669095993041992,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

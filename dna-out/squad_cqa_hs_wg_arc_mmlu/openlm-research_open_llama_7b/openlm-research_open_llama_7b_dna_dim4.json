@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.00020271787070669234,
+    0.005081227049231529,
+    0.007667518220841885,
+    -0.0032622069120407104
+  ],
+  "metadata": {
+    "model_name": "openlm-research/open_llama_7b",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_596",
+    "probe_count": 596,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:49:18",
+    "computation_time_seconds": 0.0030858516693115234,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

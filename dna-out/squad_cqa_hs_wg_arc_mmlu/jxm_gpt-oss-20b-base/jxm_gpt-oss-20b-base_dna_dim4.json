@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.01713031530380249,
+    0.04099864512681961,
+    0.00909633468836546,
+    -0.01637551374733448
+  ],
+  "metadata": {
+    "model_name": "jxm/gpt-oss-20b-base",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:14:23",
+    "computation_time_seconds": 0.003070831298828125,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

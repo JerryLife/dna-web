@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.011355699971318245,
+    0.015272269956767559,
+    -0.006679595913738012,
+    0.013639618642628193
+  ],
+  "metadata": {
+    "model_name": "google-t5/t5-small",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_595",
+    "probe_count": 595,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:00:44",
+    "computation_time_seconds": 0.0030469894409179688,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

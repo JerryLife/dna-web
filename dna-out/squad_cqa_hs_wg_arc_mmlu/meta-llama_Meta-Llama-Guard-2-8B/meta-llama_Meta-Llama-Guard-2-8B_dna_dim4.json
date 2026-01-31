@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.023924263194203377,
+    0.012822377495467663,
+    -0.002191150328144431,
+    -0.015514824539422989
+  ],
+  "metadata": {
+    "model_name": "meta-llama/Meta-Llama-Guard-2-8B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:23:55",
+    "computation_time_seconds": 0.003124237060546875,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

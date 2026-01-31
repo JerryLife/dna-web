@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.04583228379487991,
+    0.013059630990028381,
+    0.0035767797380685806,
+    0.01863587461411953
+  ],
+  "metadata": {
+    "model_name": "quantumaikr/KoreanLM",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_558",
+    "probe_count": 558,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:50:08",
+    "computation_time_seconds": 0.006216764450073242,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

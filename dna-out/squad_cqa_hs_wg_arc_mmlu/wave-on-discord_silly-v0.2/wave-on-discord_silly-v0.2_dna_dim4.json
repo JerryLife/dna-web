@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.014627952128648758,
+    0.028770381584763527,
+    -0.004083838779479265,
+    0.0064076511189341545
+  ],
+  "metadata": {
+    "model_name": "wave-on-discord/silly-v0.2",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_374",
+    "probe_count": 374,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T22:05:25",
+    "computation_time_seconds": 0.005123615264892578,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

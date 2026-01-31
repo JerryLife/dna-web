@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore the DNA of Large Language Models - Interactive visualization of LLM behavioral fingerprints">
+  <title>LLM DNA Explorer | Discover Model Genetics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/pages.css">
+</head>
+
+<body>
+  <!-- Navigation Header -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-icon">🧬</span>
+        <span class="logo-text">LLM DNA</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link" data-page="galaxy">Galaxy</a></li>
+        <li><a href="/lab" class="nav-link" data-page="lab">Community Lab</a></li>
+        <li><a href="/workbench" class="nav-link" data-page="workbench">Workbench</a></li>
+        <li><a href="/about" class="nav-link" data-page="about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main id="app">
+    <!-- Content will be dynamically loaded here -->
+  </main>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="dna-helix">
+        <div class="strand strand-1"></div>
+        <div class="strand strand-2"></div>
+      </div>
+      <p class="loading-text">Sequencing DNA...</p>
+    </div>
+  </div>
+
+  <!-- Toast Notifications -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.012811149470508099,
+    0.018352389335632324,
+    -0.00619085319340229,
+    -0.003912903368473053
+  ],
+  "metadata": {
+    "model_name": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T19:49:42",
+    "computation_time_seconds": 0.0029516220092773438,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

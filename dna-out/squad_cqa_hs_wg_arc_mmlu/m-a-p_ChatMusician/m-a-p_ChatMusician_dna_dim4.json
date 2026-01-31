@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.006867085583508015,
+    -0.00804685615003109,
+    0.018474480137228966,
+    0.015992455184459686
+  ],
+  "metadata": {
+    "model_name": "m-a-p/ChatMusician",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_563",
+    "probe_count": 563,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:18:41",
+    "computation_time_seconds": 0.00630640983581543,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.005377641413360834,
+    0.01788998208940029,
+    -0.025238187983632088,
+    0.014690635725855827
+  ],
+  "metadata": {
+    "model_name": "HuggingFaceTB/SmolLM-135M",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_598",
+    "probe_count": 598,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T17:33:43",
+    "computation_time_seconds": 0.0028870105743408203,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

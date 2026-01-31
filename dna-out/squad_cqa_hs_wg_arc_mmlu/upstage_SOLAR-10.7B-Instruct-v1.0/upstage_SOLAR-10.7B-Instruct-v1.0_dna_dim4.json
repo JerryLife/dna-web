@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.017192868515849113,
+    0.022616565227508545,
+    -0.011682911776006222,
+    -0.008590818382799625
+  ],
+  "metadata": {
+    "model_name": "upstage/SOLAR-10.7B-Instruct-v1.0",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T22:04:18",
+    "computation_time_seconds": 0.0029091835021972656,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

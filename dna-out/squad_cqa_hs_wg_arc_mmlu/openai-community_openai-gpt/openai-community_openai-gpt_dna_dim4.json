@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.009101374074816704,
+    0.023436469957232475,
+    -0.013154435902833939,
+    0.00643968116492033
+  ],
+  "metadata": {
+    "model_name": "openai-community/openai-gpt",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:42:32",
+    "computation_time_seconds": 0.0032012462615966797,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

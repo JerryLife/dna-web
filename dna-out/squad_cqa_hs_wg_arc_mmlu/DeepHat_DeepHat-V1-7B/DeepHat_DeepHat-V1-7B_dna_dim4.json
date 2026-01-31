@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.009515891782939434,
+    0.015597560442984104,
+    -0.0053363703191280365,
+    -0.001728894654661417
+  ],
+  "metadata": {
+    "model_name": "DeepHat/DeepHat-V1-7B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T16:19:04",
+    "computation_time_seconds": 0.002190828323364258,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

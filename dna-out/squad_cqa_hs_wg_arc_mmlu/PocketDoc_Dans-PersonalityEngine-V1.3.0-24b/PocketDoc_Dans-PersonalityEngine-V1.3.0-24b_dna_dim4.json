@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0029097760561853647,
+    0.02950931526720524,
+    -0.005637874361127615,
+    -0.01954258419573307
+  ],
+  "metadata": {
+    "model_name": "PocketDoc/Dans-PersonalityEngine-V1.3.0-24b",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T19:00:00",
+    "computation_time_seconds": 0.0030508041381835938,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

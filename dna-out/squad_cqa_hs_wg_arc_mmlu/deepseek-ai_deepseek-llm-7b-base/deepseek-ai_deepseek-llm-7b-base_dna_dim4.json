@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.015878155827522278,
+    0.0276295505464077,
+    0.008460765704512596,
+    -0.006234967149794102
+  ],
+  "metadata": {
+    "model_name": "deepseek-ai/deepseek-llm-7b-base",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_599",
+    "probe_count": 599,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:55:09",
+    "computation_time_seconds": 0.0029211044311523438,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}
