@@ -393,8 +393,38 @@ export default class GalaxyPage {
     if (!this.dots) return;
     let visible = 0;
 
+    // Prepare search regex if wildcard is used
+    let searchRegex = null;
+    const searchTerm = this.filters.search.trim();
+
+    if (searchTerm && searchTerm.includes('*')) {
+      try {
+        // Robust wildcard handling:
+        // 1. Split by '*' to get literal segments
+        // 2. Escape special regex characters in each segment
+        // 3. Join segments with '.*' to represent the wildcard
+        const parts = searchTerm.split('*');
+        const escapedParts = parts.map(part => part.replace(/[.+?^${}()|[\]\\]/g, '\\$&'));
+        const pattern = escapedParts.join('.*');
+
+        // Anchor to match full string behavior
+        searchRegex = new RegExp(`^${pattern}$`, 'i');
+      } catch (e) {
+        console.warn('Invalid wildcard search', e);
+      }
+    }
+
     this.dots.style('display', d => {
-      const matchSearch = !this.filters.search || d.name.toLowerCase().includes(this.filters.search.toLowerCase());
+      let matchSearch = true;
+
+      if (this.filters.search) {
+        if (searchRegex) {
+          matchSearch = searchRegex.test(d.name);
+        } else {
+          matchSearch = d.name.toLowerCase().includes(this.filters.search.toLowerCase());
+        }
+      }
+
       const matchType = (this.filters.showBase && !d.isInstruct) || (this.filters.showInstruct && d.isInstruct);
       const matchOrg = this.filters.activeOrgs.has(d.organization);
 
