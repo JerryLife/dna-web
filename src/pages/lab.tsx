@@ -125,8 +125,8 @@ function ProposalCard({ proposal, rank, onVote }: ProposalCardProps) {
     const statusConfig = getStatusConfig(proposal.status);
 
     return (
-        <Paper p="md" radius="md" withBorder>
-            <Group justify="space-between" wrap="nowrap">
+        <Paper p="md" radius="md" withBorder className="lab-proposal-card">
+            <Group justify="space-between" wrap="wrap" className="lab-proposal-card-inner">
                 <Text size="xl" fw={700} c="dimmed" style={{ minWidth: 30 }}>
                     {rank}
                 </Text>
@@ -326,7 +326,7 @@ export default function LabPage() {
     };
 
     return (
-        <div className="page">
+        <div className="page lab-page">
             <header className="page-header">
                 <h1 className="page-title">Community Lab</h1>
                 <p className="page-subtitle">
@@ -334,12 +334,7 @@ export default function LabPage() {
                 </p>
             </header>
 
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: '2rem',
-                marginTop: '2rem',
-            }}>
+            <div className="lab-main-grid">
                 {/* Proposal Form */}
                 <Paper p="lg" radius="md" withBorder>
                     <Title order={4} mb="lg">🔬 Propose a Model</Title>
@@ -401,7 +396,7 @@ export default function LabPage() {
 
                 {/* Leaderboard */}
                 <Paper p="lg" radius="md" withBorder>
-                    <Group justify="space-between" mb="lg">
+                    <Group justify="space-between" mb="lg" className="lab-leaderboard-header">
                         <Title order={4}>📊 Research Queue</Title>
                         <Select
                             value={sortBy}
@@ -416,7 +411,7 @@ export default function LabPage() {
                         />
                     </Group>
 
-                    <Stack gap="sm" style={{ maxHeight: 500, overflowY: 'auto' }}>
+                    <Stack gap="sm" className="lab-proposals-list">
                         {sortedProposals.map((proposal, index) => (
                             <ProposalCard
                                 key={proposal.id}
@@ -430,13 +425,9 @@ export default function LabPage() {
             </div>
 
             {/* How It Works */}
-            <Paper p="lg" radius="md" withBorder mt="xl">
+            <Paper p="lg" radius="md" withBorder mt="xl" className="lab-how-it-works-paper">
                 <Title order={4} mb="lg">ℹ️ How It Works</Title>
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 1fr)',
-                    gap: '1rem',
-                }}>
+                <div className="lab-how-it-works-grid">
                     <InfoCard
                         icon="1️⃣"
                         title="Propose"

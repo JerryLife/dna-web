@@ -558,6 +558,117 @@
     }
 }
 
+/* Lab page layout (form + leaderboard grid) */
+.lab-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* How It Works - 4 info cards */
+.lab-how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* Proposals list (scrollable) */
+.lab-proposals-list {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Proposal card (Mantine Paper) - allow inner wrap on small screens */
+.lab-proposal-card-inner {
+    gap: 0.75rem;
+}
+
+.lab-proposal-card-inner .mantine-Stack-root {
+    flex: 1;
+    min-width: 0;
+}
+
+.lab-proposal-card a {
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+/* Mobile: Lab page */
+@media (max-width: 768px) {
+    .lab-page {
+        padding: 20px 16px;
+    }
+
+    .lab-page .page-title {
+        font-size: 28px;
+    }
+
+    .lab-page .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .lab-main-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .lab-how-it-works-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .lab-how-it-works-paper {
+        padding: 1rem;
+    }
+
+    .lab-leaderboard-header {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .lab-leaderboard-header .mantine-Select-root {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .lab-proposals-list {
+        max-height: 360px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lab-page {
+        padding: 16px 12px;
+    }
+
+    .lab-page .page-title {
+        font-size: 24px;
+    }
+
+    .lab-how-it-works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-leaderboard-header .mantine-Select-root {
+        max-width: none;
+    }
+
+    /* Proposal card: stack rank+content, then vote row on very small screens */
+    .lab-proposal-card-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lab-proposal-card-inner > .mantine-Stack-root:last-child {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 /* Proposal Card - Modern & Fancy */
 .proposals-list {
     display: flex;
@@ -973,15 +1084,146 @@
 }
 
 /* ============================================
-   Workbench Page - Responsive
+   Workbench Page - Professional Layout
    ============================================ */
+
+.workbench-page .workbench-header {
+    margin-bottom: 0.5rem;
+}
+
+.workbench-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.workbench-header-inner .page-title {
+    margin-bottom: 0;
+}
+
+.workbench-badge {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.workbench-page .page-subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    max-width: 560px;
+    margin-top: 0.25rem;
+}
 
 .workbench-layout {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: 340px 1fr;
+    gap: 1.75rem;
+    margin-top: 1.75rem;
 }
+
+.workbench-panel {
+    background: var(--color-bg-primary);
+    border-color: var(--color-border-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.workbench-panel-config {
+    align-self: start;
+    position: sticky;
+    top: calc(var(--nav-height, 64px) + 1rem);
+}
+
+.workbench-panel-results {
+    min-height: 320px;
+}
+
+.workbench-label {
+    color: var(--color-text-secondary);
+}
+
+.workbench-run-btn {
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.workbench-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    min-height: 280px;
+}
+
+.workbench-empty-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1.25rem;
+    background: var(--color-bg-tertiary);
+    border: 2px solid var(--color-border-primary);
+    border-radius: var(--radius-xl);
+    opacity: 0.8;
+}
+
+.workbench-result-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.workbench-result-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-border-hover);
+}
+
+.workbench-result-ring-wrap {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workbench-rank-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    border-radius: var(--radius-md);
+    background: var(--color-bg-tertiary);
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.workbench-rank-badge.workbench-rank-1 {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 235, 180, 0.3));
+    color: #b8860b;
+    font-weight: 700;
+}
+
+.workbench-rank-badge.workbench-rank-2 {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.25), rgba(230, 230, 230, 0.35));
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.workbench-rank-badge.workbench-rank-3 {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.2), rgba(230, 180, 140, 0.3));
+    color: #a0522d;
+    font-weight: 700;
+}
+
+.workbench-comparison-detail {
+    background: var(--color-bg-primary);
+    border-color: var(--color-border-primary);
+    box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   Workbench Page - Responsive
+   ============================================ */
 
 @media (max-width: 900px) {
     .workbench-layout {
@@ -1021,13 +1263,11 @@
     }
 
     .workbench-result-card .workbench-result-meta .workbench-result-percent {
-        order: -1;
-        width: 100%;
+        order: 0;
     }
 
-    .workbench-result-card .workbench-result-meta .workbench-result-progress {
-        flex: 1;
-        min-width: 80px;
+    .workbench-result-card .workbench-result-meta .workbench-result-ring-wrap {
+        flex-shrink: 0;
     }
 
     .workbench-result-card .workbench-result-meta .workbench-result-btn {
