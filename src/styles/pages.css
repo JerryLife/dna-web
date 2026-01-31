@@ -35,6 +35,16 @@
     background: var(--color-bg-primary);
 }
 
+/* Mobile: filter drawer backdrop */
+.galaxy-filter-backdrop {
+    position: fixed;
+    inset: 0;
+    top: var(--nav-height, 60px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 18;
+    cursor: pointer;
+}
+
 /* Sidebar - Light Theme */
 .sidebar {
     width: 280px;
