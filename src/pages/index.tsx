@@ -18,7 +18,7 @@ import {
 import { useDebouncedValue, useResizeObserver } from '@mantine/hooks';
 import { useData } from '@/contexts/DataContext';
 import type { ModelData } from '@/utils/data';
-import config from '../../config.js';
+import config from '@/config';
 
 // Configuration
 const MIN_COUNT = config.visualization?.minCount || 5;

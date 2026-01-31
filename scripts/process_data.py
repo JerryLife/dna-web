@@ -22,19 +22,13 @@ except ImportError:
     sys.exit(1)
 
 def load_config():
-    # Load basic config from config.js (simple parsing)
-    config_path = Path(__file__).parent.parent / 'config.js'
+    # Load basic config from config.json
+    config_path = Path(__file__).parent.parent / 'config.json'
     if not config_path.exists():
         return {'dataset': 'squad_cqa_hs_wg_arc_mmlu'}
     
     with open(config_path, 'r') as f:
-        content = f.read()
-        # Very basic extraction of dataset value
-        import re
-        match = re.search(r"dataset:\s*['\"]([^'\"]+)['\"]", content)
-        if match:
-            return {'dataset': match.group(1)}
-    return {'dataset': 'squad_cqa_hs_wg_arc_mmlu'}
+        return json.load(f)
 
 def collect_signatures(dataset_dir):
     records = []

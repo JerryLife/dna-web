@@ -5,10 +5,12 @@
  * Usage: node scripts/build_database.js
  */
 
+import { readFileSync } from 'fs';
 import { readdir, readFile, writeFile, mkdir } from 'fs/promises';
 import { join, basename } from 'path';
 import { existsSync } from 'fs';
-import config from '../config.js';
+
+const config = JSON.parse(readFileSync(join(process.cwd(), 'config.json'), 'utf-8'));
 
 const DNA_OUT_DIR = config.paths.dnaOut;
 const OUTPUT_FILE = config.paths.output;
