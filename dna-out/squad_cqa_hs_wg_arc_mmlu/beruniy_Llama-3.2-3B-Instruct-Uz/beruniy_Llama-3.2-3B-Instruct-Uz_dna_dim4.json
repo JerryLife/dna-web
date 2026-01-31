@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.006957304663956165,
+    0.017466869205236435,
+    0.007805026136338711,
+    0.006944654043763876
+  ],
+  "metadata": {
+    "model_name": "beruniy/Llama-3.2-3B-Instruct-Uz",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:28:33",
+    "computation_time_seconds": 0.0030324459075927734,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

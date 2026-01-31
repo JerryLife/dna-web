@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.005953001789748669,
+    0.02171480841934681,
+    0.005055864341557026,
+    -0.003135168459266424
+  ],
+  "metadata": {
+    "model_name": "mosaicml/mpt-30b-chat",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:37:52",
+    "computation_time_seconds": 0.0030434131622314453,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

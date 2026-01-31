@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0037524572107940912,
+    0.013209021650254726,
+    -0.007672998122870922,
+    -0.004607082810252905
+  ],
+  "metadata": {
+    "model_name": "NousResearch/Nous-Hermes-2-Yi-34B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T18:46:03",
+    "computation_time_seconds": 0.0029325485229492188,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

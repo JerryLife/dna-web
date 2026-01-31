@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.026204360648989677,
+    0.028207814320921898,
+    0.009588398039340973,
+    -0.01956593245267868
+  ],
+  "metadata": {
+    "model_name": "thesephist/contra-bottleneck-t5-large-wikipedia",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_590",
+    "probe_count": 590,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:58:46",
+    "computation_time_seconds": 0.0076808929443359375,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.01059234794229269,
+    -0.008886952884495258,
+    -0.009884892962872982,
+    0.008016395382583141
+  ],
+  "metadata": {
+    "model_name": "TheBloke/CodeLlama-70B-Instruct-AWQ",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_598",
+    "probe_count": 598,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:04:37",
+    "computation_time_seconds": 0.003031492233276367,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

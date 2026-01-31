@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.0014565682504326105,
+    0.02042236551642418,
+    -0.005974601488560438,
+    -0.01138337329030037
+  ],
+  "metadata": {
+    "model_name": "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_597",
+    "probe_count": 597,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T18:51:42",
+    "computation_time_seconds": 0.008738517761230469,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

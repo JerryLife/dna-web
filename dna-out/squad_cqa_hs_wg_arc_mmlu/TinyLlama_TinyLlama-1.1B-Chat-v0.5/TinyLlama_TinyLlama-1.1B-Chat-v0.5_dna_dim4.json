@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.009166795760393143,
+    -0.013135031796991825,
+    -0.005166769027709961,
+    -0.02683449536561966
+  ],
+  "metadata": {
+    "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v0.5",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_599",
+    "probe_count": 599,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:11:50",
+    "computation_time_seconds": 0.0033111572265625,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

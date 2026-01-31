@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.014568565413355827,
+    0.01185032818466425,
+    -0.006741116754710674,
+    -0.02008453756570816
+  ],
+  "metadata": {
+    "model_name": "01-ai/Yi-6B-200K",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_506",
+    "probe_count": 506,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T15:40:24",
+    "computation_time_seconds": 0.006078958511352539,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

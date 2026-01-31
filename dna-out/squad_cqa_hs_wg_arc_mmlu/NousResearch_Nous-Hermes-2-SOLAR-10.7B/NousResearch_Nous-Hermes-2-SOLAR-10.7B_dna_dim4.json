@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.010529005900025368,
+    0.016017252579331398,
+    -0.005277174059301615,
+    -0.003248945577070117
+  ],
+  "metadata": {
+    "model_name": "NousResearch/Nous-Hermes-2-SOLAR-10.7B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T18:44:56",
+    "computation_time_seconds": 0.0032503604888916016,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

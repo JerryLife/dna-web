@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.0059657529927790165,
+    0.01603228598833084,
+    -0.0019409909145906568,
+    -0.012718507088720798
+  ],
+  "metadata": {
+    "model_name": "01-ai/Yi-1.5-34B-Chat",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T15:30:19",
+    "computation_time_seconds": 0.011647462844848633,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.006272032391279936,
+    0.025609321892261505,
+    -0.012156244367361069,
+    -0.007296660915017128
+  ],
+  "metadata": {
+    "model_name": "tomg-group-umd/DynaGuard-8B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T22:04:43",
+    "computation_time_seconds": 0.0030176639556884766,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

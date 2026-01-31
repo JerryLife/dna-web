@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.006238370668143034,
+    0.042928241193294525,
+    -0.0038133233319967985,
+    -0.030232690274715424
+  ],
+  "metadata": {
+    "model_name": "Tianlin668/MentalBART",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:09:13",
+    "computation_time_seconds": 0.003352642059326172,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

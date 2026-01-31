@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.033705417066812515,
+    -0.015546547248959541,
+    -0.009729321114718914,
+    -0.014474804513156414
+  ],
+  "metadata": {
+    "model_name": "nomic-ai/gpt4all-13b-snoozy",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_534",
+    "probe_count": 534,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:40:01",
+    "computation_time_seconds": 0.0070323944091796875,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

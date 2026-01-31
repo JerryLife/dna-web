@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.0011246020440012217,
+    0.030010972172021866,
+    -0.00981300137937069,
+    -0.002900312887504697
+  ],
+  "metadata": {
+    "model_name": "elyza/ELYZA-japanese-Llama-2-7b-instruct",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T20:58:12",
+    "computation_time_seconds": 0.0030088424682617188,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

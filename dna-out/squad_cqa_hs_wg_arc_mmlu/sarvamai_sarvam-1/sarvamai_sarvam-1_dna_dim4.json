@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.01200669351965189,
+    -0.00605856254696846,
+    -0.012119060382246971,
+    0.017950553447008133
+  ],
+  "metadata": {
+    "model_name": "sarvamai/sarvam-1",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_592",
+    "probe_count": 592,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:51:48",
+    "computation_time_seconds": 0.003088712692260742,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

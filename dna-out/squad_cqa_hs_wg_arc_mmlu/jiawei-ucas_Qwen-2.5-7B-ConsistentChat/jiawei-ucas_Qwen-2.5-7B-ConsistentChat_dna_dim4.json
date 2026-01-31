@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.009043983183801174,
+    0.01967778615653515,
+    0.007758025545626879,
+    -0.010729759000241756
+  ],
+  "metadata": {
+    "model_name": "jiawei-ucas/Qwen-2.5-7B-ConsistentChat",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T21:09:23",
+    "computation_time_seconds": 0.0030612945556640625,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

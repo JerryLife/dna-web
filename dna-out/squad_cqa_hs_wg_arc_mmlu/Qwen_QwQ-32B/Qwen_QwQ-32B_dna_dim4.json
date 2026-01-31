@@ -1,0 +1,29 @@
+{
+  "signature": [
+    0.008567416109144688,
+    0.033717844635248184,
+    -0.0006509671802632511,
+    -0.017415855079889297
+  ],
+  "metadata": {
+    "model_name": "Qwen/QwQ-32B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_600",
+    "probe_count": 600,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T19:10:07",
+    "computation_time_seconds": 0.0027344226837158203,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}

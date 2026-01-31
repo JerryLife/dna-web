@@ -1,0 +1,29 @@
+{
+  "signature": [
+    -0.012587574310600758,
+    0.03355027735233307,
+    0.004592720419168472,
+    0.021190045401453972
+  ],
+  "metadata": {
+    "model_name": "LGAI-EXAONE/EXAONE-4.0-1.2B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "squad,cqa,hs,wg,arc,mmlu_252",
+    "probe_count": 252,
+    "dna_dimension": 4,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2025-11-18T17:58:06",
+    "computation_time_seconds": 0.003929853439331055,
+    "model_metadata": {},
+    "extractor_config": {
+      "backend": "auto",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "pooling": "cls",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 4
+    },
+    "aggregation_method": "concat"
+  }
+}
