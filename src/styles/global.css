@@ -319,6 +319,16 @@ code {
   font-weight: 600;
 }
 
+/* Model title: single-line truncation with ellipsis */
+.model-title-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .glass-panel {
   background: var(--color-bg-glass);
   backdrop-filter: blur(20px);

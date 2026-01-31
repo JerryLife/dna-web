@@ -1,4 +1,47 @@
 /* ============================================
+   Unified Page Headers (Lab, Workbench, About)
+   ============================================ */
+
+.page .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page .page-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+}
+
+.page .page-subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    max-width: 560px;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+    .page .page-title {
+        font-size: var(--font-size-2xl);
+    }
+    .page .page-subtitle {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .page .page-title {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* ============================================
    Galaxy Page Styles - Light Theme
    ============================================ */
 
@@ -528,23 +571,6 @@
     width: 100%;
 }
 
-.lab-page .page-header {
-    text-align: left;
-    margin-bottom: 32px;
-    padding-left: 4px;
-    /* Slight offset to match card visual line */
-}
-
-.lab-page .page-title {
-    font-size: 36px;
-    background: var(--color-accent-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 8px;
-    display: inline-block;
-}
-
 .lab-grid {
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -600,14 +626,6 @@
         padding: 20px 16px;
     }
 
-    .lab-page .page-title {
-        font-size: 28px;
-    }
-
-    .lab-page .page-subtitle {
-        font-size: 1rem;
-    }
-
     .lab-main-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -641,10 +659,6 @@
 @media (max-width: 480px) {
     .lab-page {
         padding: 16px 12px;
-    }
-
-    .lab-page .page-title {
-        font-size: 24px;
     }
 
     .lab-how-it-works-grid {
@@ -1094,6 +1108,7 @@
 .workbench-header-inner {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
     flex-wrap: wrap;
 }
@@ -1105,13 +1120,6 @@
 .workbench-badge {
     font-weight: 500;
     letter-spacing: 0.02em;
-}
-
-.workbench-page .page-subtitle {
-    color: var(--color-text-secondary);
-    font-size: var(--font-size-sm);
-    max-width: 560px;
-    margin-top: 0.25rem;
 }
 
 .workbench-layout {
@@ -1133,6 +1141,7 @@
 
 .workbench-panel-results {
     min-height: 320px;
+    min-width: 0; /* allow grid item to shrink, prevent overflow */
 }
 
 .workbench-label {
@@ -1169,6 +1178,9 @@
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
+    min-width: 0; /* allow card to shrink inside panel */
+    max-width: 100%; /* text/content must not exceed card width */
+    overflow: hidden; /* clip anything that would still overflow */
     transition: box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
@@ -1219,6 +1231,11 @@
     box-shadow: var(--shadow-md);
 }
 
+.workbench-comparison-tip-target {
+    cursor: default;
+    border-radius: var(--radius-sm);
+}
+
 /* ============================================
    Workbench Page - Responsive
    ============================================ */
@@ -1240,6 +1257,33 @@
 .workbench-result-card .workbench-result-main {
     flex: 1;
     min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* allow name to truncate; badges wrap instead of overflowing */
+.workbench-result-card .workbench-result-main .mantine-Stack-root {
+    overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
+}
+/* let every direct child (title, badges, barcode) shrink so text doesn't stretch */
+.workbench-result-card .workbench-result-main .mantine-Stack-root > * {
+    min-width: 0;
+    max-width: 100%;
+}
+.workbench-result-card .workbench-result-main .mantine-Stack-root .mantine-Group-root {
+    flex-wrap: wrap;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+/* truncate long badge text (family / parameters) with ellipsis */
+.workbench-result-card .workbench-result-main .mantine-Badge-root {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .workbench-result-card .workbench-result-meta {
@@ -1273,9 +1317,16 @@
     }
 }
 
-/* Results list: height follows content */
+/* Results list: height follows content, constrain width */
 .workbench-results-scroll {
     min-height: 0;
+    min-width: 0;
+    overflow-x: auto;
+}
+/* Stack of cards takes full width of panel so cards have a defined width */
+.workbench-results-scroll > .mantine-Stack-root {
+    min-width: 0;
+    width: 100%;
 }
 
 /* Comparison detail: stack header and rows on narrow */
@@ -1290,6 +1341,12 @@
 }
 
 /* Barcode/heatmap overflow on very narrow screens */
+/* Result card: constrain mini barcode so it doesn't stretch the card */
+.workbench-mini-barcode-wrap {
+    min-width: 0;
+    overflow: hidden;
+}
+
 .workbench-barcode-wrap,
 .workbench-heatmap-wrap {
     overflow-x: auto;

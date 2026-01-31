@@ -20,6 +20,7 @@ import {
     Tooltip,
     Divider,
     Box,
+    Modal,
 } from '@mantine/core';
 import { useData } from '@/contexts/DataContext';
 import type { ModelData, RankedModel } from '@/utils/data';
@@ -70,7 +71,7 @@ function ModelCombobox({
     const options = filteredModels.map((model) => (
         <Combobox.Option value={model.id} key={model.id}>
             <Group justify="space-between" wrap="nowrap">
-                <Text size="sm" truncate style={{ maxWidth: 250 }}>{model.name}</Text>
+                <Text size="sm" className="model-title-truncate" style={{ maxWidth: 250 }}>{model.name}</Text>
                 <Group gap="xs">
                     {model.parameters && (
                         <Badge size="xs" variant="light" color="gray">
@@ -148,9 +149,9 @@ function MiniBarcode({ signature, dataLoader }: { signature: number[] | null; da
     const step = Math.ceil(colors.length / 32);
 
     return (
-        <div style={{ display: 'flex', height: 12, gap: 1, borderRadius: 4, overflow: 'hidden' }}>
+        <div style={{ display: 'flex', height: 12, gap: 1, borderRadius: 4, overflow: 'hidden', minWidth: 0 }}>
             {colors.filter((_, i) => i % step === 0).map((color, i) => (
-                <div key={i} style={{ background: color, flex: 1 }} />
+                <div key={i} style={{ background: color, flex: 1, minWidth: 0 }} />
             ))}
         </div>
     );
@@ -194,7 +195,7 @@ function ResultCard({ result, rank, dataLoader, onCompare }: ResultCardProps) {
                     </Text>
                 </Box>
                 <Stack gap="xs" style={{ flex: 1, minWidth: 0 }}>
-                    <Text fw={600} size="sm" truncate>{result.name}</Text>
+                    <Text fw={600} size="sm" className="model-title-truncate">{result.name}</Text>
                     <Group gap="xs">
                         {result.family && (
                             <Badge
@@ -215,7 +216,9 @@ function ResultCard({ result, rank, dataLoader, onCompare }: ResultCardProps) {
                             </Badge>
                         )}
                     </Group>
-                    <MiniBarcode signature={result.signature} dataLoader={dataLoader} />
+                    <div className="workbench-mini-barcode-wrap">
+                        <MiniBarcode signature={result.signature} dataLoader={dataLoader} />
+                    </div>
                 </Stack>
             </Group>
             <Group gap="sm" align="center" className="workbench-result-meta" style={{ flexShrink: 0 }}>
@@ -315,22 +318,13 @@ interface ComparisonDetailProps {
     onClose: () => void;
 }
 
-function ComparisonDetail({ refModel, compModel, dataLoader, onClose }: ComparisonDetailProps) {
+function ComparisonDetailContent({ refModel, compModel, dataLoader }: Omit<ComparisonDetailProps, 'onClose'>) {
     const distance = dataLoader.calculateDistance(refModel.signature, compModel.signature);
     const getSimilarityPercent = (d: number) => Math.max(0, Math.min(100, (1 - d / 2) * 100));
     const percent = Math.round(getSimilarityPercent(distance));
 
     return (
-        <Paper p="lg" radius="md" withBorder mt="xl" className="workbench-comparison-detail">
-            <Group justify="space-between" mb="md" className="workbench-comparison-header">
-                <Group gap="xs">
-                    <Title order={4} fw={600}>Pairwise Comparison</Title>
-                    <Badge size="sm" variant="light" color="violet">DNA</Badge>
-                </Group>
-                <CloseButton size="md" onClick={onClose} aria-label="Close comparison" />
-            </Group>
-            <Divider mb="lg" />
-
+        <>
             <Stack gap="xl">
                 <div>
                     <Group justify="space-between" mb="xs" className="workbench-comparison-row-header">
@@ -338,7 +332,7 @@ function ComparisonDetail({ refModel, compModel, dataLoader, onClose }: Comparis
                             Reference
                         </Text>
                     </Group>
-                    <Text fw={600} size="sm" mb="xs" style={{ wordBreak: 'break-word' }}>{refModel.name}</Text>
+                    <Text fw={600} size="sm" mb="xs" className="model-title-truncate">{refModel.name}</Text>
                     <div className="workbench-barcode-wrap">
                         <FullBarcode signature={refModel.signature} dataLoader={dataLoader} />
                     </div>
@@ -353,7 +347,7 @@ function ComparisonDetail({ refModel, compModel, dataLoader, onClose }: Comparis
                             {percent}% similarity
                         </Text>
                     </Group>
-                    <Text fw={600} size="sm" mb="xs" style={{ wordBreak: 'break-word' }}>{compModel.name}</Text>
+                    <Text fw={600} size="sm" mb="xs" className="model-title-truncate">{compModel.name}</Text>
                     <div className="workbench-barcode-wrap">
                         <FullBarcode signature={compModel.signature} dataLoader={dataLoader} />
                     </div>
@@ -370,7 +364,7 @@ function ComparisonDetail({ refModel, compModel, dataLoader, onClose }: Comparis
                     <DifferenceHeatmap sig1={refModel.signature} sig2={compModel.signature} />
                 </div>
             </Stack>
-        </Paper>
+        </>
     );
 }
 
@@ -530,15 +524,27 @@ export default function WorkbenchPage() {
                 </Paper>
             </div>
 
-            {/* Comparison Detail */}
-            {refModelData && compModelData && (
-                <ComparisonDetail
-                    refModel={refModelData}
-                    compModel={compModelData}
-                    dataLoader={dataLoader}
-                    onClose={() => setCompareDetailId(null)}
-                />
-            )}
+            {/* Pairwise Comparison Modal */}
+            <Modal
+                opened={!!compModelData}
+                onClose={() => setCompareDetailId(null)}
+                title={
+                    <Group gap="xs">
+                        <Title order={4} fw={600}>Pairwise Comparison</Title>
+                        <Badge size="sm" variant="light" color="violet">DNA</Badge>
+                    </Group>
+                }
+                size="lg"
+                radius="md"
+            >
+                {refModelData && compModelData && (
+                    <ComparisonDetailContent
+                        refModel={refModelData}
+                        compModel={compModelData}
+                        dataLoader={dataLoader}
+                    />
+                )}
+            </Modal>
 
             <style>{`
                 @keyframes fadeInUp {

@@ -156,7 +156,7 @@ function Sidebar({
                                                     borderRadius: '50%',
                                                     background: color,
                                                 }} />
-                                                <Text size="xs" truncate style={{ flex: 1 }}>{name}</Text>
+                                                <Text size="xs" className="model-title-truncate" style={{ flex: 1 }}>{name}</Text>
                                                 <Text size="xs" c="dimmed">{count}</Text>
                                             </Group>
                                         }
