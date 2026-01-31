@@ -225,8 +225,8 @@ code {
 }
 
 .nav-container {
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 0 var(--spacing-6);
   height: 100%;
   display: flex;
@@ -241,6 +241,10 @@ code {
   font-weight: 700;
   font-size: var(--font-size-xl);
   color: var(--color-text-primary);
+  /* Ensure it stays pinned during scaling/scrolling */
+  position: relative;
+  z-index: 20;
+  flex-shrink: 0;
 }
 
 .logo-icon {
@@ -769,7 +773,6 @@ code {
   min-width: 250px;
   pointer-events: none;
   z-index: var(--z-dropdown);
-  transform: translate(-50%, -100%) translateY(-10px);
 }
 
 .dna-card-title {

@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import { debounce } from '../data.js';
+import config from '../../../config.js';
 
 export default class GalaxyPage {
   constructor(container) {
@@ -13,6 +14,14 @@ export default class GalaxyPage {
       showInstruct: true,
       activeOrgs: new Set()
     };
+
+    // Use config settings
+    this.minCount = config.visualization?.minCount || 5;
+    this.crowdRadius = config.visualization?.crowdRadius || 6.0;
+
+    // Cache for pre-calculated contours (computed once in normalized space)
+    this.cachedContours = null;
+    this.normalizedSize = 1000; // Fixed normalized space for contour calculation
   }
 
   async render() {
@@ -189,29 +198,97 @@ export default class GalaxyPage {
 
   drawShadows(models, width, height) {
     this.shadowGroup.selectAll('*').remove();
+
+    // Calculate scale factors from normalized space to current viewport
+    const scaleX = width / this.normalizedSize;
+    const scaleY = height / this.normalizedSize;
+
+    // If contours are not cached, compute them once in normalized space
+    if (!this.cachedContours) {
+      this.cachedContours = this.computeNormalizedContours(models);
+    }
+
+    // Render cached contours with transform
+    for (const { org, contour, color, count } of this.cachedContours) {
+      this.shadowGroup.append('path')
+        .datum(contour)
+        .attr('class', 'org-area')
+        .attr('data-org', org)
+        .attr('fill', color)
+        .attr('fill-opacity', 0.15)
+        .attr('stroke', color)
+        .attr('stroke-width', 1)
+        .attr('stroke-opacity', 0.3)
+        .attr('d', d3.geoPath())
+        .attr('transform', `scale(${scaleX}, ${scaleY})`)
+        .style('cursor', 'pointer')
+        .on('mouseenter', (event) => this.showAreaTooltip(event, org, count, color))
+        .on('mouseleave', () => this.hideTooltip())
+        .on('mousemove', (event) => this.updateAreaTooltipPosition(event));
+    }
+  }
+
+  // Compute contours once in normalized 1000x1000 space
+  computeNormalizedContours(models) {
     const orgGroups = d3.group(models, d => d.organization || 'Others');
-    const density = d3.contourDensity()
-      .x(d => this.xScale(d.x))
-      .y(d => this.yScale(d.y))
-      .size([width, height])
-      .bandwidth(35) // Smoothness matching reference
-      .thresholds(2); // Low threshold
+    const cachedContours = [];
+
+    // Get data extent for normalized scales
+    const xExtent = d3.extent(models, d => d.x);
+    const yExtent = d3.extent(models, d => d.y);
+    const padding = 60;
+
+    // Create normalized scales (0-1000)
+    const normXScale = d3.scaleLinear()
+      .domain(xExtent)
+      .range([padding, this.normalizedSize - padding]);
+    const normYScale = d3.scaleLinear()
+      .domain(yExtent)
+      .range([this.normalizedSize - padding, padding]);
+
+    // Helper to find data-space distance between two points
+    const dist = (p1, p2) => Math.sqrt(
+      Math.pow(p1.x - p2.x, 2) +
+      Math.pow(p1.y - p2.y, 2)
+    );
+
+    // Simple clustering in data-space
+    const findDenseCluster = (points, radius = 2, minPoints = 2) => {
+      if (points.length < minPoints) return [];
+      const densePoints = [];
+      for (const p of points) {
+        const neighbors = points.filter(other => dist(p, other) < radius);
+        if (neighbors.length >= minPoints) {
+          densePoints.push(...neighbors);
+        }
+      }
+      return [...new Set(densePoints)];
+    };
+
+    const dataRadius = this.crowdRadius / 6;
+    const bandwidth = 35; // Fixed bandwidth in normalized space
 
     for (const [org, orgModels] of orgGroups) {
-      if (orgModels.length <= 4 || org === 'Others') continue;
+      if (orgModels.length < this.minCount || org === 'Others') continue;
 
-      const contours = density(orgModels);
+      const clusteredPoints = findDenseCluster(orgModels, dataRadius, 2);
+      if (clusteredPoints.length < 2) continue;
+
+      const density = d3.contourDensity()
+        .x(d => normXScale(d.x))
+        .y(d => normYScale(d.y))
+        .size([this.normalizedSize, this.normalizedSize])
+        .bandwidth(bandwidth)
+        .thresholds(2);
+
+      const contours = density(clusteredPoints);
+      if (!contours || !contours[0]) continue;
+
       const color = this.generateOrgColor(org, orgModels.length);
-
-      this.shadowGroup.append('path')
-        .datum(contours[0])
-        .attr('fill', color)
-        .attr('fill-opacity', 0.12)
-        .attr('stroke', color)
-        .attr('stroke-width', 0.8)
-        .attr('stroke-opacity', 0.2)
-        .attr('d', d3.geoPath());
+      cachedContours.push({ org, contour: contours[0], color, count: orgModels.length });
     }
+
+    return cachedContours;
   }
 
   drawDots(models) {
@@ -238,27 +315,8 @@ export default class GalaxyPage {
 
   drawLabels(models) {
     this.labelGroup.selectAll('*').remove();
-    const orgGroups = d3.group(models, d => d.organization || 'Others');
-
-    for (const [org, orgModels] of orgGroups) {
-      if (orgModels.length <= 4 || org === 'Others') continue;
-
-      const x = d3.mean(orgModels, d => this.xScale(d.x));
-      const y = d3.mean(orgModels, d => this.yScale(d.y));
-
-      const color = this.generateOrgColor(org, orgModels.length);
-
-      this.labelGroup.append('text')
-        .attr('x', x)
-        .attr('y', y)
-        .attr('text-anchor', 'middle')
-        .attr('fill', color)
-        .attr('font-size', '13px')
-        .attr('font-weight', '600')
-        .style('pointer-events', 'none')
-        .style('text-shadow', '0 0 2px rgba(255,255,255,0.8)')
-        .text(org);
-    }
+    // Removed per user request to prevent confusion (text for area).
+    // Labels are now only shown on hover via tooltips.
   }
 
   generateOrgColor(org, count = 10) {
@@ -384,6 +442,36 @@ export default class GalaxyPage {
   hideTooltip() {
     const t = document.getElementById('dna-tooltip');
     if (t) t.style.display = 'none';
+  }
+
+  showAreaTooltip(event, org, modelCount, color) {
+    const tooltip = document.getElementById('dna-tooltip');
+    if (!tooltip) return;
+
+    document.getElementById('tooltip-title').textContent = org;
+    document.getElementById('tooltip-meta').innerHTML = `
+      <span class="badge" style="background:${color}44; color:#333;">${modelCount} models</span>
+    `;
+    document.getElementById('tooltip-details').textContent = 'Organization Territory';
+
+    this.updateAreaTooltipPosition(event);
+    tooltip.style.display = 'block';
+  }
+
+  updateAreaTooltipPosition(event) {
+    const tooltip = document.getElementById('dna-tooltip');
+    if (!tooltip) return;
+
+    const tRect = tooltip.getBoundingClientRect();
+    let left = event.clientX + 15;
+    let top = event.clientY + 15;
+
+    // Check boundaries
+    if (left + tRect.width > window.innerWidth) left = event.clientX - tRect.width - 15;
+    if (top + tRect.height > window.innerHeight) top = window.innerHeight - tRect.height - 10;
+
+    tooltip.style.left = `${left}px`;
+    tooltip.style.top = `${top}px`;
   }
 
   onDotClick(model) {
