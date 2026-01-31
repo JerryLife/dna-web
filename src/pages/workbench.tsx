@@ -184,61 +184,61 @@ function ResultCard({ result, rank, dataLoader, onCompare }: ResultCardProps) {
             p="md"
             radius="md"
             withBorder
+            className="workbench-result-card"
             style={{
                 animation: `fadeInUp 0.3s ease-out ${rank * 0.05}s both`,
             }}
         >
-            <Group justify="space-between" align="flex-start" wrap="nowrap">
-                <Group gap="md" wrap="nowrap" style={{ flex: 1, minWidth: 0 }}>
-                    <Text size="xl" fw={700} style={{ minWidth: 40, textAlign: 'center' }}>
-                        {getRankIcon()}
-                    </Text>
-
-                    <Stack gap="xs" style={{ flex: 1, minWidth: 0 }}>
-                        <Text fw={600} truncate>{result.name}</Text>
-                        <Group gap="xs">
-                            {result.family && (
-                                <Badge
-                                    size="sm"
-                                    variant="light"
-                                    style={{
-                                        backgroundColor: `${familyColor}22`,
-                                        color: familyColor,
-                                    }}
-                                >
-                                    {result.family}
-                                </Badge>
-                            )}
-                            {result.parameters && (
-                                <Badge size="sm" variant="light" color="gray">
-                                    {result.parameters}
-                                </Badge>
-                            )}
-                        </Group>
-                        <MiniBarcode signature={result.signature} dataLoader={dataLoader} />
-                    </Stack>
-                </Group>
-
-                <Stack gap="xs" align="flex-end" style={{ minWidth: 100 }}>
+            <Group gap="md" wrap="nowrap" className="workbench-result-main" style={{ flex: 1, minWidth: 0 }}>
+                <Text size="xl" fw={700} style={{ minWidth: 40, textAlign: 'center', flexShrink: 0 }}>
+                    {getRankIcon()}
+                </Text>
+                <Stack gap="xs" style={{ flex: 1, minWidth: 0 }}>
+                    <Text fw={600} truncate>{result.name}</Text>
+                    <Group gap="xs">
+                        {result.family && (
+                            <Badge
+                                size="sm"
+                                variant="light"
+                                style={{
+                                    backgroundColor: `${familyColor}22`,
+                                    color: familyColor,
+                                }}
+                            >
+                                {result.family}
+                            </Badge>
+                        )}
+                        {result.parameters && (
+                            <Badge size="sm" variant="light" color="gray">
+                                {result.parameters}
+                            </Badge>
+                        )}
+                    </Group>
+                    <MiniBarcode signature={result.signature} dataLoader={dataLoader} />
+                </Stack>
+            </Group>
+            <Group gap="xs" align="flex-end" className="workbench-result-meta" style={{ flexShrink: 0 }}>
+                <Stack gap="xs" align="flex-end" className="workbench-result-percent">
                     <Text size="xl" fw={700} c="violet">{percent}%</Text>
                     <Text size="xs" c="dimmed">Match</Text>
-                    <Progress
-                        value={percent}
-                        size="sm"
-                        color="violet"
-                        style={{ width: 80 }}
-                    />
-                    <Button
-                        size="xs"
-                        variant="filled"
-                        color="violet"
-                        fullWidth
-                        mt="xs"
-                        onClick={onCompare}
-                    >
-                        Compare
-                    </Button>
                 </Stack>
+                <Progress
+                    value={percent}
+                    size="sm"
+                    color="violet"
+                    className="workbench-result-progress"
+                    style={{ width: 80, flex: 1 }}
+                />
+                <Button
+                    size="xs"
+                    variant="filled"
+                    color="violet"
+                    className="workbench-result-btn"
+                    mt="xs"
+                    onClick={onCompare}
+                >
+                    Compare
+                </Button>
             </Group>
         </Paper>
     );
@@ -312,8 +312,8 @@ function ComparisonDetail({ refModel, compModel, dataLoader, onClose }: Comparis
     const percent = Math.round(getSimilarityPercent(distance));
 
     return (
-        <Paper p="lg" radius="md" withBorder mt="xl">
-            <Group justify="space-between" mb="lg">
+        <Paper p="lg" radius="md" withBorder mt="xl" className="workbench-comparison-detail">
+            <Group justify="space-between" mb="lg" className="workbench-comparison-header">
                 <Title order={3}>🧬 DNA Comparison</Title>
                 <CloseButton onClick={onClose} />
             </Group>
@@ -321,18 +321,20 @@ function ComparisonDetail({ refModel, compModel, dataLoader, onClose }: Comparis
             <Stack gap="xl">
                 {/* Row 1: Reference DNA */}
                 <div>
-                    <Group justify="space-between" mb={4}>
-                        <Text fw={600}>{refModel.name}</Text>
+                    <Group justify="space-between" mb={4} className="workbench-comparison-row-header">
+                        <Text fw={600} style={{ wordBreak: 'break-word' }}>{refModel.name}</Text>
                         <Badge variant="dot" size="sm" color="gray">Reference</Badge>
                     </Group>
-                    <FullBarcode signature={refModel.signature} dataLoader={dataLoader} />
+                    <div className="workbench-barcode-wrap">
+                        <FullBarcode signature={refModel.signature} dataLoader={dataLoader} />
+                    </div>
                 </div>
 
                 {/* Row 2: Comparison DNA with Score */}
                 <div>
-                    <Group justify="space-between" mb={4} align="center">
-                        <Group gap="xs">
-                            <Text fw={600}>{compModel.name}</Text>
+                    <Group justify="space-between" mb={4} align="center" className="workbench-comparison-row-header">
+                        <Group gap="xs" wrap="wrap">
+                            <Text fw={600} style={{ wordBreak: 'break-word' }}>{compModel.name}</Text>
                             <Badge variant="dot" size="sm" color="violet">Comparison</Badge>
                         </Group>
                         <Group gap={6}>
@@ -340,16 +342,20 @@ function ComparisonDetail({ refModel, compModel, dataLoader, onClose }: Comparis
                             <Text fw={700} c="violet">{percent}% Match</Text>
                         </Group>
                     </Group>
-                    <FullBarcode signature={compModel.signature} dataLoader={dataLoader} />
+                    <div className="workbench-barcode-wrap">
+                        <FullBarcode signature={compModel.signature} dataLoader={dataLoader} />
+                    </div>
                 </div>
             </Stack>
 
             <Stack gap="xs" mt="xl">
-                <Group gap="xs">
+                <Group gap="xs" wrap="wrap">
                     <Title order={5}>Signature Difference</Title>
                     <Text size="xs" c="dimmed">(Darker red = larger difference)</Text>
                 </Group>
-                <DifferenceHeatmap sig1={refModel.signature} sig2={compModel.signature} />
+                <div className="workbench-heatmap-wrap">
+                    <DifferenceHeatmap sig1={refModel.signature} sig2={compModel.signature} />
+                </div>
             </Stack>
         </Paper>
     );
@@ -401,12 +407,7 @@ export default function WorkbenchPage() {
                 </p>
             </header>
 
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: '350px 1fr',
-                gap: '2rem',
-                marginTop: '2rem',
-            }}>
+            <div className="workbench-layout">
                 {/* Selection Panel */}
                 <Paper p="lg" radius="md" withBorder>
                     <Title order={4} mb="lg">🔬 Model Selection</Title>
@@ -489,7 +490,7 @@ export default function WorkbenchPage() {
                             </Text>
                         </Stack>
                     ) : (
-                        <ScrollArea h={600} type="auto">
+                        <div className="workbench-results-scroll">
                             <Stack gap="md">
                                 {results.slice(0, 50).map((result, index) => (
                                     <ResultCard
@@ -501,7 +502,7 @@ export default function WorkbenchPage() {
                                     />
                                 ))}
                             </Stack>
-                        </ScrollArea>
+                        </div>
                     )}
                 </Paper>
             </div>

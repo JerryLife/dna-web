@@ -449,6 +449,12 @@ code {
   gap: var(--spacing-4);
 }
 
+@media (max-width: 560px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .stat-card {
   text-align: center;
   padding: var(--spacing-6);

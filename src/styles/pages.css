@@ -971,3 +971,121 @@
     padding: 2px 8px;
     border-radius: 12px;
 }
+
+/* ============================================
+   Workbench Page - Responsive
+   ============================================ */
+
+.workbench-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .workbench-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Result card: stack on narrow screens */
+.workbench-result-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.workbench-result-card .workbench-result-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.workbench-result-card .workbench-result-meta {
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .workbench-result-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .workbench-result-card .workbench-result-meta {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    .workbench-result-card .workbench-result-meta .workbench-result-percent {
+        order: -1;
+        width: 100%;
+    }
+
+    .workbench-result-card .workbench-result-meta .workbench-result-progress {
+        flex: 1;
+        min-width: 80px;
+    }
+
+    .workbench-result-card .workbench-result-meta .workbench-result-btn {
+        min-width: 100px;
+    }
+}
+
+/* Results list: height follows content */
+.workbench-results-scroll {
+    min-height: 0;
+}
+
+/* Comparison detail: stack header and rows on narrow */
+.workbench-comparison-detail .workbench-comparison-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.workbench-comparison-detail .workbench-comparison-row-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Barcode/heatmap overflow on very narrow screens */
+.workbench-barcode-wrap,
+.workbench-heatmap-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* About page: narrower content width */
+.about-page {
+    max-width: 1000px;
+}
+
+/* About page: Key Insights — icon and title inline on one line */
+.insight-heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0 0 0.5em 0;
+}
+.insight-heading .insight-icon {
+    display: inline;
+}
+
+/* About page: Related Papers — vertical layout, Read Paper wraps on narrow */
+.about-paper-row {
+    gap: 0.75rem 1rem;
+}
+
+@media (max-width: 560px) {
+    .about-paper-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-paper-row .about-read-paper-btn {
+        align-self: flex-start;
+    }
+}
