@@ -351,18 +351,16 @@ export default function GalaxyPage() {
         // Draw density contours for organizations
         const orgGroups = d3.group(models, d => d.organization || 'Others');
 
-        const scaleX = chartWidth / NORMALIZED_SIZE;
-        const scaleY = chartHeight / NORMALIZED_SIZE;
-
         // Normalized scales for contour calculation
-        // We must adjust the range so that after scaling by scaleX/scaleY, 
-        // the visual padding matches innerPadding (60px)
         const normXScale = d3.scaleLinear()
             .domain(xExtent)
-            .range([innerPadding / scaleX, NORMALIZED_SIZE - (innerPadding / scaleX)]);
+            .range([innerPadding, NORMALIZED_SIZE - innerPadding]);
         const normYScale = d3.scaleLinear()
             .domain(yExtent)
-            .range([NORMALIZED_SIZE - (innerPadding / scaleY), innerPadding / scaleY]);
+            .range([NORMALIZED_SIZE - innerPadding, innerPadding]);
+
+        const scaleX = chartWidth / NORMALIZED_SIZE;
+        const scaleY = chartHeight / NORMALIZED_SIZE;
 
         // Helper to find data-space distance between two points (same as galaxy.js)
         const dist = (p1: ModelData, p2: ModelData) => Math.sqrt(
