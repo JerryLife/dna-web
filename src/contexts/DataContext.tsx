@@ -8,7 +8,7 @@ import {
     useEffect,
     type ReactNode,
 } from 'react';
-import { DataLoader } from '@/js/data.js';
+import { DataLoader } from '@/utils/data';
 import { Center, Stack, Loader, Text, Paper } from '@mantine/core';
 
 const DataContext = createContext<DataLoader | null>(null);

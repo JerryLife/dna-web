@@ -17,7 +17,7 @@ import {
 } from '@mantine/core';
 import { useDebouncedValue, useResizeObserver } from '@mantine/hooks';
 import { useData } from '@/contexts/DataContext';
-import type { ModelData } from '@/js/data.js';
+import type { ModelData } from '@/utils/data';
 import config from '../../config.js';
 
 // Configuration
@@ -364,7 +364,7 @@ export default function GalaxyPage() {
 
         // Helper to find data-space distance between two points (same as galaxy.js)
         const dist = (p1: ModelData, p2: ModelData) => Math.sqrt(
-            Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2)
+            Math.pow(p1.x! - p2.x!, 2) + Math.pow(p1.y! - p2.y!, 2)
         );
 
         // Simple clustering in data-space (same as galaxy.js)
@@ -398,8 +398,8 @@ export default function GalaxyPage() {
             if (clusteredPoints.length < 2) continue;
 
             const density = d3.contourDensity<ModelData>()
-                .x(d => normXScale(d.x))
-                .y(d => normYScale(d.y))
+                .x(d => normXScale(d.x!))
+                .y(d => normYScale(d.y!))
                 .size([NORMALIZED_SIZE, NORMALIZED_SIZE])
                 .bandwidth(bandwidth)
                 .thresholds(2);
@@ -437,8 +437,8 @@ export default function GalaxyPage() {
             .data(models)
             .enter().append('circle')
             .attr('class', 'model-dot')
-            .attr('cx', d => xScale(d.x))
-            .attr('cy', d => yScale(d.y))
+            .attr('cx', d => xScale(d.x!))
+            .attr('cy', d => yScale(d.y!))
             .attr('r', 4.5)
             .attr('fill', d => {
                 const count = orgCounts.get(d.organization || 'Others') || 0;

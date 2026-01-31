@@ -20,7 +20,7 @@ import {
     Tooltip,
 } from '@mantine/core';
 import { useData } from '@/contexts/DataContext';
-import type { ModelData, RankedModel } from '@/js/data.js';
+import type { ModelData, RankedModel } from '@/utils/data';
 
 // Model Combobox Component
 interface ModelComboboxProps {

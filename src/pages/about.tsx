@@ -1,5 +1,6 @@
 import { Card } from '@/components/Card';
 import { Flow, type FlowStep } from '@/components/Flow';
+import { CopyButton, ActionIcon, Tooltip, Button, Group, Text, Stack } from '@mantine/core';
 
 const extractionFlowSteps: FlowStep[] = [
     { icon: '⌨️', label: 'Random input text' },
@@ -7,6 +8,39 @@ const extractionFlowSteps: FlowStep[] = [
     { icon: '🔗', label: 'Concatenation' },
     { icon: '🔀', label: 'Random projection' },
     { icon: '🧬', label: 'DNA', isFinal: true },
+];
+
+const BIBTEX = `@article{wu2025llmdna,
+  title={LLM DNA: Tracing Model Evolution via Functional Representations},
+  author={Wu, Zhaomin and Zhao, Haodong and Wang, Ziyang and Guo, Jizhou and Wang, Qian and He, Bingsheng},
+  journal={arXiv preprint arXiv:2509.24496},
+  year={2025}
+}`;
+
+interface Paper {
+    title: string;
+    authors: string;
+    affiliations: React.ReactNode;
+    link: string;
+    venue?: string;
+}
+
+const PAPERS: Paper[] = [
+    {
+        title: "LLM DNA: Tracing Model Evolution via Functional Representations",
+        authors: "Zhaomin Wu¹, Haodong Zhao², Ziyang Wang¹, Jizhou Guo³, Qian Wang¹, Bingsheng He¹",
+        venue: "ICLR 2026",
+        affiliations: (
+            <>
+                ¹ Department of Computer Science, National University of Singapore
+                <br />
+                ² School of Computer Science, Shanghai Jiao Tong University
+                <br />
+                ³ Zhiyuan College, Shanghai Jiao Tong University
+            </>
+        ),
+        link: "https://arxiv.org/pdf/2509.24496"
+    }
 ];
 
 export default function AboutPage() {
@@ -18,6 +52,47 @@ export default function AboutPage() {
                     Tracing Model Evolution via Functional Representations
                 </p>
             </header>
+
+            <div className="mt-8">
+                <Card title="📄 Related Papers" titleClassName="text-accent">
+                    <Stack gap="xl">
+                        {PAPERS.map((paper, index) => (
+                            <Group key={index} justify="space-between" align="flex-start" wrap="nowrap">
+                                <Stack gap={4} style={{ flex: 1 }}>
+                                    <Group gap="xs" align="center">
+                                        <Text size="lg" fw={600} ta="left" lh={1.3}>
+                                            {paper.title}
+                                        </Text>
+                                        {paper.venue && (
+                                            <span className="badge badge-info" style={{ whiteSpace: 'nowrap' }}>
+                                                {paper.venue}
+                                            </span>
+                                        )}
+                                    </Group>
+                                    <Text ta="left" size="sm" fw={500}>
+                                        {paper.authors}
+                                    </Text>
+                                    <Text ta="left" c="dimmed" size="xs">
+                                        {paper.affiliations}
+                                    </Text>
+                                </Stack>
+                                <Button
+                                    component="a"
+                                    href={paper.link}
+                                    target="_blank"
+                                    variant="light"
+                                    color="violet"
+                                    size="xs"
+                                    leftSection="📄"
+                                    style={{ flexShrink: 0 }}
+                                >
+                                    Read Paper
+                                </Button>
+                            </Group>
+                        ))}
+                    </Stack>
+                </Card>
+            </div>
 
             <div className="stats-grid mt-4">
                 <Card title="🧬 Definition" titleClassName="text-accent">
@@ -73,15 +148,25 @@ export default function AboutPage() {
             </Card>
 
             <Card title="📝 Citation" className="mt-8">
-                <p>If you find this work useful, please cite our paper:</p>
-                <pre className="code-block" style={{ whiteSpace: 'pre-wrap' }}>
-                    {`@inproceedings{wu2026llmdna,
-  title        = {{LLM} {DNA}: Tracing Model Evolution via Functional Representations},
-  author       = {Wu, Zhaomin and Zhao, Haodong and Wang, Ziyang and Guo, Jizhou and Wang, Qian and He, Bingsheng},
-  booktitle    = {The Fourteenth International Conference on Learning Representations, {ICLR} 2026},
-  publisher    = {OpenReview.net},
-  year         = {2026}
-}`}
+                <Group justify="space-between" align="center" mb="xs">
+                    <p style={{ margin: 0 }}>If you find this work useful, please cite our paper:</p>
+                    <CopyButton value={BIBTEX} timeout={2000}>
+                        {({ copied, copy }) => (
+                            <Tooltip label={copied ? 'Copied' : 'Copy BibTeX'} withArrow position="left">
+                                <ActionIcon
+                                    color={copied ? 'teal' : 'gray'}
+                                    variant="light"
+                                    size="lg"
+                                    onClick={copy}
+                                >
+                                    {copied ? '✓' : '📋'}
+                                </ActionIcon>
+                            </Tooltip>
+                        )}
+                    </CopyButton>
+                </Group>
+                <pre className="code-block" style={{ whiteSpace: 'pre-wrap', position: 'relative' }}>
+                    {BIBTEX}
                 </pre>
             </Card>
 
@@ -117,6 +202,41 @@ export default function AboutPage() {
                     </a>
                 </div>
             </Card>
-        </div>
+
+            {/* Subscribe Section */}
+            <Card title="💌 Subscribe" className="mt-8">
+                <p className="mb-4">
+                    Get the latest updates on new model DNAs and analysis features.
+                </p>
+                <form
+                    action="https://formspree.io/f/mqazoqrz"
+                    method="POST"
+                    target="_blank"
+                >
+                    <Group align="flex-end">
+                        <Stack gap={4} style={{ flex: 1 }}>
+                            <Text size="sm" fw={500}>Email Address</Text>
+                            <input
+                                type="email"
+                                name="email"
+                                className="mantine-Input-input mantine-TextInput-input"
+                                placeholder="name@example.com"
+                                style={{
+                                    width: '100%',
+                                    padding: '8px 12px',
+                                    borderRadius: '4px',
+                                    border: '1px solid var(--mantine-color-gray-4)',
+                                    fontSize: '14px'
+                                }}
+                                required
+                            />
+                        </Stack>
+                        <Button type="submit" color="violet">
+                            Subscribe
+                        </Button>
+                    </Group>
+                </form>
+            </Card>
+        </div >
     );
 }
