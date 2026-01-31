@@ -211,12 +211,14 @@ export default function GalaxyPage() {
             }));
     }, [models]);
 
-    // Initialize activeOrgs on first load
+    // Initialize activeOrgs only on first load (so "Unselect All" can stay empty)
+    const hasInitializedOrgs = useRef(false);
     useEffect(() => {
-        if (activeOrgs.size === 0 && organizations.length > 0) {
+        if (!hasInitializedOrgs.current && organizations.length > 0) {
+            hasInitializedOrgs.current = true;
             setActiveOrgs(new Set(organizations.map(o => o.name)));
         }
-    }, [organizations, activeOrgs.size]);
+    }, [organizations]);
 
     // Organization toggle handlers
     const toggleOrg = useCallback((org: string) => {
@@ -275,13 +277,32 @@ export default function GalaxyPage() {
         const svg = d3.select(svgRef.current);
         const tooltip = tooltipRef.current;
 
-        if (!container || !svg.node() || !tooltip || models.length === 0 || activeOrgs.size === 0) {
-            return;
-        }
+        if (!container || !svg.node() || !tooltip) return;
 
         // Use ResizeObserver dimensions for responsive sizing
         const width = containerWidth || container.clientWidth;
         const height = containerHeight || container.clientHeight;
+
+        // When nothing to show (no models or no orgs selected), clear chart so areas/dots disappear
+        if (models.length === 0 || activeOrgs.size === 0) {
+            svg.selectAll('*').remove();
+            if (width > 0 && height > 0) {
+                svg.attr('width', width).attr('height', height).style('background', '#ffffff');
+                const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+                const chartWidth = width - margin.left - margin.right;
+                const chartHeight = height - margin.top - margin.bottom;
+                svg.append('rect')
+                    .attr('x', margin.left)
+                    .attr('y', margin.top)
+                    .attr('width', chartWidth)
+                    .attr('height', chartHeight)
+                    .attr('fill', 'none')
+                    .attr('stroke', '#e5e7eb')
+                    .attr('stroke-width', 2);
+            }
+            setVisibleCount(0);
+            return;
+        }
 
         // Skip if dimensions are 0 (not yet measured)
         if (width === 0 || height === 0) return;
@@ -559,6 +580,26 @@ export default function GalaxyPage() {
                             boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
                         }}
                     />
+
+                    {/* Empty state: prompt to select an organization */}
+                    {activeOrgs.size === 0 && organizations.length > 0 && (
+                        <Stack
+                            align="center"
+                            justify="center"
+                            gap="xs"
+                            style={{
+                                position: 'absolute',
+                                inset: 16,
+                                borderRadius: 8,
+                                background: 'rgba(248, 250, 252, 0.9)',
+                                pointerEvents: 'none',
+                            }}
+                        >
+                            <Text size="sm" c="dimmed" ta="center">
+                                Select an organization on the left to view the galaxy
+                            </Text>
+                        </Stack>
+                    )}
 
                     {/* Reset button positioned inside the container */}
                     <Button
