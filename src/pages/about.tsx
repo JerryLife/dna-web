@@ -57,18 +57,18 @@ export default function AboutPage() {
                 <Card title="📄 Related Papers" titleClassName="text-accent">
                     <Stack gap="xl">
                         {PAPERS.map((paper, index) => (
-                            <Group key={index} justify="space-between" align="flex-start" wrap="nowrap">
-                                <Stack gap={4} style={{ flex: 1 }}>
-                                    <Group gap="xs" align="center">
+                            <Group key={index} justify="space-between" align="flex-start" wrap="wrap" className="about-paper-row">
+                                <Stack gap={4} style={{ flex: 1, minWidth: 0 }}>
+                                    <Stack gap={4}>
                                         <Text size="lg" fw={600} ta="left" lh={1.3}>
                                             {paper.title}
                                         </Text>
                                         {paper.venue && (
-                                            <span className="badge badge-info" style={{ whiteSpace: 'nowrap' }}>
+                                            <span className="badge badge-info" style={{ whiteSpace: 'nowrap', alignSelf: 'flex-start' }}>
                                                 {paper.venue}
                                             </span>
                                         )}
-                                    </Group>
+                                    </Stack>
                                     <Text ta="left" size="sm" fw={500}>
                                         {paper.authors}
                                     </Text>
@@ -84,7 +84,7 @@ export default function AboutPage() {
                                     color="violet"
                                     size="xs"
                                     leftSection="📄"
-                                    style={{ flexShrink: 0 }}
+                                    className="about-read-paper-btn"
                                 >
                                     Read Paper
                                 </Button>
@@ -121,24 +121,21 @@ export default function AboutPage() {
             <Card title="💡 Key Insights" className="mt-8">
                 <div className="insights-grid">
                     <div className="insight-card">
-                        <div className="insight-icon">👪</div>
-                        <h4>Family Clustering</h4>
+                        <h4 className="insight-heading"><span className="insight-icon">👪</span> Family Clustering</h4>
                         <p>
                             Models from the same family (e.g., Llama, Qwen) naturally cluster
                             together, indicating shared foundational training.
                         </p>
                     </div>
                     <div className="insight-card">
-                        <div className="insight-icon">🎯</div>
-                        <h4>Fine-tuning Drift</h4>
+                        <h4 className="insight-heading"><span className="insight-icon">🎯</span> Fine-tuning Drift</h4>
                         <p>
                             Instruct-tuned models drift away from their base versions, with
                             distance proportional to fine-tuning intensity.
                         </p>
                     </div>
                     <div className="insight-card">
-                        <div className="insight-icon">🔗</div>
-                        <h4>Hidden Lineages</h4>
+                        <h4 className="insight-heading"><span className="insight-icon">🔗</span> Hidden Lineages</h4>
                         <p>
                             Some models cluster unexpectedly, revealing undisclosed training
                             data sharing or architecture borrowing.

@@ -1,4 +1,47 @@
 /* ============================================
+   Unified Page Headers (Lab, Workbench, About)
+   ============================================ */
+
+.page .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page .page-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+}
+
+.page .page-subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    max-width: 560px;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+    .page .page-title {
+        font-size: var(--font-size-2xl);
+    }
+    .page .page-subtitle {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .page .page-title {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* ============================================
    Galaxy Page Styles - Light Theme
    ============================================ */
 
@@ -33,6 +76,16 @@
     overflow: hidden;
     position: relative;
     background: var(--color-bg-primary);
+}
+
+/* Mobile: filter drawer backdrop */
+.galaxy-filter-backdrop {
+    position: fixed;
+    inset: 0;
+    top: var(--nav-height, 60px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 18;
+    cursor: pointer;
 }
 
 /* Sidebar - Light Theme */
@@ -518,23 +571,6 @@
     width: 100%;
 }
 
-.lab-page .page-header {
-    text-align: left;
-    margin-bottom: 32px;
-    padding-left: 4px;
-    /* Slight offset to match card visual line */
-}
-
-.lab-page .page-title {
-    font-size: 36px;
-    background: var(--color-accent-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 8px;
-    display: inline-block;
-}
-
 .lab-grid {
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -545,6 +581,105 @@
 @media (max-width: 1024px) {
     .lab-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Lab page layout (form + leaderboard grid) */
+.lab-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* How It Works - 4 info cards */
+.lab-how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* Proposals list (scrollable) */
+.lab-proposals-list {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Proposal card (Mantine Paper) - allow inner wrap on small screens */
+.lab-proposal-card-inner {
+    gap: 0.75rem;
+}
+
+.lab-proposal-card-inner .mantine-Stack-root {
+    flex: 1;
+    min-width: 0;
+}
+
+.lab-proposal-card a {
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+/* Mobile: Lab page */
+@media (max-width: 768px) {
+    .lab-page {
+        padding: 20px 16px;
+    }
+
+    .lab-main-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .lab-how-it-works-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .lab-how-it-works-paper {
+        padding: 1rem;
+    }
+
+    .lab-leaderboard-header {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .lab-leaderboard-header .mantine-Select-root {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .lab-proposals-list {
+        max-height: 360px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lab-page {
+        padding: 16px 12px;
+    }
+
+    .lab-how-it-works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-leaderboard-header .mantine-Select-root {
+        max-width: none;
+    }
+
+    /* Proposal card: stack rank+content, then vote row on very small screens */
+    .lab-proposal-card-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lab-proposal-card-inner > .mantine-Stack-root:last-child {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
     }
 }
 
@@ -960,4 +1095,292 @@
     background: var(--color-bg-secondary);
     padding: 2px 8px;
     border-radius: 12px;
+}
+
+/* ============================================
+   Workbench Page - Professional Layout
+   ============================================ */
+
+.workbench-page .workbench-header {
+    margin-bottom: 0.5rem;
+}
+
+.workbench-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.workbench-header-inner .page-title {
+    margin-bottom: 0;
+}
+
+.workbench-badge {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.workbench-layout {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 1.75rem;
+    margin-top: 1.75rem;
+}
+
+.workbench-panel {
+    background: var(--color-bg-primary);
+    border-color: var(--color-border-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.workbench-panel-config {
+    align-self: start;
+}
+
+.workbench-panel-results {
+    min-height: 320px;
+    min-width: 0; /* allow grid item to shrink, prevent overflow */
+}
+
+.workbench-label {
+    color: var(--color-text-secondary);
+}
+
+.workbench-run-btn {
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.workbench-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    min-height: 280px;
+}
+
+.workbench-empty-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1.25rem;
+    background: var(--color-bg-tertiary);
+    border: 2px solid var(--color-border-primary);
+    border-radius: var(--radius-xl);
+    opacity: 0.8;
+}
+
+.workbench-result-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    min-width: 0; /* allow card to shrink inside panel */
+    max-width: 100%; /* text/content must not exceed card width */
+    overflow: hidden; /* clip anything that would still overflow */
+    transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.workbench-result-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-border-hover);
+}
+
+.workbench-result-ring-wrap {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workbench-rank-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    border-radius: var(--radius-md);
+    background: var(--color-bg-tertiary);
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.workbench-rank-badge.workbench-rank-1 {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 235, 180, 0.3));
+    color: #b8860b;
+    font-weight: 700;
+}
+
+.workbench-rank-badge.workbench-rank-2 {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.25), rgba(230, 230, 230, 0.35));
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.workbench-rank-badge.workbench-rank-3 {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.2), rgba(230, 180, 140, 0.3));
+    color: #a0522d;
+    font-weight: 700;
+}
+
+.workbench-comparison-detail {
+    background: var(--color-bg-primary);
+    border-color: var(--color-border-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.workbench-comparison-tip-target {
+    cursor: default;
+    border-radius: var(--radius-sm);
+}
+
+/* ============================================
+   Workbench Page - Responsive
+   ============================================ */
+
+@media (max-width: 900px) {
+    .workbench-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Result card: stack on narrow screens */
+.workbench-result-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.workbench-result-card .workbench-result-main {
+    flex: 1;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* allow name to truncate; badges wrap instead of overflowing */
+.workbench-result-card .workbench-result-main .mantine-Stack-root {
+    overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
+}
+/* let every direct child (title, badges, barcode) shrink so text doesn't stretch */
+.workbench-result-card .workbench-result-main .mantine-Stack-root > * {
+    min-width: 0;
+    max-width: 100%;
+}
+.workbench-result-card .workbench-result-main .mantine-Stack-root .mantine-Group-root {
+    flex-wrap: wrap;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+/* truncate long badge text (family / parameters) with ellipsis */
+.workbench-result-card .workbench-result-main .mantine-Badge-root {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.workbench-result-card .workbench-result-meta {
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .workbench-result-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .workbench-result-card .workbench-result-meta {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    .workbench-result-card .workbench-result-meta .workbench-result-percent {
+        order: 0;
+    }
+
+    .workbench-result-card .workbench-result-meta .workbench-result-ring-wrap {
+        flex-shrink: 0;
+    }
+
+    .workbench-result-card .workbench-result-meta .workbench-result-btn {
+        min-width: 100px;
+    }
+}
+
+/* Results list: height follows content, constrain width */
+.workbench-results-scroll {
+    min-height: 0;
+    min-width: 0;
+    overflow-x: auto;
+}
+/* Stack of cards takes full width of panel so cards have a defined width */
+.workbench-results-scroll > .mantine-Stack-root {
+    min-width: 0;
+    width: 100%;
+}
+
+/* Comparison detail: stack header and rows on narrow */
+.workbench-comparison-detail .workbench-comparison-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.workbench-comparison-detail .workbench-comparison-row-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Barcode/heatmap overflow on very narrow screens */
+/* Result card: constrain mini barcode so it doesn't stretch the card */
+.workbench-mini-barcode-wrap {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.workbench-barcode-wrap,
+.workbench-heatmap-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* About page: narrower content width */
+.about-page {
+    max-width: 1000px;
+}
+
+/* About page: Key Insights — icon and title inline on one line */
+.insight-heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0 0 0.5em 0;
+}
+.insight-heading .insight-icon {
+    display: inline;
+}
+
+/* About page: Related Papers — vertical layout, Read Paper wraps on narrow */
+.about-paper-row {
+    gap: 0.75rem 1rem;
+}
+
+@media (max-width: 560px) {
+    .about-paper-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-paper-row .about-read-paper-btn {
+        align-self: flex-start;
+    }
 }

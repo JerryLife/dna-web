@@ -15,7 +15,7 @@ import {
     ScrollArea,
     Badge,
 } from '@mantine/core';
-import { useDebouncedValue, useResizeObserver } from '@mantine/hooks';
+import { useDebouncedValue, useResizeObserver, useMediaQuery } from '@mantine/hooks';
 import { useData } from '@/contexts/DataContext';
 import type { ModelData } from '@/utils/data';
 import config from '@/config';
@@ -51,6 +51,11 @@ interface SidebarProps {
     visibleModels: number;
     collapsed: boolean;
     onToggleCollapse: () => void;
+    /** On mobile: drawer is open (overlay visible) */
+    mobileOpen?: boolean;
+    /** On mobile: close drawer */
+    onMobileClose?: () => void;
+    isMobile?: boolean;
 }
 
 function Sidebar({
@@ -68,28 +73,32 @@ function Sidebar({
     visibleModels,
     collapsed,
     onToggleCollapse,
+    mobileOpen = false,
+    onMobileClose,
+    isMobile = false,
 }: SidebarProps) {
     const allSelected = organizations.every(o => activeOrgs.has(o.name));
+    const contentVisible = isMobile ? mobileOpen : !collapsed;
 
     return (
         <aside
-            className="sidebar"
+            className={`sidebar ${isMobile && mobileOpen ? 'open' : ''}`}
             style={{
-                width: collapsed ? 50 : 280,
-                transition: 'width 0.3s ease',
+                width: isMobile ? 280 : (collapsed ? 50 : 280),
+                transition: 'width 0.3s ease, transform 0.3s ease',
                 overflow: 'hidden',
             }}
         >
             <Button
                 variant="subtle"
                 size="xs"
-                onClick={onToggleCollapse}
+                onClick={isMobile ? onMobileClose : onToggleCollapse}
                 style={{ position: 'absolute', right: 8, top: 8, zIndex: 10 }}
             >
-                {collapsed ? '▶' : '◀'}
+                {isMobile ? '✕' : (collapsed ? '▶' : '◀')}
             </Button>
 
-            {!collapsed && (
+            {contentVisible && (
                 <Stack gap="lg" p="md" pt="xl">
                     {/* Search */}
                     <div>
@@ -147,7 +156,7 @@ function Sidebar({
                                                     borderRadius: '50%',
                                                     background: color,
                                                 }} />
-                                                <Text size="xs" truncate style={{ flex: 1 }}>{name}</Text>
+                                                <Text size="xs" className="model-title-truncate" style={{ flex: 1 }}>{name}</Text>
                                                 <Text size="xs" c="dimmed">{count}</Text>
                                             </Group>
                                         }
@@ -192,6 +201,8 @@ export default function GalaxyPage() {
     const [showInstruct, setShowInstruct] = useState(true);
     const [activeOrgs, setActiveOrgs] = useState<Set<string>>(new Set());
     const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+    const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+    const isMobile = useMediaQuery('(max-width: 1024px)', false);
 
     // Stats
     const [visibleCount, setVisibleCount] = useState(0);
@@ -211,12 +222,14 @@ export default function GalaxyPage() {
             }));
     }, [models]);
 
-    // Initialize activeOrgs on first load
+    // Initialize activeOrgs only on first load (so "Unselect All" can stay empty)
+    const hasInitializedOrgs = useRef(false);
     useEffect(() => {
-        if (activeOrgs.size === 0 && organizations.length > 0) {
+        if (!hasInitializedOrgs.current && organizations.length > 0) {
+            hasInitializedOrgs.current = true;
             setActiveOrgs(new Set(organizations.map(o => o.name)));
         }
-    }, [organizations, activeOrgs.size]);
+    }, [organizations]);
 
     // Organization toggle handlers
     const toggleOrg = useCallback((org: string) => {
@@ -275,13 +288,32 @@ export default function GalaxyPage() {
         const svg = d3.select(svgRef.current);
         const tooltip = tooltipRef.current;
 
-        if (!container || !svg.node() || !tooltip || models.length === 0 || activeOrgs.size === 0) {
-            return;
-        }
+        if (!container || !svg.node() || !tooltip) return;
 
         // Use ResizeObserver dimensions for responsive sizing
         const width = containerWidth || container.clientWidth;
         const height = containerHeight || container.clientHeight;
+
+        // When nothing to show (no models or no orgs selected), clear chart so areas/dots disappear
+        if (models.length === 0 || activeOrgs.size === 0) {
+            svg.selectAll('*').remove();
+            if (width > 0 && height > 0) {
+                svg.attr('width', width).attr('height', height).style('background', '#ffffff');
+                const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+                const chartWidth = width - margin.left - margin.right;
+                const chartHeight = height - margin.top - margin.bottom;
+                svg.append('rect')
+                    .attr('x', margin.left)
+                    .attr('y', margin.top)
+                    .attr('width', chartWidth)
+                    .attr('height', chartHeight)
+                    .attr('fill', 'none')
+                    .attr('stroke', '#e5e7eb')
+                    .attr('stroke-width', 2);
+            }
+            setVisibleCount(0);
+            return;
+        }
 
         // Skip if dimensions are 0 (not yet measured)
         if (width === 0 || height === 0) return;
@@ -523,6 +555,16 @@ export default function GalaxyPage() {
 
     return (
         <div className="galaxy-page" style={{ display: 'flex', height: 'calc(100vh - 60px)' }}>
+            {isMobile && mobileFilterOpen && (
+                <div
+                    className="galaxy-filter-backdrop"
+                    onClick={() => setMobileFilterOpen(false)}
+                    onKeyDown={(e) => e.key === 'Escape' && setMobileFilterOpen(false)}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="Close filter"
+                />
+            )}
             <Sidebar
                 search={search}
                 onSearchChange={setSearch}
@@ -538,6 +580,9 @@ export default function GalaxyPage() {
                 visibleModels={visibleCount}
                 collapsed={sidebarCollapsed}
                 onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
+                isMobile={isMobile}
+                mobileOpen={mobileFilterOpen}
+                onMobileClose={() => setMobileFilterOpen(false)}
             />
 
             <main style={{ flex: 1, position: 'relative', background: '#f8fafc', overflow: 'hidden', transition: 'all 0.3s ease' }}>
@@ -560,6 +605,43 @@ export default function GalaxyPage() {
                         }}
                     />
 
+                    {/* Empty state: prompt to select an organization */}
+                    {activeOrgs.size === 0 && organizations.length > 0 && (
+                        <Stack
+                            align="center"
+                            justify="center"
+                            gap="xs"
+                            style={{
+                                position: 'absolute',
+                                inset: 16,
+                                borderRadius: 8,
+                                background: 'rgba(248, 250, 252, 0.9)',
+                                pointerEvents: 'none',
+                            }}
+                        >
+                            <Text size="sm" c="dimmed" ta="center">
+                                Select an organization on the left to view the galaxy
+                            </Text>
+                        </Stack>
+                    )}
+
+                    {/* Mobile: floating Filter button */}
+                    {isMobile && (
+                        <Button
+                            variant="filled"
+                            size="md"
+                            onClick={() => setMobileFilterOpen(true)}
+                            style={{
+                                position: 'absolute',
+                                top: 16,
+                                left: 16,
+                                boxShadow: '0 2px 12px rgba(0,0,0,0.2)',
+                                zIndex: 10,
+                            }}
+                        >
+                            Filter
+                        </Button>
+                    )}
                     {/* Reset button positioned inside the container */}
                     <Button
                         variant="white"
