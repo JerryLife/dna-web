@@ -1,6 +1,6 @@
 /**
  * Community Lab Page - Model Proposal and Voting System
- * Migrated from lab.js to React with Mantine form components
+ * Refactored for Verify-to-Publish pipeline with Batch Voting
  */
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import {
@@ -17,8 +17,11 @@ import {
     Alert,
     ActionIcon,
     Loader,
+    Affix,
+    Transition,
 } from '@mantine/core';
 import { useData } from '@/contexts/DataContext';
+import { VoteModal } from '@/components/VoteModal';
 
 // Types
 interface Proposal {
@@ -27,69 +30,15 @@ interface Proposal {
     reason: string;
     submitter: string;
     votes: number;
-    voted: boolean;
     status: 'pending' | 'scanning' | 'completed' | 'failed';
     createdAt: string;
 }
-
-// Default proposals for demo
-const DEFAULT_PROPOSALS: Proposal[] = [
-    {
-        id: '1',
-        modelId: 'google/gemma-2-27b-it',
-        votes: 42,
-        voted: false,
-        status: 'pending',
-        createdAt: '2026-01-29T10:00:00Z',
-        reason: 'Largest Gemma 2 model, would be great to see family clustering',
-        submitter: 'demo@example.com',
-    },
-    {
-        id: '2',
-        modelId: 'Nexusflow/Athene-V2-Chat',
-        votes: 38,
-        voted: false,
-        status: 'scanning',
-        createdAt: '2026-01-28T15:30:00Z',
-        reason: 'Top model on various benchmarks',
-        submitter: 'researcher@univ.edu',
-    },
-    {
-        id: '3',
-        modelId: 'deepseek-ai/DeepSeek-V3',
-        votes: 65,
-        voted: false,
-        status: 'pending',
-        createdAt: '2026-01-27T08:45:00Z',
-        reason: 'Breakthrough MoE architecture',
-        submitter: 'community@ai.org',
-    },
-    {
-        id: '4',
-        modelId: 'Qwen/Qwen2.5-72B-Instruct',
-        votes: 29,
-        voted: false,
-        status: 'completed',
-        createdAt: '2026-01-25T12:00:00Z',
-        reason: '',
-        submitter: 'qwen-fan@mail.com',
-    },
-    {
-        id: '5',
-        modelId: 'microsoft/phi-4',
-        votes: 51,
-        voted: false,
-        status: 'pending',
-        createdAt: '2026-01-26T09:15:00Z',
-        reason: 'New Phi series, interesting for small model comparison',
-        submitter: 'msft-watcher@tech.com',
-    },
-];
 
 // Utility functions
 function maskEmail(email: string): string {
     if (!email) return 'Anonymous';
     const [name, domain] = email.split('@');
+    if (!domain) return email.substring(0, 3) + '***';
     return `${name.substring(0, 3)}***@${domain}`;
 }
 
@@ -111,21 +60,31 @@ function getStatusConfig(status: Proposal['status']): { color: string; icon: str
         completed: { color: 'green', icon: '✓', label: 'Completed' },
         failed: { color: 'red', icon: '✕', label: 'Failed' },
     };
-    return configs[status];
+    return configs[status] || configs.pending;
 }
 
 // Proposal Card Component
 interface ProposalCardProps {
     proposal: Proposal;
     rank: number;
-    onVote: (id: string) => void;
+    isSelected: boolean;
+    onToggleSelect: (id: string) => void;
 }
 
-function ProposalCard({ proposal, rank, onVote }: ProposalCardProps) {
+function ProposalCard({ proposal, rank, isSelected, onToggleSelect }: ProposalCardProps) {
     const statusConfig = getStatusConfig(proposal.status);
 
     return (
-        <Paper p="md" radius="md" withBorder className="lab-proposal-card">
+        <Paper
+            p="md"
+            radius="md"
+            withBorder
+            className="lab-proposal-card"
+            style={{
+                borderColor: isSelected ? 'var(--mantine-color-violet-5)' : undefined,
+                backgroundColor: isSelected ? 'var(--mantine-color-violet-0)' : undefined
+            }}
+        >
             <Group justify="space-between" wrap="wrap" className="lab-proposal-card-inner">
                 <Text size="xl" fw={700} c="dimmed" style={{ minWidth: 30 }}>
                     {rank}
@@ -155,11 +114,12 @@ function ProposalCard({ proposal, rank, onVote }: ProposalCardProps) {
 
                 <Stack align="center" gap={4}>
                     <ActionIcon
-                        variant={proposal.voted ? 'filled' : 'light'}
-                        color={proposal.voted ? 'violet' : 'gray'}
+                        variant={isSelected ? 'filled' : 'light'}
+                        color={isSelected ? 'violet' : 'gray'}
                         size="lg"
                         disabled={proposal.status === 'completed'}
-                        onClick={() => onVote(proposal.id)}
+                        onClick={() => onToggleSelect(proposal.id)}
+                        aria-label={isSelected ? 'Deselect vote' : 'Select to vote'}
                     >
                         ▲
                     </ActionIcon>
@@ -194,27 +154,50 @@ export default function LabPage() {
 
     // Proposals state
     const [proposals, setProposals] = useState<Proposal[]>([]);
+    const [loading, setLoading] = useState(true);
     const [sortBy, setSortBy] = useState<string>('votes');
 
-    // Load proposals from localStorage
-    useEffect(() => {
+    // Batch voting state (persisted in sessionStorage)
+    const [pendingVotes, setPendingVotes] = useState<Set<string>>(() => {
         try {
-            const stored = localStorage.getItem('dna-proposals');
-            if (stored) {
-                setProposals(JSON.parse(stored));
-            } else {
-                setProposals(DEFAULT_PROPOSALS);
-            }
+            const stored = sessionStorage.getItem('lab-pending-votes');
+            return stored ? new Set(JSON.parse(stored)) : new Set();
         } catch {
-            setProposals(DEFAULT_PROPOSALS);
+            return new Set();
+        }
+    });
+    const [voteModalOpen, setVoteModalOpen] = useState(false);
+
+    // Save pending votes to sessionStorage
+    useEffect(() => {
+        sessionStorage.setItem('lab-pending-votes', JSON.stringify([...pendingVotes]));
+    }, [pendingVotes]);
+
+    // Fetch proposals from API
+    const fetchProposals = useCallback(async () => {
+        try {
+            const response = await fetch('/api/proposals');
+            if (response.ok) {
+                const data = await response.json();
+                setProposals(data);
+            }
+        } catch (error) {
+            console.error('Failed to fetch proposals:', error);
+        } finally {
+            setLoading(false);
         }
     }, []);
 
-    // Save proposals to localStorage
-    const saveProposals = useCallback((updated: Proposal[]) => {
-        setProposals(updated);
-        localStorage.setItem('dna-proposals', JSON.stringify(updated));
-    }, []);
+    useEffect(() => {
+        fetchProposals();
+    }, [fetchProposals]);
+
+    // Create proposal name map for VoteModal
+    const proposalNames = useMemo(() => {
+        const map = new Map<string, string>();
+        proposals.forEach(p => map.set(p.id, p.modelId));
+        return map;
+    }, [proposals]);
 
     // Sort proposals
     const sortedProposals = useMemo(() => {
@@ -233,20 +216,20 @@ export default function LabPage() {
         return sorted;
     }, [proposals, sortBy]);
 
-    // Handle vote
-    const handleVote = useCallback((id: string) => {
-        const updated = proposals.map(p => {
-            if (p.id !== id || p.status === 'completed') return p;
-            return {
-                ...p,
-                votes: p.voted ? p.votes - 1 : p.votes + 1,
-                voted: !p.voted,
-            };
+    // Toggle vote selection
+    const toggleVoteSelection = useCallback((id: string) => {
+        setPendingVotes(prev => {
+            const next = new Set(prev);
+            if (next.has(id)) {
+                next.delete(id);
+            } else {
+                next.add(id);
+            }
+            return next;
         });
-        saveProposals(updated);
-    }, [proposals, saveProposals]);
+    }, []);
 
-    // Handle form submit
+    // Handle proposal form submit
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setFormStatus(null);
@@ -261,7 +244,7 @@ export default function LabPage() {
             return;
         }
 
-        // Check if already proposed
+        // Check if already proposed (client-side)
         if (proposals.some(p => p.modelId.toLowerCase() === modelId.toLowerCase())) {
             setFormStatus({ type: 'warning', message: 'This model has already been proposed' });
             return;
@@ -283,47 +266,75 @@ export default function LabPage() {
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-            const response = await fetch(`https://huggingface.co/api/models/${modelId}`, {
+            const hfResponse = await fetch(`https://huggingface.co/api/models/${modelId}`, {
                 method: 'HEAD',
                 signal: controller.signal,
             });
             clearTimeout(timeoutId);
 
-            if (!response.ok) {
-                if (response.status === 404) {
-                    throw new Error(`Model not found. Check the ID.`);
+            if (!hfResponse.ok) {
+                if (hfResponse.status === 404) {
+                    throw new Error(`Model not found on HuggingFace. Check the ID.`);
                 } else {
-                    throw new Error(`Verification failed (${response.status})`);
+                    throw new Error(`HuggingFace verification failed (${hfResponse.status})`);
                 }
             }
         } catch (error) {
             setSubmitting(false);
-            setFormStatus({
-                type: 'error',
-                message: error instanceof Error ? error.message : 'Verification failed'
-            });
-            return;
+            if (error instanceof Error && error.name === 'AbortError') {
+                setFormStatus({ type: 'warning', message: 'HuggingFace check timed out. Proceeding anyway.' });
+            } else {
+                setFormStatus({
+                    type: 'error',
+                    message: error instanceof Error ? error.message : 'Verification failed'
+                });
+                return;
+            }
         }
 
-        setSubmitting(false);
+        // Submit to backend
+        try {
+            const response = await fetch('/api/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    email: email.trim(),
+                    payload: {
+                        type: 'proposal',
+                        modelId: modelId.trim(),
+                        reason: reason.trim()
+                    }
+                })
+            });
 
-        // Add proposal
-        const newProposal: Proposal = {
-            id: Date.now().toString(),
-            modelId: modelId.trim(),
-            reason: reason.trim(),
-            submitter: email.trim(),
-            votes: 1,
-            voted: true,
-            status: 'pending',
-            createdAt: new Date().toISOString(),
-        };
+            const data = await response.json();
 
-        saveProposals([newProposal, ...proposals]);
-        setModelId('');
-        setReason('');
-        setFormStatus({ type: 'success', message: 'Model verified and added to the queue! 🧬' });
+            if (!response.ok) {
+                throw new Error(data.error || 'Submission failed');
+            }
+
+            setModelId('');
+            setReason('');
+            setFormStatus({
+                type: 'success',
+                message: '📧 Check your email for a verification link!'
+            });
+
+        } catch (error) {
+            setFormStatus({
+                type: 'error',
+                message: error instanceof Error ? error.message : 'Submission failed'
+            });
+        } finally {
+            setSubmitting(false);
+        }
     };
+
+    // Handle vote modal success
+    const handleVoteSuccess = useCallback(() => {
+        setPendingVotes(new Set());
+        fetchProposals(); // Refresh list
+    }, [fetchProposals]);
 
     return (
         <div className="page lab-page">
@@ -342,12 +353,12 @@ export default function LabPage() {
                     <form onSubmit={handleSubmit}>
                         <Stack gap="md">
                             <TextInput
-                                label="Your Email (Submitter ID)"
+                                label="Your Email"
                                 placeholder="name@example.com"
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                description="Used as your ID. We may contact you if there are issues."
+                                description="We'll send a verification link to confirm your proposal."
                                 required
                             />
 
@@ -367,6 +378,21 @@ export default function LabPage() {
                                 onChange={(e) => setReason(e.target.value)}
                                 rows={3}
                             />
+
+                            {/* CAPTCHA Placeholder */}
+                            <div
+                                className="captcha-placeholder"
+                                style={{
+                                    border: '1px dashed var(--mantine-color-dimmed)',
+                                    borderRadius: 8,
+                                    padding: 12,
+                                    textAlign: 'center',
+                                    color: 'var(--mantine-color-dimmed)',
+                                    fontSize: '0.85rem'
+                                }}
+                            >
+                                CAPTCHA Placeholder
+                            </div>
 
                             {formStatus && (
                                 <Alert
@@ -388,7 +414,7 @@ export default function LabPage() {
                                 disabled={submitting}
                                 fullWidth
                             >
-                                {submitting ? 'Verifying...' : 'Add to Trace Queue'}
+                                {submitting ? 'Verifying...' : 'Propose Model'}
                             </Button>
                         </Stack>
                     </form>
@@ -411,16 +437,30 @@ export default function LabPage() {
                         />
                     </Group>
 
-                    <Stack gap="sm" className="lab-proposals-list">
-                        {sortedProposals.map((proposal, index) => (
-                            <ProposalCard
-                                key={proposal.id}
-                                proposal={proposal}
-                                rank={index + 1}
-                                onVote={handleVote}
-                            />
-                        ))}
-                    </Stack>
+                    {loading ? (
+                        <Stack align="center" py="xl">
+                            <Loader color="violet" />
+                            <Text c="dimmed">Loading proposals...</Text>
+                        </Stack>
+                    ) : (
+                        <Stack gap="sm" className="lab-proposals-list">
+                            {sortedProposals.length === 0 ? (
+                                <Text c="dimmed" ta="center" py="xl">
+                                    No proposals yet. Be the first to propose a model!
+                                </Text>
+                            ) : (
+                                sortedProposals.map((proposal, index) => (
+                                    <ProposalCard
+                                        key={proposal.id}
+                                        proposal={proposal}
+                                        rank={index + 1}
+                                        isSelected={pendingVotes.has(proposal.id)}
+                                        onToggleSelect={toggleVoteSelection}
+                                    />
+                                ))
+                            )}
+                        </Stack>
+                    )}
                 </Paper>
             </div>
 
@@ -431,12 +471,12 @@ export default function LabPage() {
                     <InfoCard
                         icon="1️⃣"
                         title="Propose"
-                        description="Submit a HuggingFace model ID that you'd like us to analyze."
+                        description="Submit a HuggingFace model ID and verify via email."
                     />
                     <InfoCard
                         icon="2️⃣"
                         title="Vote"
-                        description="Upvote models you want to see in the DNA Galaxy."
+                        description="Select models to vote for, then verify with your email."
                     />
                     <InfoCard
                         icon="3️⃣"
@@ -450,6 +490,54 @@ export default function LabPage() {
                     />
                 </div>
             </Paper>
+
+            {/* Floating Action Bar for Batch Voting */}
+            <Affix position={{ bottom: 20, right: 20 }}>
+                <Transition transition="slide-up" mounted={pendingVotes.size > 0}>
+                    {(transitionStyles) => (
+                        <Paper
+                            p="md"
+                            radius="md"
+                            withBorder
+                            shadow="lg"
+                            style={{
+                                ...transitionStyles,
+                                background: 'var(--mantine-color-violet-6)',
+                                color: 'white'
+                            }}
+                        >
+                            <Group gap="md">
+                                <Text fw={600}>
+                                    {pendingVotes.size} Vote{pendingVotes.size > 1 ? 's' : ''} Selected
+                                </Text>
+                                <Button
+                                    variant="white"
+                                    color="violet"
+                                    onClick={() => setVoteModalOpen(true)}
+                                >
+                                    Verify & Submit
+                                </Button>
+                                <Button
+                                    variant="subtle"
+                                    color="white"
+                                    onClick={() => setPendingVotes(new Set())}
+                                >
+                                    Clear
+                                </Button>
+                            </Group>
+                        </Paper>
+                    )}
+                </Transition>
+            </Affix>
+
+            {/* Vote Modal */}
+            <VoteModal
+                opened={voteModalOpen}
+                onClose={() => setVoteModalOpen(false)}
+                pendingVotes={[...pendingVotes]}
+                proposalNames={proposalNames}
+                onSuccess={handleVoteSuccess}
+            />
         </div>
     );
 }

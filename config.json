@@ -7,5 +7,10 @@
     "visualization": {
         "minCount": 5,
         "crowdRadius": 6.0
+    },
+    "server": {
+        "port": 3001,
+        "cleanupCron": "0 0 * * *",
+        "pendingExpirationHours": 24
     }
 }
