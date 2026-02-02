@@ -6,12 +6,57 @@ import { v4 as uuidv4 } from 'uuid';
 import { getDatabase } from '../database.js';
 import { sendVerificationEmail, EmailType, SubmissionDetails } from './email.js';
 import { config } from 'dotenv';
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
 
 // Load environment variables from server/.env
 config({ path: 'server/.env' });
 
 const router = Router();
 const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY || '';
+
+// Cache of evaluated model IDs from dna_database.json
+let evaluatedModelIds: Set<string> | null = null;
+
+/**
+ * Load evaluated model IDs from dna_database.json (cached)
+ */
+function getEvaluatedModelIds(): Set<string> {
+    if (evaluatedModelIds) return evaluatedModelIds;
+
+    evaluatedModelIds = new Set<string>();
+    const dbPath = join(process.cwd(), 'public', 'dna_database.json');
+
+    if (existsSync(dbPath)) {
+        try {
+            const data = JSON.parse(readFileSync(dbPath, 'utf-8'));
+            if (data.models && Array.isArray(data.models)) {
+                for (const model of data.models) {
+                    if (model.id) {
+                        // Add both underscore and slash versions for matching
+                        evaluatedModelIds.add(model.id.toLowerCase());
+                        evaluatedModelIds.add(model.id.toLowerCase().replace('_', '/'));
+                    }
+                }
+            }
+            console.log(`✅ Loaded ${evaluatedModelIds.size / 2} evaluated model IDs`);
+        } catch (error) {
+            console.error('Failed to load dna_database.json:', error);
+        }
+    } else {
+        console.warn('⚠️ dna_database.json not found at', dbPath);
+    }
+
+    return evaluatedModelIds;
+}
+
+/**
+ * Check if a model has already been evaluated (exists in dna_database.json)
+ */
+function isModelEvaluated(modelId: string): boolean {
+    const ids = getEvaluatedModelIds();
+    return ids.has(modelId.toLowerCase()) || ids.has(modelId.toLowerCase().replace('/', '_'));
+}
 
 // Types
 interface ProposalPayload {
@@ -94,6 +139,13 @@ router.post('/submit', async (req: Request, res: Response) => {
         if (payload.type === 'proposal') {
             if (!payload.modelId) {
                 return res.status(400).json({ error: 'Model ID is required' });
+            }
+
+            // Check if model is already in the DNA database (evaluated)
+            if (isModelEvaluated(payload.modelId)) {
+                return res.status(409).json({
+                    error: 'This model has already been evaluated and is in the Galaxy!'
+                });
             }
 
             // Check if model already proposed

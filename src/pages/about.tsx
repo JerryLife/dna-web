@@ -238,11 +238,11 @@ export default function AboutPage() {
                     <li>
                         <strong>GitHub:</strong>{' '}
                         <a
-                            href="https://github.com/your-org/dna-web"
+                            href="https://github.com/Xtra-Computing/LLM-DNA.git"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            your-org/dna-web
+                            Xtra-Computing/LLM-DNA
                         </a>
                     </li>
                     <li>

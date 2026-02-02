@@ -19,6 +19,7 @@ import {
     Loader,
     Affix,
     Transition,
+    Tabs,
 } from '@mantine/core';
 import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 import { useData } from '@/contexts/DataContext';
@@ -159,6 +160,7 @@ export default function LabPage() {
     const [proposals, setProposals] = useState<Proposal[]>([]);
     const [loading, setLoading] = useState(true);
     const [sortBy, setSortBy] = useState<string>('votes');
+    const [activeTab, setActiveTab] = useState<string>('open');
 
     // Batch voting state (persisted in sessionStorage)
     const [pendingVotes, setPendingVotes] = useState<Set<string>>(() => {
@@ -202,9 +204,43 @@ export default function LabPage() {
         return map;
     }, [proposals]);
 
-    // Sort proposals
+    // Filter proposals by status
+    const openProposals = useMemo(() =>
+        proposals.filter(p => p.status !== 'completed' && p.status !== 'failed'),
+        [proposals]
+    );
+
+    const closedProposalsFromDB = useMemo(() =>
+        proposals.filter(p => p.status === 'completed' || p.status === 'failed'),
+        [proposals]
+    );
+
+    // Create virtual "completed" entries from dna_database.json models
+    const evaluatedModels = useMemo((): Proposal[] => {
+        const existingModelIds = new Set(proposals.map(p => p.modelId.toLowerCase()));
+        return dataLoader.getModels()
+            .filter(m => !existingModelIds.has(m.id.toLowerCase().replace('_', '/')))
+            .map(m => ({
+                id: `evaluated-${m.id}`,
+                modelId: m.id.replace('_', '/'),
+                reason: '',
+                submitter: '',
+                votes: 0,
+                status: 'completed' as const,
+                createdAt: ''
+            }));
+    }, [dataLoader, proposals]);
+
+    // Combine closed proposals with evaluated models
+    const closedProposals = useMemo(() =>
+        [...closedProposalsFromDB, ...evaluatedModels],
+        [closedProposalsFromDB, evaluatedModels]
+    );
+
+    // Sort proposals based on active tab
     const sortedProposals = useMemo(() => {
-        const sorted = [...proposals];
+        const source = activeTab === 'open' ? openProposals : closedProposals;
+        const sorted = [...source];
         switch (sortBy) {
             case 'votes':
                 sorted.sort((a, b) => b.votes - a.votes);
@@ -217,7 +253,7 @@ export default function LabPage() {
                 break;
         }
         return sorted;
-    }, [proposals, sortBy]);
+    }, [activeTab, openProposals, closedProposals, sortBy]);
 
     // Toggle vote selection
     const toggleVoteSelection = useCallback((id: string) => {
@@ -432,7 +468,7 @@ export default function LabPage() {
 
                 {/* Leaderboard */}
                 <Paper p="lg" radius="md" withBorder>
-                    <Group justify="space-between" mb="lg" className="lab-leaderboard-header">
+                    <Group justify="space-between" mb="md" className="lab-leaderboard-header">
                         <Title order={4}>📊 Research Queue</Title>
                         <Select
                             value={sortBy}
@@ -447,30 +483,70 @@ export default function LabPage() {
                         />
                     </Group>
 
-                    {loading ? (
-                        <Stack align="center" py="xl">
-                            <Loader color="violet" />
-                            <Text c="dimmed">Loading proposals...</Text>
-                        </Stack>
-                    ) : (
-                        <Stack gap="sm" className="lab-proposals-list">
-                            {sortedProposals.length === 0 ? (
-                                <Text c="dimmed" ta="center" py="xl">
-                                    No proposals yet. Be the first to propose a model!
-                                </Text>
+                    <Tabs value={activeTab} onChange={(v) => setActiveTab(v ?? 'open')}>
+                        <Tabs.List mb="md">
+                            <Tabs.Tab value="open">
+                                Open ({openProposals.length})
+                            </Tabs.Tab>
+                            <Tabs.Tab value="closed">
+                                Closed ({closedProposals.length})
+                            </Tabs.Tab>
+                        </Tabs.List>
+
+                        <Tabs.Panel value="open">
+                            {loading ? (
+                                <Stack align="center" py="xl">
+                                    <Loader color="violet" />
+                                    <Text c="dimmed">Loading proposals...</Text>
+                                </Stack>
                             ) : (
-                                sortedProposals.map((proposal, index) => (
-                                    <ProposalCard
-                                        key={proposal.id}
-                                        proposal={proposal}
-                                        rank={index + 1}
-                                        isSelected={pendingVotes.has(proposal.id)}
-                                        onToggleSelect={toggleVoteSelection}
-                                    />
-                                ))
+                                <Stack gap="sm" className="lab-proposals-list">
+                                    {sortedProposals.length === 0 ? (
+                                        <Text c="dimmed" ta="center" py="xl">
+                                            No open proposals. Be the first to propose a model!
+                                        </Text>
+                                    ) : (
+                                        sortedProposals.map((proposal, index) => (
+                                            <ProposalCard
+                                                key={proposal.id}
+                                                proposal={proposal}
+                                                rank={index + 1}
+                                                isSelected={pendingVotes.has(proposal.id)}
+                                                onToggleSelect={toggleVoteSelection}
+                                            />
+                                        ))
+                                    )}
+                                </Stack>
                             )}
-                        </Stack>
-                    )}
+                        </Tabs.Panel>
+
+                        <Tabs.Panel value="closed">
+                            {loading ? (
+                                <Stack align="center" py="xl">
+                                    <Loader color="violet" />
+                                    <Text c="dimmed">Loading...</Text>
+                                </Stack>
+                            ) : (
+                                <Stack gap="sm" className="lab-proposals-list">
+                                    {sortedProposals.length === 0 ? (
+                                        <Text c="dimmed" ta="center" py="xl">
+                                            No closed proposals yet.
+                                        </Text>
+                                    ) : (
+                                        sortedProposals.map((proposal, index) => (
+                                            <ProposalCard
+                                                key={proposal.id}
+                                                proposal={proposal}
+                                                rank={index + 1}
+                                                isSelected={false}
+                                                onToggleSelect={() => { }}
+                                            />
+                                        ))
+                                    )}
+                                </Stack>
+                            )}
+                        </Tabs.Panel>
+                    </Tabs>
                 </Paper>
             </div>
 
