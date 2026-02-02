@@ -1,0 +1,23 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies (using install instead of ci for flexibility)
+RUN npm install --omit=dev
+
+# Copy server code
+COPY server ./server
+COPY config.json ./
+COPY public ./public
+
+# Create data directory for SQLite
+RUN mkdir -p /app/server/data
+
+# Expose port 3001
+EXPOSE 3001
+
+# Start the server
+CMD ["npx", "tsx", "server/index.ts"]

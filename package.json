@@ -28,7 +28,8 @@
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
     "uuid": "^9.0.1",
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.4.1",
+    "nodemailer": "^6.9.16"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -49,7 +50,8 @@
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
     "vite": "^7.3.1",
-    "vitest": "^4.0.18"
+    "vitest": "^4.0.18",
+    "@types/nodemailer": "^6.4.14"
   },
   "keywords": [
     "llm",

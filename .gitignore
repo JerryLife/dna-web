@@ -2,50 +2,34 @@
 node_modules/
 .pnpm-store/
 
-# Build output
+# Build outputs
 dist/
-build/
-
-# Cache
-.vite/
-*.cache
+*.tsbuildinfo
 
 # Environment files
 .env
-.env.local
-.env.*.local
+server/.env
 
-# Editor directories and files
+# Database
+server/data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-*~
 
 # OS files
 .DS_Store
 Thumbs.db
 
 # Logs
-logs/
 *.log
 npm-debug.log*
 
-# Python
-__pycache__/
-*.py[cod]
-.Python
-*.so
-venv/
-.venv/
-
-# Testing
-coverage/
-
-# Misc
-*.bak
-*.tmp
-
-# Server Database
-server/data/
-server/.env
+# Docker (optional - if you want to ignore local docker data)
+# docker-compose.override.yml

@@ -148,13 +148,24 @@ router.post('/submit', async (req: Request, res: Response) => {
                 });
             }
 
-            // Check if model already proposed
+            // Check if model already proposed (in proposals table)
             const existing = await db.get(
                 'SELECT id FROM proposals WHERE model_id = ?',
                 [payload.modelId]
             );
             if (existing) {
                 return res.status(409).json({ error: 'This model has already been proposed' });
+            }
+
+            // Check if model is pending verification (in submission_queue)
+            const pending = await db.get(
+                `SELECT id FROM submission_queue 
+                 WHERE json_extract(payload, '$.modelId') = ? 
+                 AND is_verified = 0`,
+                [payload.modelId]
+            );
+            if (pending) {
+                return res.status(409).json({ error: 'This model is pending verification by another user' });
             }
         } else if (payload.type === 'batch_vote') {
             if (!Array.isArray(payload.proposalIds) || payload.proposalIds.length === 0) {

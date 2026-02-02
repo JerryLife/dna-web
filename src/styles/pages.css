@@ -477,7 +477,7 @@
 /* About Page Methodology Flow */
 .method-flow {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     /* Center to fill space better */
     gap: 8px;
@@ -541,6 +541,7 @@
     flex-shrink: 0;
     /* Don't shrink arrays */
     padding: 0 4px;
+    align-self: center;
 }
 
 /* Reference Card Styles */

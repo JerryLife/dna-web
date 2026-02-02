@@ -7,17 +7,19 @@ import { CopyButton, ActionIcon, Tooltip, Button, Group, Text, Stack } from '@ma
 
 const extractionFlowSteps: FlowStep[] = [
     { icon: '⌨️', label: 'Random input text' },
-    { icon: '📦', label: 'Static sentence embedding model' },
+    { icon: '📦', label: 'Sentence embedding model' },
     { icon: '🔗', label: 'Concatenation' },
     { icon: '🔀', label: 'Random projection' },
     { icon: '🧬', label: 'DNA', isFinal: true },
 ];
 
-const BIBTEX = `@article{wu2025llmdna,
+const BIBTEX = `@inproceedings{wu2026llmdna,
   title={LLM DNA: Tracing Model Evolution via Functional Representations},
   author={Wu, Zhaomin and Zhao, Haodong and Wang, Ziyang and Guo, Jizhou and Wang, Qian and He, Bingsheng},
-  journal={arXiv preprint arXiv:2509.24496},
-  year={2025}
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=UIxHaAqFqQ},
+  publisher={OpenReview}
 }`;
 
 interface Paper {
@@ -31,18 +33,14 @@ interface Paper {
 const PAPERS: Paper[] = [
     {
         title: "LLM DNA: Tracing Model Evolution via Functional Representations",
-        authors: "Zhaomin Wu¹, Haodong Zhao², Ziyang Wang¹, Jizhou Guo³, Qian Wang¹, Bingsheng He¹",
+        authors: "Zhaomin Wu, Haodong Zhao, Ziyang Wang, Jizhou Guo, Qian Wang, Bingsheng He",
         venue: "ICLR 2026",
         affiliations: (
             <>
-                ¹ Department of Computer Science, National University of Singapore
-                <br />
-                ² School of Computer Science, Shanghai Jiao Tong University
-                <br />
-                ³ Zhiyuan College, Shanghai Jiao Tong University
+                National University of Singapore, Shanghai Jiao Tong University
             </>
         ),
-        link: "https://arxiv.org/pdf/2509.24496"
+        link: "https://openreview.net/forum?id=UIxHaAqFqQ"
     }
 ];
 

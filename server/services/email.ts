@@ -12,7 +12,24 @@
  * });
  */
 
+import nodemailer from 'nodemailer';
+import { config } from 'dotenv';
+
+// Load environment variables
+config({ path: 'server/.env' });
+
 const BASE_URL = process.env.BASE_URL || 'http://localhost:5173';
+const EMAIL_USER = process.env.EMAIL_USER;
+const EMAIL_PASS = process.env.EMAIL_PASS;
+
+// Create reusable transporter object using the default SMTP transport
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: EMAIL_USER,
+        pass: EMAIL_PASS,
+    },
+});
 
 export type EmailType = 'proposal' | 'vote' | 'batch_vote';
 
@@ -47,20 +64,26 @@ export async function sendVerificationEmail(
     // Build formal email content
     const email = buildFormalEmail(to, type, verifyUrl, details);
 
-    // ============================================================
-    // PLACEHOLDER: Log to console instead of sending email
-    // The xtra.science admin should replace this with actual SMTP
-    // ============================================================
-    console.log('\n');
-    console.log('═'.repeat(70));
-    console.log('📧 [EMAIL SIMULATION - Would be sent via SMTP in production]');
-    console.log('═'.repeat(70));
-    console.log(`To:      ${to}`);
-    console.log(`Subject: ${email.subject}`);
-    console.log('─'.repeat(70));
-    console.log(email.body);
-    console.log('═'.repeat(70));
-    console.log('\n');
+    if (!EMAIL_USER || !EMAIL_PASS) {
+        console.warn('⚠️  Email credentials not found in environment variables. Logging instead execution.');
+        console.log(`[SIMULATION] To: ${to}, Subject: ${email.subject}`);
+        return;
+    }
+
+    try {
+        const info = await transporter.sendMail({
+            from: `"LLM DNA Explorer" <${EMAIL_USER}>`, // sender address
+            to: to, // list of receivers
+            subject: email.subject, // Subject line
+            text: email.body, // plain text body
+            // html: "<b>Hello world?</b>", // html body
+        });
+
+        console.log(`✅ Verification email sent to ${to}: ${info.messageId}`);
+    } catch (error) {
+        console.error('❌ Error sending verification email:', error);
+        throw new Error('Failed to send verification email');
+    }
 }
 
 interface FormattedEmail {
@@ -124,8 +147,8 @@ If you did not submit this proposal, you can safely ignore this email.
 Best regards,
 The LLM DNA Team
 
-🌐 Website: https://xtra.science
-📧 Contact: support@xtra.science
+🌐 Website: https://dna.xtra.science
+📧 Contact: xtra.computing.lab@gmail.com
 
 ---
 This is an automated message from the LLM DNA Explorer.
@@ -177,8 +200,8 @@ If you did not request these votes, you can safely ignore this email.
 Best regards,
 The LLM DNA Team
 
-🌐 Website: https://xtra.science
-📧 Contact: support@xtra.science
+🌐 Website: https://dna.xtra.science
+📧 Contact: xtra.computing.lab@gmail.com
 
 ---
 This is an automated message from the LLM DNA Explorer.

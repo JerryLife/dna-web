@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Build outputs (we build inside Docker)
+dist/
+
+# Development files
+*.md
+*.log
+.editorconfig
+.vscode/
+.idea/
+
+# Test files
+test/
+*.test.ts
+*.spec.ts
+
+# Docker files (avoid recursive copying)
+Dockerfile*
+docker-compose*.yml
+
+# Environment files (loaded via env_file in compose)
+.env
+
+# Database (mounted as volume)
+server/data/
+
+# Scripts not needed in container
+scripts/
+
+# Large raw data folder
+dna-out/

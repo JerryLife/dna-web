@@ -74,12 +74,36 @@ python scripts/process_data.py
 npm run build:data
 ```
 
-### Build for Production
+## 🚀 Deployment
 
-```bash
-npm run build
-npm run preview  # Preview production build
-```
+### Docker (Recommended)
+
+1.  **Configure Environment**:
+    Create a `.env` file in the root directory for production settings:
+    ```ini
+    # Production Domain
+    BASE_URL=https://dna.xtra.science
+    ```
+
+    Update `server/.env` with your secure credentials:
+    ```ini
+    TURNSTILE_SECRET_KEY=your_turnstile_secret
+    EMAIL_USER=your_email_address
+    EMAIL_PASS=your_email_password
+    ```
+
+2.  **Run with Docker Compose**:
+    ```bash
+    ./deploy.sh
+    ```
+
+3.  **Manual Start**:
+    ```bash
+    docker compose build
+    docker compose up -d
+    ```
+
+See `deployment_guide.md` for detailed instructions on setting up a VPS, configuring SSL with Cloudflare/Nginx, and managing the application.
 
 ## 📁 Project Structure
 
