@@ -1,7 +1,7 @@
 /**
- * Vote Modal Component - Email verification for voting
+ * Vote Modal Component - Email verification for voting with Cloudflare Turnstile
  */
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {
     Modal,
     TextInput,
@@ -13,6 +13,7 @@ import {
     Badge,
     Group,
 } from '@mantine/core';
+import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 
 interface VoteModalProps {
     opened: boolean;
@@ -30,8 +31,10 @@ export function VoteModal({
     onSuccess
 }: VoteModalProps) {
     const [email, setEmail] = useState('');
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null);
     const [submitting, setSubmitting] = useState(false);
     const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+    const turnstileRef = useRef<TurnstileInstance>(null);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -39,6 +42,11 @@ export function VoteModal({
 
         if (!email.trim()) {
             setStatus({ type: 'error', message: 'Please enter your email' });
+            return;
+        }
+
+        if (!captchaToken) {
+            setStatus({ type: 'error', message: 'Please complete the CAPTCHA' });
             return;
         }
 
@@ -50,6 +58,7 @@ export function VoteModal({
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     email: email.trim(),
+                    captchaToken,
                     payload: {
                         type: 'batch_vote',
                         proposalIds: pendingVotes
@@ -71,7 +80,9 @@ export function VoteModal({
             // Clear and close after delay
             setTimeout(() => {
                 setEmail('');
+                setCaptchaToken(null);
                 setStatus(null);
+                turnstileRef.current?.reset();
                 onSuccess();
                 onClose();
             }, 2000);
@@ -81,15 +92,25 @@ export function VoteModal({
                 type: 'error',
                 message: error instanceof Error ? error.message : 'Submission failed'
             });
+            // Reset captcha on error
+            turnstileRef.current?.reset();
+            setCaptchaToken(null);
         } finally {
             setSubmitting(false);
         }
     };
 
+    const handleClose = () => {
+        // Reset state when modal closes
+        setCaptchaToken(null);
+        turnstileRef.current?.reset();
+        onClose();
+    };
+
     return (
         <Modal
             opened={opened}
-            onClose={onClose}
+            onClose={handleClose}
             title={`Verify ${pendingVotes.length} Vote${pendingVotes.length > 1 ? 's' : ''}`}
             centered
         >
@@ -118,19 +139,15 @@ export function VoteModal({
                         disabled={submitting}
                     />
 
-                    {/* CAPTCHA Placeholder */}
-                    <div
-                        className="captcha-placeholder"
-                        style={{
-                            border: '1px dashed var(--mantine-color-dimmed)',
-                            borderRadius: 8,
-                            padding: 16,
-                            textAlign: 'center',
-                            color: 'var(--mantine-color-dimmed)'
-                        }}
-                    >
-                        CAPTCHA Placeholder
-                        <Text size="xs">(Admin: Integrate Cloudflare Turnstile here)</Text>
+                    {/* Cloudflare Turnstile CAPTCHA */}
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Turnstile
+                            ref={turnstileRef}
+                            siteKey="0x4AAAAAACWqoNnjPjbJm3_c"
+                            onSuccess={(token) => setCaptchaToken(token)}
+                            onError={() => setCaptchaToken(null)}
+                            onExpire={() => setCaptchaToken(null)}
+                        />
                     </div>
 
                     {status && (
@@ -145,7 +162,7 @@ export function VoteModal({
                     <Button
                         type="submit"
                         fullWidth
-                        disabled={submitting || pendingVotes.length === 0}
+                        disabled={submitting || pendingVotes.length === 0 || !captchaToken}
                         leftSection={submitting ? <Loader size="xs" /> : '📧'}
                     >
                         {submitting ? 'Sending...' : 'Send Verification Email'}

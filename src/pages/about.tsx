@@ -1,6 +1,8 @@
+import { useState, useRef } from 'react';
 import { Card } from '@/components/Card';
 import { Flow, type FlowStep } from '@/components/Flow';
-import { CopyButton, ActionIcon, Tooltip, Button, Group, Text, Stack } from '@mantine/core';
+import { CopyButton, ActionIcon, Tooltip, Button, Group, Text, Stack, TextInput, Alert, Loader } from '@mantine/core';
+import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 
 const extractionFlowSteps: FlowStep[] = [
     { icon: '⌨️', label: 'Random input text' },
@@ -44,6 +46,65 @@ const PAPERS: Paper[] = [
 ];
 
 export default function AboutPage() {
+    // Subscription form state
+    const [subscribeEmail, setSubscribeEmail] = useState('');
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+    const [submitting, setSubmitting] = useState(false);
+    const [status, setStatus] = useState<{ type: 'success' | 'error' | 'info'; message: string } | null>(null);
+    const turnstileRef = useRef<TurnstileInstance>(null);
+
+    const handleSubscribe = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus(null);
+
+        if (!subscribeEmail.trim()) {
+            setStatus({ type: 'error', message: 'Please enter your email' });
+            return;
+        }
+
+        if (!captchaToken) {
+            setStatus({ type: 'error', message: 'Please complete the CAPTCHA' });
+            return;
+        }
+
+        setSubmitting(true);
+
+        try {
+            const response = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    email: subscribeEmail.trim(),
+                    captchaToken
+                })
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Subscription failed');
+            }
+
+            setStatus({
+                type: data.alreadySubscribed ? 'info' : 'success',
+                message: data.message
+            });
+            setSubscribeEmail('');
+            setCaptchaToken(null);
+            turnstileRef.current?.reset();
+
+        } catch (error) {
+            setStatus({
+                type: 'error',
+                message: error instanceof Error ? error.message : 'Subscription failed'
+            });
+            setCaptchaToken(null);
+            turnstileRef.current?.reset();
+        } finally {
+            setSubmitting(false);
+        }
+    };
+
     return (
         <div className="page about-page">
             <header className="page-header">
@@ -205,35 +266,49 @@ export default function AboutPage() {
                 <p className="mb-4">
                     Get the latest updates on new model DNAs and analysis features.
                 </p>
-                <form
-                    action="https://formspree.io/f/mqazoqrz"
-                    method="POST"
-                    target="_blank"
-                >
-                    <Group align="flex-end">
-                        <Stack gap={4} style={{ flex: 1 }}>
-                            <Text size="sm" fw={500}>Email Address</Text>
-                            <input
-                                type="email"
-                                name="email"
-                                className="mantine-Input-input mantine-TextInput-input"
-                                placeholder="name@example.com"
-                                style={{
-                                    width: '100%',
-                                    padding: '8px 12px',
-                                    borderRadius: '4px',
-                                    border: '1px solid var(--mantine-color-gray-4)',
-                                    fontSize: '14px'
-                                }}
-                                required
+                <form onSubmit={handleSubscribe}>
+                    <Stack gap="md">
+                        <TextInput
+                            label="Email Address"
+                            placeholder="name@example.com"
+                            type="email"
+                            value={subscribeEmail}
+                            onChange={(e) => setSubscribeEmail(e.target.value)}
+                            required
+                            disabled={submitting}
+                        />
+
+                        {/* Cloudflare Turnstile CAPTCHA */}
+                        <div style={{ display: 'flex', justifyContent: 'center' }}>
+                            <Turnstile
+                                ref={turnstileRef}
+                                siteKey="0x4AAAAAACWqoNnjPjbJm3_c"
+                                onSuccess={(token) => setCaptchaToken(token)}
+                                onError={() => setCaptchaToken(null)}
+                                onExpire={() => setCaptchaToken(null)}
                             />
-                        </Stack>
-                        <Button type="submit" color="violet">
-                            Subscribe
+                        </div>
+
+                        {status && (
+                            <Alert
+                                color={status.type === 'success' ? 'green' : status.type === 'info' ? 'blue' : 'red'}
+                                variant="light"
+                            >
+                                {status.message}
+                            </Alert>
+                        )}
+
+                        <Button
+                            type="submit"
+                            color="violet"
+                            disabled={submitting || !captchaToken}
+                            leftSection={submitting ? <Loader size="xs" /> : '📧'}
+                        >
+                            {submitting ? 'Subscribing...' : 'Subscribe'}
                         </Button>
-                    </Group>
+                    </Stack>
                 </form>
             </Card>
-        </div >
+        </div>
     );
 }

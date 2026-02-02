@@ -45,3 +45,7 @@ coverage/
 # Misc
 *.bak
 *.tmp
+
+# Server Database
+server/data/
+server/.env

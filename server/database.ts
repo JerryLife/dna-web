@@ -71,6 +71,16 @@ export async function initDatabase(): Promise<Database> {
         )
     `);
 
+    // Create subscriptions table (newsletter emails - private)
+    await db.run(`
+        CREATE TABLE IF NOT EXISTS subscriptions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            email TEXT UNIQUE NOT NULL,
+            subscribed_at TEXT DEFAULT (datetime('now')),
+            is_active INTEGER DEFAULT 1
+        )
+    `);
+
     console.log('✅ Database initialized');
     return db;
 }

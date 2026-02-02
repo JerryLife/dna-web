@@ -2,7 +2,7 @@
  * Community Lab Page - Model Proposal and Voting System
  * Refactored for Verify-to-Publish pipeline with Batch Voting
  */
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
     TextInput,
     Textarea,
@@ -20,6 +20,7 @@ import {
     Affix,
     Transition,
 } from '@mantine/core';
+import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 import { useData } from '@/contexts/DataContext';
 import { VoteModal } from '@/components/VoteModal';
 
@@ -149,8 +150,10 @@ export default function LabPage() {
     const [email, setEmail] = useState('');
     const [modelId, setModelId] = useState('');
     const [reason, setReason] = useState('');
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null);
     const [submitting, setSubmitting] = useState(false);
     const [formStatus, setFormStatus] = useState<{ type: 'success' | 'error' | 'warning' | 'info'; message: string } | null>(null);
+    const turnstileRef = useRef<TurnstileInstance>(null);
 
     // Proposals state
     const [proposals, setProposals] = useState<Proposal[]>([]);
@@ -244,6 +247,11 @@ export default function LabPage() {
             return;
         }
 
+        if (!captchaToken) {
+            setFormStatus({ type: 'error', message: 'Please complete the CAPTCHA' });
+            return;
+        }
+
         // Check if already proposed (client-side)
         if (proposals.some(p => p.modelId.toLowerCase() === modelId.toLowerCase())) {
             setFormStatus({ type: 'warning', message: 'This model has already been proposed' });
@@ -299,6 +307,7 @@ export default function LabPage() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     email: email.trim(),
+                    captchaToken,
                     payload: {
                         type: 'proposal',
                         modelId: modelId.trim(),
@@ -315,6 +324,8 @@ export default function LabPage() {
 
             setModelId('');
             setReason('');
+            setCaptchaToken(null);
+            turnstileRef.current?.reset();
             setFormStatus({
                 type: 'success',
                 message: '📧 Check your email for a verification link!'
@@ -325,6 +336,9 @@ export default function LabPage() {
                 type: 'error',
                 message: error instanceof Error ? error.message : 'Submission failed'
             });
+            // Reset captcha on error
+            setCaptchaToken(null);
+            turnstileRef.current?.reset();
         } finally {
             setSubmitting(false);
         }
@@ -379,19 +393,15 @@ export default function LabPage() {
                                 rows={3}
                             />
 
-                            {/* CAPTCHA Placeholder */}
-                            <div
-                                className="captcha-placeholder"
-                                style={{
-                                    border: '1px dashed var(--mantine-color-dimmed)',
-                                    borderRadius: 8,
-                                    padding: 12,
-                                    textAlign: 'center',
-                                    color: 'var(--mantine-color-dimmed)',
-                                    fontSize: '0.85rem'
-                                }}
-                            >
-                                CAPTCHA Placeholder
+                            {/* Cloudflare Turnstile CAPTCHA */}
+                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Turnstile
+                                    ref={turnstileRef}
+                                    siteKey="0x4AAAAAACWqoNnjPjbJm3_c"
+                                    onSuccess={(token) => setCaptchaToken(token)}
+                                    onError={() => setCaptchaToken(null)}
+                                    onExpire={() => setCaptchaToken(null)}
+                                />
                             </div>
 
                             {formStatus && (

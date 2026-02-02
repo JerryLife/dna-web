@@ -16,40 +16,174 @@ const BASE_URL = process.env.BASE_URL || 'http://localhost:5173';
 
 export type EmailType = 'proposal' | 'vote' | 'batch_vote';
 
+interface ProposalDetails {
+    modelId: string;
+    reason?: string;
+}
+
+interface BatchVoteDetails {
+    proposalIds: string[];
+    proposalNames?: Map<string, string>;
+}
+
+export type SubmissionDetails = ProposalDetails | BatchVoteDetails;
+
 /**
  * Send a verification email to the user
  * 
  * @param to - Recipient email address
  * @param token - Verification token
  * @param type - Type of submission being verified
+ * @param details - Details of the submission (model info or vote info)
  */
 export async function sendVerificationEmail(
     to: string,
     token: string,
-    type: EmailType
+    type: EmailType,
+    details?: SubmissionDetails
 ): Promise<void> {
     const verifyUrl = `${BASE_URL}/verify?token=${token}`;
 
-    const subjects: Record<EmailType, string> = {
-        proposal: 'Confirm your model proposal',
-        vote: 'Confirm your vote',
-        batch_vote: 'Confirm your votes'
-    };
-
-    const subject = subjects[type];
+    // Build formal email content
+    const email = buildFormalEmail(to, type, verifyUrl, details);
 
     // ============================================================
     // PLACEHOLDER: Log to console instead of sending email
     // The xtra.science admin should replace this with actual SMTP
     // ============================================================
     console.log('\n');
-    console.log('═'.repeat(60));
-    console.log('📧 [EMAIL SIMULATION]');
-    console.log('═'.repeat(60));
+    console.log('═'.repeat(70));
+    console.log('📧 [EMAIL SIMULATION - Would be sent via SMTP in production]');
+    console.log('═'.repeat(70));
     console.log(`To:      ${to}`);
-    console.log(`Subject: ${subject}`);
-    console.log(`─`.repeat(60));
-    console.log(`Click to verify: ${verifyUrl}`);
-    console.log('═'.repeat(60));
+    console.log(`Subject: ${email.subject}`);
+    console.log('─'.repeat(70));
+    console.log(email.body);
+    console.log('═'.repeat(70));
     console.log('\n');
+}
+
+interface FormattedEmail {
+    subject: string;
+    body: string;
+}
+
+function buildFormalEmail(
+    to: string,
+    type: EmailType,
+    verifyUrl: string,
+    details?: SubmissionDetails
+): FormattedEmail {
+    const recipientName = to.split('@')[0];
+    const timestamp = new Date().toLocaleString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZoneName: 'short'
+    });
+
+    if (type === 'proposal') {
+        const proposalDetails = details as ProposalDetails | undefined;
+        const modelId = proposalDetails?.modelId || 'Unknown Model';
+        const reason = proposalDetails?.reason || 'No reason provided';
+
+        return {
+            subject: `[LLM DNA] Confirm Your Model Proposal - ${modelId}`,
+            body: `
+Dear ${recipientName},
+
+Thank you for your contribution to the LLM DNA project!
+
+You have submitted a proposal to add a new model to our community-driven LLM fingerprint database.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 PROPOSAL DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Model ID:    ${modelId}
+  Reason:      ${reason}
+  Submitted:   ${timestamp}
+  Email:       ${to}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+To confirm your proposal and add it to the voting queue, please click the link below:
+
+🔗 VERIFY YOUR PROPOSAL:
+${verifyUrl}
+
+⚠️  This link will expire in 24 hours.
+
+If you did not submit this proposal, you can safely ignore this email.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Best regards,
+The LLM DNA Team
+
+🌐 Website: https://xtra.science
+📧 Contact: support@xtra.science
+
+---
+This is an automated message from the LLM DNA Explorer.
+Please do not reply directly to this email.
+`.trim()
+        };
+    } else {
+        // batch_vote or vote
+        const voteDetails = details as BatchVoteDetails | undefined;
+        const proposalIds = voteDetails?.proposalIds || [];
+        const voteCount = proposalIds.length;
+
+        const voteList = proposalIds.length > 0
+            ? proposalIds.map((id, i) => `  ${i + 1}. ${id}`).join('\n')
+            : '  (No proposals specified)';
+
+        return {
+            subject: `[LLM DNA] Confirm Your ${voteCount} Vote${voteCount !== 1 ? 's' : ''} for Model Proposals`,
+            body: `
+Dear ${recipientName},
+
+Thank you for participating in the LLM DNA community!
+
+You have requested to vote on ${voteCount} model proposal${voteCount !== 1 ? 's' : ''}. Your votes help prioritize which models should be analyzed and added to the LLM DNA Galaxy.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🗳️ YOUR VOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+${voteList}
+
+  Total Votes: ${voteCount}
+  Submitted:   ${timestamp}
+  Email:       ${to}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+To confirm your vote${voteCount !== 1 ? 's' : ''} and make them count, please click the link below:
+
+🔗 VERIFY YOUR VOTES:
+${verifyUrl}
+
+⚠️  This link will expire in 24 hours.
+
+If you did not request these votes, you can safely ignore this email.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Best regards,
+The LLM DNA Team
+
+🌐 Website: https://xtra.science
+📧 Contact: support@xtra.science
+
+---
+This is an automated message from the LLM DNA Explorer.
+Please do not reply directly to this email.
+`.trim()
+        };
+    }
 }

@@ -1,12 +1,17 @@
 /**
- * Submission Service - Handles new proposals and votes
+ * Submission Service - Handles new proposals and votes with Cloudflare Turnstile verification
  */
 import { Router, Request, Response } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import { getDatabase } from '../database.js';
-import { sendVerificationEmail, EmailType } from './email.js';
+import { sendVerificationEmail, EmailType, SubmissionDetails } from './email.js';
+import { config } from 'dotenv';
+
+// Load environment variables from server/.env
+config({ path: 'server/.env' });
 
 const router = Router();
+const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY || '';
 
 // Types
 interface ProposalPayload {
@@ -24,7 +29,35 @@ type SubmissionPayload = ProposalPayload | BatchVotePayload;
 
 interface SubmissionRequest {
     email: string;
+    captchaToken: string;
     payload: SubmissionPayload;
+}
+
+/**
+ * Verify Cloudflare Turnstile token
+ */
+async function verifyTurnstileToken(token: string): Promise<boolean> {
+    if (!TURNSTILE_SECRET_KEY) {
+        console.warn('⚠️ TURNSTILE_SECRET_KEY not set, skipping CAPTCHA verification');
+        return true; // Skip verification if no secret key configured
+    }
+
+    try {
+        const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                secret: TURNSTILE_SECRET_KEY,
+                response: token
+            })
+        });
+
+        const data = await response.json() as { success: boolean };
+        return data.success;
+    } catch (error) {
+        console.error('Turnstile verification error:', error);
+        return false;
+    }
 }
 
 /**
@@ -33,7 +66,17 @@ interface SubmissionRequest {
  */
 router.post('/submit', async (req: Request, res: Response) => {
     try {
-        const { email, payload } = req.body as SubmissionRequest;
+        const { email, captchaToken, payload } = req.body as SubmissionRequest;
+
+        // Validate CAPTCHA first
+        if (!captchaToken) {
+            return res.status(400).json({ error: 'CAPTCHA verification required' });
+        }
+
+        const isCaptchaValid = await verifyTurnstileToken(captchaToken);
+        if (!isCaptchaValid) {
+            return res.status(400).json({ error: 'CAPTCHA verification failed. Please try again.' });
+        }
 
         // Validate email
         if (!email || !isValidEmail(email)) {
@@ -90,11 +133,14 @@ router.post('/submit', async (req: Request, res: Response) => {
             [email, JSON.stringify(payload), token]
         );
 
-        // Determine email type
+        // Determine email type and details
         const emailType: EmailType = payload.type === 'proposal' ? 'proposal' : 'batch_vote';
+        const emailDetails = payload.type === 'proposal'
+            ? { modelId: payload.modelId, reason: payload.reason }
+            : { proposalIds: payload.proposalIds };
 
-        // Send verification email
-        await sendVerificationEmail(email, token, emailType);
+        // Send verification email with details
+        await sendVerificationEmail(email, token, emailType, emailDetails);
 
         res.status(201).json({
             message: 'Verification email sent. Please check your inbox.',

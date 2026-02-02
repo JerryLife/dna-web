@@ -7,6 +7,7 @@ import rateLimit from 'express-rate-limit';
 import { initDatabase, getDatabase } from './database.js';
 import submissionRouter from './services/submission.js';
 import verificationRouter from './services/verification.js';
+import subscribeRouter from './services/subscribe.js';
 import { startCleanupJob } from './cron/cleanup.js';
 import config from '../config.json' with { type: 'json' };
 
@@ -32,6 +33,7 @@ app.use('/api', limiter);
 // Routes
 app.use('/api', submissionRouter);
 app.use('/api', verificationRouter);
+app.use('/api', subscribeRouter);
 
 // GET /api/proposals - Fetch all active proposals
 app.get('/api/proposals', async (req, res) => {
@@ -68,7 +70,8 @@ async function start() {
             console.log(`\n🚀 Lab API Server running on http://localhost:${PORT}`);
             console.log(`   - POST /api/submit     (Create pending submission)`);
             console.log(`   - GET  /api/verify     (Verify email token)`);
-            console.log(`   - GET  /api/proposals  (List all proposals)\n`);
+            console.log(`   - GET  /api/proposals  (List all proposals)`);
+            console.log(`   - POST /api/subscribe  (Newsletter subscription)\n`);
         });
     } catch (error) {
         console.error('Failed to start server:', error);
