@@ -1,8 +1,9 @@
 import { useState, useRef } from 'react';
 import { Card } from '@/components/Card';
 import { Flow, type FlowStep } from '@/components/Flow';
-import { CopyButton, ActionIcon, Tooltip, Button, Group, Text, Stack, TextInput, Alert, Loader } from '@mantine/core';
-import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
+import { CopyButton, ActionIcon, Tooltip, Button, Group, Text, Stack } from '@mantine/core';
+// import { TextInput, Alert, Loader } from '@mantine/core';
+// import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 
 const extractionFlowSteps: FlowStep[] = [
     { icon: '⌨️', label: 'Random input text' },
@@ -261,7 +262,7 @@ export default function AboutPage() {
                 </div>
             </Card>
 
-            {/* Subscribe Section */}
+            {/* Subscribe Section - TEMPORARILY DISABLED
             <Card title="💌 Subscribe" className="mt-8">
                 <p className="mb-4">
                     Get the latest updates on new model DNAs and analysis features.
@@ -278,7 +279,7 @@ export default function AboutPage() {
                             disabled={submitting}
                         />
 
-                        {/* Cloudflare Turnstile CAPTCHA */}
+                        {/* Cloudflare Turnstile CAPTCHA 
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
                             <Turnstile
                                 ref={turnstileRef}
@@ -298,8 +299,8 @@ export default function AboutPage() {
                             </Alert>
                         )}
 
-                        <Button
-                            type="submit"
+                        <Button 
+                            type="submit" 
                             color="violet"
                             disabled={submitting || !captchaToken}
                             leftSection={submitting ? <Loader size="xs" /> : '📧'}
@@ -309,6 +310,7 @@ export default function AboutPage() {
                     </Stack>
                 </form>
             </Card>
+            */}
         </div>
     );
 }
