@@ -2,7 +2,7 @@
  * Workbench Page - Model DNA Comparison Tool
  * Migrated from workbench.js to React with Mantine Combobox
  */
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import {
     Combobox,
     InputBase,
@@ -60,8 +60,7 @@ function ModelCombobox({
                 m.name.toLowerCase().includes(lowerSearch) ||
                 (m.family && m.family.toLowerCase().includes(lowerSearch)) ||
                 (m.organization && m.organization.toLowerCase().includes(lowerSearch))
-            )
-            .slice(0, 50);
+            );
     }, [models, search, excludeIds]);
 
     const selectedModel = useMemo(() =>
@@ -128,11 +127,6 @@ function ModelCombobox({
                     <ScrollArea.Autosize type="scroll" mah={300}>
                         {options.length > 0 ? options : (
                             <Combobox.Empty>No models found</Combobox.Empty>
-                        )}
-                        {filteredModels.length === 50 && (
-                            <Text size="xs" c="dimmed" ta="center" py="xs">
-                                Showing first 50 results. Keep typing to narrow down.
-                            </Text>
                         )}
                     </ScrollArea.Autosize>
                 </Combobox.Options>
@@ -238,9 +232,11 @@ function ResultCard({ result, rank, dataLoader, onCompare }: ResultCardProps) {
                     />
                 </Box>
                 <Stack gap={2} align="flex-end" className="workbench-result-percent">
-                    <Text size="xs" c="dimmed" style={{ textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 500 }}>
-                        Similarity
-                    </Text>
+                    <Tooltip label="Cosine similarity scaled to 0-100%" withArrow>
+                        <Text size="xs" c="dimmed" style={{ textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 500, cursor: 'help' }}>
+                            Similarity <span style={{ color: 'var(--color-accent-primary)' }}>ⓘ</span>
+                        </Text>
+                    </Tooltip>
                 </Stack>
                 <Button
                     size="xs"
@@ -343,9 +339,11 @@ function ComparisonDetailContent({ refModel, compModel, dataLoader }: Omit<Compa
                         <Text size="xs" fw={500} c="dimmed" style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                             Comparison
                         </Text>
-                        <Text size="sm" fw={700} c="violet" style={{ fontVariantNumeric: 'tabular-nums' }}>
-                            {percent}% similarity
-                        </Text>
+                        <Tooltip label="Cosine similarity scaled to 0-100%" withArrow>
+                            <Text size="sm" fw={700} c="violet" style={{ fontVariantNumeric: 'tabular-nums', cursor: 'help' }}>
+                                {percent}% similarity <span style={{ fontSize: '0.8em' }}>ⓘ</span>
+                            </Text>
+                        </Tooltip>
                     </Group>
                     <Text fw={600} size="sm" mb="xs" className="model-title-truncate">{compModel.name}</Text>
                     <div className="workbench-barcode-wrap">
@@ -376,6 +374,16 @@ export default function WorkbenchPage() {
     const [comparisonModels, setComparisonModels] = useState<Set<string>>(new Set());
     const [results, setResults] = useState<RankedModel[]>([]);
     const [compareDetailId, setCompareDetailId] = useState<string | null>(null);
+    const [visibleCount, setVisibleCount] = useState(50);
+
+    // Reset visible count when results change
+    useEffect(() => {
+        setVisibleCount(50);
+    }, [results]);
+
+    const showMore = useCallback(() => {
+        setVisibleCount(prev => Math.min(prev + 50, results.length));
+    }, [results.length]);
 
     const addComparisonModel = useCallback((id: string | null) => {
         if (id && !comparisonModels.has(id)) {
@@ -509,7 +517,7 @@ export default function WorkbenchPage() {
                     ) : (
                         <div className="workbench-results-scroll">
                             <Stack gap="md">
-                                {results.slice(0, 50).map((result, index) => (
+                                {results.slice(0, visibleCount).map((result, index) => (
                                     <ResultCard
                                         key={result.id}
                                         result={result}
@@ -519,6 +527,23 @@ export default function WorkbenchPage() {
                                     />
                                 ))}
                             </Stack>
+                            {/* Show More button */}
+                            {visibleCount < results.length && (
+                                <Button
+                                    variant="light"
+                                    color="violet"
+                                    fullWidth
+                                    mt="md"
+                                    onClick={showMore}
+                                >
+                                    Show More ({results.length - visibleCount} remaining)
+                                </Button>
+                            )}
+                            {visibleCount >= results.length && results.length > 50 && (
+                                <Text size="xs" c="dimmed" ta="center" py="md">
+                                    All {results.length} results loaded
+                                </Text>
+                            )}
                         </div>
                     )}
                 </Paper>

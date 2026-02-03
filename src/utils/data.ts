@@ -103,19 +103,29 @@ export class DataLoader {
     }
 
     /**
-     * Calculate Euclidean distance between two DNA signatures
+     * Calculate Cosine distance between two DNA signatures
+     * Cosine distance = 1 - cosine_similarity, ranges from 0 (identical) to 2 (opposite)
      */
     calculateDistance(sig1: number[] | null, sig2: number[] | null): number {
         if (!sig1 || !sig2 || sig1.length !== sig2.length) {
             return Infinity;
         }
 
-        let sum = 0;
+        let dotProduct = 0;
+        let norm1 = 0;
+        let norm2 = 0;
+
         for (let i = 0; i < sig1.length; i++) {
-            const diff = sig1[i] - sig2[i];
-            sum += diff * diff;
+            dotProduct += sig1[i] * sig2[i];
+            norm1 += sig1[i] * sig1[i];
+            norm2 += sig2[i] * sig2[i];
         }
-        return Math.sqrt(sum);
+
+        const magnitude = Math.sqrt(norm1) * Math.sqrt(norm2);
+        if (magnitude === 0) return 2; // Max distance if either vector is zero
+
+        const cosineSimilarity = dotProduct / magnitude;
+        return 1 - cosineSimilarity; // Cosine distance: 0 = identical, 2 = opposite
     }
 
     /**

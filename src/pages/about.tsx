@@ -25,7 +25,6 @@ const BIBTEX = `@inproceedings{wu2026llmdna,
 interface Paper {
     title: string;
     authors: string;
-    affiliations: React.ReactNode;
     link: string;
     venue?: string;
 }
@@ -35,11 +34,6 @@ const PAPERS: Paper[] = [
         title: "LLM DNA: Tracing Model Evolution via Functional Representations",
         authors: "Zhaomin Wu, Haodong Zhao, Ziyang Wang, Jizhou Guo, Qian Wang, Bingsheng He",
         venue: "ICLR 2026",
-        affiliations: (
-            <>
-                National University of Singapore, Shanghai Jiao Tong University
-            </>
-        ),
         link: "https://openreview.net/forum?id=UIxHaAqFqQ"
     }
 ];
@@ -132,9 +126,7 @@ export default function AboutPage() {
                                     <Text ta="left" size="sm" fw={500}>
                                         {paper.authors}
                                     </Text>
-                                    <Text ta="left" c="dimmed" size="xs">
-                                        {paper.affiliations}
-                                    </Text>
+
                                 </Stack>
                                 <Button
                                     component="a"
