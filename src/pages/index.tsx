@@ -14,9 +14,10 @@ import {
     Button,
     ScrollArea,
     Badge,
+    Tabs,
 } from '@mantine/core';
 import { useDebouncedValue, useResizeObserver, useMediaQuery } from '@mantine/hooks';
-import { useData } from '@/contexts/DataContext';
+import { useData, type DnaMode } from '@/contexts/DataContext';
 import type { ModelData } from '@/utils/data';
 import config from '@/config';
 
@@ -43,6 +44,8 @@ interface SidebarProps {
     onShowBaseChange: (value: boolean) => void;
     showInstruct: boolean;
     onShowInstructChange: (value: boolean) => void;
+    showModelText: boolean;
+    onShowModelTextChange: (value: boolean) => void;
     organizations: Array<{ name: string; count: number; color: string }>;
     activeOrgs: Set<string>;
     onToggleOrg: (org: string) => void;
@@ -65,6 +68,8 @@ function Sidebar({
     onShowBaseChange,
     showInstruct,
     onShowInstructChange,
+    showModelText,
+    onShowModelTextChange,
     organizations,
     activeOrgs,
     onToggleOrg,
@@ -127,6 +132,12 @@ function Sidebar({
                                 onChange={(e) => onShowInstructChange(e.target.checked)}
                                 size="sm"
                             />
+                            <Checkbox
+                                label="Show Model Text"
+                                checked={showModelText}
+                                onChange={(e) => onShowModelTextChange(e.target.checked)}
+                                size="sm"
+                            />
                         </Stack>
                     </div>
 
@@ -185,7 +196,8 @@ function Sidebar({
 
 // Main Galaxy Page
 export default function GalaxyPage() {
-    const dataLoader = useData();
+    const [galaxyMode, setGalaxyMode] = useState<DnaMode>('raw');
+    const dataLoader = useData(galaxyMode);
     const [containerRef, containerRect] = useResizeObserver();
     const svgRef = useRef<SVGSVGElement>(null);
     const tooltipRef = useRef<HTMLDivElement>(null);
@@ -199,6 +211,7 @@ export default function GalaxyPage() {
     const [debouncedSearch] = useDebouncedValue(search, 300);
     const [showBase, setShowBase] = useState(true);
     const [showInstruct, setShowInstruct] = useState(true);
+    const [showModelText, setShowModelText] = useState(true);
     const [activeOrgs, setActiveOrgs] = useState<Set<string>>(new Set());
     const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
     const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
@@ -222,14 +235,14 @@ export default function GalaxyPage() {
             }));
     }, [models]);
 
-    // Initialize activeOrgs only on first load (so "Unselect All" can stay empty)
-    const hasInitializedOrgs = useRef(false);
+    // Initialize activeOrgs on first load and when switching tabs
+    const prevModeRef = useRef<DnaMode | null>(null);
     useEffect(() => {
-        if (!hasInitializedOrgs.current && organizations.length > 0) {
-            hasInitializedOrgs.current = true;
+        if (organizations.length > 0 && prevModeRef.current !== galaxyMode) {
+            prevModeRef.current = galaxyMode;
             setActiveOrgs(new Set(organizations.map(o => o.name)));
         }
-    }, [organizations]);
+    }, [organizations, galaxyMode]);
 
     // Organization toggle handlers
     const toggleOrg = useCallback((org: string) => {
@@ -501,6 +514,23 @@ export default function GalaxyPage() {
             .on('mousemove', updateTooltipPosition)
             .on('mouseleave', () => { tooltip.style.display = 'none'; });
 
+        if (showModelText) {
+            dotGroup.selectAll('.model-label')
+                .data(models.filter(filterModel))
+                .enter().append('text')
+                .attr('class', 'model-label')
+                .attr('x', d => xScale(d.x!) + 6)
+                .attr('y', d => yScale(d.y!) - 6)
+                .attr('fill', '#334155')
+                .attr('font-size', 10)
+                .attr('font-weight', 500)
+                .attr('stroke', '#ffffff')
+                .attr('stroke-width', 3)
+                .attr('paint-order', 'stroke')
+                .style('pointer-events', 'none')
+                .text(d => d.name);
+        }
+
         setVisibleCount(visible);
 
         function updateTooltipPosition(event: MouseEvent) {
@@ -531,7 +561,7 @@ export default function GalaxyPage() {
         return () => {
             document.removeEventListener('keydown', handleKeydown);
         };
-    }, [models, activeOrgs, filterModel, containerWidth, containerHeight]);
+    }, [models, activeOrgs, filterModel, containerWidth, containerHeight, showModelText]);
 
     // Update visibility when filters change
     useEffect(() => {
@@ -572,6 +602,8 @@ export default function GalaxyPage() {
                 onShowBaseChange={setShowBase}
                 showInstruct={showInstruct}
                 onShowInstructChange={setShowInstruct}
+                showModelText={showModelText}
+                onShowModelTextChange={setShowModelText}
                 organizations={organizations}
                 activeOrgs={activeOrgs}
                 onToggleOrg={toggleOrg}
@@ -585,14 +617,41 @@ export default function GalaxyPage() {
                 onMobileClose={() => setMobileFilterOpen(false)}
             />
 
-            <main style={{ flex: 1, position: 'relative', background: '#f8fafc', overflow: 'hidden', transition: 'all 0.3s ease' }}>
+            <main
+                className="galaxy-main"
+                style={{
+                    flex: 1,
+                    position: 'relative',
+                    background: '#f8fafc',
+                    overflow: 'hidden',
+                    display: 'flex',
+                    flexDirection: 'column',
+                }}
+            >
+                <Tabs
+                    value={galaxyMode}
+                    onChange={(v) => setGalaxyMode((v as DnaMode) || 'raw')}
+                    className="galaxy-mode-tabs"
+                    style={{ borderBottom: '1px solid var(--mantine-color-gray-3)', flexShrink: 0 }}
+                >
+                    <Tabs.List px="md">
+                        <Tabs.Tab value="raw" leftSection="🧬">
+                            Raw DNA
+                        </Tabs.Tab>
+                        <Tabs.Tab value="chat" leftSection="💬">
+                            Chat DNA
+                        </Tabs.Tab>
+                    </Tabs.List>
+                </Tabs>
                 <div
                     ref={containerRef}
                     style={{
+                        flex: 1,
+                        minHeight: 0,
                         width: '100%',
-                        height: '100%',
                         padding: 16,
                         position: 'relative',
+                        overflow: 'hidden',
                     }}
                 >
                     <svg
@@ -621,6 +680,26 @@ export default function GalaxyPage() {
                         >
                             <Text size="sm" c="dimmed" ta="center">
                                 Select an organization on the left to view the galaxy
+                            </Text>
+                        </Stack>
+                    )}
+
+                    {/* No models state */}
+                    {models.length === 0 && (
+                        <Stack
+                            align="center"
+                            justify="center"
+                            gap="xs"
+                            style={{
+                                position: 'absolute',
+                                inset: 16,
+                                borderRadius: 8,
+                                background: 'rgba(248, 250, 252, 0.9)',
+                                pointerEvents: 'none',
+                            }}
+                        >
+                            <Text size="sm" c="dimmed" ta="center">
+                                No models available for this DNA type
                             </Text>
                         </Stack>
                     )}

@@ -20,6 +20,9 @@
         "minCount": 5,
         "crowdRadius": 6
     },
+    "projection": {
+        "method": "random"
+    },
     "server": {
         "port": 3001,
         "cleanupCron": "0 0 * * *",

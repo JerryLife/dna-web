@@ -1312,6 +1312,7 @@
     "last_updated": "2026-02-09",
     "mode": "chat",
     "dataset": "rand",
+    "projection_method": "random",
     "dna_dimension": 128
   }
 }

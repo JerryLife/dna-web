@@ -19,6 +19,7 @@ import {
     Loader,
     Affix,
     Transition,
+    Tabs,
 } from '@mantine/core';
 import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 import { useData, type DnaMode } from '@/contexts/DataContext';
