@@ -33,7 +33,7 @@ const PAPERS: Paper[] = [
     {
         title: "LLM DNA: Tracing Model Evolution via Functional Representations",
         authors: "Zhaomin Wu, Haodong Zhao, Ziyang Wang, Jizhou Guo, Qian Wang, Bingsheng He",
-        venue: "ICLR 2026",
+        venue: "ICLR 2026 (Oral)",
         link: "https://openreview.net/forum?id=UIxHaAqFqQ"
     }
 ];
@@ -228,11 +228,11 @@ export default function AboutPage() {
                     <li>
                         <strong>GitHub:</strong>{' '}
                         <a
-                            href="https://github.com/Xtra-Computing/LLM-DNA.git"
+                            href="https://github.com/JerryLife/RepTrace"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Xtra-Computing/LLM-DNA
+                            JerryLife/RepTrace
                         </a>
                     </li>
                     <li>

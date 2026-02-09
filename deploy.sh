@@ -22,6 +22,9 @@ fi
 echo "📦 Stopping existing containers..."
 docker compose down 2>/dev/null || true
 
+# echo "🧬 Building DNA databases..."
+# npm run build:data
+
 echo "🔨 Building containers..."
 docker compose build --no-cache
 

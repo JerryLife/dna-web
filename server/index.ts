@@ -35,16 +35,25 @@ app.use('/api', submissionRouter);
 app.use('/api', verificationRouter);
 // app.use('/api', subscribeRouter); // TEMPORARILY DISABLED
 
-// GET /api/proposals - Fetch all active proposals
+// GET /api/proposals - Fetch all active proposals (optionally filtered by mode)
 app.get('/api/proposals', async (req, res) => {
     try {
         const db = await getDatabase();
-        const proposals = await db.all(
-            `SELECT id, model_id as modelId, submitter_email as submitter, 
-                    reason, votes, status, created_at as createdAt
-             FROM proposals 
-             ORDER BY votes DESC, created_at DESC`
-        );
+        const mode = req.query.mode as string | undefined;
+
+        let query = `SELECT id, model_id as modelId, submitter_email as submitter, 
+                    reason, votes, status, mode, created_at as createdAt
+             FROM proposals`;
+        const params: string[] = [];
+
+        if (mode && (mode === 'raw' || mode === 'chat')) {
+            query += ` WHERE mode = ?`;
+            params.push(mode);
+        }
+
+        query += ` ORDER BY votes DESC, created_at DESC`;
+
+        const proposals = await db.all(query, params);
         res.json(proposals);
     } catch (error) {
         console.error('Error fetching proposals:', error);

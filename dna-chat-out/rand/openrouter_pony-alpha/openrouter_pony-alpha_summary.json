@@ -1,0 +1,77 @@
+{
+  "model_name": "openrouter/pony-alpha",
+  "dataset": "rand",
+  "dataset_full": "rand",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 6.956060409545898,
+  "signature_stats": {
+    "mean": -0.3198806643486023,
+    "std": 2.5670385360717773,
+    "min": -5.381986618041992,
+    "max": 5.557575225830078,
+    "median": -0.2012084722518921,
+    "l1_norm": 272.10125732421875,
+    "l2_norm": 29.26734161376953,
+    "sparsity": 0.0,
+    "entropy": 5.195711207732385
+  },
+  "metadata": {
+    "model_name": "openrouter/pony-alpha",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-02-09T19:53:16.466581",
+    "computation_time_seconds": 6.953047037124634,
+    "model_metadata": {
+      "model_name": "openrouter/pony-alpha",
+      "architecture": {
+        "is_generative": true
+      },
+      "repository": {}
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "out/rand/openrouter_pony-alpha/openrouter_pony-alpha_dna.json",
+  "config": {
+    "model_name": "openrouter/pony-alpha",
+    "model_path": null,
+    "model_type": "auto",
+    "dataset": "rand",
+    "probe_set": "general",
+    "max_samples": 100,
+    "data_root": "./data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda:0",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "skip_chat_template": false
+  }
+}

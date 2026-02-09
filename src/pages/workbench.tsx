@@ -1,6 +1,7 @@
 /**
  * Workbench Page - Model DNA Comparison Tool
  * Migrated from workbench.js to React with Mantine Combobox
+ * Supports dual mode: Raw DNA and Chat DNA
  */
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import {
@@ -21,8 +22,9 @@ import {
     Divider,
     Box,
     Modal,
+    Tabs,
 } from '@mantine/core';
-import { useData } from '@/contexts/DataContext';
+import { useData, useDualData, type DnaMode } from '@/contexts/DataContext';
 import type { ModelData, RankedModel } from '@/utils/data';
 
 // Model Combobox Component
@@ -32,6 +34,7 @@ interface ModelComboboxProps {
     onChange: (id: string | null) => void;
     excludeIds?: Set<string>;
     clearable?: boolean;
+    mode?: DnaMode;
 }
 
 function ModelCombobox({
@@ -40,8 +43,9 @@ function ModelCombobox({
     onChange,
     excludeIds = new Set(),
     clearable = false,
+    mode = 'raw',
 }: ModelComboboxProps) {
-    const dataLoader = useData();
+    const dataLoader = useData(mode);
     const [search, setSearch] = useState('');
     const combobox = useCombobox({
         onDropdownClose: () => {
@@ -160,9 +164,12 @@ interface ResultCardProps {
 }
 
 function ResultCard({ result, rank, dataLoader, onCompare }: ResultCardProps) {
+    // For non-negative DNA signatures, cosine similarity is in [0,1], so distance is in [0,1]
+    // Map distance [0,1] to percent [100,0]: similarity = (1 - distance) * 100
     const getSimilarityPercent = (distance: number) => {
-        const maxDist = 2;
-        return Math.max(0, Math.min(100, (1 - distance / maxDist) * 100));
+        // Clamp distance to [0, 1] for non-negative signatures, then convert to percent
+        const clampedDist = Math.max(0, Math.min(1, distance));
+        return (1 - clampedDist) * 100;
     };
 
     const percent = Math.round(getSimilarityPercent(result.distance));
@@ -316,7 +323,12 @@ interface ComparisonDetailProps {
 
 function ComparisonDetailContent({ refModel, compModel, dataLoader }: Omit<ComparisonDetailProps, 'onClose'>) {
     const distance = dataLoader.calculateDistance(refModel.signature, compModel.signature);
-    const getSimilarityPercent = (d: number) => Math.max(0, Math.min(100, (1 - d / 2) * 100));
+    // For non-negative DNA signatures, cosine similarity is in [0,1], distance in [0,1]
+    // Clamp and convert to percent for display
+    const getSimilarityPercent = (d: number) => {
+        const clampedDist = Math.max(0, Math.min(1, d));
+        return (1 - clampedDist) * 100;
+    };
     const percent = Math.round(getSimilarityPercent(distance));
 
     return (
@@ -366,15 +378,28 @@ function ComparisonDetailContent({ refModel, compModel, dataLoader }: Omit<Compa
     );
 }
 
-// Main Workbench Page
-export default function WorkbenchPage() {
-    const dataLoader = useData();
+// Workbench Content Component for a specific mode
+interface WorkbenchContentProps {
+    mode: DnaMode;
+}
+
+function WorkbenchContent({ mode }: WorkbenchContentProps) {
+    const dataLoader = useData(mode);
 
     const [referenceModel, setReferenceModel] = useState<string | null>(null);
     const [comparisonModels, setComparisonModels] = useState<Set<string>>(new Set());
     const [results, setResults] = useState<RankedModel[]>([]);
     const [compareDetailId, setCompareDetailId] = useState<string | null>(null);
     const [visibleCount, setVisibleCount] = useState(50);
+
+    // Reset state when mode changes
+    useEffect(() => {
+        setReferenceModel(null);
+        setComparisonModels(new Set());
+        setResults([]);
+        setCompareDetailId(null);
+        setVisibleCount(50);
+    }, [mode]);
 
     // Reset visible count when results change
     useEffect(() => {
@@ -414,19 +439,7 @@ export default function WorkbenchPage() {
     const compModelData = compareDetailId ? dataLoader.getModelById(compareDetailId) : null;
 
     return (
-        <div className="page workbench-page">
-            <header className="page-header workbench-header">
-                <div className="workbench-header-inner">
-                    <h1 className="page-title">Workbench</h1>
-                    <Badge size="sm" variant="light" color="violet" className="workbench-badge">
-                        DNA Comparison
-                    </Badge>
-                </div>
-                <p className="page-subtitle">
-                    Select a reference model and run similarity analysis against the catalog. Optionally narrow by comparison set.
-                </p>
-            </header>
-
+        <>
             <div className="workbench-layout">
                 {/* Selection Panel */}
                 <Paper p="lg" radius="md" withBorder className="workbench-panel workbench-panel-config">
@@ -442,6 +455,7 @@ export default function WorkbenchPage() {
                                 value={referenceModel}
                                 onChange={setReferenceModel}
                                 clearable
+                                mode={mode}
                             />
                         </div>
 
@@ -452,6 +466,7 @@ export default function WorkbenchPage() {
                                 value={null}
                                 onChange={addComparisonModel}
                                 excludeIds={new Set([...comparisonModels, referenceModel ?? ''])}
+                                mode={mode}
                             />
                             <Group gap="xs" mt="sm" style={{ flexWrap: 'wrap' }}>
                                 {comparisonModels.size === 0 ? (
@@ -583,6 +598,47 @@ export default function WorkbenchPage() {
                     }
                 }
             `}</style>
+        </>
+    );
+}
+
+// Main Workbench Page with Mode Tabs
+export default function WorkbenchPage() {
+    const { chatAvailable } = useDualData();
+    const [workbenchMode, setWorkbenchMode] = useState<DnaMode>('raw');
+
+    return (
+        <div className="page workbench-page">
+            <header className="page-header workbench-header">
+                <div className="workbench-header-inner">
+                    <h1 className="page-title">Workbench</h1>
+                    <Badge size="sm" variant="light" color="violet" className="workbench-badge">
+                        DNA Comparison
+                    </Badge>
+                </div>
+                <p className="page-subtitle">
+                    Select a reference model and run similarity analysis against the catalog. Optionally narrow by comparison set.
+                </p>
+            </header>
+
+            {/* Mode Tabs */}
+            <Tabs
+                value={workbenchMode}
+                onChange={(v) => setWorkbenchMode((v as DnaMode) || 'raw')}
+                mb="lg"
+            >
+                <Tabs.List>
+                    <Tabs.Tab value="raw" leftSection="🧬">
+                        Raw DNA
+                    </Tabs.Tab>
+                    <Tabs.Tab value="chat" leftSection="💬" disabled={!chatAvailable}>
+                        Chat DNA
+                    </Tabs.Tab>
+                </Tabs.List>
+            </Tabs>
+
+            {/* Workbench Content for selected mode */}
+            <WorkbenchContent mode={workbenchMode} />
         </div>
     );
 }

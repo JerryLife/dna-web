@@ -1,0 +1,77 @@
+{
+  "model_name": "x-ai/grok-4.1-fast",
+  "dataset": "rand",
+  "dataset_full": "rand",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 6.430746793746948,
+  "signature_stats": {
+    "mean": 0.12359413504600525,
+    "std": 2.9293179512023926,
+    "min": -9.07507610321045,
+    "max": 6.604971408843994,
+    "median": 0.23821310698986053,
+    "l1_norm": 289.0753173828125,
+    "l2_norm": 33.17093276977539,
+    "sparsity": 0.0,
+    "entropy": 4.923283353193748
+  },
+  "metadata": {
+    "model_name": "x-ai/grok-4.1-fast",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-02-09T18:49:58.200074",
+    "computation_time_seconds": 6.428202152252197,
+    "model_metadata": {
+      "model_name": "x-ai/grok-4.1-fast",
+      "architecture": {
+        "is_generative": true
+      },
+      "repository": {}
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "out/rand/x-ai_grok-4.1-fast/x-ai_grok-4.1-fast_dna.json",
+  "config": {
+    "model_name": "x-ai/grok-4.1-fast",
+    "model_path": null,
+    "model_type": "auto",
+    "dataset": "rand",
+    "probe_set": "general",
+    "max_samples": 100,
+    "data_root": "./data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda:0",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "skip_chat_template": false
+  }
+}

@@ -57,6 +57,7 @@ export async function initDatabase(): Promise<Database> {
             reason TEXT,
             votes INTEGER DEFAULT 0,
             status TEXT DEFAULT 'pending',
+            mode TEXT DEFAULT 'raw',
             created_at TEXT DEFAULT (datetime('now'))
         )
     `);

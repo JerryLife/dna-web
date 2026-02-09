@@ -78,6 +78,29 @@
     background: var(--color-bg-primary);
 }
 
+/* Galaxy sidebar should participate in layout (avoid overlaying tabs/content) */
+.galaxy-page .sidebar {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    transform: none;
+    z-index: 2;
+}
+
+.galaxy-page .galaxy-main {
+    min-width: 0;
+    z-index: 1;
+}
+
+.galaxy-page .galaxy-mode-tabs {
+    position: relative;
+    z-index: 3;
+    background: var(--color-bg-primary);
+}
+
 /* Mobile: filter drawer backdrop */
 .galaxy-filter-backdrop {
     position: fixed;
@@ -86,6 +109,20 @@
     background: rgba(0, 0, 0, 0.4);
     z-index: 18;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .galaxy-page .sidebar {
+        position: fixed;
+        top: var(--nav-height);
+        left: 0;
+        height: calc(100vh - var(--nav-height));
+        transform: translateX(-100%);
+    }
+
+    .galaxy-page .sidebar.open {
+        transform: translateX(0);
+    }
 }
 
 /* Sidebar - Light Theme */

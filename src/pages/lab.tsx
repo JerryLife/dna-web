@@ -19,10 +19,9 @@ import {
     Loader,
     Affix,
     Transition,
-    Tabs,
 } from '@mantine/core';
 import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
-import { useData } from '@/contexts/DataContext';
+import { useData, type DnaMode } from '@/contexts/DataContext';
 import { VoteModal } from '@/components/VoteModal';
 
 // Types
@@ -34,6 +33,7 @@ interface Proposal {
     votes: number;
     status: 'pending' | 'scanning' | 'completed' | 'failed';
     createdAt: string;
+    mode?: DnaMode; // raw or chat
 }
 
 // Utility functions
@@ -143,9 +143,13 @@ function InfoCard({ icon, title, description }: { icon: string; title: string; d
     );
 }
 
-// Main Lab Page
-export default function LabPage() {
-    const dataLoader = useData();
+// Lab Content Component for a specific mode
+interface LabContentProps {
+    mode: DnaMode;
+}
+
+function LabContent({ mode }: LabContentProps) {
+    const dataLoader = useData(mode);
 
     // Form state
     const [email, setEmail] = useState('');
@@ -162,10 +166,11 @@ export default function LabPage() {
     const [sortBy, setSortBy] = useState<string>('votes');
     const [activeTab, setActiveTab] = useState<string>('open');
 
-    // Batch voting state (persisted in sessionStorage)
+    // Batch voting state (persisted in sessionStorage, separated by mode)
+    const storageKey = `lab-pending-votes-${mode}`;
     const [pendingVotes, setPendingVotes] = useState<Set<string>>(() => {
         try {
-            const stored = sessionStorage.getItem('lab-pending-votes');
+            const stored = sessionStorage.getItem(storageKey);
             return stored ? new Set(JSON.parse(stored)) : new Set();
         } catch {
             return new Set();
@@ -175,13 +180,13 @@ export default function LabPage() {
 
     // Save pending votes to sessionStorage
     useEffect(() => {
-        sessionStorage.setItem('lab-pending-votes', JSON.stringify([...pendingVotes]));
-    }, [pendingVotes]);
+        sessionStorage.setItem(storageKey, JSON.stringify([...pendingVotes]));
+    }, [pendingVotes, storageKey]);
 
-    // Fetch proposals from API
+    // Fetch proposals from API (filtered by mode)
     const fetchProposals = useCallback(async () => {
         try {
-            const response = await fetch('/api/proposals');
+            const response = await fetch(`/api/proposals?mode=${mode}`);
             if (response.ok) {
                 const data = await response.json();
                 setProposals(data);
@@ -191,11 +196,12 @@ export default function LabPage() {
         } finally {
             setLoading(false);
         }
-    }, []);
+    }, [mode]);
 
     useEffect(() => {
+        setLoading(true);
         fetchProposals();
-    }, [fetchProposals]);
+    }, [fetchProposals, mode]);
 
     // Create proposal name map for VoteModal
     const proposalNames = useMemo(() => {
@@ -227,9 +233,10 @@ export default function LabPage() {
                 submitter: '',
                 votes: 0,
                 status: 'completed' as const,
-                createdAt: ''
+                createdAt: '',
+                mode: mode
             }));
-    }, [dataLoader, proposals]);
+    }, [dataLoader, proposals, mode]);
 
     // Combine closed proposals with evaluated models
     const closedProposals = useMemo(() =>
@@ -336,7 +343,7 @@ export default function LabPage() {
             }
         }
 
-        // Submit to backend
+        // Submit to backend with mode
         try {
             const response = await fetch('/api/submit', {
                 method: 'POST',
@@ -347,7 +354,8 @@ export default function LabPage() {
                     payload: {
                         type: 'proposal',
                         modelId: modelId.trim(),
-                        reason: reason.trim()
+                        reason: reason.trim(),
+                        mode: mode // Include mode in proposal
                     }
                 })
             });
@@ -386,19 +394,14 @@ export default function LabPage() {
         fetchProposals(); // Refresh list
     }, [fetchProposals]);
 
-    return (
-        <div className="page lab-page">
-            <header className="page-header">
-                <h1 className="page-title">Community Lab</h1>
-                <p className="page-subtitle">
-                    Help us map the LLM ecosystem. Propose new models and vote on which ones to analyze next.
-                </p>
-            </header>
+    const modeLabel = mode === 'chat' ? 'Chat' : 'Raw';
 
+    return (
+        <>
             <div className="lab-main-grid">
                 {/* Proposal Form */}
                 <Paper p="lg" radius="md" withBorder>
-                    <Title order={4} mb="lg">🔬 Propose a Model</Title>
+                    <Title order={4} mb="lg">🔬 Propose a Model ({modeLabel} DNA)</Title>
 
                     <form onSubmit={handleSubmit}>
                         <Stack gap="md">
@@ -469,7 +472,7 @@ export default function LabPage() {
                 {/* Leaderboard */}
                 <Paper p="lg" radius="md" withBorder>
                     <Group justify="space-between" mb="md" className="lab-leaderboard-header">
-                        <Title order={4}>📊 Research Queue</Title>
+                        <Title order={4}>📊 Research Queue ({modeLabel})</Title>
                         <Select
                             value={sortBy}
                             onChange={(v) => setSortBy(v ?? 'votes')}
@@ -550,33 +553,6 @@ export default function LabPage() {
                 </Paper>
             </div>
 
-            {/* How It Works */}
-            <Paper p="lg" radius="md" withBorder mt="xl" className="lab-how-it-works-paper">
-                <Title order={4} mb="lg">ℹ️ How It Works</Title>
-                <div className="lab-how-it-works-grid">
-                    <InfoCard
-                        icon="1️⃣"
-                        title="Propose"
-                        description="Submit a HuggingFace model ID and verify via email."
-                    />
-                    <InfoCard
-                        icon="2️⃣"
-                        title="Vote"
-                        description="Select models to vote for, then verify with your email."
-                    />
-                    <InfoCard
-                        icon="3️⃣"
-                        title="Track"
-                        description="Watch as we process top-voted models with RepTrace."
-                    />
-                    <InfoCard
-                        icon="4️⃣"
-                        title="Explore"
-                        description="Once complete, find the model in the Galaxy!"
-                    />
-                </div>
-            </Paper>
-
             {/* Floating Action Bar for Batch Voting */}
             <Affix position={{ bottom: 20, right: 20 }}>
                 <Transition transition="slide-up" mounted={pendingVotes.size > 0}>
@@ -624,6 +600,50 @@ export default function LabPage() {
                 proposalNames={proposalNames}
                 onSuccess={handleVoteSuccess}
             />
+        </>
+    );
+}
+
+// Main Lab Page (Raw DNA only)
+export default function LabPage() {
+    return (
+        <div className="page lab-page">
+            <header className="page-header">
+                <h1 className="page-title">Community Lab</h1>
+                <p className="page-subtitle">
+                    Help us map the LLM ecosystem. Propose new models and vote on which ones to analyze next.
+                </p>
+            </header>
+
+            {/* Lab Content for raw mode */}
+            <LabContent mode="raw" />
+
+            {/* How It Works */}
+            <Paper p="lg" radius="md" withBorder mt="xl" className="lab-how-it-works-paper">
+                <Title order={4} mb="lg">ℹ️ How It Works</Title>
+                <div className="lab-how-it-works-grid">
+                    <InfoCard
+                        icon="1️⃣"
+                        title="Propose"
+                        description="Submit a HuggingFace model ID and verify via email."
+                    />
+                    <InfoCard
+                        icon="2️⃣"
+                        title="Vote"
+                        description="Select models to vote for, then verify with your email."
+                    />
+                    <InfoCard
+                        icon="3️⃣"
+                        title="Track"
+                        description="Watch as we process top-voted models with RepTrace."
+                    />
+                    <InfoCard
+                        icon="4️⃣"
+                        title="Explore"
+                        description="Once complete, find the model in the Galaxy!"
+                    />
+                </div>
+            </Paper>
         </div>
     );
 }

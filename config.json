@@ -4,9 +4,21 @@
         "dnaOut": "./dna-out",
         "output": "./public/dna_database.json"
     },
+    "datasets": {
+        "raw": {
+            "dnaOut": "./dna-out",
+            "dataset": "squad_cqa_hs_wg_arc_mmlu",
+            "output": "./public/dna_database.json"
+        },
+        "chat": {
+            "dnaOut": "./dna-chat-out",
+            "dataset": "rand",
+            "output": "./public/dna_database_chat.json"
+        }
+    },
     "visualization": {
         "minCount": 5,
-        "crowdRadius": 6.0
+        "crowdRadius": 6
     },
     "server": {
         "port": 3001,

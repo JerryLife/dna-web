@@ -29,19 +29,24 @@ export class DataLoader {
     models: ModelData[] = [];
     metadata: Record<string, any> | null = null;
     isLoaded: boolean = false;
+    private databasePath: string;
 
-    constructor() {
+    constructor(databasePath: string = '/dna_database.json') {
         this.database = null;
         this.models = [];
         this.metadata = null;
         this.isLoaded = false;
+        this.databasePath = databasePath;
     }
 
     async loadDatabase(): Promise<Database> {
         if (this.isLoaded && this.database) return this.database;
 
         try {
-            const response = await fetch('/dna_database.json');
+            const response = await fetch(this.databasePath, {
+                // Always revalidate DB payload so deployed updates are reflected immediately.
+                cache: 'no-store',
+            });
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}`);
             }
@@ -51,11 +56,11 @@ export class DataLoader {
             this.metadata = this.database?.metadata || {};
             this.isLoaded = true;
 
-            console.log(`Loaded ${this.models.length} models`);
+            console.log(`Loaded ${this.models.length} models from ${this.databasePath}`);
             return this.database as Database;
 
         } catch (error) {
-            console.warn('Could not load dna_database.json:', error);
+            console.warn(`Could not load ${this.databasePath}:`, error);
             // Return empty database structure
             this.database = { models: [], metadata: {} };
             this.models = [];
@@ -121,10 +126,12 @@ export class DataLoader {
             norm2 += sig2[i] * sig2[i];
         }
 
+        const EPSILON = 1e-12;
         const magnitude = Math.sqrt(norm1) * Math.sqrt(norm2);
-        if (magnitude === 0) return 2; // Max distance if either vector is zero
+        if (magnitude < EPSILON) return 2; // Max distance if either vector is near-zero
 
-        const cosineSimilarity = dotProduct / magnitude;
+        // Clamp to [-1, 1] to handle floating point errors
+        const cosineSimilarity = Math.max(-1, Math.min(1, dotProduct / magnitude));
         return 1 - cosineSimilarity; // Cosine distance: 0 = identical, 2 = opposite
     }
 

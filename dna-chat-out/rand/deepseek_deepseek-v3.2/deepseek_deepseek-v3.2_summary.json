@@ -1,0 +1,77 @@
+{
+  "model_name": "deepseek/deepseek-v3.2",
+  "dataset": "rand",
+  "dataset_full": "rand",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 6.608897924423218,
+  "signature_stats": {
+    "mean": 0.11571148782968521,
+    "std": 2.903642416000366,
+    "min": -6.136072158813477,
+    "max": 8.384917259216309,
+    "median": -0.14734476804733276,
+    "l1_norm": 297.5673828125,
+    "l2_norm": 32.87704086303711,
+    "sparsity": 0.0,
+    "entropy": 5.023384204637683
+  },
+  "metadata": {
+    "model_name": "deepseek/deepseek-v3.2",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-02-09T18:50:52.054286",
+    "computation_time_seconds": 6.605885028839111,
+    "model_metadata": {
+      "model_name": "deepseek/deepseek-v3.2",
+      "architecture": {
+        "is_generative": true
+      },
+      "repository": {}
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "out/rand/deepseek_deepseek-v3.2/deepseek_deepseek-v3.2_dna.json",
+  "config": {
+    "model_name": "deepseek/deepseek-v3.2",
+    "model_path": null,
+    "model_type": "auto",
+    "dataset": "rand",
+    "probe_set": "general",
+    "max_samples": 100,
+    "data_root": "./data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda:0",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "skip_chat_template": false
+  }
+}

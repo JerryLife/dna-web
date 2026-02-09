@@ -63,6 +63,7 @@ interface ProposalPayload {
     type: 'proposal';
     modelId: string;
     reason?: string;
+    mode?: 'raw' | 'chat';
 }
 
 interface BatchVotePayload {
