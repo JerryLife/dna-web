@@ -10,6 +10,9 @@ export interface AppConfig {
         minCount: number;
         crowdRadius: number;
     };
+    analytics?: {
+        googleTagId?: string;
+    };
 }
 
 const config: AppConfig = configData;

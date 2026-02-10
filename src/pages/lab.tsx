@@ -184,10 +184,10 @@ function LabContent({ mode }: LabContentProps) {
         sessionStorage.setItem(storageKey, JSON.stringify([...pendingVotes]));
     }, [pendingVotes, storageKey]);
 
-    // Fetch proposals from API (filtered by mode)
+    // Fetch proposals from API (legacy endpoint)
     const fetchProposals = useCallback(async () => {
         try {
-            const response = await fetch(`/api/proposals?mode=${mode}`);
+            const response = await fetch('/api/proposals');
             if (response.ok) {
                 const data = await response.json();
                 setProposals(data);

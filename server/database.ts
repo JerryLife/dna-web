@@ -5,10 +5,108 @@ import { open, Database } from 'sqlite';
 import sqlite3 from 'sqlite3';
 import { existsSync, mkdirSync } from 'fs';
 import { dirname } from 'path';
+import { v4 as uuidv4 } from 'uuid';
 
 const DB_PATH = './server/data/lab.db';
 
 let db: Database | null = null;
+
+type TableColumnInfo = {
+    name: string;
+};
+
+interface VerifiedSubmissionRow {
+    id: number;
+    email: string;
+    payload: string;
+    created_at: string;
+}
+
+interface ProposalPayload {
+    type: 'proposal';
+    modelId: string;
+    reason?: string;
+    mode?: 'raw' | 'chat';
+}
+
+function normalizeMode(mode?: string): 'raw' | 'chat' {
+    return mode === 'chat' ? 'chat' : 'raw';
+}
+
+async function ensureProposalsModeColumn(database: Database): Promise<void> {
+    const columns = await database.all<TableColumnInfo[]>('PRAGMA table_info(proposals)');
+    const hasModeColumn = columns.some((col) => col.name === 'mode');
+
+    if (!hasModeColumn) {
+        await database.run(`ALTER TABLE proposals ADD COLUMN mode TEXT DEFAULT 'raw'`);
+        console.log('🔧 Migrated proposals table: added mode column');
+    }
+
+    await database.run(
+        `UPDATE proposals
+         SET mode = 'raw'
+         WHERE mode IS NULL OR trim(mode) = ''`
+    );
+}
+
+/**
+ * Recover submissions that were marked verified but failed to create proposals.
+ * This specifically handles the historical "token consumed before INSERT" bug.
+ */
+async function recoverVerifiedProposalSubmissions(database: Database): Promise<void> {
+    const verifiedRows = await database.all<VerifiedSubmissionRow[]>(
+        `SELECT id, email, payload, created_at
+         FROM submission_queue
+         WHERE is_verified = 1`
+    );
+
+    let recoveredCount = 0;
+
+    for (const row of verifiedRows) {
+        let payload: ProposalPayload | null = null;
+        try {
+            payload = JSON.parse(row.payload) as ProposalPayload;
+        } catch {
+            continue;
+        }
+
+        if (!payload || payload.type !== 'proposal' || !payload.modelId) {
+            continue;
+        }
+
+        const modelId = payload.modelId.trim();
+        if (!modelId) continue;
+
+        const existingProposal = await database.get<{ id: string }>(
+            `SELECT id FROM proposals WHERE lower(model_id) = lower(?)`,
+            [modelId]
+        );
+        if (existingProposal) {
+            continue;
+        }
+
+        const proposalId = uuidv4();
+        const mode = normalizeMode(payload.mode);
+
+        await database.run(
+            `INSERT INTO proposals (id, model_id, submitter_email, reason, votes, status, mode, created_at)
+             VALUES (?, ?, ?, ?, 1, 'pending', ?, ?)`,
+            [proposalId, modelId, row.email, payload.reason || '', mode, row.created_at]
+        );
+
+        await database.run(
+            `INSERT OR IGNORE INTO votes (proposal_id, user_email, created_at)
+             VALUES (?, ?, ?)`,
+            [proposalId, row.email, row.created_at]
+        );
+
+        recoveredCount += 1;
+    }
+
+    if (recoveredCount > 0) {
+        console.log(`🔧 Recovered ${recoveredCount} verified proposal(s) stuck before insertion`);
+    }
+}
 
 /**
  * Initialize the database and create tables if they don't exist
@@ -81,6 +179,10 @@ export async function initDatabase(): Promise<Database> {
             is_active INTEGER DEFAULT 1
         )
     `);
+
+    // Migrations for legacy deployments
+    await ensureProposalsModeColumn(db);
+    await recoverVerifiedProposalSubmissions(db);
 
     console.log('✅ Database initialized');
     return db;
