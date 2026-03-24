@@ -66,7 +66,7 @@
     "load_in_4bit": false,
     "no_quantization": false,
     "metadata_file": "configs/llm_metadata.json",
-    "token": "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",
+    "token": null,
     "trust_remote_code": true,
     "device": "cpu",
     "gpu_id": null,
