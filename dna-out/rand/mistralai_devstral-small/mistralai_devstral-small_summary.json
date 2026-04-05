@@ -1,0 +1,94 @@
+{
+  "model_name": "mistralai/devstral-small",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 340.1580832004547,
+  "signature_stats": {
+    "mean": 0.22521957755088806,
+    "std": 2.128405809402466,
+    "min": -5.474740982055664,
+    "max": 5.246857643127441,
+    "median": 0.2696042060852051,
+    "l1_norm": 215.4070281982422,
+    "l2_norm": 24.214603424072266,
+    "sparsity": 0.0,
+    "entropy": 5.024093291449087
+  },
+  "metadata": {
+    "model_name": "mistralai/devstral-small",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-03T08:28:05.238374",
+    "computation_time_seconds": 4.893348932266235,
+    "model_metadata": {
+      "model_name": "mistralai/devstral-small",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": true
+      },
+      "metadata": {
+        "fetched_at": "2026-04-03T08:22:25.855163",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/mistralai_devstral-small/mistralai_devstral-small_dna.json",
+  "config": {
+    "model_name": "mistralai/devstral-small",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false
+  }
+}

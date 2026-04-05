@@ -1,0 +1,94 @@
+{
+  "model_name": "anthropic/claude-opus-4.1",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 1362.7808527946472,
+  "signature_stats": {
+    "mean": 0.06018829718232155,
+    "std": 2.374258041381836,
+    "min": -6.909679412841797,
+    "max": 5.525384902954102,
+    "median": 0.10004416108131409,
+    "l1_norm": 236.50039672851562,
+    "l2_norm": 26.87029457092285,
+    "sparsity": 0.0,
+    "entropy": 4.995657328825511
+  },
+  "metadata": {
+    "model_name": "anthropic/claude-opus-4.1",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-03T07:45:43.693612",
+    "computation_time_seconds": 5.051175832748413,
+    "model_metadata": {
+      "model_name": "anthropic/claude-opus-4.1",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": true
+      },
+      "metadata": {
+        "fetched_at": "2026-04-03T07:23:01.702082",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:6",
+      "encoder_device": "cuda:6",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/anthropic_claude-opus-4.1/anthropic_claude-opus-4.1_dna.json",
+  "config": {
+    "model_name": "anthropic/claude-opus-4.1",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 6,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false
+  }
+}

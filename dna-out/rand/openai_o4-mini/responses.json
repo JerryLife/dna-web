@@ -1,0 +1,408 @@
+{
+  "model": "openai/o4-mini",
+  "dataset": "rand_chinese",
+  "count": 100,
+  "items": [
+    {
+      "prompt": "既隐者观义，乃以变为友。察势。虽以信为正仁，犹出道旁于山林。盛礼远德，深山正水。将者，未知法者也。虽兴于关隘，犹朝不守名于道旁。居朝堂于泽畔。游子不安邦而生，朝学学于道旁。既以志为小之义，乃师安朝。虽星不崇实，而不敬野。既以学为风，乃家修礼。",
+      "response": "**Critiquing superficial practices**\n\nI'm analyzing a text that seems to play with puns about the superficial practices of various scholars and leaders like hermits and generals. They focus more on external appearances rather than true understanding. My summary includes points like: hermits observing righteousness but relying on fleeting alliances, and generals ignoring proper methods while gaining fame without true virtue. Overall, it highlights the contrast between outer ceremonies and inner morality, emphasizing a disconnect from true principles.**Analyzing superficial learning**\n\nI'm thinking about how some teachers equate personal will with trivial righteousness, focusing on appearances rather than substance. They set up in courts and get distracted by stars while neglecting genuine respect for simpler values. Learning becomes a fleeting trend, where families just polish rituals instead of understanding their significance. I’m trying to capture the essence of this critique, highlighting the disconnect between outward practices and true knowledge. It's an important distinction to consider! noticing that this text seems to make puns with \"既...乃...,\" and it critiques scholars like hermits, generals, courtiers, and wanderers for having superficial practices. They focus on external forms rather than true understanding. They might adhere to Confucian practices but miss the essence. For instance, hermits may observe righteousness while relying on fleeting alliances. Generals neglect proper methods for prominence, and wanderers often feel uneasy without a true homeland, existing only on the margins of society.**Examining superficial learning**\n\nIt seems that this text critiques how some equate personal desire with superficial righteousness, leading teachers to position themselves within the court. They focus on stars and external accolades while ignoring real substance and have little respect for everyday reality. It’s like they treat education as a trend, leading families to merely refine rituals instead of engaging with the deeper meaning of learning. I really want to convey the emptiness of such superficial practices effectively."
+    },
+    {
+      "prompt": "既以术为山之国，乃家兴于市井。知名察智，近风清礼。虽以义为正之智，犹以势为德之心。道之天者，日之弱者也。臣知名。虽山未辨礼，犹石省势。或往市井，或未见信。既父亡于江海，乃定功。虽以名为贤者，犹以德为仁。退而御朝。虽以功为云之义，犹海守社稷于泽畔。",
+      "response": "下面先给出一段现代白话的释义，之后再作简要评析和注解。\n\n一、现代白话释义  \n1. “既以术为山之国，乃家兴于市井。”  \n   用经营之术构筑如山般稳固的国度，反而让自家生意在市井之中发达起来。  \n\n2. “知名察智，近风清礼。”  \n   他善于洞察世人名声与才智，行为趋近于君子风范、清素礼仪。  \n\n3. “虽以义为正之智，犹以势为德之心。”  \n   虽然把“义”当作刚正无私的智慧，本心却仍取决于权势的大小。  \n\n4. “道之天者，日之弱者也。”  \n   真正高尚的道理，常被人们如同“晦日”那样忽视或轻视。  \n\n5. “臣知名。虽山未辨礼，犹石省势。”  \n   我认识那些追名逐利的人。虽然他们未能像山那样分明讲礼，却像石块一样能分辨势力强弱。  \n\n6. “或往市井，或未见信。”  \n   有的游走于市井之间，却不一定能赢得人"
+    },
+    {
+      "prompt": "苟不立邦于山林，则士察信于市井。若御朝于江海，则邦立国于江海。立云行德，明志正天。苟友不固家于庭，则游子持乡。持泉而未辨智。持名。若以名为地之山，则城衰于道旁。平天下而不立雪，崇城而守朝。虽贤者悟理，而石不安乡。省义而固天下。游子者，不定实者也。",
+      "response": "您好！请问您希望我对这段古文做什么呢？是要翻译成白话、逐句注释，还是进行整体赏析？或者有其他特定的需求？请您告诉我，我好进一步为您服务。"
+    },
+    {
+      "prompt": "虽立雨于山林，而民不安法。虽以道为贤者，而以礼为地之实。虽安地于泽畔，犹不守石。养智而正术，正志而慎名。下之国者，弱也。月抚朝于山林，日安野于泽畔。既以变为天，乃学者兴。社稷定社稷。虽朝治社稷于山林，犹以变为邪德。贤者者，不定百姓者也。既以理为智之民，乃雷进于门。",
+      "response": ""
+    },
+    {
+      "prompt": "苟以智为智之国，则以道为雷。以功为名之风，以法为远道。若以仁为泉，则以过为山。柔德远天，辨云观风。若以学为社稷，则不固义。正势而崇德，守法而正法。既乡入朝堂于庭，乃以机为野。博义安风，思义知名。仁者，礼之本也。江不养术于郊野，家行门而未论学。",
+      "response": "**Considering translation needs**\n\nIt seems like the user might be looking for a translation, analysis, or explanation since they didn't specify exactly what they want. The text is a bit obscure, possibly relating to classical Chinese philosophy. My best guess is that they want an English translation and interpretation, so I'll offer a line-by-line translation while commenting on themes like moral governance and Confucian virtues. I’ll also summarize the overall message about ideal governance. Let's see how I can help with this text!**Crafting a structured response**\n\nI want to create a clear response that includes the original text, a modern Chinese paraphrase, English translation, and some commentary for each sentence. I think presenting these as bullet points would enhance clarity. \n\nFor example, the original might say something like: \"If you regard wisdom as the guiding principle of the nation, then treat the Way as thunder.\" I can explore different perspectives on the phrases, like considering the Dao as swift, awe-inspiring thunder, and interpreting merit and law in similar ways. Let’s pull this together effectively!**Interpreting the poem on governance**\n\nThe last two lines suggest that even a great river doesn't directly nourish art or skills, highlighting how families may enter, but learning remains unaddressed. This poem emphasizes that effective governance involves balancing wisdom, the Dao, merit, law, benevolence, and learning. It suggests that true governance should incorporate these virtues, righteousness, and education to create a harmonious society. I want to ensure I convey this message clearly as I discuss it further!"
+    },
+    {
+      "prompt": "或不修社稷，或行泽畔。友者，灭者也。既平家于山林，乃师不正江于关隘。虽城不修术于庭，犹安日于门。苟雨未论实于江海，则不敬心于门。既以德为大之义，乃进。川退于朝堂，学者败而不固智。天之智者，星之刚者也。既朝固草，乃国统社稷。既百姓慎川，乃父不正河于市井。",
+      "response": "您好！请问您希望我如何帮助您处理这段文字？您是想要：\n\n1. 翻译成现代白话文？  \n2. 对其进行逐句注释或释义？  \n3. 分析其风格、主题或潜在含义？  \n4. 进行改写或续写？  \n5. 其他方面的帮助？\n\n烦请告知具体需求，我好进一步为您服务。"
+    },
+    {
+      "prompt": "既以变为弱之风，乃野抚邦于道旁。若城不慎天于朝堂，则往泽畔于道旁。将者，起者也。虽不慎石，犹林行江海。朝者，功之浊者也。苟百姓御野于道旁，则固志于江海。既不崇木，乃以过为川。柔实近智，安礼守地。虽以礼为弱水，而野至朝堂。将者，义之高者也。苟国观功，则思变于郊野。",
+      "response": "下面先给出一个现代白话式的“直译＋意译”示例，之后再做简要点评。由于原文多处堆砌断裂的意象、句法亦无前后连贯，下面的“译文”只能算是一种可能的理解拼接，实际语义并不连贯。\n\n一、直译＋意译（仅供参考）\n\n1. 既以变为弱之风，乃野抚邦于道旁。  \n  “既然把‘变动’看做薄弱的风气，便任由荒野之民在大道旁散漫放逸。”\n\n2. 若城不慎天于朝堂，则往泽畔于道旁。  \n  “如果城池在朝堂上不小心触犯了天道，就退往沼泽边的道路旁边。”\n\n3. 将者，起者也。虽不慎石，犹林行江海。  \n  “‘将’者，就是发动、开始之意。即便对石头不加小心，也好比森林在江海中航行。”\n\n4. 朝者，功"
+    },
+    {
+      "prompt": "虽以学为家，犹社稷理城于山林。虽安天下，犹止。雪不持雷，牧家。游子游市井于门。既修理于关隘，乃以功为雪。以理为刚礼。虽起于郊野，而以志为礼之天。城立木于山林。广礼近民，高云衰民。士者，未观志者也。苟石崇志于道旁，则未论势于山林。既辨心于关隘，乃地省变于庭。",
+      "response": "您提供的这段文字，文风古奥，句意断续，似为仿古而成的一种散句拼贴。下面先给出一种“现代译文”与“文意梳理”，再请您指示是否需要更深入的注释或改写。\n\n一、现代汉语（意译）  \n1. 虽然把求学当成家业，却仍像治理社稷的诸侯那样，在山林野外打理城墙。  \n2. 虽然使天下安定，却仍随时有所止息。  \n3. 雪花不会带来雷声，正如牧人守护家园一般。  \n4. 游子在城门口的市集里游荡。  \n5. 在修葺边关之后，就把自己的功业当作洗雪冤屈的凭据；以道理代替了僵化的礼法。  \n6. 即使出身在乡野郊外，也以志向为礼仪的根本。  \n7. 在山林中立起木桩筑起防线。  \n8. 宽广的礼仪使百姓亲近，高高在上的云端却让民众日渐衰弱。  \n9. 士人尚未真正察觉自己的志向。  \n10. 若任凭一块不起眼的石头，崇高地摆放在路旁——仍未谈及山林间的权势与布局。  \n11. 当人们在关隘处辨明了内心，就能使土地在庭院中也随之变换。  \n\n二、文意梳理  \n- 全文以“学”“礼”“志”“功”“城”“关隘”“乡野”等意象反复堆叠，似在讨论“治学”“立志”“修身”“治国”之间的关系。  \n- 它既强调出身乡野也不妨大志氤氲；既说边塞防御也通达礼法之理。  \n- 但行文断续、跳跃，更多像在营造一种“古色古香”的意境，而非"
+    },
+    {
+      "prompt": "子者，修城者也。思仁修仁，高义深风。雷灭于道旁。苟入庭于郊野，则乡不正实。辨雨而知理，明木而闻机。博实盛仁，广名刚义。虽地御社稷，而行庭于市井。虽川亡，而归江海。苟社稷不守石于郊野，则石持名于道旁。川未闻义，以智为暗天。定百姓而归门。虽以智为智，而社稷生。",
+      "response": "请问您希望我对这段文字做什么？  \n1. 逐句翻译成现代白话？  \n2. 注释词语、讲解典故？  \n3. 分析其主旨结构和修辞特点？  \n4. 或者有其他具体需求？"
+    },
+    {
+      "prompt": "以功为名，以实为野。既学者崇木于道旁，乃以术为明风。慎机而守名，明月而明理。既雨持国，乃以机为暗之义。虽兴，而以礼为下地。圣人者，衰者也。既王不慎信，乃百姓成。林者，志之下者也。若未闻学，则以心为师。邦临道旁而存。或安朝，或行关隘。虽以名为高风，而以理为柔水。",
+      "response": "请问您希望如何处理这段文字？  \n1. 翻译成现代汉语或英文？  \n2. 注释、赏析其用意与文法？  \n3. 其他（例如改写、提炼要点）？  \n\n麻烦告知具体需求，我好进一步为您服务。"
+    },
+    {
+      "prompt": "御邦，进。苟社稷灭于庭，则未学过于郊野。浊德者，法之近者也。立心而敬心，慎实而养义。立信而立过，修志而养礼。或思变，或明信。远天安心，知志察天。隐者衰，治天下。既以义为高云，乃士入门于关隘。天崇云而不守雪。民正草。既乡御乡于关隘，乃未见义于市井。",
+      "response": "您好！请问您希望我如何帮助您处理这段文字？您是想要：\n\n1. 翻译为现代白话文  \n2. 注释词句、解释含义  \n3. 分析赏析（主旨、结构、用典等）  \n4. 现代文改写或简要概括  \n\n烦请告知您的具体需求，谢谢！"
+    },
+    {
+      "prompt": "既风临朝堂于郊野，乃平百姓于道旁。弱山者，高也。以义为浊心。虽以变为名之水，犹友未见德于道旁。虽成于门，而风未思心。或安野，或退。持实而修智，见雷而悟心。生于郊野。固朝于郊野。苟牧百姓于关隘，则以仁为民。御社稷，以过为社稷。安之水者，术之下者也。",
+      "response": "请问您希望我如何帮助您？  \n1. 将此段古文翻译成现代汉语？  \n2. 对文中关键句子进行逐句注解？  \n3. 分析其整体寓意或结构？  \n4. 其他（请具体说明）。"
+    },
+    {
+      "prompt": "功者，机之本也。虽出山林，而抚天下。悟川而知机，观江而论变。既以变为邪之实，乃地行朝堂。社稷存而不立雷。以道为河。或临江海，或游门。苟以仁为野，则以志为志。察道明实，远义深心。过者，正也。雪未明功于朝堂。既以志为法，乃雪不安木。邦御家而修雷。城存。",
+      "response": "您好！请问您希望如何处理这段文字？您是想要：\n\n1. 翻译成现代汉语或英文？  \n2. 注释、逐句讲解？  \n3. 赏析其思想、结构与用典？  \n4. 其他需求？\n\n烦请指明，我好为您提供更准确的帮助。"
+    },
+    {
+      "prompt": "若朝理家于市井，则游泽畔。既以智为隐者，乃以法为乡。虽臣涉泽畔于关隘，犹贤者安乡。既民安城于庭，乃师明仁于道旁。虽以志为深之道，而泉治百姓。志者，信之近者也。安乡于市井，民存。未见过于庭，以德为百姓。既野未见法于门，乃以名为林。广风危国，近德远礼。",
+      "response": "下面先给出一版现代白话的释文，再作简要的概括和点评。\n\n一、现代白话释文  \n1. 若早晨把家务都安排在市井之中打点，那么午后就会游荡到沼泽水边。  \n2. 既然把“"
+    },
+    {
+      "prompt": "以心为水之道。高志安风，立山辨风。国者，势之浊者也。以仁为风，士未见志。守智行心，广天高天。深之仁者，草之安者也。若安国于门，则家守草于市井。平国于关隘。民之志者，山之安者也。仁之道者，石之大者也。苟月治百姓，则隐者不立邦。或不定德，或统百姓。",
+      "response": "下面先给出一段现代白话的译文与概括，再对原文中的主要意象与思想作逐句解释。\n\n一、现代白话译文与要旨  \n1. 把人的内心比作水的运行之道：  \n   – 心若明净如水，则能流畅而不滞。  \n2. 抱有高远志向，能平息风浪；像屹立的山峰，才能分辨风向。  \n3. “国”是权势最浑浊之处。  \n4. 以仁德作风去吹拂士人，但往往看不到他们的真正抱负。  \n5. 守住智慧、实践良知，放宽眼界，如同广阔高远的天空。  \n6. 真正深入践行仁德的人，"
+    },
+    {
+      "prompt": "或闻法，或不崇天下。持地思德，明地居智。虽以机为地，而以信为月。安水衰民，广国盛志。苟野未思术于江海，则天下兴于泽畔。臣御城。既月行泽畔，乃以术为地。以心为志之天。以德为仁，侯出山林于关隘。以心为雪，天下衰。苟以实为义，则入郊野。虽父明理于朝堂，犹思法。",
+      "response": "请问您希望我如何帮助您？例如：\n\n1. 为这段文字做现代汉语或英文翻译  \n2. 逐句注释、梳理其用典和意象  \n3. 提炼中心思想、做整体解读  \n4. 其它（如改写、创作联想等）\n\n您确认后，我再进行对应的工作。"
+    },
+    {
+      "prompt": "以仁为邪之名，成而牧天下。既朝养名于朝堂，乃侯入庭。虽师不固泉，犹木正山于朝堂。苟城观术，则以德为下之道。悟名而统野，游子不敬江。既以变为学者，乃以功为智。既以德为大之山，乃野不养社稷。虽野不安风于郊野，犹山不修法于郊野。苟民定百姓，则未悟势于市井。",
+      "response": "请问您希望我如何帮助处理这段古文？  \n例如：  \n1. 现代汉语翻译与释义  \n2. 逐句注释与文化背景说明  \n3. 文体、用典与句法分析  \n4. 改写或仿写  \n5. 其他（请具体说明）  \n\n您看哪种方式最符合您的需求？"
+    },
+    {
+      "prompt": "游道旁而往庭。师未明术。王观机于市井，以机为林。泉往门。虽御城，而以机为石。江定社稷。国者，石之远者也。理者，仁之本也。苟以实为恶之水，则临泽畔。虽成，而国修志于朝堂。虽乡悟过，而出道旁于关隘。势者，变之本也。苟定邦于郊野，则以理为正之天。虽城见德于关隘，而生于关隘。",
+      "response": "下面是对该段文字的逐句译文与简要评述——\n\n一、逐句翻译  \n1. 游道旁而往庭。  \n   “他在小路旁徘徊，随后走进了庭院。”  \n\n2. 师未明术。  \n   “师傅尚未阐明他的技艺和方法。”  \n\n3. 王观机于市井，以机为林。  \n   “国王在市井之间观察机遇，将这‘机遇’比作丛林一般密布。”  \n\n4. 泉往门。  \n   “泉水流向门户。”  \n\n5. 虽御城，而以机为石。  \n   “即便在城墙上设防，也视‘机遇’为坚固如石。”  \n\n6. 江定社稷。  \n   “要想稳固国家，就必须治理好江河。”  \n\n7. 国者，石之远者也。  \n   “所谓国家，是与‘石’相对、处于远方的存在。”  \n\n8. 理者，仁之本也。  \n   “‘理’是"
+    },
+    {
+      "prompt": "立名而修功，养道而崇志。若入关隘于朝堂，则以德为深道。泉临庭而入泽畔，子察实而兴。游子不固日而临市井，士生而存。苟圣人安百姓，则子察变于道旁。虽灭，而以名为德。既以名为士，乃子立道于市井。以机为朝，臣不修功而辨德。以智为师，以智为暗地。",
+      "response": "下面先给出一句句的白话释义，再做简要评点。\n\n一、原文与白话释义  \n1. 立名而修功，养道而崇志。  \n   ——确立声誉、完成业绩；修养道德、坚守志向。  \n\n2. 若入关隘于朝堂，则以德为深道。  \n   ——一旦入仕朝廷关隘，就应把“德行”当作最根本、最深远的治国之道。  \n\n3. 泉临庭而入泽畔，子察实而兴。  \n   ——水泉流至庭院，再汇入沼泽之滨。君子正如审察泉源、审度地势，洞察真情后再行动。  \n\n4. 游子不固日而临市井，士生而存。  \n   ——漂泊游子若无坚定立足之心，便只会徘徊于市井之中；真正的士人则以存"
+    },
+    {
+      "prompt": "城定雪而不敬家。以实为义，不崇野而不正志。正过而立学，辨日而思学。既临门，乃师学实。君子者，定朝者也。雷论势。既以义为暗实，乃以名为礼。若百姓入朝堂于市井，则以信为近之山。虽以心为士，而乡明变。父立功于朝堂，家未知法。以法为地之仁，以理为大国。",
+      "response": ""
+    },
+    {
+      "prompt": "远山者，柔也。仁者，变之本也。地平天下。衰国广国，高仁远实。社稷进于门。思风立仁，柔义广实。不守术而起，守国于朝堂。虽至门，犹以信为小之心。虽百姓败，而以志为理。雷治乡于关隘，石行泽畔于郊野。或平社稷，或省学。以名为近之智，地存于郊野。虽抚百姓于江海，犹贤者灭于门。",
+      "response": "您提供的这段文字文意深奥，不知您想要怎样的帮助？  \n请您告诉我，是希望：\n\n1. 将其翻译成现代汉语或英文？  \n2. 对其中的主旨、意象、用典做注释和解读？  \n3. 或者其他（如改写、续写、创作灵感提炼等）？\n\n待您说明需求，我再做针对性回应。"
+    },
+    {
+      "prompt": "草起而未思信。或不立朝，或往泽畔。信者，川之弱者也。风衰于道旁，以法为实之智。子者，游朝堂者也。定志而慎德，固礼而修实。虽悟名于郊野，而以名为乡。既林归泽畔于庭，乃家辨德。虽未知术，犹固道。以心为子，以道为友。野兴。以智为士。虽成，犹将未论仁于泽畔。",
+      "response": "下面先给出逐句的现代文直译，再做简单的句意与全篇主旨的梳理。\n\n一、逐句直译  \n1. 草刚刚萌发，还没有来得及扎根变得坚实。  \n2. 有的人不参加朝会，有的人却跑到沼泽边上。  \n3. “信”是河流中最薄弱的那一股水流。  \n4. 风一旦衰退，就停留在路旁；以“法”作根本，才是真正的智慧。  \n5. “子”是那些游走于朝堂之间的人。  \n6. 要立定志向，小心谨慎地修养品德；以礼仪自固，以实际行动来耕耘。  \n7. 虽然能在僻野中名声大振，却要把这“名”当作自己的故里来珍惜。  \n8. 当你从林中归来，又回到沼泽边的庭院，方才能在家中辨别善恶、培养德行。  \n9. 即使对各种技艺尚未全然通晓，也要坚定地守住自己的道。  \n10. 以“心”待子女，以“道”结交朋友。  \n11. 田野因此而兴旺；以智慧自处，则可成就“士”。  \n12. 即便已经功成名就，却仍未到在沼泽边谈论“仁”的时候。\n\n二、要点与主旨  \n1. 萌芽—扎根—壮大：以“草”“川”“风”等自然意象，喻初学修身的状态与进程。"
+    },
+    {
+      "prompt": "苟以名为近智，则以仁为正地。以学为乡。若以道为浅山，则日止于市井。未见功于朝堂。将者，木之邪者也。君子明礼于郊野。退而存。既未见仁于市井，乃以心为士。若师未悟道，则以实为强之云。社稷归关隘而不慎过，不守实而论礼。既士修雪于泽畔，乃思智于郊野。",
+      "response": "下面先给出这段文字的现代文意译，再做简要赏析。\n\n一、现代汉语意译  \n1. 如果把“名声”当作最接近智慧的标志，就当把“仁德”视为最正当、最根本的立足之地；  \n2. 把“学问”当作自己的故乡；  \n3. 若把“道”看做是浅近的丘陵，那么一日也就止步于市井之中，看不到在朝廷上成就功业的可能。  \n4. 这样的统帅，就像树木向一边歪长一样，不成器。  \n5. 君子即便远居郊野，也能通达礼义，一旦退隐便保存自己的德行。  \n6. 既然在市井之中还难以体现仁德修养，就要先以内心自励，自当士人之节。  \n7. 若师长尚未真正领悟大道，就当用切实的行动与成绩来证明他的能力。  \n8. 社稷的安危系于边关险要，若不谨慎小心，就容易犯下大错；若不守信用实事，却空谈礼法，也无济于事。  \n9. 等到士人在泽边雪地（艰苦环境）中修身洁行，才开始思考如何在郊野实践求取真正的智慧。\n\n二、英文翻译（参考）  \nIf one regards fame as the nearest approach to wisdom, then one must regard benevolence as the proper foundation.  \nMake scholarship your homeland.  \nIf you regard the Way as a mere hillock, you will remain confined to the marketplace and never achieve merit at court.  \nA general of that sort is like a tree growing crooked.  \nA gentleman, even in the countryside, illumines himself with rites; when he withdraws"
+    },
+    {
+      "prompt": "苟定邦，则以过为清之国。星未思变而明势。以智为实，子思智而居郊野。贤者者，牧朝者也。既以过为法，乃治社稷。学者，志之本也。苟天下定城于门，则学者临道旁于朝堂。虽雨未论心于江海，犹以信为仁之志。既以法为远风，乃未论机于庭。既民不慎山，乃家存于市井。",
+      "response": "请问您是希望对这段仿古文作现代白话译文、注释说明，还是进一步的赏析点评？如果直接需要现代译文，参见下面的示例：  \n\n———  \n现代白话译文（仅供参考）  \n\n1. “苟定邦，则以过为清之国。”  \n   如果能使国家安定，就把“宽容过失”当作使国清明的准绳。  \n\n2. “星未思变而明势"
+    },
+    {
+      "prompt": "虽以德为浊之仁，而以仁为隐者。既国生，乃以学为清之民。抚乡。既师出市井于庭，乃游道旁于郊野。牧百姓。若以机为林，则雪安野。未悟义。既以名为志之仁，乃友往郊野。既星固朝，乃社稷行门于门。仁者，功之本也。王学义于道旁。既以志为国之国，乃以义为月。",
+      "response": "下面先给出一段现代白话译文，随后简要释评。  \n\n一、现代白话译文  \n虽然把“德”看作含浊的仁爱，却又把“仁”当成隐士的风范；  \n一旦国家建立，就拿“学”来清化民风，教化黎庶；  \n抚慰乡里，等到老师走出市井，在庭院中授业，又走到道旁、郊野宣讲；  \n以此来教化百姓。倘若把机遇比作森林，那么即便大雪封野也能让田野安然；  \n尚未"
+    },
+    {
+      "prompt": "立理而持功，立礼而定义。悟礼而存，以过为功。苟石不立变，则雷观志。定道而崇礼，慎变而敬机。苟林思功于山林，则圣人抚乡。强之云者，泉之下者也。虽百姓起于朝堂，犹以信为邦。既居泽畔于江海，乃未察信于关隘。既以过为柔志，乃以礼为远之德。安仁近名，危礼深心。",
+      "response": "下面先给出一段较为通顺的译文（先是现代白话，然后附英文），接着再对主旨作简要评析。\n\n───  \n一、现代白话译文  \n1. 要确立道理并持之以恒，制定礼仪并明确分寸。  \n2. 领会礼的内涵而加以保存，把超越常规当作一种功业。  \n3. 如果顽石不肯随形而变，就像打雷时才能显露它真正的志向。  \n4. 稳固正道而尊崇礼仪，慎防盲目变通并敬重时机。  \n5. 若有人偏安山林，追求个人功名，圣人也会回到乡野体恤黎庶。  \n6. 强行攀附权势的人，不过是泉水之下的阴云；  \n7. 即便百姓聚集在朝堂之上，国家却仍以“诚信”作为根本。  \n8. 你既然居住在大泽江海之畔，却未曾在"
+    },
+    {
+      "prompt": "安礼而固礼，正志而养学。若以实为柔国，则不守泉于道旁。既日起于江海，乃以法为邪实。刚民刚云，盛智盛仁。虽以机为清之地，犹不崇义。广天大德，思志知山。既齐国于郊野，乃以理为近民。既以义为游子，乃明名于市井。既不定术，乃以礼为邦。以仁为下水，臣论礼而不立仁。",
+      "response": "您好！这段文字看起来是一篇古文，若无特别指示，我可以提供以下帮助——\n\n1. 现代汉语译文  \n2. 段落结构与用意分析  \n3. 典故出处或思想渊源考证  \n\n请您告诉我更具体的需求？谢谢！"
+    },
+    {
+      "prompt": "虽以智为百姓，犹以信为深民。虽正功，而以学为云。实者，山之近者也。虽以道为邪之智，而城退。既未察机于郊野，乃出江海。虽民出郊野于泽畔，犹以智为弱之山。抚国。以势为泉。见星而思变，安仁而安仁。虽百姓出江海，犹风养术于江海。若修天下于山林，则月成。",
+      "response": "这段文字虽然仿古，用了颇多对偶、比喻，却并无一个连贯的主题，只是将“智、信、学、道、城防、机遇、百姓迁徙、山林、江海、星象”等意象拼凑在一起。下面先给出一个现代汉语的意译版，供你参考——\n\n——  \n虽以智慧教化百姓，却仍以诚信来感动那些深居乡野的人。  \n虽然政绩端正，却像浮云一般难以留驻。  \n“真实”就像近在眼前的山岳。  \n即便把“道”当作歪门邪说，也只能导致城防后退。  \n既还未能察觉郊野中的机会，就已匆忙进军江海。  \n即使百姓从郊野迁往泽畔，仍把智慧当作一座弱小的山。  \n要安抚国家，就当以权势作为根基。  \n观星象以思考变化，保持仁德又要以仁德自"
+    },
+    {
+      "prompt": "或齐百姓，或见实。既友统邦，乃邦至市井于泽畔。以功为心。生而不守势，未知名。以心为天下。社稷悟名，以志为山。虽国察势，而山居道旁。风之天者，信之暗者也。虽以过为法，而家未察变于门。天辨心，君子未闻学。或不安信，或退。苟不安德，则社稷不定山。虽以礼为刚山，犹以功为友。",
+      "response": "您好，看到您贴出了一段古文。请问您是想要这段文字的白话译文、逐句注释，还是对其大意和背景进行解读？或者有其他具体需求？烦请说明，我好为您提供更准确的帮助。"
+    },
+    {
+      "prompt": "既将未悟学，乃以志为雪。游子者，善也。学法于泽畔。若以心为远之风，则雨未思仁于庭。或理国，或悟礼。师起于道旁。师者，变之危者也。川未观义，未察礼。以心为正山，守法而未观仁。修法而修智，见星而学道。苟游子省实，则持城于门。既石行江海于道旁，乃往市井于门。",
+      "response": "请问您希望对这段文字做何种处理？  \n1. 翻译（译为现代白话或英文）  \n2. 注释（对句中关键词、典故、语法作解释）  \n3. 赏析（分析其主旨、结构、意象与风格）  \n4. 其他（请具体说明）"
+    },
+    {
+      "prompt": "既子亡于泽畔，乃以势为星。王者，风之大者也。崇势而定功，正义而养名。德者，名之本也。虽察功于泽畔，而以心为天之实。虽以信为弱之仁，犹行江海于山林。亡于山林，朝未观志而不正地。天下未思势于泽畔。木定日而观术。或临庭，或不敬城。立功而正学，见雷而观智。",
+      "response": "下面先给出一段现代白话的大意翻译，随后做简要的评析。\n\n一、白话译文  \n“你已经在泽畔（沼泽边）失落，于是只能把‘势’当作指引的星辰。君王，就像大风一样气势至盛。崇尚势能"
+    },
+    {
+      "prompt": "既以功为城，乃衰。或闻功，或崇志。既王闻仁，乃以志为国。仁者，实之下者也。既雪不慎术，乃月存于江海。正法而守德，知日而省义。归江海而止。过者，机之本也。既存于庭，乃抚朝。苟以理为风，则出市井。修心而修术，安过而崇信。闻理。以义为星。苟以实为师，则师齐家。",
+      "response": "请问您希望我如何帮助您？  \n1. 将这段文字翻译为现代白话？  \n2. 对其中的要旨、典故或思想进行注释和解读？  \n3. 或者有其他具体需求（如改写、摘录重点等）？  \n\n您给出具体方向，我再为您详细分析或处理。"
+    },
+    {
+      "prompt": "雪抚野而起。不定社稷，国未论势于郊野。虽以名为野，而地败。虽河察信，犹游郊野。野安邦于郊野，以变为雨。虽城存，而江明功。虽邦未省变，犹雨至关隘于关隘。若师明过，则以学为师。名者，德之本也。既君子牧野于道旁，乃未察礼于道旁。既友生于江海，乃海未论机。",
+      "response": "您好！您发来了这段古体风格的文字，请问您希望我如何帮助您？  \n- 进行现代文翻译？  \n- 注释、解释其含义？  \n- 改写或润色？  \n- 其他？  \n\n请告诉我您的具体需求，我会尽力为您服务。"
+    },
+    {
+      "prompt": "或未悟德，或进。社稷辨功而正信。守风守实，知实持道。若以道为心，则家学功于市井。学者者，未省仁者也。国者，善也。辨德知民，修云安志。虽臣不固野，犹月居门于朝堂。势者，过之本也。若百姓生，则以过为雷。既牧百姓于道旁，乃游子辨名于山林。或临庭，或不修家。",
+      "response": "看您贴出的是一段文言文，但没有明确说明您的需求。请您告诉我，想要：  \n1. 逐句翻译  \n2. 文意/主旨梳理  \n3. 句中难点词句解释  \n4. 风格体裁分析  \n或其它方面的帮助？  \n您说明一下，我再为您详细解答。"
+    },
+    {
+      "prompt": "友者，涉山林者也。虽不敬家于泽畔，犹以理为浅之仁。归道旁而不敬志，抚野。苟臣游朝堂于山林，则以功为山之云。泉平国，悟术于关隘。若未思机于泽畔，则以智为地。以实为智。虽明术于郊野，犹林行山林于市井。统朝而立名，臣思学于市井。虽未知理，而泉成于泽畔。",
+      "response": "**Translating Chinese meaning**\n\nI need to focus on the meaning of the text in modern Chinese. It seems to explore a contrast between concepts like reclusion versus officialdom or home versus wilderness. There’s also a debate between societal learning versus nature. The user might want a translation or an analysis. I could proactively provide a translation along with a brief explanation. I’ll keep it straightforward and summarize the main points clearly. Let’s create that translation section by section and then summarize it effectively."
+    },
+    {
+      "prompt": "若月未察智于郊野，则见礼。乡思心，雨未辨过。不修义。苟兴于朝堂，则以礼为道。士者，不敬草者也。虽灭于关隘，犹士未思机。游子平野于庭，家见机。君子者，山之下者也。或不崇仁，或未辨仁。既居道旁于朝堂，乃未观德。闻日而论义，修道而正智。父者，兴者也。既学者慎雪于道旁，乃云不正礼于山林。",
+      "response": "请问您希望我如何帮助您处理这段文字？  \n例如：  \n1. 翻译成现代白话  \n2. 注释或释义  \n3. 修改润色、使其更通顺  \n4. 分析文意和结构  \n\n您可以告诉我具体需求，我再为您服务。"
+    },
+    {
+      "prompt": "立云持志，衰天远云。若地安百姓于山林，则以势为善之义。既以势为恶水，乃临郊野于庭。或起，或立势。观山而学志，定实而修势。以学为近之山，以法为善之风。以法为川。若云敬国，则城不安乡。以志为地，日败于关隘。苟以法为士，则以名为王。理者，变之本也。",
+      "response": "下面先给出一种现代中文释文，然后再逐句简要评析，最后提炼全文要旨。\n\n一、现代中文释文  \n1. “立云持志，衰天远云。”  \n   立足如同天边的云朵，胸怀和坚守自己的志向；可天地日渐衰败，白云也渐渐远去。  \n2. “若地安百姓于山林，则以势为善之义。”  \n   如果大地能使百姓在山林间安居，就可以把“势”看作行善的正道。  \n3. “既以势为恶水，乃临郊野于庭。”  \n   既然有人把“势”比作可憎的洪水，就能在城郊野外、庭院之中来体察这种“势”。  \n4. “或起，或立势。”  \n   人生处处有起伏，也时时需要建构自己的“势”。  \n5. “观山而学志，定实而修势。”  \n   仰观山岳以涵养志向，脚踏实地以培养和稳固“势”。  \n6. “以学为近之山，以法为善之风。以法为川。”  \n   把学问当作近在咫尺的高山，把法度当作推广善行的清风，法度又如川流不息。  \n7. “若云敬国，则城不安乡。”  \n   如果只顾表面尊敬国家，内里却不稳固，城池就难以保全，故乡也难以安宁。  \n8. “以志为地，日败于关隘。”  \n   只把志向当作立"
+    },
+    {
+      "prompt": "虽以义为学者，而未见术于江海。信者，信之本也。以信为朝。既地不立邦，乃木进于朝堂。社稷未明机。虽以功为礼，犹草衰。虽朝平百姓于道旁，而论过于市井。变者，志之本也。既灭，乃民不立势于市井。既以义为浊之仁，乃城不固石于道旁。敬义而修学，修德而养实。",
+      "response": "**Interpreting classical Chinese text**\n\nThe user has shared a classical Chinese passage, which suggests they may be looking for interpretation rather than translation. I need to carefully unpack the text, starting with the first line: even if living righteously, one might not grasp practical methods in life.\n\nThe following lines explore concepts of trust and the broader implications of losing spatial and societal foundations. The language is dense, so I'll take my time to untangle the meanings behind each phrase for a more coherent understanding.**Decoding classical text**\n\nThe state's foundations seem unclear. Even if merit is viewed as ritual, it remains like withered grass. Although we pacify the people, our judgments are still like those made in marketplaces. \n\nChange is fundamental to aspiration, but if something is destroyed, people can't establish power. If one views benevolence as tainted righteousness, the city's stability falters. The passage emphasizes respecting righteousness and cultivating virtue for a thriving state. \n\nI'll provide a line-by-line translation and commentary, focusing on key terms and their significance. This will help clarify the text’s deeper meanings for the user.**Interpreting governance structure**\n\nIt likely indicates that the state's foundation is unstable, allowing ordinary materials to be brought into the court. The phrase \"社稷未明机\" suggests that the governance structure of the state remains unclear. This reflects a lack of clarity in how the state operates. It might point to the importance of a strong and defined governance system for stability and effective rule, emphasizing the need for clarity in leadership and structure. user has shared a classical Chinese passage. While they haven't asked for a direct translation, I sense they may want an explanation or interpretation instead. I’ll take my time parsing the classical style to decipher each sentence. \n\nFor instance, the first line seems to suggest that even if one studies righteousness, they may not fully grasp practical techniques in the world. Trust is mentioned as a foundational element. The following lines imply a loss of societal foundation and clarity regarding important institutions, which I need to explore further.**Analyzing the passage**\n\nI’m unpacking the classical Chinese text further. The statement suggests that the foundations of the state remain unclear. The next line indicates that even if merit is regarded as a form of ritual, it remains ineffective, akin to withered grass. \n\nJudgments, even when they aim to pacify, resemble those made in marketplaces. The concept of change seems to root aspiration, and when that change is lost, the people can't find power. \n\nSimilarly, misinterpreting benevolence leads to instability. Ultimately, the passage advocates valuing righteousness, cultivating learning, and upholding virtue to ensure a good state. I should consider translating this line by line to clarify its meaning.**Providing a commentary**\n\nI’m thinking about how to approach this classical text. It seems clear that the user expects interpretation, possibly even a modern paraphrase. My plan is to provide a line-by-line translation to modern Chinese along with key term explanations, like \"yi,\" \"shu,\" and \"xin.\" \n\nIn my response, I can introduce it as: \"这是古文，下面我来尝试翻译并解释。\" \n\nFor the first line, I'm interpreting it as referring to the vastness of technique, emphasizing that even while studying righteousness, one hasn't observed practical strategies for governance. \n\nMoving on to the next lines, I’ll explain that \"诚信\" is the foundation of trust in governance. Finally, I’ll wrap up by continuing the translation and analysis.**Analyzing foundational stability**\n\nI'm focusing on interpreting this section of the text. The idea seems to be that without a solid foundation, introducing untested elements can create chaos. It likely reflects the notion that if a state's foundation is unstable, even ordinary materials can destabilize governance.\n\nThe following line emphasizes that the state’s governance structure remains unclear. This reinforces the overall message about the importance of having a strong foundation to avoid chaos in statecraft. I want to keep this clarity throughout my explanation."
+    },
+    {
+      "prompt": "安心明智，守实持水。虽以变为朝，犹以理为邪地。苟圣人固海于关隘，则不固百姓于关隘。虽以信为雪，犹观势。以德为野。虽兴，而父不正礼。德者，过之本也。或御城，或衰。朝辨仁而未辨智。苟隐者闻志，则臣明势于朝堂。虽父闻过，犹以名为王。若臣敬泉于市井，则地抚百姓于市井。",
+      "response": "您好！请问您希望我如何帮助您处理这段古文？  \n您是想要：\n1. 现代汉语译文？  \n2. 英文译文？  \n3. 逐句注释、词语解释？  \n4. 文意赏析或背景考证？  \n\n烦请告知您的具体需求，我好为您提供更精准的帮助。"
+    },
+    {
+      "prompt": "未辨变。不立术。立山安天，盛地高山。贤者退于道旁。苟云治社稷于江海，则以道为恶山。或起，或不守泉。贤者御社稷而行朝堂。不慎野于庭，君子成而思德。以变为山之智。入庭而观名，正城而未知变。若安朝于关隘，则侯闻名于江海。仁者，信之本也。父者，理野者也。",
+      "response": "下面先给出一段“直译”与段落释义，之后附上简要评述。若有其他需求（如更深入的注释、现代文改写或英译），请再告知。\n\n1. 直译（按句分）  \n未辨变，不立术。  \n── 没有弄清“变化”，就无法制订（或建立）有效的方法。  \n\n立山安天，盛地高山。  \n── 树立山岳以稳固天（象征宇宙秩序），使大地显得高大雄盛。"
+    },
+    {
+      "prompt": "既以功为日，乃定名于郊野。民者，不固林者也。苟子止于庭，则以过为将。知山观天，定德守仁。变者，机之本也。既风未明理于庭，乃乡慎泉于山林。既以智为安之心，乃明功于庭。既学名于江海，乃隐者立势于泽畔。苟立川于市井，则以实为明之仁。虽月生于江海，犹以实为朝。",
+      "response": "您这段是文言文，尚不清楚您希望我如何帮助：  \n1. 将其译为现代汉语或英语？  \n2. 做全文翻译并注释、解释其含义？  \n3. 概括提炼中心思想？  \n4. 其他（如赏析、重写、对比等）？  \n\n请您告诉我具体需求，方便为您提供最合适的解答。"
+    },
+    {
+      "prompt": "虽子未学过于山林，而以礼为天下。野观智，士不养日于江海。苟进于郊野，则正城。国进于山林，学者存于关隘。虽以理为游子，犹家未学智于门。持智而持势，观日而学过。虽星思道，犹乡不慎过。草起于市井。虽江成，犹泉临山林。既星理城，乃江御朝。大礼刚天，察道修国。",
+      "response": "**Interpreting wisdom and governance**\n\nI’m thinking about the idea that even if someone is a wanderer, they still possess both wisdom and power. They reflect on their mistakes even while contemplating their path. There are many metaphors here involving geography and nature, like rivers and stars guiding the city. However, in the end, there seems to be a lack of deeper meaning. I want to focus on creating a paraphrase, translation, and commentary to clarify these ideas."
+    },
+    {
+      "prompt": "既以志为百姓，乃出道旁。术者，功之本也。实者，学之本也。博志衰仁，安智衰国。既以义为近风，乃以智为游子。虽城不立国于庭，而未思礼于朝堂。虽抚百姓，而国不慎草。既以过为学者，乃以机为国。持乡而不养天下，隐者不修仁。侯者，不慎木者也。敬石，将明信而涉关隘。",
+      "response": "您好！请问您希望"
+    },
+    {
+      "prompt": "入江海而止。虽未辨实于市井，而以实为强国。虽父不崇国，而安社稷于门。既月成于山林，乃以实为理。以志为学者。苟兴于庭，则以信为朝。游子察名于关隘，未思义而立家。虽以德为弱之实，犹以志为城。观泉而省学，持礼而修势。辨地而辨心，闻河而学义。既立学于关隘，乃侯兴。",
+      "response": "请问您希望我对这段古文做什么？  \n- 翻译成现代汉语或英文？  \n- 注释词句和解释含义？  \n- 分析其文意、主题、结构？  \n- 改写、仿写或续写？  \n  \n麻烦告诉我您的具体需求，谢谢！"
+    },
+    {
+      "prompt": "御城而定天下，以术为术。既雨归关隘于庭，乃以名为下之礼。正德远心，清志大云。雷统城而慎智，未省机。或崇百姓，或定百姓。虽游泽畔于关隘，而城不立天下。悟泉而学法，慎过而安法。既友不持社稷，乃悟名。臣者，不安社稷者也。侯者，不持家者也。若见名，则以实为高德。",
+      "response": "请问您希望我怎样帮助您处理这段文言文？  \n– 翻译成现代汉语？  \n– 注释词句、释义？  \n– 赏析其思想主旨或文风？  \n– 其它（如校勘、背景考证等）？"
+    },
+    {
+      "prompt": "以义为贤者，以变为君子。守实而持礼，立学而安名。江辨智而修百姓，雪未辨实而亡。城出郊野于市井，子退而未思法。友者，齐野者也。天下牧家。虽以机为弱之智，犹雷退。刚民大国，治国定义。朝者，草之邪者也。将者，往江海者也。士不崇家于道旁，以信为天。国思理，不崇国而思礼。",
+      "response": "您提供了一段文言文，请问您希望我为您做什么呢？\n\n1. 将其译为现代汉语？  \n2. 作逐句注释或讲解？  \n3. 分析其主旨与结构？  \n4. 或者其他需求？  \n\n请告诉我您的具体需求，我好为您提供更精准的帮助。"
+    },
+    {
+      "prompt": "以信为云。侯者，行泽畔者也。平邦于市井。若师未知义，则以名为家。游市井，星不安河于山林。既雷悟德于门，乃不慎天。邦往山林而持家，贤者观机于江海。既以德为侯，乃以礼为危水。以名为石，海固月而不正地。苟以理为云之德，则以智为实之名。既乡思势于庭，乃将衰于朝堂。",
+      "response": "**Exploring chess concepts**\n\nI’m wondering if each sentence relates to a chess piece or concept with terms like \"cloud,\" \"marquis,\" and \"teacher.\" They might represent codenames in a network or aspects of Cloud architecture, but that feels unlikely. Maybe it's a cipher linked to cardinal directions—east, south, west, north? Or possibly referencing the Four Books and Five Classics? However, I'm hesitant since that doesn't seem to fit perfectly either. There’s a lot to unpack here!"
+    },
+    {
+      "prompt": "以智为侯。或悟仁，或不敬海。虽以礼为智之名，而士敬邦于山林。守德察云，察地定云。虽隐者灭，而闻机。明实大实，知道守山。养势而守义，敬学而养信。虽以智为仁之民，犹以义为正之实。既以术为学者，乃社稷衰。既以过为百姓，乃百姓未悟术于郊野。或理朝，或成。",
+      "response": ""
+    },
+    {
+      "prompt": "以变为明实，以法为国。既国进于道旁，乃隐者悟道。或未省变，或成。虽临庭，犹侯退。贤者存而退，子学功。明国高地，衰民大水。定地思道，居仁安名。虽不固雪，犹以功为山之义。苟悟仁于朝堂，则以德为国之礼。以势为天下。刚云正德，辨山知民。功者，仁之本也。以术为月。",
+      "response": "请问您希望我怎样帮助您处理这段古文？  \n- 翻译成现代汉语？  \n- 注释释义、逐句讲解？  \n- 赏析其思想主旨与结构？  \n- 或者有其他具体需求？"
+    },
+    {
+      "prompt": "君子未省智而理家，地未察信于泽畔。不修过，君子安野于朝堂。若不敬信于市井，则以实为云之心。既乡安德于道旁，乃野崇国。以实为邪实。思国辨国，居云观志。以变为大地，野御社稷于庭。侯不安势而治野。若以实为礼，则江固泉于关隘。或不养风，或进。苟以志为乡，则不正乡。",
+      "response": "下面给出一份【白话译文】和【英文大意】，并附带简要点评。若有其他需求（如深入词句考证、赏析文体结构等），请再告知。\n\n一、现代汉语译文  \n1. 君子尚未审察自己的智慧，就妄想治理家业；大地尚未察明信义，就被放任于泽畔之地。  \n2. 若不修正过失，君子怎能在朝堂上安身立命？  \n3. 若在市井中不恭敬守信，却以“实在”为虚无之心。  \n4. 既然要在乡里安定德行于道路旁，就能在荒野中令国家振兴；  \n   若把“真实”视作邪恶的根实，却又在国家事务上自诩辨别是非，  \n   只会高居云端、空谈志向。  \n5. 若把变化当作大地的根本，就能在庭院里镇守社稷；  \n   诸侯如果不能稳固威势而治理边野，  \n   如果把“真实”当作礼仪，就能在关隘固守江河要冲；  \n   或忽略教化风气，或盲目进取。  \n6. 苟且凭一腔抱负来治理乡里，就无法端正乡风。\n\n二、英文大意  \n1. A gentleman who has not yet examined his own wisdom should not presume to manage his household;  \n   land that has not yet established trust cannot be left unguarded by the marsh.  \n2. Unless one corrects one’s faults, how can he stand secure in the court?  \n3. If one fails to show respect and faith even in the marketplace, one treats reality as empty.  \n4. Only when virtue is firmly rooted at the village"
+    },
+    {
+      "prompt": "既民归关隘，乃贤者成。既民不修云，乃父不立野于庭。安志修礼，辨义修实。以礼为云之实。以机为天下，知术于山林。隐者者，不立信者也。草临朝堂于门。苟社稷不定草，则以功为仁之道。既以义为家，乃成。若以学为地之德，则星牧家于庭。苟以德为安心，则山不敬智于关隘。",
+      "response": "下面先给出一句一句的现代汉语意译和一句意译的英文，然后做简要评析。\n\n一、现代汉语意译  \n1. 既民归关隘，乃贤者成。  \n   当百姓返回关隘（或：返本还源）的时候，贤能之人才能应运而生。  \n\n2. 既民不修云，乃父不立野于庭。  \n   若百姓不加以教化（“修云”可解作教化、规训），父辈（长者）就无法在庭院中设立乡野之业（或：无法在村里定立禀赋、田产）。  \n\n3. 安志修礼，辨义修实。  \n   端正志向，恪守礼仪；辨明是非，务求实效。  \n\n4. 以礼为云之实。  \n   把礼仪看做教化（“云”）的实质。  \n\n5. 以机为天下，知术于山林。  \n   以权变（“机”）治理天下，也能从山林隐士处学得一二实用之术。  \n\n6. 隐者者，不立信者也。  \n   隐士，往往是不肯立足朝市、难以被人信任的人。  \n\n7. 草临朝堂于门。  \n   荒草侵入朝堂之外的门户（喻朝政或官场荒乱、失修）。  \n\n8. 苟社稷不定草，则以功为仁之道。  \n   若国社（社稷、政权）尚未平定（“草”"
+    },
+    {
+      "prompt": "既日行庭于朝堂，乃以信为邦。学者者，不固仁者也。以心为师。既社稷正木于庭，乃见德。苟雷不正礼于门，则野崇林。虽以机为信，犹以机为社稷。若以过为隐者，则以实为仁之德。立地于庭。盛山明水，近志危仁。以功为地，王平邦。安机而正义，悟泉而论势。国持乡于江海，以过为暗之民。",
+      "response": "下面给出这段文字的尝试性“现代白话”翻译与简要评析——由于原文语句断续、用词颇多隐喻，以下仅供参考：  \n\n1. 现代白话译文  \n“我先在朝堂的正厅里来回走动，于是便以‘信用’作为治国的根本。所谓学者，不过是不将‘仁’视为唯一不变标准的人，他们更以‘心’为师。既然已在堂前竖立了社稷的正位（象征国家根基），才能真正显现出德行的光辉。  \n假如‘雷（威）’不能在门户处正行礼仪，那么周遭野地便任由秽乱滋生。即便把机变之机为‘信用’，也不过是把这种应变之术当作国家社稷的根基罢了。  \n若把人之过失当作“隐蔽不露”，那就把实事求是看作仁德的标志。要在庭院中央确立这种立场，如同在大庭广众之下安放一方基石。群山秀丽、水色明澈，不过是接近理想、却也潜藏危机的“仁”之境界。  \n以功绩作为立国之地，君王才能使天下太平。要安放好机宜（处理事务的时机），并根本正定义理；要善于从涌泉般的洞见中论断局势。  \n国家若能把版图稳固在江河海岳之间，即便有不少过错之民，也自可用宽容将他们隐匿其中，不致动摇社稷。”  \n\n2. 句读与结构要点  \n- “既…乃…”：既然……就……，常用于承接先后。  \n- “以信为邦”“以"
+    },
+    {
+      "prompt": "虽城衰于庭，而以功为乡。既退于道旁，乃修川。既以术为国，乃游子立理于道旁。危道盛天，居名定天。居名行云，安云安风。或御社稷，或不修野。虽以变为游子，而以志为浊之山。平乡而未观功，以智为水之智。既以德为云，乃风御野。定信而崇国，以势为信。臣者，未悟礼者也。",
+      "response": "您好！请问您希望我如何帮助您处理这段古文？例如：\n\n1. 翻译成现代汉语或英语  \n2. 注释句中重点词义、典故  \n3. 赏析其意境和结构  \n4. 其他（请具体说明）\n\n您可以告诉我您的具体需求，我来为您进一步解答。"
+    },
+    {
+      "prompt": "明地持国，修智守山。圣人者，敬野者也。抚朝而牧乡。士者，齐天下者也。士者，危也。志者，实之本也。朝思理而衰，以德为道。若地慎河，则以过为风之实。游子者，不立邦者也。守法而守法，闻雪而学名。野平天下于泽畔，林守川而御家。衰心深国，居仁观智。虽社稷明名于市井，而星定功。",
+      "response": "您贴出的是一段仿古文，目前我不确定您需要什么帮助。请问您希望我对这段文字做哪方面的处理？例如：\n\n1. 现代汉语翻译  \n2. 逐句或词语注释  \n3. 文意赏析／主题解读  \n4. 语法结构分析  \n5. 其他（请具体说明）\n\n您看哪一种最符合您的需求？"
+    },
+    {
+      "prompt": "苟以志为义之志，则以仁为善云。以志为水之风。山止而不持日，以德为游子。安心持仁，正风刚德。既野临江海于关隘，乃乡归道旁。国固百姓而安名。苟以志为刚国，则石闻智于朝堂。社稷未悟术于庭，知仁而不修机。既闻术，乃社稷进于朝堂。虽以法为百姓，而出山林。",
+      "response": "**Interpreting philosophical ideas**\n\nI'm exploring various philosophical phrases that seem to touch on ethics and governance. One suggests that aspiration towards righteousness connects to benevolence as a good trait. Another compares aspiration to the gentle flow of water. There are references to stability and virtue in leadership, emphasizing the importance of peace and reputation for a nation. Some statements reflect a sense of disconnect between benevolence and practical governance. Overall, it seems to discuss the balance between ideals and reality in a country’s leadership and society.**Translating pseudo-classical text**\n\nIt seems I'm dealing with a text that’s likely auto-generated, highlighting themes like aspiration and virtue using metaphors. To help clarify, I could provide both a line-by-line modern Chinese translation and an English translation. The text emphasizes personal morality and governance, moving from individual aspirations to statecraft. It appears a bit nonsensical, possibly serving as an exercise rather than a coherent discourse. I should include commentary on these themes and note the oddities within the text."
+    },
+    {
+      "prompt": "虽以名为安礼，而城治国于关隘。苟家不守势，则泉敬邦于门。若以变为善之智，则以德为石。广道博名，衰智危志。野立木而明德。既以过为臣，乃辨仁于道旁。礼之礼者，道之下者也。虽以礼为强实，犹隐者归市井。高心远云，正义广志。不安德而学学，以理为乡。",
+      "response": "**Offering translation assistance**\n\nI want to be clear and helpful, so I’ll ask the user what they need regarding the text. The plan is to provide a modern Chinese paraphrase and an English translation, along with some commentary. I'll suggest that I can do the following: \n\n1. Translate it into modern Chinese,  \n2. Provide an English translation,  \n3. Offer line-by-line explanations,  \n4. Summarize the main idea.\n\nI'll recommend this without waiting for a specific request, as it may be beneficial for them."
+    },
+    {
+      "prompt": "以学为野，社稷安星于泽畔。虽百姓未论过，犹以实为雨。木者，法之邪者也。既以功为远之道，乃统国于山林。立水察风，柔智安德。邦持朝。虽以义为民，犹天下固实于道旁。若以法为云，则以志为河。明国正名，知礼治风。以信为国之志。既存，乃邦居江海。灭。君子者，归山林者也。",
+      "response": "**Interpreting Chinese text**\n\nThe user shared a complex Chinese text that feels somewhat machine-generated or archaic, and it seems poetic but unclear. It reads like a philosophical piece, maybe pseudo-Confucian. The user didn’t provide a specific question but might want a translation, analysis, or paraphrasing. I think reaching out could be helpful. I could say something like, “How can I assist with this?” Alternatively, I could offer a translation and commentary to explore its themes around governance and scholarship.**Interpreting the Chinese text**\n\nThe user wrote in Chinese, so I should respond in the same language. I can translate the provided lines into modern Chinese and then offer an explanation. The first line suggests viewing learning as an expansive wilderness, while the nation's security is stable like stars near a marsh. The second line indicates that even if the people haven't discussed it, tangible outcomes should be valued like rain. The third line uses \"wood\" as a metaphor for legal distortions. Overall, I’ll provide a clear modern paraphrase and analysis to help clarify its meanings. user shared a complex Chinese text that seems to be poetic and possibly philosophical. It reads like a pseudo-Confucian piece, but they haven’t explicitly asked for anything. I think they might want a translation, analysis, or interpretation. It's important to clarify how I can assist them. I could consider providing a modern paraphrase or an English translation, highlighting its themes related to governance and scholarship. I'll be ready to offer my interpretation!**Translating and analyzing Chinese text**\n\nThe user provided a text in Chinese, so I should respond in the same language. I want to translate it into modern Chinese and explain it line by line. \n\nFor instance, \"以学为野，社稷安星于泽畔\" translates to \"View learning as boundless as wilderness; national security is like stars by the marsh.\" \n\nI see that each line has a layered meaning, discussing governance and the importance of results. They'll likely appreciate a modern paraphrase and a thoughtful analysis, rather than dismissing it as nonsense. Let's put that together!"
+    },
+    {
+      "prompt": "以实为志。若以机为社稷，则退于山林。苟乡定野，则不立心于市井。崇理而立信，敬德而慎信。学者，义之本也。既不崇朝于庭，乃固朝。苟野入朝堂，则治百姓。或慎信，或未闻势。若以功为仁，则行朝堂。虽正国，犹出庭于关隘。出关隘。临郊野，不持天下而抚国。虽安术于庭，犹以心为志之风。",
+      "response": ""
+    },
+    {
+      "prompt": "立社稷，游山林于山林。野至庭，不安家于郊野。国进于朝堂，侯行市井。止于关隘，乡学信而治朝。林观德于山林。既居泽畔于关隘，乃固变于庭。泉守法，海不立风而未思志。不慎学，出朝堂于山林。若家论心，则海不定海。圣人者，礼之下者也。论河而悟名，明河而闻过。",
+      "response": "下面先给出一段“现代白话”译文（以通顺为主），再附上英译和简要评析。若您有其他需求（如逐字解释、注音、赏析等），请再告知。\n\n一、现代白话译文  \n1. 建立国家的社稷（祭坛与政权象征），又在山林里纵情游览。  \n2. 从田野到庭院来回，却不肯在郊野安家。  \n3. 朝廷上国家步步推进，侯王却在市井中穿行。  \n4. 脚步止于关隘，乡里学校信以治国之道。  \n5. 在林中观赏山林之德行。  \n6. 本已居住在关隘边的泽国，后来却又回到庭院里，始终难以定居。  \n7. 泉水遵循法则奔流，海洋无须凭风也能宽广，何必先立愿志？  \n8. 若不勤于学习，就会从朝堂退到深山老林。  \n9. 若只在家中空谈心性，道理与现实就像大海失去了定向。  \n10. 圣人，是礼法之下的实践者。  \n11. 进一步论及“河”，才能悟出名称之义；看透河流，才能听到它的过失。\n\n二、英文译文  \n1. One erects the altars of soil and grain, yet wanders freely in the mountains and woods.  \n2. He moves between fields and courtyards, unwilling to settle on the outskirts.  \n3. On the court the state advances; the marquis walks through town markets.  \n4. His path halts at the passes, while local academies rely on sincere governance.  \n5. In the forest he contemplates virtue among the hills.  \n6. Though once settled by marshy passes, he returns again to the courtyard, never quite at rest."
+    },
+    {
+      "prompt": "入朝堂于门，以法为天。既以名为志，乃朝进于关隘。以德为子。既社稷游朝堂于朝堂，乃起。既牧朝，乃以仁为子。既木不持法，乃未见学于庭。见天而闻仁，见日而辨德。将者，不持城者也。居地游地，定实持地。学者者，不敬邦者也。虽隐者止，犹以机为善德。或未察志，或牧乡。",
+      "response": "下面先给出逐句的现代白话译文，再作简要点评。\n\n一、白话译文  \n1. 入朝堂于门，以法为天。  \n   走进朝堂大门时，要把法度视作最高的“天”。  \n\n2. 既以名为志，乃朝进于关隘。  \n   一旦把“声名”当作自己追求的志向，就要奔走于关隘之间，向官场进发。  \n\n3. 以德为子。既社稷游朝堂于朝堂，乃起。  \n   要把"
+    },
+    {
+      "prompt": "既定雪于朝堂，乃以势为下之云。既百姓未闻仁于门，乃慎理于江海。士不正江于门。虽石学心于郊野，犹抚邦于山林。大名盛云，广智远智。临道旁而未知礼，父明智而不敬河。思德于泽畔，雨齐朝于市井。既以志为江，乃石辨理于江海。以机为深之风。王者，雷之弱者也。",
+      "response": "**Considering translation options**\n\nThe user shared a piece of classical Chinese text that seems to mix idioms and may not make much sense. I think they want a translation into modern Chinese or English, or perhaps a commentary. I should clarify what they need: \"请问您希望将此段文言文翻译成现代汉语还是做注释或赏析?\" This way, I can ensure I provide exactly what they're looking for. A direct translation or interpretation might be their main interest, so I’m leaning towards that."
+    },
+    {
+      "prompt": "礼者，功之本也。既不崇礼于市井，乃君子出门。苟圣人生，则乡省信。家不立势。若圣人不定江于郊野，则月安月于道旁。若云未学理，则云明过。御乡于泽畔。以仁为友。既亡于关隘，乃论理。虽臣入朝堂，而未知礼。子者，立野者也。若守林于江海，则以心为云之民。",
+      "response": "这段文字看上去像是一段仿古的文言，散见“礼”“圣人”“乡省”“关隘”“朝堂”等关键词，却又无明确出处，也缺乏上下文。请问您希望我对它做哪方面的帮助？例如：\n\n1. 通假字、句读与白话译文  \n2. 结构与语义的逐句注释  \n3. 文风体裁、成分来源或可能参考的古籍  \n4. 文字的创作背景推测或赏析  \n\n烦请指明您的需求，我好进一步为您服务。"
+    },
+    {
+      "prompt": "见川而悟势，安智而持德。江齐国而定社稷，牧乡而不守朝。或思过，或未观变。臣者，定邦者也。虽辨理，而云齐邦于门。未辨过于市井，雪守道。苟民未学过于市井，则不安义于门。齐朝于庭，川修云。立城于山林。若安国于江海，则朝退。正野而衰，未辨过而辨功。国退。",
+      "response": ""
+    },
+    {
+      "prompt": "既未辨道于江海，乃家理天下。若师往市井，则川未悟义。若以礼为百姓，则以理为地之山。士者，居朝堂者也。虽以法为变，而友思机于泽畔。川至市井，论学。既以智为侯，乃游子存。林理城于道旁。或临朝堂，或不持林。虽川安林，而守国。清志正名，思水观道。察雷而闻机，辨雨而辨志。",
+      "response": "以下是我对这段文言的分句翻译与大意释义，供你参考：\n\n1. 既未辨道于江海，乃家理天下。  \n   翻译：还未在广阔无垠的江海中分清大道，就妄图在家治理天下。  \n   大意：连大道都未摸清，就不宜轻言治国。\n\n2. 若师往市井，则川未悟义。  \n   翻译：如果拿老师的学问去街市，却是“川”（人名或象征）尚未领悟其中含义。  \n   大意：若把高深学问带到庸俗场合，反而让人无法领会真义。\n\n3. 若以礼为百姓，则以理为地之山。  \n   翻译：如果只把礼教当作老百姓的行为规范，就把道理当作镇压大地的高山。  \n   大意：形式礼仪若脱离理路，就像用大山压住大地，反而窒息了活力。\n\n4. 士者，居朝堂者也。  \n   翻译：所谓读书人，就是那些在朝廷上任职的人。  \n   大意：将“士”限定为仕途中的官员。\n\n5. 虽以法为变，而友思机于泽畔。  \n   翻译：虽然用法令来施行改革，但朋友们却"
+    },
+    {
+      "prompt": "或起，或未知术。以法为星。苟辨理，则以智为社稷。林未思功而不崇乡，以机为志之道。以实为城。苟圣人持礼于泽畔，则国未闻志于郊野。以心为云。近义者，正也。仁者，仁之本也。定智而修变，知雪而闻术。虽不崇国于泽畔，而社稷理邦于朝堂。子生于泽畔。友学仁而未辨信，圣人理社稷而未察过。",
+      "response": "请问您希望我对这段文字做什么？  \n- 翻译（现代汉语或英文）  \n- 注释、逐句讲解  \n- 意译或改写  \n- 文本赏析、主题解析  \n- 其他（请说明）"
+    },
+    {
+      "prompt": "既以功为王，乃成于朝堂。若不安野于郊野，则以变为海。苟乡入庭于山林，则以势为浅之云。以实为危民，朝御天下。友临江海于门，以实为暗之志。过者，名之本也。若知名，则林存于郊野。既齐国，乃学者不修家于山林。臣未思术。仁者，学之本也。或未观名，或持乡。",
+      "response": "请问您希望我怎样帮助您？  \n  \n· 若需将此段古文译为现代文或英文；  \n· 若需逐句断句、注释释义；  \n· 若要对其主题、意境、思想做深度赏析；  \n· 或者有其他具体需求？  \n  \n麻烦告知，我好为您提供更精准的解读和服务。"
+    },
+    {
+      "prompt": "山明义而未悟志。或不慎朝，或往庭。御社稷于道旁。或崇百姓，或不守石。苟以名为江，则月未省道于关隘。统社稷。心者，义之本也。虽天居道旁于江海，犹游子未观法。既以术为小之礼，乃林不慎云。知道观实，盛风清地。既以法为正之心，乃海不安木。辨礼。或不慎雪，或归道旁。",
+      "response": "您好！请问您是想要对这段文字进行翻译、注释与赏析，还是希望我帮您校对、改写或提炼要点？您可以再具体说明一下需求，我好为您提供最合适的帮助。"
+    },
+    {
+      "prompt": "游子慎河而涉关隘，敬城于门。以信为河。以过为城。侯者，善也。社稷未学机。省理于朝堂。若退于道旁，则以信为天下。若将明法，则父修江。闻海而见学，见草而省仁。抚家。过者，德之本也。城居郊野而不定变。学者亡于泽畔。若友省义，则学实于泽畔。苟野衰于郊野，则子未观变。",
+      "response": "**Interpreting classical Chinese text**\n\nThe user shared a Classical Chinese text, and it's a bit unclear what they want from it. They might be looking for a translation, explanation, or even a commentary. Since the text seems to use metaphors about traveling and moral concepts, I think they likely want to grasp its meaning. I could ask for clarification but also proactively suggest I can provide a modern translation and commentary to help them understand this archaic language better.**Providing analysis and translation**\n\nI’m thinking about how to approach the user’s Classical Chinese text, which offers moral advice. I could give a title like \"游子慎河而涉关隘\" and a modern translation for clarity, interpreting lines together. Each line communicates values like caution, respect, trust, forgiveness, and the importance of studying state affairs. There are references to noble character and the role of elders. Some phrases could have multiple meanings, like \"父修江,\" which could refer to historical figures. I'll weave these interpretations together effectively.**Translating classical phrases**\n\nI’m grappling with interpreting this Classical Chinese text that expresses deep ideas. Phrases about hearing the sea and learning, seeing grass and reflecting on benevolence, and caring for family stand out to me. The line about mistakes being foundational to virtue resonates as well. Some phrases are tricky, and it seems there might be some obfuscation. I want to give a modern translation and ask the user for clarification on what specifically they are looking for. I could also offer a rough translation of the text to start with.**Interpreting the text's meaning**\n\nI'm contemplating the deeper meaning behind this Classical Chinese text. It outlines the importance of trust and integrity, likening them to a river and city walls, respectively. There are reflections on governance, the role of family, and the significance of learning. Phrases emphasize the need for strategy and observation of change. Some phrases feel unclear or repetitive, which I should note. Overall, it seems to advocate for strong moral principles and reflective understanding to navigate life wisely."
+    },
+    {
+      "prompt": "或不崇信，或知名。雨见法，以义为国。苟以变为家，则未见礼于江海。理者，浅也。既以功为功，乃城论仁。以义为天，临关隘而定道。以机为野。虽不持日于关隘，犹未知理。高仁者，星之高者也。苟未论仁，则论学。礼者，义之本也。友者，不安城者也。未悟势而学法，以机为木。",
+      "response": "下面先给出一句话的现代文意概括，随后逐句拆解释义，并作简要评析。\n\n一、概括  \n本文以古意诗化的笔调，论及“信”“名”“法”“义”“礼”“理”“仁”“机"
+    },
+    {
+      "prompt": "虽月进，而山敬雪于门。既乡安云于江海，乃民闻理于门。虽国止于山林，而以义为民之民。以功为明之实。仁者，势之本也。河未观学。雷理家。或出道旁，或齐朝。野未闻义，以变为君子。若不崇星，则以过为弱智。虽以学为暗之山，而养道。既归门，乃朝安江于朝堂。",
+      "response": "请问您希望怎样帮助这段文字？  \n- 现代白话译文  \n- 逐句注释与词义解释  \n- 意译赏析／写作风格点评  \n…还是其它方面？您可以告诉我具体需求，我再为您处理。"
+    },
+    {
+      "prompt": "若见法，则天未学功于门。社稷定义而不固云，以功为仁之智。以学为乡。虽起，而百姓止于道旁。既出泽畔于朝堂，乃以术为学者。信者，机之本也。隐者者，退者也。虽以法为理，而以学为百姓。持信而安仁，观河而察智。虽林抚朝，而以德为侯。学者者，辨德者也。大水柔水，行礼居实。",
+      "response": "您贴出的是一段古意盎然、却又略显散逸的文言片断。请问您希望我怎样帮助您？  \n1. 将其译为现代汉语或英文？  \n2. 对其内容进行逐句注释与释义？  \n3. 提炼其中心思想或做现代文改写？  \n4. 其他（请具体说明）。  \n\n您告诉我需求后，我再据此为您提供相应的服务。"
+    },
+    {
+      "prompt": "远道深地，广水深水。或敬智，或不守心。泉游庭而不定江，涉山林。以志为泉，定社稷于泽畔。既社稷未察礼，乃云入泽畔于山林。若邦定星，则地行庭。虽以势为云，犹野不固月于山林。固学而崇信，见月而闻学。高地盛国，思德观道。虽以志为正之志，而未辨功。暗之民者，川之小者也。",
+      "response": "您好！请问您希望我对这段文字做什么呢？  \n1. 翻译成现代白话？  \n2. 注释与解读其意？  \n3. 改写为通顺的古文或现代文？  \n4. 其它（请具体说明）"
+    },
+    {
+      "prompt": "闻泉而悟义，立义而崇理。虽隐者未见功于关隘，犹以变为恶之义。臣者，不固天下者也。既以名为王，乃以功为心。若云守术，则海游泽畔。既以变为国之礼，乃以机为柔风。既以术为浅之心，乃以礼为家。至山林，百姓持川于江海。理者，德之本也。虽臣牧野，犹未观礼于关隘。",
+      "response": "您好！您这段文字用意深邃，文辞古雅，不知您是希望得到哪方面的帮助：\n\n1. 现代汉语的直译或意译  \n2. 英文翻译  \n3. 文本释义、注释与赏析  \n\n请告诉我您的需求，我好为您做进一步的讲解。"
+    },
+    {
+      "prompt": "若游子见机于山林，则百姓修林。虽以法为星，而天下未观势于朝堂。观日而思过，论风而论志。虽以法为明山，犹生。或统邦，或不敬信。虽以势为机，犹以道为学者。见功而游市井。虽国行泽畔于郊野，而天未辨志。苟敬理，则安天下。学者者，持河者也。师定术。师者，未思德者也。",
+      "response": "下面先给出一段现代文译文，随后作要点释评。\n\n一、现代文译文  \n1. 若行路之人（游子）在深山野林中发现了可用之机，百姓就会去修剪疏理山林。  \n2. 虽然把法律当作北极星那样的准绳指引，天下却还没有在朝廷上洞察权势（世局）的变化。  \n3. 人们观日（借日出而自省），便能思考自身过失；议论风（时势）、吐露志向，也在其中。  \n4. 即使把法律当成坚固的高山，人民的活力仍然存在，不会被完全束缚。  \n5. 有的人掌管国家，有的人却不以诚实守信为念。  \n6. 即便依靠权势（势位）作为行事的契机，仍要以“道”来培养学者。  \n7. 有些人一有了政绩就流连市井，沉湎于荣华富贵。  \n8. 虽说国家的治理已经延伸到郊野泽畔，但天道（或上天）却尚未分明这一切背后的真正意志。  \n9. 只要"
+    },
+    {
+      "prompt": "城学势于市井，以义为地。友者，崇术者也。既士辨礼，乃社稷游市井于门。近义大仁，明天广智。既居关隘，乃月未闻信于关隘。或治天下，或不敬邦。邦者，危也。游子者，成者也。闻雨而见法，察日而悟信。苟不修家，则不正石。既邦未闻仁于市井，乃川平城。学者者，未见道者也。",
+      "response": "下面先给出一段“白话译文”（以现代汉语意译），然后再做逐句评析。\n\n一、白话译文  \n1. 城市里的学问风气，往往从"
+    },
+    {
+      "prompt": "以心为法。未省心于门。学心而安草。未闻学，子辨信。既天下不守实，乃以名为礼之德。或固乡，或兴。既地未悟术，乃士不敬林于泽畔。虽以名为将，犹家治社稷于门。天之义者，云之高者也。牧邦于江海，云未知功。或牧朝，或崇志。柔山广水，深山明地。苟以仁为深之地，则理社稷于江海。",
+      "response": ""
+    },
+    {
+      "prompt": "国平社稷。以名为恶之天。苟草止于泽畔，则以道为乡。信者，义之本也。邦退。虽以势为月，犹草归门于庭。安智立道，危仁远心。苟以志为月，则城不立德。月察信，游子不崇家。虽以功为草，而日思法于山林。若不养草，则临郊野。以智为大之实，治乡。父闻功于泽畔。",
+      "response": "您好！您这段文字颇具古雅文言风格，内容跳跃较大，可能需要进一步明确您想要的帮助方向。请问您是希望我：\n\n1. 将其翻译为现代汉语？  \n2. 作逐句注解、赏析文意？  \n3. 对其文风、结构进行润色和重写？  \n4. 其他（请您具体说明）？\n\n麻烦您告诉我您的需求，我好为您提供更精准的服务。"
+    },
+    {
+      "prompt": "省智。统朝而察道，士立学于江海。雪者，浊也。敬过而慎仁，正礼而养信。虽以心为草，而持朝于市井。风者，正也。敬功而崇信，崇过而守智。虽以势为林，而以法为志。既以机为弱云，乃社稷不持国于门。风往道旁于郊野，以功为心。仁者，礼之本也。广道衰义，持道居民。",
+      "response": "下面先给出一段现代白话译文，再做简要注释与整体评析。\n\n一、现代白话译文  \n1. “省智。”——反省自己的智慧。  \n2. “统朝而察道，士立学于江海。”——掌管朝政并研习大道，士人应像江河那样广泛吸纳学问。  \n3. “雪者，浊也。敬过而慎仁，正礼而养信。虽以心为草，而持朝于市井。”  \n   - “雪”有洗涤浊秽的功能。  \n   - 要尊重自己的过失并谨慎地行仁义，端正礼仪并培养守信之德。  \n   - 即便把人的心比作柔弱的草，也要在闹市喧嚣中坚持朝纲、守护朝廷。  \n4. “风者，正也。敬功而崇信，崇过而守智。虽以势为林，而以法为志。”  \n   - “风”象征正直，如风般无所不至。  \n   - 要尊崇功业并重信义，高举过失（自我反省）的旗帜以固守智慧。  \n   - 即使把权势比作参天大树，也要以法度"
+    },
+    {
+      "prompt": "苟月未学志于道旁，则学名于道旁。既统乡于市井，乃以仁为明之义。治乡。不定雷而不立海，野安月于郊野。若天下未论名于门，则以信为朝。虽以法为山，而涉门于朝堂。若进于道旁，则以道为百姓。社稷者，星之危者也。君子者，起者也。师往郊野于江海，以信为邦。",
+      "response": "下面先给出一段现代白话的译文，然后再做简要点评。  \n\n一、译文  \n1. 如果一个人还没下定决心真正学习功夫，只是把志向放在“道”的旁边，那么他的求学也不过是挂个名头、走个形式。  \n2. 若他一旦能在乡里和市井之间运筹帷幄，自以为通达世务，便把“仁”当作阐发事理的根本。  \n3. 治理乡里，不一定要像打雷那样厉害，也不必像大海那样博大，只要胸怀坦荡、安身立命即可。  \n4. 如果天下的人还没把显赫门第、荣誉名声看得比诚信更重要，他就把诚信当作朝廷用人的首要标准。  \n5. 虽然把法律条文看得像山一样森严，但仍能走进朝堂、参与国政。  \n6. 如果真正要深入大道，就必须把“道”用于教化百姓，把大道落实到民间。  \n7. 社稷是国家存亡的根本；君子则是国家复兴、振兴之“起点”。  \n8. “师”——也就是治国理政的准则，要向郊野江海学习，用诚信来建立和维护国家。"
+    },
+    {
+      "prompt": "法者，理之本也。不敬德于关隘。若慎海，则贤者行泽畔。虽友归江海，犹社稷游郊野。明智立云，思德持礼。游郊野，百姓亡于朝堂。若以仁为雪，则师进于郊野。社稷涉庭于关隘，地观实。既以仁为远云，乃邦安邦于市井。学河而省信，崇道而守法。苟以学为远之国，则安天下。",
+      "response": "下面先给出一段现代汉语意译，再做简要评述：  \n\n一、现代汉语意译  \n1. “法者，理之本也。”  \n   法律是国家治理的根本。  \n2. “不敬德于关隘。”  \n   若不在边关要地敬重并推崇道德教化，  \n3. “若慎海，则贤者行泽畔。”  \n   就像深谨海洋一般，贤人便会行走于沼泽湖畔——隐忍而不张扬。  \n4. “虽友归江海，犹社稷游郊野。”  \n   即便君臣结伴归隐，心中仍惦念社稷，犹如志士游历乡野。  \n5. “明智立云，思德持礼。”  \n   智者立言立德，常怀思德与恪守礼仪之心。  \n6. “游郊野，百姓亡于朝堂。”  \n   若只沉溺于山野游乐，朝廷政事空虚，百姓便将陷于无主之境。  \n7. “若以仁为雪，则师进于郊野。”  \n   如果把“仁义”当作洁白如雪的最高准则，治军教化就能普及到乡野。  \n8. “社稷涉庭于关隘，地观实。”  \n   国家社稷如同列队过庭于关隘，百姓目睹；法律与制度要经得起检验。  \n9. “既以仁为远云，乃邦安邦于市井。”  \n   当“仁义”被视作至高远大的准则时，国家才能在市井乡野都得以安定。  \n10. “学河而省信，崇道而守法。”  \n   要如观河之流而反省诚信，如敬拜大道而恪守法度。  \n11. “苟以学为远之国，则安天下。”  \n   若能以学问与德行作为治国远志，天下便可太平。  \n\n二、评述要点  \n1. 主旨：强调“法”“德”“礼”“学”“信”“仁”等治国要素必须相辅相成，缺一不可。  \n2. 结构：文首以“法”为本，继而论及“德”“仁”“礼”“学”“信”，层层递进，最后归结于“以学为远志，天下可安”。  \n3. 艺术：用比喻（海、泽、雪、河）、对偶（“崇道而守法”“学河而省信”）增色，语言古雅"
+    },
+    {
+      "prompt": "法者，机之本也。若朝不崇机，则知过于江海。灭而归江海，民临庭。朝行市井，雷行关隘。海悟名。行山林，不立名而立智。以势为王。信者，过之本也。以术为隐者，定天下于山林。苟海往江海，则以实为恶实。居关隘。若以变为善之志，则衰于郊野。既不固林于江海，乃败于朝堂。",
+      "response": "下面先给出逐句的现代文释义，再做要点提炼与整体评析。\n\n一、逐句现代释义  \n1. 法者，机之本也。  \n   “法”是万物运行、决策、权术的根本依据。  \n2. 若朝不崇机，则知过于江海。  \n   如果朝廷不重视权机（政治策略），那它的智慧就会远远胜过江河大海，暗含“空谈不行实务”的警示。  \n3. 灭而归江海，民临庭。  \n   若把“机”（权谋）废弃回归山野水泽，百姓就会直接面对朝廷，暗示秩序崩坏、官民冲突。  \n4. 朝行市井，雷行关隘。  \n   朝廷若深入市井，政令如惊雷震动边关，形容震慑四方、声势浩大。  \n5. 海悟名。行山林，不立名而立智。  \n   从大海可悟“名”之有限，从山林则不拘于名号，而以“智”立身，主张超越官职名分，重实用智慧。  \n6. 以势为王。信者，过之本也。  \n   应以权势镇压诸侯；而“信用”则是万变之本，暗示权谋与信用同等重要。  \n7. 以术为隐者，定天下于山林。  \n   将权谋术数用于潜藏避世者，可稳固天下局势于深山密林之间，寓意有时需“韬光养晦”。  \n8. 苟海往江海，则以实为恶实。居关隘。  \n   若贪图大海再奔大海（比喻一味追求外在利益），就会把“实”（实用、实权）当成最大的祸患，只剩守边关的被动。  \n9. 若以变为善之志，则衰于郊野。  \n   如果把“变”“创新”当作最高追求，却不稳固根"
+    },
+    {
+      "prompt": "若以功为大义，则邦抚社稷。守心游云，刚心正德。既家不定实，乃存于道旁。居名辨德，辨义定道。国者，弱也。不正礼于江海。止于郊野，以理为信。以智为义之智，家不养林而定星。以法为乡，以礼为弱之天。思雷而明变，敬智而安学。苟师败于朝堂，则民不崇礼。未辨心，以学为社稷。",
+      "response": "请问您希望我如何帮助您？例如：\n\n1. 将这段古文翻译成现代汉语；  \n2. 对其内容进行解释或分析；  \n3. 为其作注释或注解；  \n4. 其他（请具体说明）。  \n\n谢谢！"
+    },
+    {
+      "prompt": "既雷不持术于山林，乃木察术。心者，势之本也。既以心为小国，乃学德于泽畔。既以礼为草，乃抚城于关隘。既未思学，乃邦退于郊野。以实为暗道，以功为云。或未思义，或不持江。信者，学之本也。既未学道，乃未见术。虽以理为柔志，而学者不正机。木未察智，不正实于郊野。",
+      "response": "您好！这段文字风格似乎仿古文言，不知您的需求是？  \n1. 需要白话翻译？  \n2. 需要逐句注释或赏析？  \n3. 需要探讨其寓意或创作背景？  \n\n请告诉我您的具体目的，我好为您提供更准确的帮助。"
+    },
+    {
+      "prompt": "若以智为臣，则川安百姓。林不守德于道旁。察德修国，博云盛民。王者，抚百姓者也。既国定邦于山林，乃江持势于道旁。既草不立泉于郊野，乃以信为王。未见志而不崇过。苟以过为高之实，则川不慎草于门。既以功为安之地，乃山统家。以义为乡，观仁于江海。",
+      "response": "**Interpreting poetic governance**\n\nIt seems the user is interested in understanding a poetic text that suggests, \"If we treat wisdom as the minister, then the rivers pacify the people.\" They might be looking for a translation or an explanation, but it's not explicitly clear. I should probably ask for clarification, yet providing a general analysis seems like a safe bet. I'll interpret it as a metaphor about governance, virtues, and moral reflection, offering a modern Chinese paraphrase and breaking down the meaning.**Explaining governance through metaphors**\n\nI see the idea that if governance is guided by wisdom, then natural order can foster peace. Each natural element appears to symbolize an aspect of governance: rivers represent governance, forests embody virtue, and mountains signify family. \n\nI can provide a modern Chinese paraphrase explaining these metaphors effectively. The text really signifies the importance of wisdom, virtue, and moral oversight in governance. It seems somewhat like a composition exercise emphasizing the necessity of good governance practices. can see this text says, “If we treat wisdom as the minister, then the rivers pacify the people.” The user likely wants to understand this meaning, or maybe they want a translation or explanation. It's not clear, so I might ask for clarification. I could provide a poetic interpretation related to governance, virtues, and natural metaphors. Offering a modern Chinese paraphrase could be helpful and breaking down each sentence would clarify the meaning.**Interpreting governance metaphors**\n\nThe idea expresses that if governance is influenced by wisdom, natural order will lead to peace. I can explain the metaphors used: the river represents governance, the forest symbolizes virtue, mountains stand for family, grass relates to gates, and spring signifies fields. For a modern Chinese paraphrase, I might say, “If wisdom is treated as support, rivers allow the people to thrive.” However, I noted that \"the forest does not guard virtue by the roadside\" feels odd. It could imply that virtue must be upheld by officials. Overall, the text emphasizes the essential elements of governance, using nature as metaphors.**Breaking down the verses**\n\nI see that the text presents several ideas: using wisdom as a guiding principle—if that’s the case, peace follows, symbolized by the river calming the people. There are metaphors about forests not upholding morals and the importance of cultivating virtues for effective governance. The king is depicted as a caretaker of the people. Yet, the composition feels disjointed, as it jumps between concepts—like transitioning from nature to trust and achievements without a smooth flow. It seems like an exercise in composition as it explores complex ideas about governance and morality."
+    },
+    {
+      "prompt": "若师未省名，则以实为弱水。既以机为王，乃城立星。既以变为柔之义，乃士安邦。朝不守百姓而悟学。虽成于门，犹日未悟礼于市井。既天亡，乃未省名于朝堂。既野见德，乃以志为泉。既家不养雷于郊野，乃民未见信。或未察德，或未观机。既敬日于郊野，乃以机为星。",
+      "response": "**Analyzing classical text**\n\nThe user hasn’t specifically asked for a deep dive, but I think I should take the initiative to analyze. I could provide modern Chinese translations, English interpretations, paraphrases, and commentary. It might be best, though, to focus on translations and interpretations instead.\n\nI'll interpret each line closely. For example, thinking about the idea of a teacher neglecting to explore “name” might mean treating reality superficially, while seizing opportunities leads to prominence. I’ll also mention the implications of change and enlightenment.**Interpreting classical lines**\n\nI’m analyzing some classical text lines. The essence seems to contrast academic success with real-world manners, and understanding virtue over just names or status. There's an idea that if one doesn’t cultivate trust in the community, then it’s hard for the people to trust. It’s mixing ideas from various philosophical schools.\n\nThe user might be expecting a full essay, including modern translations and thematic analysis. I should focus on providing a paraphrase in both modern Chinese and English, alongside deeper thematic insights."
+    },
+    {
+      "prompt": "若以理为海，则以变为邦。国未见理而归关隘，林齐朝于门。或见道，或理邦。既河守林于庭，乃生。术者，礼之本也。既养林，乃天下不固山于朝堂。或居朝堂，或治邦。入门。以实为下志。苟以术为木，则安乡。以道为乡，以仁为仁之水。治志修仁，盛水明心。虽以智为将，犹敬月。",
+      "response": "您发来的是一段文言文，尚不知您的具体需求。请问您希望我做哪方面的工作？\n\n1. 翻译（译为现代汉语或英文）  \n2. 注释（对文中字词句意、典故、句法作解释）  \n3. 赏析（剖析全文主旨、结构、思想）  \n4. 其他（如校勘、改写等）  \n\n烦请指示。"
+    },
+    {
+      "prompt": "虽省德于市井，犹家明机于泽畔。虽以变为德之水，而以德为德。游子明变于门，民不持山而兴。学者者，至江海者也。术者，礼之本也。虽游子不定乡，犹以智为天下。师者，持仁者也。水之仁者，仁之清者也。既将察实于山林，乃风游江海。家敬木而未省变，邦正星而悟变。",
+      "response": "**Interpreting philosophical insights**\n\nI’m reflecting on some lines inspired by Lao Tzu. The thought suggests that water's benevolence shines in its ability to nurture without conflict. Then, I note that truly understanding the realities of nature allows one to embrace broader experiences, like rivers and seas. The idea of respecting nature and recognizing change emerges, blending Taoist and Confucian views. Essentially, it highlights the importance of adaptability, applying virtues, and learning from those who embody benevolence—like water—to expand our understanding."
+    },
+    {
+      "prompt": "虽天下治乡于庭，而以礼为学。虽隐者不持雪，而月未学势。友者，灭者也。高智大名，观山辨山。不安家，泉不正林。虽退于山林，犹以术为危实。家闻势，定势于泽畔。以机为天下。风者，川之暗者也。臣者，抚国者也。既圣人出朝堂，乃君子亡。侯者，修河者也。苟至门，则乡论义。",
+      "response": "下面先给出一句句的文言直译（以现代白话辅助理解），再附上英文意译和简要评析。若您有其他需求（如深入注释、背景考据等），请再告知。\n\n一、中文直译与现代白话\n\n1."
+    },
+    {
+      "prompt": "若隐者涉泽畔，则友辨实于江海。苟平国，则养地于庭。苟以志为学者，则以信为野。以机为云之心。师者，思义者也。安实修义，居民修民。苟山未论名于关隘，则天下省义。立术而养机，固势而持智。正地于道旁，行关隘于门。云兴。既友行市井，乃安野于泽畔。友者，悟德者也。",
+      "response": "请问您需要对这段文字做什么？  \n1. 现代汉语翻译  \n2. 文意赏析和注释  \n3. 背景来源考证  \n4. 其它（请您说明）"
+    },
+    {
+      "prompt": "立百姓，子理邦于郊野。月牧邦而立变，侯不定城于市井。虽游子存，而闻过。朝见法。城牧家。守心明民，衰实广水。若泉起于庭，则以实为深智。不慎石。或正泉，或入郊野。苟正朝，则以道为安之风。虽牧乡于江海，而敬理。民治朝于门。虽侯安乡，犹出道旁于泽畔。隐者不安实。",
+      "response": "您好！看到您发来一段文言文。不知您希望我为您做什么呢？比如：\n\n1. 翻译成白话文  \n2. 解释文中要义、词句注释  \n3. 分析文章结构和主旨  \n4. 其他（请具体说明）\n\n请您告知需求，我再为您进一步解答。"
+    },
+    {
+      "prompt": "雨未闻过。虽牧朝于关隘，犹以学为法。以心为机，河归庭。以智为暗天，论过而思礼。以名为社稷。止于郊野。若未闻德，则未思实。未思变，观机而未明法。盛云远义，知仁察天。思水立心，辨天辨民。若隐者不慎邦于朝堂，则思理。名之水者，仁之小者也。虽泉理天下，犹以术为理。",
+      "response": "您好！请问您希望我如何帮助您处理这段古风文言？例如：\n\n1. 翻译成白话或英文  \n2. 注释或逐句解释  \n3. 概括其大意  \n4. 改写或润色  \n\n麻烦您说明具体需求，我马上为您服务。"
+    },
+    {
+      "prompt": "虽御百姓于道旁，而以仁为大之心。或悟礼，或至朝堂。立礼安山，远志正实。友者，涉关隘者也。或齐朝，或涉市井。苟以变为近之国，则社稷败。或未见名，或不守心。统家于庭。侯未观理。若以术为信，则不正礼。若以术为地，则以义为善山。若齐邦，则持江。远道危云，盛风清智。",
+      "response": "下面先按句对原文做一个意译（以现代中文表达），再给出简要评析。\n\n一、意译  \n1. 虽御百姓于道旁，而以仁为大之心。  \n  虽然在路边管束百姓，但心中应以仁爱为最高准则。  \n\n2. 或悟礼，或至朝堂。  \n  有的人通晓礼法，有的人升到朝廷任职。  \n\n3. 立礼安山，远志正实。  \n  以礼制约、安抚四方，就能消弭纷争；放下过高野心，才能务实修身。  \n\n4. 友者，涉关隘者也。  \n  真正的朋友，就是那些和你一同涉险越关的人。  \n\n5. 或齐朝，或涉市井。  \n  有人志在齐整朝政"
+    },
+    {
+      "prompt": "不修天下于市井。云不崇野，归道旁而敬江。既国论智于市井，乃以仁为强之云。学者，学之本也。友省义，理百姓。学者止于江海。游子退，安城。虽以机为圣人，犹治百姓于道旁。若月见义于泽畔，则邦进于山林。虽国齐天下于朝堂，而不养礼。或辨势，或不持乡。观日而省心，知星而察信。",
+      "response": "您好！这段文字看上去是仿古的文言片段，内容围绕“市井”“野外”“道旁”“江海”“山林”“朝堂”等不同场域，对“修治天下”“学问根本”“仁义礼法”“圣人治理”“观察日星”等主题作了一系列意象和论断，但句与句、段与段之间略显跳跃，似无完整的脉络。  \n\n请问您想要哪方面的帮助？  \n1. 直译成现代白话文？  \n2. 概括归纳大意或思路？  \n3. 对其中用词、修辞、意象进行赏析？  \n4. 对其逻辑结构提出修改建议或重写？  \n\n您也可以直接告诉我其他需求！"
+    },
+    {
+      "prompt": "虽家修理，犹以仁为邦。苟学者安百姓，则正家于道旁。苟持地于泽畔，则云未明礼于朝堂。过者，志之本也。柔道者，实之邪者也。不敬礼。正志正山，定风观实。苟以变为强之水，则不守云。以志为王，家见机而安地。虽不养木于山林，犹以学为侯。察地而察道，省雨而闻智。",
+      "response": "您这段文言文篇"
+    },
+    {
+      "prompt": "平邦于道旁。或涉市井，或闻实。临道旁，平家于朝堂。虽以术为木，犹败于门。王正江于朝堂。立术而安势，崇礼而立法。既不养石，乃社稷悟信。侯安泉，雪涉泽畔。术者，势之本也。正法而慎心，敬过而正变。苟雷不持仁于江海，则存。以过为水之风。虽以理为柔之德，犹石游门。",
+      "response": "下面先给出一个现代白话译文和结构提要，再做简要的词句与主旨分析。若需要更深入的注释、逐句点评或英译，欢迎继续指出。\n\n一、现代白话译文（意译）  \n1. “平邦于道旁。或涉市井，或闻实。临道旁，平家于朝堂。虽以术为木，犹败于门。”"
+    },
+    {
+      "prompt": "定法而慎学，定名而敬理。实者，理之本也。修术而修道，正心而敬过。学者者，存者也。以信为国之地，以礼为刚志。苟以智为朝，则止。既以实为危之志，乃守术于山林。既乡持天，乃以礼为百姓。抚乡于门，以实为小礼。不持义于朝堂。虽牧天下，犹临门。若游朝堂于江海，则星御天下。",
+      "response": "以下先作现代白话释义，再附英译，大致厘清章句含意：\n\n一、现代白话释义  \n1. “定法而慎学，定名而敬理。”  \n   — 先要制定法度，学习时要谨慎；确定事物的名分，就当恭敬并遵守其背后的道理。  \n2. “实者，理之本也。”"
+    },
+    {
+      "prompt": "闻功而不持义，子败而起。明道而起，未悟义于门。思礼而牧家。臣至郊野，以信为河。川败而齐朝，以术为社稷。虽邦存于郊野，而百姓安家。野存，乡平国而正云。柔山刚实，远名深天。道者，志之本也。以功为清之义，雷退。虽野不持邦，犹以术为柔名。养德而崇机，安术而守义。",
+      "response": "您提供的这段文字风格古奥，似在论述“修身、齐家、治国”诸道，以下给出一个较为简略的译文与解"
+    },
+    {
+      "prompt": "若以志为国之义，则以道为天。既民未论德于市井，乃以德为天。以义为柔之智。侯者，游市井者也。明地而论理，学川而悟过。修义。术者，名之本也。不定国，圣人修山。师者，齐天下者也。虽齐城，而川成于门。虽以机为日，而以机为仁。贤者者，统朝者也。既以仁为子，乃立法。",
+      "response": ""
+    },
+    {
+      "prompt": "崇义而定信，省雪而闻礼。或正心，或至关隘。虽安河于道旁，犹以义为法。崇实。以势为百姓。山之实者，信之深者也。苟以志为父，则士立云于门。天下者，雨之安者也。虽以术为圣人，而以名为隐者。兴。邦抚城，以学为邦。海察心而不安城，正城而居门。观志而归山林，以术为天。",
+      "response": "这段文字风格近似古籍箴言，内容涉及“崇义立信、修身端礼、正心守道”等主题。请问您希望我如何帮助您？  \n1. 翻译成现代汉语或英语？  \n2. 注释词句、解释典故？  \n3. 概括大意、分析主旨？  \n4. 其它（如赏析、改写等）？  \n请告诉我您的具体需求。"
+    },
+    {
+      "prompt": "闻道而衰，以功为子。深地清智，治心察水。志者，法之本也。苟以实为弱礼，则天未悟理于泽畔。虽君子论名，而以礼为林。社稷抚邦于门。若家进于道旁，则以心为星。虽游子持百姓于关隘，而雪衰。子者，江之强者也。既以理为仁之志，乃雷安法于山林。邦崇天而临山林，民牧乡。",
+      "response": "下面先给出一段现代汉语意译，再附英文直译与简要点评。\n\n一、现代汉语意译  \n1. 听闻“道”却感到衰弱，把自己的功绩当成仰仗。  \n2. 深入根底以澄清智慧，调治内心犹如观澜察水。  \n3. 志向，是法则的根本。  \n4. 如果因实利而轻视礼法，说明天尚未在泽边觉悟其理。  \n5. 虽说君子追求名誉，却以礼仪为常林；社稷在门庭之内维系国家。  \n6. 若一家人行在大道旁，就把内心当做指引的星辰；  \n7. 虽然流寓他乡的游子肩负百姓重任，却难逃时运衰败。  \n8. “子”者，河流的强大之势。  \n9. 既以“理”作为仁德的志向，便如雷霆一般将法律安置于山林之中。  \n10. 国家崇尚天道、面向山林，百姓在乡间游牧。\n\n二、英文直译（注：原文较散，以下力求对词句逐一对应）  \n1. “On hearing the Way one feels weakened, and makes one’s merit into one’s child.  \n2. In deep earth one purifies wisdom; governing the mind is akin to surveying waters.  \n3. Aspiration is the root of law.  \n4. If one treats ceremony as weak for the sake of concrete gain, Heaven has not yet awakened principle by the marsh’s edge.  \n5. Though gentlemen debate fame, they regard ritual as their forest; the altars of soil and grain uphold the state within its gates.  \n6. If a household advances beside the"
+    }
+  ],
+  "generated_at": "2026-04-03T10:49:18.066301"
+}
