@@ -1,0 +1,96 @@
+{
+  "model_name": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 2629.0028648376465,
+  "signature_stats": {
+    "mean": 0.025079362094402313,
+    "std": 2.6795408725738525,
+    "min": -6.3278703689575195,
+    "max": 8.304816246032715,
+    "median": 0.10410735011100769,
+    "l1_norm": 268.14447021484375,
+    "l2_norm": 30.31687355041504,
+    "sparsity": 0.0,
+    "entropy": 4.889583496646251
+  },
+  "metadata": {
+    "model_name": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-06T09:13:47.826618",
+    "computation_time_seconds": 7.603339672088623,
+    "model_metadata": {
+      "model_name": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6967787520,
+        "parameter_count_billions": 6.97
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-06T00:05:10.813621",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/deepseek-ai_DeepSeek-R1-Distill-Llama-8B/deepseek-ai_DeepSeek-R1-Distill-Llama-8B_dna.json",
+  "config": {
+    "model_name": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false
+  }
+}
