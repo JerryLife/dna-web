@@ -12,12 +12,17 @@
 import { readdir, readFile, writeFile, mkdir } from 'fs/promises';
 import { join, basename } from 'path';
 import { existsSync } from 'fs';
+import { createRequire } from 'module';
+import { UMAP } from 'umap-js';
 import config from '../config.json' with { type: 'json' };
+
+const require = createRequire(import.meta.url);
+const TSNE = require('tsne-js');
 
 // Get build mode from command line
 const MODE = process.argv[2] || 'all'; // 'raw', 'chat', or 'all'
-const DEFAULT_PROJECTION_METHOD = 'pca';
-const SUPPORTED_PROJECTION_METHODS = new Set(['pca', 'random']);
+const DEFAULT_PROJECTION_METHOD = 'tsne';
+const SUPPORTED_PROJECTION_METHODS = new Set(['pca', 'random', 'umap', 'tsne']);
 
 function resolveProjectionMethod(datasetConfig) {
     const requested = String(
@@ -208,8 +213,8 @@ function createSeededRandom(seed = 42) {
 function assignScaledCoordinates(models, projected, rand) {
     if (projected.length === 0) {
         models.forEach(model => {
-            model.x = (rand() - 0.5) * 100;
-            model.y = (rand() - 0.5) * 100;
+            model.x = (rand() - 0.5) * 200;
+            model.y = (rand() - 0.5) * 200;
         });
         return;
     }
@@ -226,14 +231,14 @@ function assignScaledCoordinates(models, projected, rand) {
     let sigIndex = 0;
     models.forEach(model => {
         if (!model.signature) {
-            model.x = (rand() - 0.5) * 100;
-            model.y = (rand() - 0.5) * 100;
+            model.x = (rand() - 0.5) * 200;
+            model.y = (rand() - 0.5) * 200;
             return;
         }
 
         const p = projected[sigIndex++];
-        model.x = ((p.x - xMin) / xRange - 0.5) * 100;
-        model.y = ((p.y - yMin) / yRange - 0.5) * 100;
+        model.x = ((p.x - xMin) / xRange - 0.5) * 200;
+        model.y = ((p.y - yMin) / yRange - 0.5) * 200;
         model.x += (rand() - 0.5) * 1;
         model.y += (rand() - 0.5) * 1;
     });
@@ -349,9 +354,78 @@ function generate2DCoordinatesPCA(models) {
     console.log('  PCA projection complete.');
 }
 
+function generate2DCoordinatesUMAP(models) {
+    if (models.length === 0) return;
+
+    const rand = createSeededRandom(42);
+    const signatures = models.map(m => m.signature).filter(Boolean);
+    if (signatures.length < 2) {
+        assignScaledCoordinates(models, [], rand);
+        return;
+    }
+
+    console.log('  Computing UMAP projection...');
+    const umap = new UMAP({
+        nNeighbors: Math.min(15, signatures.length - 1),
+        minDist: 0.1,
+        nComponents: 2,
+        random: () => {
+            // Use seeded random for reproducibility
+            return rand();
+        },
+    });
+
+    const embedding = umap.fit(signatures);
+
+    const projected = embedding.map(([x, y]) => ({ x, y }));
+    assignScaledCoordinates(models, projected, rand);
+    console.log('  UMAP projection complete.');
+}
+
+function generate2DCoordinatesTSNE(models) {
+    if (models.length === 0) return;
+
+    const rand = createSeededRandom(42);
+    const signatures = models.map(m => m.signature).filter(Boolean);
+    if (signatures.length < 2) {
+        assignScaledCoordinates(models, [], rand);
+        return;
+    }
+
+    const perplexity = Math.min(30, Math.floor((signatures.length - 1) / 3));
+    console.log(`  Computing t-SNE projection (perplexity=${perplexity})...`);
+
+    const tsne = new TSNE({
+        dim: 2,
+        perplexity,
+        earlyExaggeration: 4.0,
+        learningRate: 100,
+        nIter: 1000,
+        metric: 'cosine',
+    });
+
+    tsne.init({ data: signatures, type: 'dense' });
+    tsne.run();
+    const output = tsne.getOutputScaled();
+
+    const projected = output.map(([x, y]) => ({ x, y }));
+    assignScaledCoordinates(models, projected, rand);
+    console.log('  t-SNE projection complete.');
+}
+
 function generate2DCoordinates(models, method = DEFAULT_PROJECTION_METHOD) {
     if (method === 'random') {
         generate2DCoordinatesRandom(models);
+        return;
+    }
+
+    if (method === 'umap') {
+        generate2DCoordinatesUMAP(models);
+        return;
+    }
+
+    if (method === 'tsne') {
+        generate2DCoordinatesTSNE(models);
         return;
     }
 
