@@ -23,8 +23,11 @@ import config from '@/config';
 
 // Configuration
 const MIN_COUNT = config.visualization?.minCount || 5;
-const CROWD_RADIUS = config.visualization?.crowdRadius || 6.0;
-const NORMALIZED_SIZE = 1000;
+const CROWD_RADIUS = config.visualization?.crowdRadius || 80;
+const HULL_PADDING = config.visualization?.hullPadding ?? 2;
+const HULL_TENSION = config.visualization?.hullTension ?? 0.7;
+const HULL_FILL_OPACITY = config.visualization?.hullFillOpacity ?? 0.12;
+const HULL_STROKE_OPACITY = config.visualization?.hullStrokeOpacity ?? 0.3;
 
 // Generate consistent color for organization
 function generateOrgColor(org: string, count: number): string {
@@ -396,88 +399,191 @@ export default function GalaxyPage() {
         // Draw density contours for organizations
         const orgGroups = d3.group(models, d => d.organization || 'Others');
 
-        // Normalized scales for contour calculation
-        const normXScale = d3.scaleLinear()
-            .domain(xExtent)
-            .range([innerPadding, NORMALIZED_SIZE - innerPadding]);
-        const normYScale = d3.scaleLinear()
-            .domain(yExtent)
-            .range([NORMALIZED_SIZE - innerPadding, innerPadding]);
-
-        const scaleX = chartWidth / NORMALIZED_SIZE;
-        const scaleY = chartHeight / NORMALIZED_SIZE;
-
-        // Helper to find data-space distance between two points (same as galaxy.js)
-        const dist = (p1: ModelData, p2: ModelData) => Math.sqrt(
-            Math.pow(p1.x! - p2.x!, 2) + Math.pow(p1.y! - p2.y!, 2)
-        );
-
-        // Simple clustering in data-space (same as galaxy.js)
-        const findDenseCluster = (points: ModelData[], radius: number, minPoints: number): ModelData[] => {
-            if (points.length < minPoints) return [];
-            const densePoints: ModelData[] = [];
-            for (const p of points) {
-                const neighbors = points.filter(other => dist(p, other) < radius);
-                if (neighbors.length >= minPoints) {
-                    densePoints.push(...neighbors);
-                }
-            }
-            // Remove duplicates by id
-            const seen = new Set<string>();
-            return densePoints.filter(p => {
-                if (seen.has(p.id)) return false;
-                seen.add(p.id);
-                return true;
-            });
-        };
-
         // Compute clustering radius as percentage of data diagonal
         const xSpan = xExtent[1] - xExtent[0];
         const ySpan = yExtent[1] - yExtent[0];
         const dataDiagonal = Math.sqrt(xSpan * xSpan + ySpan * ySpan);
-        const dataRadius = dataDiagonal * (CROWD_RADIUS / 1000);
-        const bandwidth = NORMALIZED_SIZE * (CROWD_RADIUS / 1000) * 0.6;
+        const clusterRadius = dataDiagonal * (CROWD_RADIUS / 1000);
+
+        // Split points into connected spatial clusters via BFS
+        const splitClusters = (points: ModelData[], radius: number): ModelData[][] => {
+            const visited = new Array(points.length).fill(false);
+            const clusters: ModelData[][] = [];
+
+            for (let i = 0; i < points.length; i++) {
+                if (visited[i]) continue;
+                visited[i] = true;
+                const cluster: number[] = [i];
+                const queue = [i];
+
+                while (queue.length > 0) {
+                    const curr = queue.pop()!;
+                    const px = points[curr].x!, py = points[curr].y!;
+                    for (let j = 0; j < points.length; j++) {
+                        if (visited[j]) continue;
+                        const dx = px - points[j].x!;
+                        const dy = py - points[j].y!;
+                        if (dx * dx + dy * dy < radius * radius) {
+                            visited[j] = true;
+                            cluster.push(j);
+                            queue.push(j);
+                        }
+                    }
+                }
+
+                clusters.push(cluster.map(idx => points[idx]));
+            }
+
+            return clusters;
+        };
+
+        // Alpha shape: concave hull from Delaunay triangulation
+        const alphaShape = (pts: [number, number][], alphaR: number): [number, number][][] => {
+            if (pts.length < 3) return [];
+
+            const delaunay = d3.Delaunay.from(pts);
+            const triangles = delaunay.triangles;
+            const edgeCount = new Map<string, [number, number]>();
+
+            for (let i = 0; i < triangles.length; i += 3) {
+                const i0 = triangles[i], i1 = triangles[i + 1], i2 = triangles[i + 2];
+                const [ax, ay] = pts[i0], [bx, by] = pts[i1], [cx, cy] = pts[i2];
+
+                // Circumradius
+                const ab = Math.hypot(ax - bx, ay - by);
+                const bc = Math.hypot(bx - cx, by - cy);
+                const ca = Math.hypot(cx - ax, cy - ay);
+                const s = (ab + bc + ca) / 2;
+                const area = Math.sqrt(Math.max(s * (s - ab) * (s - bc) * (s - ca), 0));
+                if (area === 0 || (ab * bc * ca) / (4 * area) > alphaR) continue;
+
+                const edges: [number, number][] = [[i0, i1], [i1, i2], [i2, i0]];
+                for (const [a, b] of edges) {
+                    const key = Math.min(a, b) + ',' + Math.max(a, b);
+                    if (edgeCount.has(key)) edgeCount.delete(key);
+                    else edgeCount.set(key, [Math.min(a, b), Math.max(a, b)]);
+                }
+            }
+
+            if (edgeCount.size === 0) return [];
+
+            // Build adjacency and extract all boundary loops
+            const adj = new Map<number, Set<number>>();
+            for (const [a, b] of edgeCount.values()) {
+                if (!adj.has(a)) adj.set(a, new Set());
+                if (!adj.has(b)) adj.set(b, new Set());
+                adj.get(a)!.add(b);
+                adj.get(b)!.add(a);
+            }
+
+            const loops: [number, number][][] = [];
+            const globalVisited = new Set<string>();
+
+            for (const [startNode, startNeighbors] of adj) {
+                for (const firstNext of startNeighbors) {
+                    const edgeKey = Math.min(startNode, firstNext) + ',' + Math.max(startNode, firstNext);
+                    if (globalVisited.has(edgeKey)) continue;
+
+                    // Walk boundary: always pick the most clockwise next edge
+                    const loop: number[] = [startNode];
+                    let prev = startNode, curr = firstNext;
+                    globalVisited.add(edgeKey);
+
+                    while (curr !== startNode) {
+                        loop.push(curr);
+                        const neighbors = adj.get(curr);
+                        if (!neighbors) break;
+
+                        // Pick next neighbor by smallest clockwise angle from incoming direction
+                        const inAngle = Math.atan2(prev - curr === 0 ? 0 : pts[prev][1] - pts[curr][1],
+                                                    pts[prev][0] - pts[curr][0]);
+                        let bestNext = -1, bestAngle = Infinity;
+                        for (const n of neighbors) {
+                            if (n === prev) continue;
+                            const ek = Math.min(curr, n) + ',' + Math.max(curr, n);
+                            if (globalVisited.has(ek)) continue;
+                            let angle = Math.atan2(pts[n][1] - pts[curr][1], pts[n][0] - pts[curr][0]) - inAngle;
+                            if (angle <= 0) angle += 2 * Math.PI;
+                            if (angle < bestAngle) { bestAngle = angle; bestNext = n; }
+                        }
+
+                        if (bestNext === -1) break;
+                        const nextKey = Math.min(curr, bestNext) + ',' + Math.max(curr, bestNext);
+                        globalVisited.add(nextKey);
+                        prev = curr;
+                        curr = bestNext;
+                    }
+
+                    if (loop.length >= 3 && curr === startNode) {
+                        loops.push(loop.map(i => pts[i]));
+                    }
+                }
+            }
+
+            return loops;
+        };
+
+        // Expand hull outward from centroid
+        const padHull = (hull: [number, number][], padding: number): [number, number][] => {
+            const cx = hull.reduce((s, p) => s + p[0], 0) / hull.length;
+            const cy = hull.reduce((s, p) => s + p[1], 0) / hull.length;
+            return hull.map(([x, y]) => {
+                const dx = x - cx, dy = y - cy;
+                const len = Math.sqrt(dx * dx + dy * dy) || 1;
+                return [x + (dx / len) * padding, y + (dy / len) * padding] as [number, number];
+            });
+        };
+
+        const smoothLine = d3.line<[number, number]>()
+            .x(d => xScale(d[0]))
+            .y(d => yScale(d[1]))
+            .curve(d3.curveCardinalClosed.tension(HULL_TENSION));
 
         for (const [org, orgModels] of orgGroups) {
             if (orgModels.length < MIN_COUNT || org === 'Others') continue;
             if (!activeOrgs.has(org)) continue;
 
-            // Filter to dense clusters only (consistent with galaxy.js)
-            const clusteredPoints = findDenseCluster(orgModels, dataRadius, MIN_COUNT);
-            if (clusteredPoints.length < MIN_COUNT) continue;
-
-            const density = d3.contourDensity<ModelData>()
-                .x(d => normXScale(d.x!))
-                .y(d => normYScale(d.y!))
-                .size([NORMALIZED_SIZE, NORMALIZED_SIZE])
-                .bandwidth(bandwidth)
-                .thresholds(2);
-
-            const contours = density(clusteredPoints);
-            if (!contours || !contours[0]) continue;
-
             const color = generateOrgColor(org, orgModels.length);
+            const clusters = splitClusters(orgModels, clusterRadius);
 
-            shadowGroup.append('path')
-                .datum(contours[0])
-                .attr('fill', color)
-                .attr('fill-opacity', 0.15)
-                .attr('stroke', color)
-                .attr('stroke-width', 1)
-                .attr('stroke-opacity', 0.3)
-                .attr('d', d3.geoPath())
-                .attr('transform', `scale(${scaleX}, ${scaleY})`)
-                .style('cursor', 'pointer')
-                .on('mouseenter', function (event) {
-                    tooltip.innerHTML = `
-                        <div style="font-weight: 600">${org}</div>
-                        <div style="color: #888">${orgModels.length} models</div>
-                    `;
-                    tooltip.style.display = 'block';
-                    updateTooltipPosition(event);
-                })
-                .on('mousemove', updateTooltipPosition)
-                .on('mouseleave', () => { tooltip.style.display = 'none'; });
+            for (const cluster of clusters) {
+                if (cluster.length < MIN_COUNT) continue;
+
+                const pts: [number, number][] = cluster.map(d => [d.x!, d.y!]);
+                if (pts.length < 3) continue;
+
+                // Try alpha shape with cluster radius, fall back to convex hull
+                let boundaries = alphaShape(pts, clusterRadius);
+                if (boundaries.length === 0) {
+                    const convex = d3.polygonHull(pts);
+                    if (!convex) continue;
+                    boundaries = [convex];
+                }
+
+                for (const boundary of boundaries) {
+                    if (boundary.length < 3) continue;
+                    const padded = padHull(boundary, HULL_PADDING);
+
+                    shadowGroup.append('path')
+                        .attr('d', smoothLine(padded))
+                        .attr('fill', color)
+                        .attr('fill-opacity', HULL_FILL_OPACITY)
+                        .attr('stroke', color)
+                        .attr('stroke-width', 1.5)
+                        .attr('stroke-opacity', HULL_STROKE_OPACITY)
+                        .style('cursor', 'pointer')
+                        .on('mouseenter', function (event) {
+                            tooltip.innerHTML = `
+                                <div style="font-weight: 600">${org}</div>
+                                <div style="color: #888">${cluster.length} of ${orgModels.length} models</div>
+                            `;
+                            tooltip.style.display = 'block';
+                            updateTooltipPosition(event);
+                        })
+                        .on('mousemove', updateTooltipPosition)
+                        .on('mouseleave', () => { tooltip.style.display = 'none'; });
+                }
+            }
         }
 
         // Draw dots

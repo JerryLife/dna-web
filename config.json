@@ -18,7 +18,11 @@
     },
     "visualization": {
         "minCount": 2,
-        "crowdRadius": 100
+        "crowdRadius": 80,
+        "hullPadding": 5,
+        "hullTension": 0.5,
+        "hullFillOpacity": 0.12,
+        "hullStrokeOpacity": 0.3
     },
     "projection": {
         "method": "tsne"

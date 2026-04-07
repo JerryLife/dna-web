@@ -9,6 +9,10 @@ export interface AppConfig {
     visualization: {
         minCount: number;
         crowdRadius: number;
+        hullPadding?: number;
+        hullTension?: number;
+        hullFillOpacity?: number;
+        hullStrokeOpacity?: number;
     };
     analytics?: {
         googleTagId?: string;

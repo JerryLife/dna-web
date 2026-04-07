@@ -392,7 +392,7 @@ function generate2DCoordinatesTSNE(models) {
         return;
     }
 
-    const perplexity = Math.min(30, Math.floor((signatures.length - 1) / 3));
+    const perplexity = Math.min(10, Math.floor((signatures.length - 1) / 3));
     console.log(`  Computing t-SNE projection (perplexity=${perplexity})...`);
 
     const tsne = new TSNE({
@@ -401,7 +401,7 @@ function generate2DCoordinatesTSNE(models) {
         earlyExaggeration: 4.0,
         learningRate: 100,
         nIter: 1000,
-        metric: 'cosine',
+        metric: 'euclidean',
     });
 
     tsne.init({ data: signatures, type: 'dense' });
