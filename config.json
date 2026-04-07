@@ -1,5 +1,5 @@
 {
-    "dataset": "squad_cqa_hs_wg_arc_mmlu",
+    "dataset": "rand",
     "paths": {
         "dnaOut": "./dna-out",
         "output": "./public/dna_database.json"
@@ -7,7 +7,7 @@
     "datasets": {
         "raw": {
             "dnaOut": "./dna-out",
-            "dataset": "squad_cqa_hs_wg_arc_mmlu",
+            "dataset": "rand",
             "output": "./public/dna_database.json"
         },
         "chat": {
@@ -17,11 +17,11 @@
         }
     },
     "visualization": {
-        "minCount": 5,
-        "crowdRadius": 6
+        "minCount": 2,
+        "crowdRadius": 100
     },
     "projection": {
-        "method": "random"
+        "method": "tsne"
     },
     "analytics": {
         "googleTagId": "G-DKR5DJH3DE"

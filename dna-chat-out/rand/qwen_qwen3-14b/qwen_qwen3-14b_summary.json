@@ -1,70 +1,72 @@
 {
-  "model_name": "google/gemini-3-flash-preview",
+  "model_name": "qwen/qwen3-14b",
   "dataset": "rand_chinese",
   "dataset_full": "rand_chinese",
   "extractor_type": "embedding",
   "dna_dimension": 128,
   "reduction_method": "random_projection",
   "num_probes": 100,
-  "total_time_seconds": 918.9359154701233,
+  "total_time_seconds": 1760.987200498581,
   "signature_stats": {
-    "mean": -0.06427191197872162,
-    "std": 2.5926647186279297,
-    "min": -8.44791030883789,
-    "max": 8.990082740783691,
-    "median": -0.029070675373077393,
-    "l1_norm": 254.95440673828125,
-    "l2_norm": 29.341663360595703,
+    "mean": 0.10480587184429169,
+    "std": 2.7257144451141357,
+    "min": -5.401419162750244,
+    "max": 8.394463539123535,
+    "median": -0.017293274402618408,
+    "l1_norm": 275.20428466796875,
+    "l2_norm": 30.86072540283203,
     "sparsity": 0.0,
-    "entropy": 4.6680948815159855
+    "entropy": 4.932535615152876
   },
   "metadata": {
-    "model_name": "google/gemini-3-flash-preview",
+    "model_name": "qwen/qwen3-14b",
     "extraction_method": "text_response_embeddings_random_projection_concat",
     "probe_set_id": "rand_chinese_100",
     "probe_count": 100,
     "dna_dimension": 128,
     "embedding_dimension": 768,
     "reduction_method": "random_projection",
-    "extraction_time": "2026-04-03T01:15:26.100051",
-    "computation_time_seconds": 5.191300392150879,
+    "extraction_time": "2026-04-03T10:47:41.759533",
+    "computation_time_seconds": 5.419715642929077,
     "model_metadata": {
-      "model_name": "google/gemini-3-flash-preview",
+      "model_name": "qwen/qwen3-14b",
       "architecture": {
         "type": "decoder_only",
-        "model_type": "unknown",
+        "model_type": "qwen3",
         "is_generative": true
       },
       "size": {
-        "parameter_count_billions": null
+        "parameter_count": 13360824320,
+        "parameter_count_billions": 13.36
       },
       "chat_model": {
-        "is_chat_model": false
+        "is_chat_model": true
       },
       "precision": {
-        "default_dtype": "float32"
+        "default_dtype": "bfloat16"
       },
       "repository": {
-        "is_gated": true
+        "is_gated": false,
+        "model_id": "Qwen/Qwen3-14B"
       },
       "metadata": {
-        "fetched_at": "2026-04-03T01:00:07.960067",
+        "fetched_at": "2026-04-03T10:18:23.369503",
         "source": "huggingface_hub"
       }
     },
     "extractor_config": {
       "mode": "single_cached_response_embeddings",
       "sentence_encoder": "all-mpnet-base-v2",
-      "generation_device": "cuda:6",
-      "encoder_device": "cuda:6",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
       "max_length": 1024,
       "dataset": "rand_chinese"
     },
     "aggregation_method": "concat"
   },
-  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/google_gemini-3-flash-preview/google_gemini-3-flash-preview_dna.json",
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/qwen_qwen3-14b/qwen_qwen3-14b_dna.json",
   "config": {
-    "model_name": "google/gemini-3-flash-preview",
+    "model_name": "qwen/qwen3-14b",
     "model_path": null,
     "model_type": "openrouter",
     "dataset": "rand_chinese",
@@ -86,7 +88,7 @@
     "token": null,
     "trust_remote_code": true,
     "device": "cuda",
-    "gpu_id": 6,
+    "gpu_id": 5,
     "log_level": "INFO",
     "random_seed": 42,
     "use_chat_template": false

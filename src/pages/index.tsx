@@ -211,7 +211,7 @@ export default function GalaxyPage() {
     const [debouncedSearch] = useDebouncedValue(search, 300);
     const [showBase, setShowBase] = useState(true);
     const [showInstruct, setShowInstruct] = useState(true);
-    const [showModelText, setShowModelText] = useState(true);
+    const [showModelText, setShowModelText] = useState(false);
     const [activeOrgs, setActiveOrgs] = useState<Set<string>>(new Set());
     const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
     const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
@@ -431,16 +431,20 @@ export default function GalaxyPage() {
             });
         };
 
-        const dataRadius = CROWD_RADIUS / 6;
-        const bandwidth = 35; // Fixed bandwidth in normalized space
+        // Compute clustering radius as percentage of data diagonal
+        const xSpan = xExtent[1] - xExtent[0];
+        const ySpan = yExtent[1] - yExtent[0];
+        const dataDiagonal = Math.sqrt(xSpan * xSpan + ySpan * ySpan);
+        const dataRadius = dataDiagonal * (CROWD_RADIUS / 1000);
+        const bandwidth = NORMALIZED_SIZE * (CROWD_RADIUS / 1000) * 0.6;
 
         for (const [org, orgModels] of orgGroups) {
             if (orgModels.length < MIN_COUNT || org === 'Others') continue;
             if (!activeOrgs.has(org)) continue;
 
             // Filter to dense clusters only (consistent with galaxy.js)
-            const clusteredPoints = findDenseCluster(orgModels, dataRadius, 2);
-            if (clusteredPoints.length < 2) continue;
+            const clusteredPoints = findDenseCluster(orgModels, dataRadius, MIN_COUNT);
+            if (clusteredPoints.length < MIN_COUNT) continue;
 
             const density = d3.contourDensity<ModelData>()
                 .x(d => normXScale(d.x!))

@@ -1,70 +1,72 @@
 {
-  "model_name": "anthropic/claude-sonnet-4.5",
+  "model_name": "ibm-granite/granite-4.0-h-micro",
   "dataset": "rand_chinese",
   "dataset_full": "rand_chinese",
   "extractor_type": "embedding",
   "dna_dimension": 128,
   "reduction_method": "random_projection",
   "num_probes": 100,
-  "total_time_seconds": 1111.1371450424194,
+  "total_time_seconds": 1258.8422696590424,
   "signature_stats": {
-    "mean": 0.019849538803100586,
-    "std": 2.7893004417419434,
-    "min": -6.9219255447387695,
-    "max": 8.046730995178223,
-    "median": -0.2728606164455414,
-    "l1_norm": 287.7965087890625,
-    "l2_norm": 31.558130264282227,
+    "mean": 0.013356536626815796,
+    "std": 2.132505416870117,
+    "min": -6.403275966644287,
+    "max": 6.303911209106445,
+    "median": -0.029077529907226562,
+    "l1_norm": 217.97943115234375,
+    "l2_norm": 24.12701988220215,
     "sparsity": 0.0,
-    "entropy": 4.964441166296852
+    "entropy": 4.8027469006933075
   },
   "metadata": {
-    "model_name": "anthropic/claude-sonnet-4.5",
+    "model_name": "ibm-granite/granite-4.0-h-micro",
     "extraction_method": "text_response_embeddings_random_projection_concat",
     "probe_set_id": "rand_chinese_100",
     "probe_count": 100,
     "dna_dimension": 128,
     "embedding_dimension": 768,
     "reduction_method": "random_projection",
-    "extraction_time": "2026-04-03T05:25:07.139838",
-    "computation_time_seconds": 5.579104900360107,
+    "extraction_time": "2026-04-03T04:45:08.937972",
+    "computation_time_seconds": 5.1764585971832275,
     "model_metadata": {
-      "model_name": "anthropic/claude-sonnet-4.5",
+      "model_name": "ibm-granite/granite-4.0-h-micro",
       "architecture": {
         "type": "decoder_only",
-        "model_type": "unknown",
+        "model_type": "granitemoehybrid",
         "is_generative": true
       },
       "size": {
-        "parameter_count_billions": null
+        "parameter_count": 2218786816,
+        "parameter_count_billions": 2.22
       },
       "chat_model": {
         "is_chat_model": false
       },
       "precision": {
-        "default_dtype": "float32"
+        "default_dtype": "bfloat16"
       },
       "repository": {
-        "is_gated": true
+        "is_gated": false,
+        "model_id": "ibm-granite/granite-4.0-h-micro"
       },
       "metadata": {
-        "fetched_at": "2026-04-03T05:06:36.789970",
+        "fetched_at": "2026-04-03T04:24:11.418335",
         "source": "huggingface_hub"
       }
     },
     "extractor_config": {
       "mode": "single_cached_response_embeddings",
       "sentence_encoder": "all-mpnet-base-v2",
-      "generation_device": "cuda:7",
-      "encoder_device": "cuda:7",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
       "max_length": 1024,
       "dataset": "rand_chinese"
     },
     "aggregation_method": "concat"
   },
-  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/anthropic_claude-sonnet-4.5/anthropic_claude-sonnet-4.5_dna.json",
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/ibm-granite_granite-4.0-h-micro/ibm-granite_granite-4.0-h-micro_dna.json",
   "config": {
-    "model_name": "anthropic/claude-sonnet-4.5",
+    "model_name": "ibm-granite/granite-4.0-h-micro",
     "model_path": null,
     "model_type": "openrouter",
     "dataset": "rand_chinese",
@@ -86,7 +88,7 @@
     "token": null,
     "trust_remote_code": true,
     "device": "cuda",
-    "gpu_id": 7,
+    "gpu_id": 5,
     "log_level": "INFO",
     "random_seed": 42,
     "use_chat_template": false
