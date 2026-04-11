@@ -1,0 +1,96 @@
+{
+  "model_name": "LLM360/Amber",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 2663.47442483902,
+  "signature_stats": {
+    "mean": 0.022145971655845642,
+    "std": 2.464712381362915,
+    "min": -5.723199844360352,
+    "max": 6.148404598236084,
+    "median": -0.031239211559295654,
+    "l1_norm": 259.6790771484375,
+    "l2_norm": 27.88616180419922,
+    "sparsity": 0.0,
+    "entropy": 5.1114371652641175
+  },
+  "metadata": {
+    "model_name": "LLM360/Amber",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-10T06:55:12.378379",
+    "computation_time_seconds": 5.455869674682617,
+    "model_metadata": {
+      "model_name": "LLM360/Amber",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6573522944,
+        "parameter_count_billions": 6.57
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "LLM360/Amber"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-10T06:10:49.831894",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/LLM360_Amber/LLM360_Amber_dna.json",
+  "config": {
+    "model_name": "LLM360/Amber",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false
+  }
+}

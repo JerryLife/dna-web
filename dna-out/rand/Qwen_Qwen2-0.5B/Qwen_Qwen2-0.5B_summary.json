@@ -1,0 +1,96 @@
+{
+  "model_name": "Qwen/Qwen2-0.5B",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 1839.1067173480988,
+  "signature_stats": {
+    "mean": 0.24604681134223938,
+    "std": 2.5782322883605957,
+    "min": -6.799223899841309,
+    "max": 6.413409233093262,
+    "median": 0.29769179224967957,
+    "l1_norm": 264.6466064453125,
+    "l2_norm": 29.30189323425293,
+    "sparsity": 0.0,
+    "entropy": 5.041278689444386
+  },
+  "metadata": {
+    "model_name": "Qwen/Qwen2-0.5B",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-06T22:45:53.847878",
+    "computation_time_seconds": 6.6790759563446045,
+    "model_metadata": {
+      "model_name": "Qwen/Qwen2-0.5B",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "qwen2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 367345664,
+        "parameter_count_billions": 0.37
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "Qwen/Qwen2-0.5B"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-06T22:15:15.678595",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/Qwen_Qwen2-0.5B/Qwen_Qwen2-0.5B_dna.json",
+  "config": {
+    "model_name": "Qwen/Qwen2-0.5B",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false
+  }
+}
