@@ -1,0 +1,95 @@
+{
+  "model_name": "nvidia/nemotron-nano-12b-v2-vl:free",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 4046.0699207782745,
+  "signature_stats": {
+    "mean": 0.14738205075263977,
+    "std": 3.1065900325775146,
+    "min": -8.373806953430176,
+    "max": 8.23544692993164,
+    "median": -0.0685177892446518,
+    "l1_norm": 307.65191650390625,
+    "l2_norm": 35.18658447265625,
+    "sparsity": 0.0,
+    "entropy": 4.862724642257783
+  },
+  "metadata": {
+    "model_name": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-14T14:15:11.669503",
+    "computation_time_seconds": 6.352391481399536,
+    "model_metadata": {
+      "model_name": "nvidia/nemotron-nano-12b-v2-vl:free",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 12000000000,
+        "parameter_count_billions": 12.0
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {},
+      "metadata": {
+        "fetched_at": "2026-04-14T13:07:45.604431",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese_chat/rand_chinese/nvidia_nemotron-nano-12b-v2-vl_free/nvidia_nemotron-nano-12b-v2-vl_free_dna.json",
+  "config": {
+    "model_name": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out/rand_chinese_chat",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}
