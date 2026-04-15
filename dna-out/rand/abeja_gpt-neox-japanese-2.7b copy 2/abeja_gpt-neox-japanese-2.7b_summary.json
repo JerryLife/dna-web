@@ -1,0 +1,79 @@
+{
+  "model_name": "abeja/gpt-neox-japanese-2.7b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 4.960631370544434,
+  "signature_stats": {
+    "mean": -0.05252528190612793,
+    "std": 0.5186355113983154,
+    "min": -1.3888956308364868,
+    "max": 1.0282752513885498,
+    "median": -0.062181852757930756,
+    "l1_norm": 52.20228958129883,
+    "l2_norm": 5.897706031799316,
+    "sparsity": 0.0,
+    "entropy": 5.022859799571636
+  },
+  "metadata": {
+    "model_name": "abeja/gpt-neox-japanese-2.7b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-12T18:53:30.556031",
+    "computation_time_seconds": 4.956735372543335,
+    "model_metadata": {
+      "model_name": "abeja/gpt-neox-japanese-2.7b",
+      "architecture": {
+        "is_generative": true
+      },
+      "repository": {}
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/abeja_gpt-neox-japanese-2.7b/abeja_gpt-neox-japanese-2.7b_dna.json",
+  "config": {
+    "model_name": "abeja/gpt-neox-japanese-2.7b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

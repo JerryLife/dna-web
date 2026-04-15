@@ -1,0 +1,98 @@
+{
+  "model_name": "lmsys/vicuna-13b-v1.5-16k",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 9975.726314783096,
+  "signature_stats": {
+    "mean": -0.09764917194843292,
+    "std": 3.0283000469207764,
+    "min": -8.467169761657715,
+    "max": 6.328329563140869,
+    "median": -0.31265926361083984,
+    "l1_norm": 310.6733703613281,
+    "l2_norm": 34.279109954833984,
+    "sparsity": 0.0,
+    "entropy": 5.156042680426655
+  },
+  "metadata": {
+    "model_name": "lmsys/vicuna-13b-v1.5-16k",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-15T16:57:11.073761",
+    "computation_time_seconds": 4.336082220077515,
+    "model_metadata": {
+      "model_name": "lmsys/vicuna-13b-v1.5-16k",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 12746752000,
+        "parameter_count_billions": 12.75
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "lmsys/vicuna-13b-v1.5-16k"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-15T14:10:57.264325",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/lmsys_vicuna-13b-v1.5-16k/lmsys_vicuna-13b-v1.5-16k_dna.json",
+  "config": {
+    "model_name": "lmsys/vicuna-13b-v1.5-16k",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 0,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
