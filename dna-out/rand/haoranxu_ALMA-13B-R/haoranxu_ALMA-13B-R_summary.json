@@ -1,0 +1,98 @@
+{
+  "model_name": "haoranxu/ALMA-13B-R",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 35952.9703001976,
+  "signature_stats": {
+    "mean": -0.08162015676498413,
+    "std": 2.7293479442596436,
+    "min": -6.093201160430908,
+    "max": 7.23000431060791,
+    "median": -0.04168655723333359,
+    "l1_norm": 279.9930725097656,
+    "l2_norm": 30.892850875854492,
+    "sparsity": 0.0,
+    "entropy": 5.094705060212499
+  },
+  "metadata": {
+    "model_name": "haoranxu/ALMA-13B-R",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-18T06:53:30.316322",
+    "computation_time_seconds": 5.011667490005493,
+    "model_metadata": {
+      "model_name": "haoranxu/ALMA-13B-R",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 12746752000,
+        "parameter_count_billions": 12.75
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "haoranxu/ALMA-13B-R"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-17T20:54:19.924250",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/haoranxu_ALMA-13B-R/haoranxu_ALMA-13B-R_dna.json",
+  "config": {
+    "model_name": "haoranxu/ALMA-13B-R",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

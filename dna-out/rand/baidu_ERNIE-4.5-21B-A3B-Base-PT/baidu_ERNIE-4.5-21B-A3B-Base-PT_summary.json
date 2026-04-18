@@ -1,0 +1,98 @@
+{
+  "model_name": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 8610.285514354706,
+  "signature_stats": {
+    "mean": -0.18095052242279053,
+    "std": 3.2308173179626465,
+    "min": -9.417024612426758,
+    "max": 9.152241706848145,
+    "median": 0.05882880091667175,
+    "l1_norm": 330.43756103515625,
+    "l2_norm": 36.60981369018555,
+    "sparsity": 0.0,
+    "entropy": 4.804563092608212
+  },
+  "metadata": {
+    "model_name": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-15T22:53:34.922761",
+    "computation_time_seconds": 6.6073713302612305,
+    "model_metadata": {
+      "model_name": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "ernie4_5_moe",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 2466775040,
+        "parameter_count_billions": 2.47
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "baidu/ERNIE-4.5-21B-A3B-Base-PT"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-15T20:30:06.680536",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/baidu_ERNIE-4.5-21B-A3B-Base-PT/baidu_ERNIE-4.5-21B-A3B-Base-PT_dna.json",
+  "config": {
+    "model_name": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

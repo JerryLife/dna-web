@@ -1,0 +1,98 @@
+{
+  "model_name": "maxcurrent/Peagle-9b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 23241.74508714676,
+  "signature_stats": {
+    "mean": 0.2524406313896179,
+    "std": 2.78171443939209,
+    "min": -6.725822448730469,
+    "max": 6.463069915771484,
+    "median": 0.04601043462753296,
+    "l1_norm": 292.1385498046875,
+    "l2_norm": 31.600833892822266,
+    "sparsity": 0.0,
+    "entropy": 5.183189876496105
+  },
+  "metadata": {
+    "model_name": "maxcurrent/Peagle-9b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-18T01:37:26.344220",
+    "computation_time_seconds": 4.410864353179932,
+    "model_metadata": {
+      "model_name": "maxcurrent/Peagle-9b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 8184135680,
+        "parameter_count_billions": 8.18
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "maxcurrent/Peagle-9b"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-17T19:10:07.015370",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/maxcurrent_Peagle-9b/maxcurrent_Peagle-9b_dna.json",
+  "config": {
+    "model_name": "maxcurrent/Peagle-9b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 0,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

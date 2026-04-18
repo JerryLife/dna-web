@@ -1,0 +1,98 @@
+{
+  "model_name": "echarlaix/tiny-random-mistral",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 95.26104831695557,
+  "signature_stats": {
+    "mean": -0.3159632682800293,
+    "std": 2.6526167392730713,
+    "min": -10.523653030395508,
+    "max": 6.3421220779418945,
+    "median": -0.1838110387325287,
+    "l1_norm": 261.883056640625,
+    "l2_norm": 30.223079681396484,
+    "sparsity": 0.0,
+    "entropy": 4.728810788080018
+  },
+  "metadata": {
+    "model_name": "echarlaix/tiny-random-mistral",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-17T15:37:31.969303",
+    "computation_time_seconds": 4.4085447788238525,
+    "model_metadata": {
+      "model_name": "echarlaix/tiny-random-mistral",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1048576,
+        "parameter_count_billions": 0.0
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "echarlaix/tiny-random-mistral"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-17T15:35:58.646531",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/echarlaix_tiny-random-mistral/echarlaix_tiny-random-mistral_dna.json",
+  "config": {
+    "model_name": "echarlaix/tiny-random-mistral",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
