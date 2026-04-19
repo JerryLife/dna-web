@@ -1,0 +1,97 @@
+{
+  "model_name": "knc6/diffractgpt_mistral_chemical_formula",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 7745.9808893203735,
+  "signature_stats": {
+    "mean": 0.3015306293964386,
+    "std": 3.4353201389312744,
+    "min": -7.006427764892578,
+    "max": 9.884148597717285,
+    "median": -0.23420953750610352,
+    "l1_norm": 351.93865966796875,
+    "l2_norm": 39.01564025878906,
+    "sparsity": 0.0,
+    "entropy": 5.15448228243082
+  },
+  "metadata": {
+    "model_name": "knc6/diffractgpt_mistral_chemical_formula",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-18T19:59:49.929859",
+    "computation_time_seconds": 4.460369348526001,
+    "model_metadata": {
+      "model_name": "knc6/diffractgpt_mistral_chemical_formula",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "knc6/diffractgpt_mistral_chemical_formula"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-18T17:50:45.074304",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/knc6_diffractgpt_mistral_chemical_formula/knc6_diffractgpt_mistral_chemical_formula_dna.json",
+  "config": {
+    "model_name": "knc6/diffractgpt_mistral_chemical_formula",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

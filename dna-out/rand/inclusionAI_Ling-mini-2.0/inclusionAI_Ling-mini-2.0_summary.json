@@ -1,0 +1,98 @@
+{
+  "model_name": "inclusionAI/Ling-mini-2.0",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 7260.1556968688965,
+  "signature_stats": {
+    "mean": 0.21599248051643372,
+    "std": 2.790733814239502,
+    "min": -5.943896293640137,
+    "max": 6.720763206481934,
+    "median": 0.20824244618415833,
+    "l1_norm": 291.1593933105469,
+    "l2_norm": 31.667972564697266,
+    "sparsity": 0.0,
+    "entropy": 5.187724536055729
+  },
+  "metadata": {
+    "model_name": "inclusionAI/Ling-mini-2.0",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-18T18:18:45.284569",
+    "computation_time_seconds": 12.927598714828491,
+    "model_metadata": {
+      "model_name": "inclusionAI/Ling-mini-2.0",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "bailing_moe",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1328545792,
+        "parameter_count_billions": 1.33
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "inclusionAI/Ling-mini-2.0"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-18T16:17:47.821293",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:1",
+      "encoder_device": "cuda:1",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/inclusionAI_Ling-mini-2.0/inclusionAI_Ling-mini-2.0_dna.json",
+  "config": {
+    "model_name": "inclusionAI/Ling-mini-2.0",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 1,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

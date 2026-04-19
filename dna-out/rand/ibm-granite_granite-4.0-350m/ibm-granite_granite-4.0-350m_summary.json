@@ -1,0 +1,98 @@
+{
+  "model_name": "ibm-granite/granite-4.0-350m",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 139.90473294258118,
+  "signature_stats": {
+    "mean": 0.025498181581497192,
+    "std": 2.6012442111968994,
+    "min": -6.249904632568359,
+    "max": 7.782605171203613,
+    "median": 0.03589168190956116,
+    "l1_norm": 261.88580322265625,
+    "l2_norm": 29.43113136291504,
+    "sparsity": 0.0,
+    "entropy": 4.931144927727575
+  },
+  "metadata": {
+    "model_name": "ibm-granite/granite-4.0-350m",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-18T20:20:43.908231",
+    "computation_time_seconds": 4.988380432128906,
+    "model_metadata": {
+      "model_name": "ibm-granite/granite-4.0-350m",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "granitemoehybrid",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 455081984,
+        "parameter_count_billions": 0.46
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "ibm-granite/granite-4.0-350m"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-18T20:18:25.579589",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/ibm-granite_granite-4.0-350m/ibm-granite_granite-4.0-350m_dna.json",
+  "config": {
+    "model_name": "ibm-granite/granite-4.0-350m",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

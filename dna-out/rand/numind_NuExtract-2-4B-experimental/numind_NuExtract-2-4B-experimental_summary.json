@@ -1,0 +1,98 @@
+{
+  "model_name": "numind/NuExtract-2-4B-experimental",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 351.0899455547333,
+  "signature_stats": {
+    "mean": -0.0968293845653534,
+    "std": 2.4969286918640137,
+    "min": -7.332108497619629,
+    "max": 5.933538913726807,
+    "median": -0.142297625541687,
+    "l1_norm": 257.0655517578125,
+    "l2_norm": 28.2707576751709,
+    "sparsity": 0.0,
+    "entropy": 4.995057501608997
+  },
+  "metadata": {
+    "model_name": "numind/NuExtract-2-4B-experimental",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-18T20:17:02.167814",
+    "computation_time_seconds": 5.241795301437378,
+    "model_metadata": {
+      "model_name": "numind/NuExtract-2-4B-experimental",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "internvl_chat",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 4000000000,
+        "parameter_count_billions": 4.0
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "numind/NuExtract-2-4B-experimental"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-18T20:11:12.563211",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/numind_NuExtract-2-4B-experimental/numind_NuExtract-2-4B-experimental_dna.json",
+  "config": {
+    "model_name": "numind/NuExtract-2-4B-experimental",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
