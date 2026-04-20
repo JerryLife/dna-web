@@ -8,17 +8,33 @@
         "raw": {
             "dnaOut": "./dna-out",
             "dataset": "rand",
-            "output": "./public/dna_database.json"
+            "output": "./public/dna_database.json",
+            "visualization": {
+                "minCount": 5,
+                "crowdRadius": 100,
+                "hullPadding": 5,
+                "hullTension": 0.5,
+                "hullFillOpacity": 0.12,
+                "hullStrokeOpacity": 0.3
+            }
         },
         "chat": {
             "dnaOut": "./dna-chat-out",
             "dataset": "rand",
-            "output": "./public/dna_database_chat.json"
+            "output": "./public/dna_database_chat.json",
+            "visualization": {
+                "minCount": 3,
+                "crowdRadius": 80,
+                "hullPadding": 8,
+                "hullTension": 0.6,
+                "hullFillOpacity": 0.15,
+                "hullStrokeOpacity": 0.4
+            }
         }
     },
     "visualization": {
-        "minCount": 2,
-        "crowdRadius": 80,
+        "minCount": 5,
+        "crowdRadius": 100,
         "hullPadding": 5,
         "hullTension": 0.5,
         "hullFillOpacity": 0.12,
