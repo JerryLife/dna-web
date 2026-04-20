@@ -1,0 +1,96 @@
+{
+  "model_name": "qwen/qwen3.5-plus-02-15",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 6769.256998538971,
+  "signature_stats": {
+    "mean": 0.15121090412139893,
+    "std": 2.732686996459961,
+    "min": -9.930784225463867,
+    "max": 8.292551040649414,
+    "median": 0.0596713125705719,
+    "l1_norm": 265.5365295410156,
+    "l2_norm": 30.96411895751953,
+    "sparsity": 0.0,
+    "entropy": 4.644584034330142
+  },
+  "metadata": {
+    "model_name": "qwen/qwen3.5-plus-02-15",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T00:28:10.322893",
+    "computation_time_seconds": 18.310948610305786,
+    "model_metadata": {
+      "model_name": "qwen/qwen3.5-plus-02-15",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": true
+      },
+      "metadata": {
+        "fetched_at": "2026-04-13T01:13:47.902745",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese/qwen_qwen3.5-plus-02-15/qwen_qwen3.5-plus-02-15_dna.json",
+  "config": {
+    "model_name": "qwen/qwen3.5-plus-02-15",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}

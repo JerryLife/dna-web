@@ -1,0 +1,79 @@
+{
+  "model_name": "nvidia/nemotron-3-nano-30b-a3b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 15.115931272506714,
+  "signature_stats": {
+    "mean": -0.28811725974082947,
+    "std": 2.3037056922912598,
+    "min": -6.815274238586426,
+    "max": 5.604307174682617,
+    "median": -0.4426487386226654,
+    "l1_norm": 242.24819946289062,
+    "l2_norm": 26.266504287719727,
+    "sparsity": 0.0,
+    "entropy": 5.002188552096016
+  },
+  "metadata": {
+    "model_name": "nvidia/nemotron-3-nano-30b-a3b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T00:08:37.170772",
+    "computation_time_seconds": 15.106804609298706,
+    "model_metadata": {
+      "model_name": "nvidia/nemotron-3-nano-30b-a3b",
+      "architecture": {
+        "is_generative": true
+      },
+      "repository": {}
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese/nvidia_nemotron-3-nano-30b-a3b/nvidia_nemotron-3-nano-30b-a3b_dna.json",
+  "config": {
+    "model_name": "nvidia/nemotron-3-nano-30b-a3b",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}

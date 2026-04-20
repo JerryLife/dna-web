@@ -1,0 +1,98 @@
+{
+  "model_name": "openai/gpt-oss-120b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 3840.75408577919,
+  "signature_stats": {
+    "mean": 0.31090468168258667,
+    "std": 2.1187126636505127,
+    "min": -5.707202911376953,
+    "max": 7.512280464172363,
+    "median": 0.3704656958580017,
+    "l1_norm": 209.85411071777344,
+    "l2_norm": 24.227203369140625,
+    "sparsity": 0.0,
+    "entropy": 4.755330785392031
+  },
+  "metadata": {
+    "model_name": "openai/gpt-oss-120b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T18:46:38.593574",
+    "computation_time_seconds": 15.817705631256104,
+    "model_metadata": {
+      "model_name": "openai/gpt-oss-120b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt_oss",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 4162314240,
+        "parameter_count_billions": 4.16
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "openai/gpt-oss-120b"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-14T16:49:49.909047",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese/openai_gpt-oss-120b/openai_gpt-oss-120b_dna.json",
+  "config": {
+    "model_name": "openai/gpt-oss-120b",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}

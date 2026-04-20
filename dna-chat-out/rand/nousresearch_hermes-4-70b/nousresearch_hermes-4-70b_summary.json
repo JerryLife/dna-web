@@ -1,0 +1,98 @@
+{
+  "model_name": "nousresearch/hermes-4-70b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 862.3763518333435,
+  "signature_stats": {
+    "mean": 0.29719236493110657,
+    "std": 2.3998706340789795,
+    "min": -6.350315093994141,
+    "max": 6.140812873840332,
+    "median": 0.3277459740638733,
+    "l1_norm": 255.29518127441406,
+    "l2_norm": 27.358835220336914,
+    "sparsity": 0.0,
+    "entropy": 5.025157072833851
+  },
+  "metadata": {
+    "model_name": "nousresearch/hermes-4-70b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T14:40:51.603396",
+    "computation_time_seconds": 16.568995475769043,
+    "model_metadata": {
+      "model_name": "nousresearch/hermes-4-70b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 65475182592,
+        "parameter_count_billions": 65.48
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "NousResearch/Hermes-4-70B"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-14T15:25:11.498504",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese/nousresearch_hermes-4-70b/nousresearch_hermes-4-70b_dna.json",
+  "config": {
+    "model_name": "nousresearch/hermes-4-70b",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}

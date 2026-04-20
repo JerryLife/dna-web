@@ -1,0 +1,97 @@
+{
+  "model_name": "liquid/lfm-2-24b-a2b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 660.86692070961,
+  "signature_stats": {
+    "mean": -0.07621409744024277,
+    "std": 2.3195910453796387,
+    "min": -6.832955360412598,
+    "max": 6.240780830383301,
+    "median": 0.013578057289123535,
+    "l1_norm": 233.11196899414062,
+    "l2_norm": 26.25733757019043,
+    "sparsity": 0.0,
+    "entropy": 4.896463063139642
+  },
+  "metadata": {
+    "model_name": "liquid/lfm-2-24b-a2b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-19T18:33:23.523923",
+    "computation_time_seconds": 14.574449062347412,
+    "model_metadata": {
+      "model_name": "liquid/lfm-2-24b-a2b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 24000000000,
+        "parameter_count_billions": 24.0
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": true
+      },
+      "metadata": {
+        "fetched_at": "2026-04-13T01:12:35.313836",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese/liquid_lfm-2-24b-a2b/liquid_lfm-2-24b-a2b_dna.json",
+  "config": {
+    "model_name": "liquid/lfm-2-24b-a2b",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}
