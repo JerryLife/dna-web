@@ -1,0 +1,96 @@
+{
+  "model_name": "moonshotai/kimi-k2-0905",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 6189.458022594452,
+  "signature_stats": {
+    "mean": -0.19055750966072083,
+    "std": 2.616070032119751,
+    "min": -6.758090972900391,
+    "max": 6.8620076179504395,
+    "median": -0.09098536521196365,
+    "l1_norm": 259.01422119140625,
+    "l2_norm": 29.675870895385742,
+    "sparsity": 0.0,
+    "entropy": 5.009318312875773
+  },
+  "metadata": {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T13:58:54.953078",
+    "computation_time_seconds": 16.06397247314453,
+    "model_metadata": {
+      "model_name": "moonshotai/kimi-k2-0905",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": true
+      },
+      "metadata": {
+        "fetched_at": "2026-04-14T15:24:16.822545",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese/moonshotai_kimi-k2-0905/moonshotai_kimi-k2-0905_dna.json",
+  "config": {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}
