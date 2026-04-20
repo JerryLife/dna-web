@@ -24,11 +24,11 @@
             "output": "./public/dna_database_chat.json",
             "visualization": {
                 "minCount": 3,
-                "crowdRadius": 80,
-                "hullPadding": 8,
-                "hullTension": 0.6,
-                "hullFillOpacity": 0.15,
-                "hullStrokeOpacity": 0.4
+                "crowdRadius": 100,
+                "hullPadding": 5,
+                "hullTension": 0.5,
+                "hullFillOpacity": 0.12,
+                "hullStrokeOpacity": 0.3
             }
         }
     },
