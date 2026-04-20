@@ -1,0 +1,98 @@
+{
+  "model_name": "LiquidAI/LFM2.5-1.2B-Base",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 363.8785080909729,
+  "signature_stats": {
+    "mean": 0.005072139203548431,
+    "std": 2.763132333755493,
+    "min": -9.173151969909668,
+    "max": 7.584200859069824,
+    "median": 0.12695741653442383,
+    "l1_norm": 285.712158203125,
+    "l2_norm": 31.26132583618164,
+    "sparsity": 0.0,
+    "entropy": 4.8524899230082434
+  },
+  "metadata": {
+    "model_name": "LiquidAI/LFM2.5-1.2B-Base",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-14T07:45:14.030565",
+    "computation_time_seconds": 8.822065114974976,
+    "model_metadata": {
+      "model_name": "LiquidAI/LFM2.5-1.2B-Base",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "lfm2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 939524096,
+        "parameter_count_billions": 0.94
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "LiquidAI/LFM2.5-1.2B-Base"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-14T07:39:14.066162",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:1",
+      "encoder_device": "cuda:1",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/LiquidAI_LFM2.5-1.2B-Base/LiquidAI_LFM2.5-1.2B-Base_dna.json",
+  "config": {
+    "model_name": "LiquidAI/LFM2.5-1.2B-Base",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 1,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

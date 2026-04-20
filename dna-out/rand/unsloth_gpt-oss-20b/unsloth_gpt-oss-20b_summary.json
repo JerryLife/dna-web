@@ -1,0 +1,98 @@
+{
+  "model_name": "unsloth/gpt-oss-20b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 101.84796905517578,
+  "signature_stats": {
+    "mean": 0.09341814368963242,
+    "std": 2.8795361518859863,
+    "min": -6.852680683135986,
+    "max": 9.333645820617676,
+    "median": 0.1052444577217102,
+    "l1_norm": 298.9002685546875,
+    "l2_norm": 32.595375061035156,
+    "sparsity": 0.0,
+    "entropy": 4.942884770297378
+  },
+  "metadata": {
+    "model_name": "unsloth/gpt-oss-20b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-12T18:02:56.455411",
+    "computation_time_seconds": 7.5645363330841064,
+    "model_metadata": {
+      "model_name": "unsloth/gpt-oss-20b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt_oss",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 2967920640,
+        "parameter_count_billions": 2.97
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "unsloth/gpt-oss-20b"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-07T23:12:07.389585",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/unsloth_gpt-oss-20b/unsloth_gpt-oss-20b_dna.json",
+  "config": {
+    "model_name": "unsloth/gpt-oss-20b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

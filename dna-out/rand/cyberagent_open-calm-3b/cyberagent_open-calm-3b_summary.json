@@ -1,0 +1,96 @@
+{
+  "model_name": "cyberagent/open-calm-3b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 2153.6738278865814,
+  "signature_stats": {
+    "mean": -0.10203152149915695,
+    "std": 3.3023886680603027,
+    "min": -6.068869113922119,
+    "max": 9.603656768798828,
+    "median": -0.1412227749824524,
+    "l1_norm": 337.69866943359375,
+    "l2_norm": 37.38009262084961,
+    "sparsity": 0.0,
+    "entropy": 5.086391482416605
+  },
+  "metadata": {
+    "model_name": "cyberagent/open-calm-3b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-07T21:49:38.457348",
+    "computation_time_seconds": 4.308319568634033,
+    "model_metadata": {
+      "model_name": "cyberagent/open-calm-3b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt_neox",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 2650275840,
+        "parameter_count_billions": 2.65
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "cyberagent/open-calm-3b"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-07T21:13:46.190309",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/cyberagent_open-calm-3b/cyberagent_open-calm-3b_dna.json",
+  "config": {
+    "model_name": "cyberagent/open-calm-3b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false
+  }
+}

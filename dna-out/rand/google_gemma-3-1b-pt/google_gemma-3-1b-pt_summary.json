@@ -1,0 +1,98 @@
+{
+  "model_name": "google/gemma-3-1b-pt",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 523.8669810295105,
+  "signature_stats": {
+    "mean": 0.11649620532989502,
+    "std": 3.01082706451416,
+    "min": -7.520590305328369,
+    "max": 7.316719055175781,
+    "median": 0.1417388617992401,
+    "l1_norm": 326.6776123046875,
+    "l2_norm": 34.089111328125,
+    "sparsity": 0.0,
+    "entropy": 4.9968197086068935
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-1b-pt",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-13T11:43:24.347703",
+    "computation_time_seconds": 6.0161659717559814,
+    "model_metadata": {
+      "model_name": "google/gemma-3-1b-pt",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gemma3_text",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 716046336,
+        "parameter_count_billions": 0.72
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": "manual",
+        "model_id": "google/gemma-3-1b-pt"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-11T06:37:34.765155",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:1",
+      "encoder_device": "cuda:1",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/google_gemma-3-1b-pt/google_gemma-3-1b-pt_dna.json",
+  "config": {
+    "model_name": "google/gemma-3-1b-pt",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 1,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

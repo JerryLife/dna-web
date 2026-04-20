@@ -1,0 +1,98 @@
+{
+  "model_name": "EleutherAI/deep-ignorance-unfiltered",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 3834.9538984298706,
+  "signature_stats": {
+    "mean": 0.2182030826807022,
+    "std": 2.502533197402954,
+    "min": -5.690110683441162,
+    "max": 6.697749137878418,
+    "median": 0.015082858502864838,
+    "l1_norm": 258.01800537109375,
+    "l2_norm": 28.420352935791016,
+    "sparsity": 0.0,
+    "entropy": 5.144483209599302
+  },
+  "metadata": {
+    "model_name": "EleutherAI/deep-ignorance-unfiltered",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-19T02:39:58.593117",
+    "computation_time_seconds": 4.621279001235962,
+    "model_metadata": {
+      "model_name": "EleutherAI/deep-ignorance-unfiltered",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt_neox",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6648496128,
+        "parameter_count_billions": 6.65
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "EleutherAI/deep-ignorance-unfiltered"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-19T01:36:05.332919",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/EleutherAI_deep-ignorance-unfiltered/EleutherAI_deep-ignorance-unfiltered_dna.json",
+  "config": {
+    "model_name": "EleutherAI/deep-ignorance-unfiltered",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

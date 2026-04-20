@@ -1,0 +1,98 @@
+{
+  "model_name": "mlabonne/NeuralDaredevil-8B-abliterated",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 5090.289343357086,
+  "signature_stats": {
+    "mean": 0.08322077989578247,
+    "std": 2.5365748405456543,
+    "min": -6.1547346115112305,
+    "max": 6.4530487060546875,
+    "median": 0.19986620545387268,
+    "l1_norm": 257.37890625,
+    "l2_norm": 28.71350860595703,
+    "sparsity": 0.0,
+    "entropy": 5.081306221249506
+  },
+  "metadata": {
+    "model_name": "mlabonne/NeuralDaredevil-8B-abliterated",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-16T16:37:27.178513",
+    "computation_time_seconds": 7.012377500534058,
+    "model_metadata": {
+      "model_name": "mlabonne/NeuralDaredevil-8B-abliterated",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6967787520,
+        "parameter_count_billions": 6.97
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "mlabonne/NeuralDaredevil-8B-abliterated"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-16T15:12:42.649142",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/mlabonne_NeuralDaredevil-8B-abliterated/mlabonne_NeuralDaredevil-8B-abliterated_dna.json",
+  "config": {
+    "model_name": "mlabonne/NeuralDaredevil-8B-abliterated",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 0,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

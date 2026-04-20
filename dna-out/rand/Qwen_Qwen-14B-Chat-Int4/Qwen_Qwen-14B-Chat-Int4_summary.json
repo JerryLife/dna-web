@@ -1,0 +1,98 @@
+{
+  "model_name": "Qwen/Qwen-14B-Chat-Int4",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 445.4172031879425,
+  "signature_stats": {
+    "mean": -0.08244675397872925,
+    "std": 2.531459093093872,
+    "min": -6.329410076141357,
+    "max": 7.59426212310791,
+    "median": -0.3654780387878418,
+    "l1_norm": 259.6617126464844,
+    "l2_norm": 28.65537452697754,
+    "sparsity": 0.0,
+    "entropy": 4.967942853300327
+  },
+  "metadata": {
+    "model_name": "Qwen/Qwen-14B-Chat-Int4",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-19T04:23:14.410675",
+    "computation_time_seconds": 4.899932146072388,
+    "model_metadata": {
+      "model_name": "Qwen/Qwen-14B-Chat-Int4",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "qwen",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 13361479680,
+        "parameter_count_billions": 13.36
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "Qwen/Qwen-14B-Chat-Int4"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-19T04:15:51.447310",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/Qwen_Qwen-14B-Chat-Int4/Qwen_Qwen-14B-Chat-Int4_dna.json",
+  "config": {
+    "model_name": "Qwen/Qwen-14B-Chat-Int4",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
