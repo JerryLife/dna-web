@@ -1,0 +1,79 @@
+{
+  "model_name": "google/gemma-3n-e4b-it",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 37.82482862472534,
+  "signature_stats": {
+    "mean": 0.38629719614982605,
+    "std": 2.9255120754241943,
+    "min": -7.6604204177856445,
+    "max": 6.145671844482422,
+    "median": 0.3796137571334839,
+    "l1_norm": 304.25982666015625,
+    "l2_norm": 33.38569259643555,
+    "sparsity": 0.0,
+    "entropy": 5.145229571141702
+  },
+  "metadata": {
+    "model_name": "google/gemma-3n-e4b-it",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-21T04:48:40.253227",
+    "computation_time_seconds": 37.81501269340515,
+    "model_metadata": {
+      "model_name": "google/gemma-3n-e4b-it",
+      "architecture": {
+        "is_generative": true
+      },
+      "repository": {}
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out/rand_chinese/google_gemma-3n-e4b-it/google_gemma-3n-e4b-it_dna.json",
+  "config": {
+    "model_name": "google/gemma-3n-e4b-it",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "dna-out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}

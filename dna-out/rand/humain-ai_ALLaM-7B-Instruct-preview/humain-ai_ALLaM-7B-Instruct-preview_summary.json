@@ -1,0 +1,98 @@
+{
+  "model_name": "humain-ai/ALLaM-7B-Instruct-preview",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 453.43462586402893,
+  "signature_stats": {
+    "mean": 0.1630687117576599,
+    "std": 2.5215771198272705,
+    "min": -5.977898597717285,
+    "max": 5.366126537322998,
+    "median": 0.24064898490905762,
+    "l1_norm": 265.4337158203125,
+    "l2_norm": 28.587980270385742,
+    "sparsity": 0.0,
+    "entropy": 5.210556008694505
+  },
+  "metadata": {
+    "model_name": "humain-ai/ALLaM-7B-Instruct-preview",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T06:24:28.074734",
+    "computation_time_seconds": 5.11963963508606,
+    "model_metadata": {
+      "model_name": "humain-ai/ALLaM-7B-Instruct-preview",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6704594944,
+        "parameter_count_billions": 6.7
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "humain-ai/ALLaM-7B-Instruct-preview"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-20T06:16:56.492936",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/humain-ai_ALLaM-7B-Instruct-preview/humain-ai_ALLaM-7B-Instruct-preview_dna.json",
+  "config": {
+    "model_name": "humain-ai/ALLaM-7B-Instruct-preview",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
