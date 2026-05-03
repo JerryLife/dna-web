@@ -1,0 +1,98 @@
+{
+  "model_name": "chujiezheng/Starling-LM-7B-beta-ExPO",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 311.9251046180725,
+  "signature_stats": {
+    "mean": 0.24300533533096313,
+    "std": 2.482192277908325,
+    "min": -6.058072090148926,
+    "max": 5.841311931610107,
+    "median": 0.10700760781764984,
+    "l1_norm": 253.499755859375,
+    "l2_norm": 28.217056274414062,
+    "sparsity": 0.0,
+    "entropy": 5.024578682824616
+  },
+  "metadata": {
+    "model_name": "chujiezheng/Starling-LM-7B-beta-ExPO",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-03T15:16:19.825100",
+    "computation_time_seconds": 5.600575685501099,
+    "model_metadata": {
+      "model_name": "chujiezheng/Starling-LM-7B-beta-ExPO",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6573531136,
+        "parameter_count_billions": 6.57
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "chujiezheng/Starling-LM-7B-beta-ExPO"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-03T15:11:10.803729",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:6",
+      "encoder_device": "cuda:6",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/chujiezheng_Starling-LM-7B-beta-ExPO/chujiezheng_Starling-LM-7B-beta-ExPO_dna.json",
+  "config": {
+    "model_name": "chujiezheng/Starling-LM-7B-beta-ExPO",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 6,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
