@@ -1,0 +1,98 @@
+{
+  "model_name": "Langboat/bloom-1b4-zh",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 752.2835876941681,
+  "signature_stats": {
+    "mean": 0.3978314995765686,
+    "std": 2.5925028324127197,
+    "min": -6.081295013427734,
+    "max": 6.049927234649658,
+    "median": 0.3667287826538086,
+    "l1_norm": 271.132568359375,
+    "l2_norm": 29.674156188964844,
+    "sparsity": 0.0,
+    "entropy": 5.15208770047891
+  },
+  "metadata": {
+    "model_name": "Langboat/bloom-1b4-zh",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-05T21:33:32.562222",
+    "computation_time_seconds": 4.564727544784546,
+    "model_metadata": {
+      "model_name": "Langboat/bloom-1b4-zh",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "bloom",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1000000000,
+        "parameter_count_billions": 1.0
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "Langboat/bloom-1b4-zh"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-05T21:21:02.148270",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:6",
+      "encoder_device": "cuda:6",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/Langboat_bloom-1b4-zh/Langboat_bloom-1b4-zh_dna.json",
+  "config": {
+    "model_name": "Langboat/bloom-1b4-zh",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 6,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

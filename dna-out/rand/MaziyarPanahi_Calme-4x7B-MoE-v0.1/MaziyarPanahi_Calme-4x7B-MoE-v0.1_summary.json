@@ -1,0 +1,98 @@
+{
+  "model_name": "MaziyarPanahi/Calme-4x7B-MoE-v0.1",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 369.2328522205353,
+  "signature_stats": {
+    "mean": -0.2572936713695526,
+    "std": 2.9077699184417725,
+    "min": -11.442516326904297,
+    "max": 5.891800880432129,
+    "median": -0.06472760438919067,
+    "l1_norm": 285.2991638183594,
+    "l2_norm": 33.02619934082031,
+    "sparsity": 0.0,
+    "entropy": 4.866261007081645
+  },
+  "metadata": {
+    "model_name": "MaziyarPanahi/Calme-4x7B-MoE-v0.1",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-03T21:16:33.091443",
+    "computation_time_seconds": 5.0830628871917725,
+    "model_metadata": {
+      "model_name": "MaziyarPanahi/Calme-4x7B-MoE-v0.1",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mixtral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6573522944,
+        "parameter_count_billions": 6.57
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "MaziyarPanahi/Calme-4x7B-MoE-v0.1"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-03T21:10:25.758448",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/MaziyarPanahi_Calme-4x7B-MoE-v0.1/MaziyarPanahi_Calme-4x7B-MoE-v0.1_dna.json",
+  "config": {
+    "model_name": "MaziyarPanahi/Calme-4x7B-MoE-v0.1",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

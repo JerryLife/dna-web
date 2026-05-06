@@ -1,0 +1,98 @@
+{
+  "model_name": "jondurbin/bagel-dpo-34b-v0.5",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 18294.107302427292,
+  "signature_stats": {
+    "mean": 0.14510555565357208,
+    "std": 2.1906206607818604,
+    "min": -5.702669143676758,
+    "max": 6.094557285308838,
+    "median": 0.09623110294342041,
+    "l1_norm": 233.55294799804688,
+    "l2_norm": 24.838356018066406,
+    "sparsity": 0.0,
+    "entropy": 5.005417318028324
+  },
+  "metadata": {
+    "model_name": "jondurbin/bagel-dpo-34b-v0.5",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-04T18:31:41.842079",
+    "computation_time_seconds": 5.1961119174957275,
+    "model_metadata": {
+      "model_name": "jondurbin/bagel-dpo-34b-v0.5",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 37452513280,
+        "parameter_count_billions": 37.45
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "jondurbin/bagel-dpo-34b-v0.5"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-04T13:26:49.643804",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/jondurbin_bagel-dpo-34b-v0.5/jondurbin_bagel-dpo-34b-v0.5_dna.json",
+  "config": {
+    "model_name": "jondurbin/bagel-dpo-34b-v0.5",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

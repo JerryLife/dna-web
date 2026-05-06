@@ -1,0 +1,98 @@
+{
+  "model_name": "ai21labs/AI21-Jamba-Reasoning-3B",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 168.8400285243988,
+  "signature_stats": {
+    "mean": -0.4029104709625244,
+    "std": 2.4617223739624023,
+    "min": -8.687398910522461,
+    "max": 4.955955982208252,
+    "median": -0.27102744579315186,
+    "l1_norm": 249.95440673828125,
+    "l2_norm": 28.22178077697754,
+    "sparsity": 0.0,
+    "entropy": 4.876429790457472
+  },
+  "metadata": {
+    "model_name": "ai21labs/AI21-Jamba-Reasoning-3B",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-06T18:45:37.417575",
+    "computation_time_seconds": 4.857982873916626,
+    "model_metadata": {
+      "model_name": "ai21labs/AI21-Jamba-Reasoning-3B",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "jamba",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 2369781760,
+        "parameter_count_billions": 2.37
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "ai21labs/AI21-Jamba-Reasoning-3B"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-06T18:42:51.146163",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/ai21labs_AI21-Jamba-Reasoning-3B/ai21labs_AI21-Jamba-Reasoning-3B_dna.json",
+  "config": {
+    "model_name": "ai21labs/AI21-Jamba-Reasoning-3B",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

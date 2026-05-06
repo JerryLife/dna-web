@@ -1,0 +1,98 @@
+{
+  "model_name": "hfl/llama-3-chinese-8b-instruct-v2",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 2635.9913976192474,
+  "signature_stats": {
+    "mean": 0.17178647220134735,
+    "std": 2.3332645893096924,
+    "min": -6.108893394470215,
+    "max": 7.033052921295166,
+    "median": 0.15487177670001984,
+    "l1_norm": 234.48794555664062,
+    "l2_norm": 26.46932601928711,
+    "sparsity": 0.0,
+    "entropy": 4.837193118783793
+  },
+  "metadata": {
+    "model_name": "hfl/llama-3-chinese-8b-instruct-v2",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-04T03:21:38.147487",
+    "computation_time_seconds": 4.3702003955841064,
+    "model_metadata": {
+      "model_name": "hfl/llama-3-chinese-8b-instruct-v2",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6967787520,
+        "parameter_count_billions": 6.97
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "hfl/llama-3-chinese-8b-instruct-v2"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-04T02:37:44.067137",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:4",
+      "encoder_device": "cuda:4",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/hfl_llama-3-chinese-8b-instruct-v2/hfl_llama-3-chinese-8b-instruct-v2_dna.json",
+  "config": {
+    "model_name": "hfl/llama-3-chinese-8b-instruct-v2",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 4,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

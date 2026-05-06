@@ -1,0 +1,98 @@
+{
+  "model_name": "AI-Sweden-Models/gpt-sw3-1.3b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 128.3742971420288,
+  "signature_stats": {
+    "mean": 0.3585346043109894,
+    "std": 2.3724474906921387,
+    "min": -6.172202110290527,
+    "max": 6.837451934814453,
+    "median": 0.41380298137664795,
+    "l1_norm": 247.69650268554688,
+    "l2_norm": 27.14595603942871,
+    "sparsity": 0.0,
+    "entropy": 4.913737573228962
+  },
+  "metadata": {
+    "model_name": "AI-Sweden-Models/gpt-sw3-1.3b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-05T06:18:00.139166",
+    "computation_time_seconds": 6.4914870262146,
+    "model_metadata": {
+      "model_name": "AI-Sweden-Models/gpt-sw3-1.3b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1300000000,
+        "parameter_count_billions": 1.3
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "AI-Sweden-Models/gpt-sw3-1.3b"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-05T06:15:53.377272",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/AI-Sweden-Models_gpt-sw3-1.3b/AI-Sweden-Models_gpt-sw3-1.3b_dna.json",
+  "config": {
+    "model_name": "AI-Sweden-Models/gpt-sw3-1.3b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 0,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "model_name": "bigscience/bloom-3b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 176.5909342765808,
+  "signature_stats": {
+    "mean": 0.19149386882781982,
+    "std": 2.606010913848877,
+    "min": -6.701104164123535,
+    "max": 7.200525283813477,
+    "median": 0.15019288659095764,
+    "l1_norm": 259.69989013671875,
+    "l2_norm": 29.563138961791992,
+    "sparsity": 0.0,
+    "entropy": 4.963207674445977
+  },
+  "metadata": {
+    "model_name": "bigscience/bloom-3b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-05T02:49:28.155931",
+    "computation_time_seconds": 7.660888195037842,
+    "model_metadata": {
+      "model_name": "bigscience/bloom-3b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "bloom",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 3000000000,
+        "parameter_count_billions": 3.0
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "bigscience/bloom-3b"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-05T02:46:35.047160",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/bigscience_bloom-3b/bigscience_bloom-3b_dna.json",
+  "config": {
+    "model_name": "bigscience/bloom-3b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 0,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "model_name": "katuni4ka/tiny-random-olmo-hf",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 62.096410036087036,
+  "signature_stats": {
+    "mean": -0.12539686262607574,
+    "std": 2.0160889625549316,
+    "min": -4.401876449584961,
+    "max": 5.600887775421143,
+    "median": -0.17026887834072113,
+    "l1_norm": 210.19180297851562,
+    "l2_norm": 22.8535213470459,
+    "sparsity": 0.0,
+    "entropy": 5.085229102713528
+  },
+  "metadata": {
+    "model_name": "katuni4ka/tiny-random-olmo-hf",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-05T23:38:38.248106",
+    "computation_time_seconds": 4.964554309844971,
+    "model_metadata": {
+      "model_name": "katuni4ka/tiny-random-olmo-hf",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "olmo",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 3317760,
+        "parameter_count_billions": 0.0
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "katuni4ka/tiny-random-olmo-hf"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-05T23:37:38.111410",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:6",
+      "encoder_device": "cuda:6",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/katuni4ka_tiny-random-olmo-hf/katuni4ka_tiny-random-olmo-hf_dna.json",
+  "config": {
+    "model_name": "katuni4ka/tiny-random-olmo-hf",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 6,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
