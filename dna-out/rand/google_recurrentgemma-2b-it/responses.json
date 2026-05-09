@@ -1,0 +1,408 @@
+{
+  "model": "google/recurrentgemma-2b-it",
+  "dataset": "rand_chinese",
+  "count": 100,
+  "items": [
+    {
+      "prompt": "既隐者观义，乃以变为友。察势。虽以信为正仁，犹出道旁于山林。盛礼远德，深山正水。将者，未知法者也。虽兴于关隘，犹朝不守名于道旁。居朝堂于泽畔。游子不安邦而生，朝学学于道旁。既以志为小之义，乃师安朝。虽星不崇实，而不敬野。既以学为风，乃家修礼。",
+      "response": "虽人不识祥，而不敬野。既以仁为大之义，乃以宁安为前。虽德不崇，而不敬野。既以道为大之义，乃以宁安为前。虽功不崇，而不敬野。既以宁安为前，乃以宁安为前。\n\nThis passage is a long and complex poem that can be interpreted in a number of ways. However, it seems to be about the importance of finding one's own path in life, even if it means going against the grain. The poem talks about how people who are willing to take risks and be different are more likely to find success and happiness. It also emphasizes the importance of having a strong sense of self and knowing your own values.\n\nHere are some of the key themes and ideas in the poem:\n\n* **Individualism:** The poem emphasizes the importance of being yourself and not conforming to the expectations of others.\n* **Self-reliance:** The poem encourages people to be independent and not rely on others for their success.\n* **Innovation:** The poem suggests that those who are willing to take risks and be different can often bring about new and innovative ideas.\n* **Wisdom:** The poem talks about the importance of having a strong sense of self and knowing your own values.\n* **Happiness:** The poem suggests that those who are happy and successful are those who are true to themselves and follow their own path in life.\n\nOverall, the poem is a powerful and inspiring piece of work that can help us to reflect on our own lives and find our own path.<eos>"
+    },
+    {
+      "prompt": "既以术为山之国，乃家兴于市井。知名察智，近风清礼。虽以义为正之智，犹以势为德之心。道之天者，日之弱者也。臣知名。虽山未辨礼，犹石省势。或往市井，或未见信。既父亡于江海，乃定功。虽以名为贤者，犹以德为仁。退而御朝。虽以功为云之义，犹海守社稷于泽畔。",
+      "response": "This passage describes a man named知名 who is known for his intelligence and virtue. He comes from a humble background, but he has risen to a position of power and influence. He is a man of integrity, and he is willing to put his life on the line for what he believes in.\n\nHere are some of the key themes and ideas in this passage:\n\n* **The importance of intelligence and virtue:**知名 is a man of both intelligence and virtue. He is able to use his intelligence to solve problems and to make wise decisions. He is also able to act with integrity and to do what is right, even when it is difficult.\n* **The importance of background:**知名 comes from a humble background, but he has risen to a position of power and influence. This shows that it is possible to overcome obstacles and to achieve your goals, regardless of your background.\n* **The importance of sacrifice:**知名 is willing to sacrifice his own life for his beliefs. He is willing to go to war and to risk his life in order to protect what he believes in.\n* **The importance of loyalty:**知名 is loyal to his country and to his family. He is willing to serve his country and to do what is right for his family.\n\nThis passage is a powerful example of the importance of intelligence, virtue, and sacrifice. It is also a reminder that it is possible to overcome obstacles and to achieve your goals, regardless of your background.<eos>"
+    },
+    {
+      "prompt": "苟不立邦于山林，则士察信于市井。若御朝于江海，则邦立国于江海。立云行德，明志正天。苟友不固家于庭，则游子持乡。持泉而未辨智。持名。若以名为地之山，则城衰于道旁。平天下而不立雪，崇城而守朝。虽贤者悟理，而石不安乡。省义而固天下。游子者，不定实者也。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "虽立雨于山林，而民不安法。虽以道为贤者，而以礼为地之实。虽安地于泽畔，犹不守石。养智而正术，正志而慎名。下之国者，弱也。月抚朝于山林，日安野于泽畔。既以变为天，乃学者兴。社稷定社稷。虽朝治社稷于山林，犹以变为邪德。贤者者，不定百姓者也。既以理为智之民，乃雷进于门。",
+      "response": "既以仁为义之民，乃以德治国。<eos>"
+    },
+    {
+      "prompt": "苟以智为智之国，则以道为雷。以功为名之风，以法为远道。若以仁为泉，则以过为山。柔德远天，辨云观风。若以学为社稷，则不固义。正势而崇德，守法而正法。既乡入朝堂于庭，乃以机为野。博义安风，思义知名。仁者，礼之本也。江不养术于郊野，家行门而未论学。",
+      "response": "**Translation:**\n\nIf a country is governed by wisdom, then it is governed by the way of lightning. If a country is governed by achievement, then it is governed by a long way. If a country is governed by benevolence, then it is governed by the mountain. If a country is governed by virtue, then it is governed by the wind. If a country is governed by learning, then it is not solid and righteous. If a country is governed by righteousness and morality, then it is governed by the way of the野 (野 is a wild place). If a country is governed by wisdom and virtue, then it is governed by the way of the home. If a country is governed by learning and righteousness, then it is governed by the way of the field.<eos>"
+    },
+    {
+      "prompt": "或不修社稷，或行泽畔。友者，灭者也。既平家于山林，乃师不正江于关隘。虽城不修术于庭，犹安日于门。苟雨未论实于江海，则不敬心于门。既以德为大之义，乃进。川退于朝堂，学者败而不固智。天之智者，星之刚者也。既朝固草，乃国统社稷。既百姓慎川，乃父不正河于市井。",
+      "response": "- 孟子《公孙丑下》<eos>"
+    },
+    {
+      "prompt": "既以变为弱之风，乃野抚邦于道旁。若城不慎天于朝堂，则往泽畔于道旁。将者，起者也。虽不慎石，犹林行江海。朝者，功之浊者也。苟百姓御野于道旁，则固志于江海。既不崇木，乃以过为川。柔实近智，安礼守地。虽以礼为弱水，而野至朝堂。将者，义之高者也。苟国观功，则思变于郊野。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "虽以学为家，犹社稷理城于山林。虽安天下，犹止。雪不持雷，牧家。游子游市井于门。既修理于关隘，乃以功为雪。以理为刚礼。虽起于郊野，而以志为礼之天。城立木于山林。广礼近民，高云衰民。士者，未观志者也。苟石崇志于道旁，则未论势于山林。既辨心于关隘，乃地省变于庭。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "子者，修城者也。思仁修仁，高义深风。雷灭于道旁。苟入庭于郊野，则乡不正实。辨雨而知理，明木而闻机。博实盛仁，广名刚义。虽地御社稷，而行庭于市井。虽川亡，而归江海。苟社稷不守石于郊野，则石持名于道旁。川未闻义，以智为暗天。定百姓而归门。虽以智为智，而社稷生。",
+      "response": "**Translation:**\n\nThe builder is the city-maker. He who studies benevolence and righteousness, and deepens his virtue, will extinguish the lightning of Heaven from the path of righteousness. If he enters the fields on the outskirts of the city, then the countryside is not right. He who distinguishes rain and knows reason, and sees wood and hears the machine. He who gathers wealth and is generous, and is famous and righteous. Although the land is under the jurisdiction of the city and the river, and the city is lost, the river returns to the sea. If the city does not guard the stone in the fields on the outskirts, the stone will hold its name in the path of Heaven. The river has not heard the righteousness, and uses its wisdom as darkness. Fix the people and return home. Although wisdom is wisdom, the city will be born.<eos>"
+    },
+    {
+      "prompt": "以功为名，以实为野。既学者崇木于道旁，乃以术为明风。慎机而守名，明月而明理。既雨持国，乃以机为暗之义。虽兴，而以礼为下地。圣人者，衰者也。既王不慎信，乃百姓成。林者，志之下者也。若未闻学，则以心为师。邦临道旁而存。或安朝，或行关隘。虽以名为高风，而以理为柔水。",
+      "response": "故君子以机为本，以实为表。以功为名，以实为野。<eos>"
+    },
+    {
+      "prompt": "御邦，进。苟社稷灭于庭，则未学过于郊野。浊德者，法之近者也。立心而敬心，慎实而养义。立信而立过，修志而养礼。或思变，或明信。远天安心，知志察天。隐者衰，治天下。既以义为高云，乃士入门于关隘。天崇云而不守雪。民正草。既乡御乡于关隘，乃未见义于市井。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "既风临朝堂于郊野，乃平百姓于道旁。弱山者，高也。以义为浊心。虽以变为名之水，犹友未见德于道旁。虽成于门，而风未思心。或安野，或退。持实而修智，见雷而悟心。生于郊野。固朝于郊野。苟牧百姓于关隘，则以仁为民。御社稷，以过为社稷。安之水者，术之下者也。",
+      "response": "- 这段文字出自唐代诗人王维的《郊野集·序》。\n\n**解释：**\n\n* 这段文字表达了王维对郊野的热爱和对弱山人的理解。\n* 他认为，弱山人应该以义为浊心，因为他们没有享有权势和地位的权利。\n* 他认为，即使弱山人改变了行为，也无法改变他们的本质，因为他们没有真正的道德。\n* 他认为，郊野是弱山人自己的空间，他们应该在野中生活，而不是在城中生活。\n* 他认为，真正的智慧需要在郊野中获得，而不是在城中获得。\n* 他认为，郊野是制作人自己的空间，而不是社稷。\n\n**关键词：**\n\n* 郊野\n* 弱山人\n* 义\n* 浊心\n* 智慧\n*  Vietnam\n\n**其他重要细节：**\n\n* 这段文字是王维的《郊野集》中的第一个部分。\n* 这段文字是王维对郊野的第一个重要论述。\n* 这段文字对王维的诗歌创作产生了重大影响。<eos>"
+    },
+    {
+      "prompt": "功者，机之本也。虽出山林，而抚天下。悟川而知机，观江而论变。既以变为邪之实，乃地行朝堂。社稷存而不立雷。以道为河。或临江海，或游门。苟以仁为野，则以志为志。察道明实，远义深心。过者，正也。雪未明功于朝堂。既以志为法，乃雪不安木。邦御家而修雷。城存。",
+      "response": "villain 不忠，则以忠为戒。戒以德为治。治以民为本。民安。则国安。\n— 道家经<eos>"
+    },
+    {
+      "prompt": "若朝理家于市井，则游泽畔。既以智为隐者，乃以法为乡。虽臣涉泽畔于关隘，犹贤者安乡。既民安城于庭，乃师明仁于道旁。虽以志为深之道，而泉治百姓。志者，信之近者也。安乡于市井，民存。未见过于庭，以德为百姓。既野未见法于门，乃以名为林。广风危国，近德远礼。",
+      "response": "This passage describes the relationship between the state and its people, drawing a parallel between the city and the countryside.\n\n**Key points:**\n\n* **The city is the domain of the wise:** The state is considered a place for the wise to reside, as they represent the principles and laws that govern the society.\n* **The countryside is the domain of the people:** The people are considered the core of the state, and their well-being is the responsibility of the state.\n* **The relationship between the state and its people is based on principles and laws:** The state exists to protect and serve the people, and its actions should be guided by reason and justice.\n* **The city and the countryside have distinct roles:** The city is a place for intellectual pursuits and the pursuit of knowledge, while the countryside is a place for people to live and work.\n* **The state should be close to the people:** The state should be accessible to the people and should act in their best interests.\n* **The state should be guided by principles:** The state's actions should be based on reason and justice, rather than on personal interests or whims.\n\n**Additional interpretations:**\n\n* The passage can be seen as a critique of the traditional power structures of feudalism, where the king was often far removed from the people he ruled.\n* It can also be seen as a call for a more democratic and participatory form of government, where the people have a greater say in the decisions that affect their lives.\n\nOverall, this passage is a powerful and thought-provoking statement about the relationship between the state and its people. It highlights the importance of principles, justice, and accessibility in building a strong and sustainable society.<eos>"
+    },
+    {
+      "prompt": "以心为水之道。高志安风，立山辨风。国者，势之浊者也。以仁为风，士未见志。守智行心，广天高天。深之仁者，草之安者也。若安国于门，则家守草于市井。平国于关隘。民之志者，山之安者也。仁之道者，石之大者也。苟月治百姓，则隐者不立邦。或不定德，或统百姓。",
+      "response": "以仁为风，以智为水，以仁为风，以智为水，以仁为风，以智为水之道。<eos>"
+    },
+    {
+      "prompt": "或闻法，或不崇天下。持地思德，明地居智。虽以机为地，而以信为月。安水衰民，广国盛志。苟野未思术于江海，则天下兴于泽畔。臣御城。既月行泽畔，乃以术为地。以心为志之天。以德为仁，侯出山林于关隘。以心为雪，天下衰。苟以实为义，则入郊野。虽父明理于朝堂，犹思法。",
+      "response": "虽母惠德于宫殿，犹敬法。臣以德为仁，以理为智，以德为智，以理为仁。以德为仁，以理为智，以德为智，以理为仁。<eos>"
+    },
+    {
+      "prompt": "以仁为邪之名，成而牧天下。既朝养名于朝堂，乃侯入庭。虽师不固泉，犹木正山于朝堂。苟城观术，则以德为下之道。悟名而统野，游子不敬江。既以变为学者，乃以功为智。既以德为大之山，乃野不养社稷。虽野不安风于郊野，犹山不修法于郊野。苟民定百姓，则未悟势于市井。",
+      "response": "苟以德为道，则以德为治。\n\nThis passage discusses the importance of virtue and its role in governance. Here are some key points:\n\n* **The use of \"以仁为邪之名\" to describe those who rise to power through unethical means.** This phrase highlights the dangers of using personal gain and corruption to achieve political success.\n* **The comparison of a master without a foundation to a tree standing upright in a vast garden.** This metaphor emphasizes the importance of virtue and integrity in leadership, even in the face of opposition.\n* **The idea that a leader should use their knowledge and skills to benefit the people, rather than using their power for personal gain.** This emphasizes the importance of public service and the need for leaders to be accountable to their constituents.\n* **The analogy of a mountain and a marsh.** This metaphor illustrates the difference between using power for personal gain and using it to benefit the people and the environment.\n* **The importance of understanding the needs of the people and addressing them through effective governance.** This emphasizes the need for leaders to be responsive to the needs of their constituents and to use their power to improve their lives.\n\nOverall, this passage provides a clear and concise explanation of the importance of virtue in governance and the potential consequences of using unethical means to achieve power. It serves as a reminder that true leadership requires integrity, empathy, and a commitment to the well-being of the people.<eos>"
+    },
+    {
+      "prompt": "游道旁而往庭。师未明术。王观机于市井，以机为林。泉往门。虽御城，而以机为石。江定社稷。国者，石之远者也。理者，仁之本也。苟以实为恶之水，则临泽畔。虽成，而国修志于朝堂。虽乡悟过，而出道旁于关隘。势者，变之本也。苟定邦于郊野，则以理为正之天。虽城见德于关隘，而生于关隘。",
+      "response": "苟以德为本，则以理为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以德为辅之天。苟以辅为本，则以"
+    },
+    {
+      "prompt": "立名而修功，养道而崇志。若入关隘于朝堂，则以德为深道。泉临庭而入泽畔，子察实而兴。游子不固日而临市井，士生而存。苟圣人安百姓，则子察变于道旁。虽灭，而以名为德。既以名为士，乃子立道于市井。以机为朝，臣不修功而辨德。以智为师，以智为暗地。",
+      "response": "以忠为本，以忠为重。以德为重，以德为深。以德为深，以德为终。\n\nThis passage describes the importance of virtue and morality in achieving success and a fulfilling life. Here are the key points:\n\n**1. Cultivate virtue and morality:** The foundation of success lies in having good character and principles.\n\n**2. Follow the path of learning:** Through diligent study and cultivation of knowledge, one can gain wisdom and insight.\n\n**3. Be mindful of your surroundings:** Observe the world around you and learn from the experiences of others.\n\n**4. Avoid arrogance and complacency:** Always strive to improve and learn, and do not rely on your past accomplishments.\n\n**5. Be loyal and dedicated:** Your loyalty should be unwavering, and your commitment to your principles should be strong.\n\n**6. Prioritize virtue:** Virtue should be your guiding principle, both in your personal life and in your interactions with others.\n\n**7. Be a model for others:** By living a virtuous life, you can inspire and encourage others to do the same.\n\n**8. Be prepared to adapt:** The world is constantly changing, so be prepared to adapt and learn new things throughout your life.\n\n**9. Be humble and grateful:** Remember that success is not a right, but rather a gift that should be appreciated.\n\n**10. Live a life of purpose:** Your life should be meaningful and have a positive impact on others.\n\nOverall, this passage emphasizes the importance of a virtuous life as the key to achieving happiness and success in both personal and professional spheres.<eos>"
+    },
+    {
+      "prompt": "城定雪而不敬家。以实为义，不崇野而不正志。正过而立学，辨日而思学。既临门，乃师学实。君子者，定朝者也。雷论势。既以义为暗实，乃以名为礼。若百姓入朝堂于市井，则以信为近之山。虽以心为士，而乡明变。父立功于朝堂，家未知法。以法为地之仁，以理为大国。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "远山者，柔也。仁者，变之本也。地平天下。衰国广国，高仁远实。社稷进于门。思风立仁，柔义广实。不守术而起，守国于朝堂。虽至门，犹以信为小之心。虽百姓败，而以志为理。雷治乡于关隘，石行泽畔于郊野。或平社稷，或省学。以名为近之智，地存于郊野。虽抚百姓于江海，犹贤者灭于门。",
+      "response": "This passage describes the qualities of a leader, highlighting the importance of empathy, wisdom, and integrity.\n\n**Key points:**\n\n* **Far-sightedness is the foundation of benevolence.** A leader who is able to anticipate the needs of the people and act accordingly is more likely to be successful in the long run.\n* **A society flourishes when its people are virtuous and have a strong sense of unity.** A leader who fosters a culture of empathy, integrity, and shared purpose can help to create a more prosperous and stable society.\n* **A leader who is skilled in their craft and willing to take risks can make a significant difference.** A leader who is constantly learning and adapting is more likely to be able to overcome challenges and achieve their goals.\n* **The leader's actions should be guided by a deep understanding of the people and their needs.** A leader who is able to connect with their constituents on a personal level is more likely to be effective in their leadership.\n\n**Additional insights:**\n\n* The passage emphasizes the importance of not being complacent and constantly striving to improve.\n* It also highlights the importance of separating personal ambition from the needs of the people.\n* The passage suggests that even in the face of great challenges, the leader should never give up on their vision.\n\nOverall, this passage provides a valuable perspective on the qualities of a successful leader and the importance of empathy, wisdom, and integrity in leadership.<eos>"
+    },
+    {
+      "prompt": "草起而未思信。或不立朝，或往泽畔。信者，川之弱者也。风衰于道旁，以法为实之智。子者，游朝堂者也。定志而慎德，固礼而修实。虽悟名于郊野，而以名为乡。既林归泽畔于庭，乃家辨德。虽未知术，犹固道。以心为子，以道为友。野兴。以智为士。虽成，犹将未论仁于泽畔。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "苟以名为近智，则以仁为正地。以学为乡。若以道为浅山，则日止于市井。未见功于朝堂。将者，木之邪者也。君子明礼于郊野。退而存。既未见仁于市井，乃以心为士。若师未悟道，则以实为强之云。社稷归关隘而不慎过，不守实而论礼。既士修雪于泽畔，乃思智于郊野。",
+      "response": "**Translation:**\n\nIf one calls themselves intelligent, then one should be guided by benevolence. To study is to reside in the countryside. If one calls their path shallow, then their actions end at the city gate. Without achieving anything in the morning, how can one expect to be praised in the court? Those who serve, are the wood's demons. A gentleman should be familiar with etiquette in the countryside. When the master has not understood the path, one should rely on one's own abilities. When the people return from the fields, one should think about wisdom in the countryside.<eos>"
+    },
+    {
+      "prompt": "苟定邦，则以过为清之国。星未思变而明势。以智为实，子思智而居郊野。贤者者，牧朝者也。既以过为法，乃治社稷。学者，志之本也。苟天下定城于门，则学者临道旁于朝堂。虽雨未论心于江海，犹以信为仁之志。既以法为远风，乃未论机于庭。既民不慎山，乃家存于市井。",
+      "response": "苟有天人合一，则无以克己。苟以仁为本，则以德为表。苟以德为本，则以智为重。苟以智为重，则以信为重。苟以信为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟以仁为重，则以德为重。苟以德为重，则以功德为重。苟以功德为重，则以德为重。苟以德为重，则以仁为重。苟"
+    },
+    {
+      "prompt": "虽以德为浊之仁，而以仁为隐者。既国生，乃以学为清之民。抚乡。既师出市井于庭，乃游道旁于郊野。牧百姓。若以机为林，则雪安野。未悟义。既以名为志之仁，乃友往郊野。既星固朝，乃社稷行门于门。仁者，功之本也。王学义于道旁。既以志为国之国，乃以义为月。",
+      "response": "既以义为民之民，乃以德为日。日复一日，以德为浊，以仁为清。<eos>"
+    },
+    {
+      "prompt": "立理而持功，立礼而定义。悟礼而存，以过为功。苟石不立变，则雷观志。定道而崇礼，慎变而敬机。苟林思功于山林，则圣人抚乡。强之云者，泉之下者也。虽百姓起于朝堂，犹以信为邦。既居泽畔于江海，乃未察信于关隘。既以过为柔志，乃以礼为远之德。安仁近名，危礼深心。",
+      "response": "**Translation:**\n\n**立理而持功，立礼而定义。悟礼而存，以过为功。苟石不立变，则雷观志。定道而崇礼，慎变而敬机。苟林思功于山林，则圣人抚乡。强之云者，泉之下者也。虽百姓起于朝堂，犹以信为邦。既居泽畔于江海，乃未察信于关隘。既以过为柔志，乃以礼为远之德。安仁近名，危礼深心。**\n\n**Meaning:**\n\nThis passage emphasizes the importance of balancing rigor with courtesy and defining virtues with practical application. It highlights the significance of understanding and respecting the established norms and customs, and using them as a foundation for personal growth and social harmony.\n\n**Key Points:**\n\n* **立理而持功 (li er ér cháng gōng):** To act with reason and diligence.\n* **立礼而定义 (li ling ér jīng):** To define virtues based on respect and courtesy.\n* **悟礼而存 (wú li ling ér cún):** To understand and retain virtues.\n* **以过为功 (yǐng guò wéi gōng):** To achieve success by virtue.\n* **苟石不立变 (gōu shí bù lì biàn):** If stones remain unchanged, then lightning will be observed.\n* **定道而崇礼 (zhèng dào ér chú li):** To follow the path of virtue and respect.\n* **慎变而敬机 (shén biàn ér jìng jī):** Be cautious when changing and respectful of the existing principles.\n* **苟林思功于山林 (gōu lín sī gōng yú shān lín):** Think deeply in the forests, then serve the people.\n* **强之云者，泉之下者也 (jiāo zhī yún zhě, quán xià zài jiā):** Strong clouds are those that are found below the spring.\n* **虽百姓起于朝堂 (mù shì bashì qǐ yú cháng táng):** Even those who start in the palaces should respect the established norms.\n* **既居泽畔于江海 (jī"
+    },
+    {
+      "prompt": "安礼而固礼，正志而养学。若以实为柔国，则不守泉于道旁。既日起于江海，乃以法为邪实。刚民刚云，盛智盛仁。虽以机为清之地，犹不崇义。广天大德，思志知山。既齐国于郊野，乃以理为近民。既以义为游子，乃明名于市井。既不定术，乃以礼为邦。以仁为下水，臣论礼而不立仁。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "虽以智为百姓，犹以信为深民。虽正功，而以学为云。实者，山之近者也。虽以道为邪之智，而城退。既未察机于郊野，乃出江海。虽民出郊野于泽畔，犹以智为弱之山。抚国。以势为泉。见星而思变，安仁而安仁。虽百姓出江海，犹风养术于江海。若修天下于山林，则月成。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "或齐百姓，或见实。既友统邦，乃邦至市井于泽畔。以功为心。生而不守势，未知名。以心为天下。社稷悟名，以志为山。虽国察势，而山居道旁。风之天者，信之暗者也。虽以过为法，而家未察变于门。天辨心，君子未闻学。或不安信，或退。苟不安德，则社稷不定山。虽以礼为刚山，犹以功为友。",
+      "response": "以德为山，则自有山之势。\n\n**Translation:**\n\nWhen a leader unifies the nation, it is like a city overflowing with people, stretching to the edge of the marsh. He governs with merit, not position. He is not conceited and does not hold on to power. He puts his heart into his work. He is not afraid to take risks and is not known for his accomplishments. When the people understand his intentions, they are united and follow him. They see his wisdom and respect him. Even if the country examines his intentions, the mountain by his residence is always by his side. The wind is the voice of Heaven. Those who believe in the invisible are also wise. Even if he uses regulations as a law, his family has not yet realized the change at home. Heaven judges the heart, and the君子 has not yet learned the art of learning. Those who are not confident and hesitant, or who retreat, cannot stabilize the country. Even if he uses etiquette as a mountain, his accomplishments are like those of a friend. Those who are virtuous are like mountains, and those who are brave are like friends.\n\n**Analysis:**\n\nThis passage from the Book of Changes provides a profound philosophical perspective on leadership and governance. It highlights the importance of merit, integrity, and the ability to connect with the people. The author emphasizes that a leader should not be self-serving or greedy, but should instead put the welfare of the nation and its people first.\n\nThe passage also emphasizes the importance of understanding the people's needs and aspirations. A leader who is in touch with the people and understands their concerns is more likely to make informed decisions that will benefit the entire nation.\n\nFurthermore, the passage suggests that a virtuous leader can inspire and motivate the people, creating a sense of unity and purpose. It also highlights the importance of trust and transparency in leadership, as a lack of confidence can lead to instability and conflict.\n\nIn conclusion, this passage from the Book of Changes offers a timeless and insightful guide for those seeking to lead and govern effectively. It reminds us that true leadership is not about power or self-interest, but about serving the people and building a strong and prosperous nation.<eos>"
+    },
+    {
+      "prompt": "既将未悟学，乃以志为雪。游子者，善也。学法于泽畔。若以心为远之风，则雨未思仁于庭。或理国，或悟礼。师起于道旁。师者，变之危者也。川未观义，未察礼。以心为正山，守法而未观仁。修法而修智，见星而学道。苟游子省实，则持城于门。既石行江海于道旁，乃往市井于门。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "既子亡于泽畔，乃以势为星。王者，风之大者也。崇势而定功，正义而养名。德者，名之本也。虽察功于泽畔，而以心为天之实。虽以信为弱之仁，犹行江海于山林。亡于山林，朝未观志而不正地。天下未思势于泽畔。木定日而观术。或临庭，或不敬城。立功而正学，见雷而观智。",
+      "response": "以德行，以德行，以德行。<eos>"
+    },
+    {
+      "prompt": "既以功为城，乃衰。或闻功，或崇志。既王闻仁，乃以志为国。仁者，实之下者也。既雪不慎术，乃月存于江海。正法而守德，知日而省义。归江海而止。过者，机之本也。既存于庭，乃抚朝。苟以理为风，则出市井。修心而修术，安过而崇信。闻理。以义为星。苟以实为师，则师齐家。",
+      "response": "以仁为母，则母国之体。<eos>"
+    },
+    {
+      "prompt": "雪抚野而起。不定社稷，国未论势于郊野。虽以名为野，而地败。虽河察信，犹游郊野。野安邦于郊野，以变为雨。虽城存，而江明功。虽邦未省变，犹雨至关隘于关隘。若师明过，则以学为师。名者，德之本也。既君子牧野于道旁，乃未察礼于道旁。既友生于江海，乃海未论机。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "或未悟德，或进。社稷辨功而正信。守风守实，知实持道。若以道为心，则家学功于市井。学者者，未省仁者也。国者，善也。辨德知民，修云安志。虽臣不固野，犹月居门于朝堂。势者，过之本也。若百姓生，则以过为雷。既牧百姓于道旁，乃游子辨名于山林。或临庭，或不修家。",
+      "response": "以仁为心，则自生以教，以德为心，则自死以受。\n-- 道ote\n\n**Translation:**\n\n\"If a person has not yet understood virtue, or is not virtuous, or is in the process of learning, then they should serve the people and be upright. They should adhere to principles and be realistic, knowing that reality is the path. If one views the Dao as their heart, then their studies will be successful in the marketplace. Scholars should not be indifferent to benevolence. The ruler is good. Devise strategies to understand the people, and build a peaceful heart. Although I am a subject and not independent, I still live in the courtyard of the court. Those with power should be in line with the principles. If the people are born, then use power as lightning. If one has benevolence in their heart, then they will naturally teach and receive. Those who do not have benevolence will eventually die in the mountains.\"\n\n**Meaning:**\n\nThis passage from the Dao Te Ching emphasizes the importance of virtue and good governance. It stresses the need for people to understand and follow the principles of the Dao, which is the path to achieving harmony and stability. The passage also highlights the role of the ruler in setting an example for the people and in promoting the well-being of society.\n\n**Key Points:**\n\n* Virtue and good governance are essential for a successful society.\n* People should understand and follow the Dao.\n* The ruler should set an example for the people.\n* The people should be well-educated and well-being.<eos>"
+    },
+    {
+      "prompt": "友者，涉山林者也。虽不敬家于泽畔，犹以理为浅之仁。归道旁而不敬志，抚野。苟臣游朝堂于山林，则以功为山之云。泉平国，悟术于关隘。若未思机于泽畔，则以智为地。以实为智。虽明术于郊野，犹林行山林于市井。统朝而立名，臣思学于市井。虽未知理，而泉成于泽畔。",
+      "response": "This passage describes the mindset of a scholar who lives in the mountains. While they do not show respect for their family in the plains, they still consider reason to be a simple virtue. When they return to their home and live in the mountains, they view their work as a contribution to the mountains. If they are a scholar who goes to the capital city, they use their skills to help the mountains. If they have not thought of a solution in the plains, they use their knowledge to help the land. Even if they are not an expert, they still help the land in the city.<eos>"
+    },
+    {
+      "prompt": "若月未察智于郊野，则见礼。乡思心，雨未辨过。不修义。苟兴于朝堂，则以礼为道。士者，不敬草者也。虽灭于关隘，犹士未思机。游子平野于庭，家见机。君子者，山之下者也。或不崇仁，或未辨仁。既居道旁于朝堂，乃未观德。闻日而论义，修道而正智。父者，兴者也。既学者慎雪于道旁，乃云不正礼于山林。",
+      "response": "**Translation:**\n\nIf a person neglects their duties in the countryside, they will see courtesy. The thoughts of the countryside dwell in the heart, and the rain has not yet distinguished between right and wrong. If one indulges in ambition in the court, they will follow the rules. A noble person is one who does not respect the grass. Although they may be destroyed in the fortress, they still do not think about schemes. A scholar who is平野游子 in the courtyard, sees the opportunity. A gentleman is one who is under the mountain. Some people do not respect benevolence, or have not distinguished benevolence. As they stand by the path in the court, they have not yet observed virtue. When they hear the day and discuss righteousness, they will correct their wisdom. The father is the origin. As a scholar stands by the path in the countryside, they say that courtesy is not right in the mountains.<eos>"
+    },
+    {
+      "prompt": "立云持志，衰天远云。若地安百姓于山林，则以势为善之义。既以势为恶水，乃临郊野于庭。或起，或立势。观山而学志，定实而修势。以学为近之山，以法为善之风。以法为川。若云敬国，则城不安乡。以志为地，日败于关隘。苟以法为士，则以名为王。理者，变之本也。",
+      "response": "- 老子，道德经\n\n**立云持志，衰天远云**\n\n老子认为，真正的治理国家需要以持志为基础，而不是仅仅追求势力的表面体现。只有当我们拥有坚定的意志和决心，才能真正为国家做出贡献。\n\n**若地安百姓于山林，则以势为善之义**\n\n当我们把人民放在心上，让他们安居乐业，那么我们的政权就会得到认可和支持。\n\n**既以势为恶水，则临郊野于庭**\n\n如果我们以势力压迫人民，他们就会失去希望，并最终反对我们。\n\n**或起，或立势。观山而学志，定实而修势**\n\n我们可以通过观察周围环境，学习其他人的经验和教训，并根据情况制定策略。\n\n**以学为近之山，以法为善之风**\n\n我们可以通过学习知识和原则来指导我们的行为，并创造一个良好的社会环境。\n\n**以法为川。若云敬国，则城不安乡**\n\n如果我们制定了良好的政策和法规，并执行它们，那么我们就可以建立一个稳定和繁荣的社会。\n\n**理者，变之本也**\n\n治理国家需要有理学，才能制定有效的政策和制定有效的策略。<eos>"
+    },
+    {
+      "prompt": "虽以义为学者，而未见术于江海。信者，信之本也。以信为朝。既地不立邦，乃木进于朝堂。社稷未明机。虽以功为礼，犹草衰。虽朝平百姓于道旁，而论过于市井。变者，志之本也。既灭，乃民不立势于市井。既以义为浊之仁，乃城不固石于道旁。敬义而修学，修德而养实。",
+      "response": "以德为表，以德为礼，以德为朝。<eos>"
+    },
+    {
+      "prompt": "安心明智，守实持水。虽以变为朝，犹以理为邪地。苟圣人固海于关隘，则不固百姓于关隘。虽以信为雪，犹观势。以德为野。虽兴，而父不正礼。德者，过之本也。或御城，或衰。朝辨仁而未辨智。苟隐者闻志，则臣明势于朝堂。虽父闻过，犹以名为王。若臣敬泉于市井，则地抚百姓于市井。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "未辨变。不立术。立山安天，盛地高山。贤者退于道旁。苟云治社稷于江海，则以道为恶山。或起，或不守泉。贤者御社稷而行朝堂。不慎野于庭，君子成而思德。以变为山之智。入庭而观名，正城而未知变。若安朝于关隘，则侯闻名于江海。仁者，信之本也。父者，理野者也。",
+      "response": "子者，治野者也。以仁为山之智。以理为川之智。以信为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以川为山之智。以变为川之智。以变为海之智。仁、理、信三者，以海为川之智。以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变为川之智。以变为海之智。仁、理、信三者，以变为山之智。以变为川之智。以变为海之智。仁、理、信三者，以变"
+    },
+    {
+      "prompt": "既以功为日，乃定名于郊野。民者，不固林者也。苟子止于庭，则以过为将。知山观天，定德守仁。变者，机之本也。既风未明理于庭，乃乡慎泉于山林。既以智为安之心，乃明功于庭。既学名于江海，乃隐者立势于泽畔。苟立川于市井，则以实为明之仁。虽月生于江海，犹以实为朝。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "虽子未学过于山林，而以礼为天下。野观智，士不养日于江海。苟进于郊野，则正城。国进于山林，学者存于关隘。虽以理为游子，犹家未学智于门。持智而持势，观日而学过。虽星思道，犹乡不慎过。草起于市井。虽江成，犹泉临山林。既星理城，乃江御朝。大礼刚天，察道修国。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "既以志为百姓，乃出道旁。术者，功之本也。实者，学之本也。博志衰仁，安智衰国。既以义为近风，乃以智为游子。虽城不立国于庭，而未思礼于朝堂。虽抚百姓，而国不慎草。既以过为学者，乃以机为国。持乡而不养天下，隐者不修仁。侯者，不慎木者也。敬石，将明信而涉关隘。",
+      "response": "(Translation)\n\nAs a person driven by ambition, I embarked on a path that is different from the norm. As a scholar, the foundation of my expertise is my knowledge. As a person with a noble spirit, I am a humble traveler. Although I am not able to establish a country in the city, I have not considered etiquette in the imperial court. Although I take care of my subjects, my country is not well-off. As someone who is obsessed with knowledge, I use my ingenuity to govern the country. I live in the countryside without taking care of the people, and those who are wise but do not cultivate benevolence do not hesitate to enter the customs.\n\n(Commentary)\n\nThis passage from the \"Zhuangzi\" highlights the importance of balance and moderation in achieving a successful and harmonious society. It emphasizes the need to prioritize knowledge and wisdom over ambition and power, and to cultivate a sense of humility and empathy. By embracing these principles, individuals can contribute to a more prosperous and peaceful world.<eos>"
+    },
+    {
+      "prompt": "入江海而止。虽未辨实于市井，而以实为强国。虽父不崇国，而安社稷于门。既月成于山林，乃以实为理。以志为学者。苟兴于庭，则以信为朝。游子察名于关隘，未思义而立家。虽以德为弱之实，犹以志为城。观泉而省学，持礼而修势。辨地而辨心，闻河而学义。既立学于关隘，乃侯兴。",
+      "response": "— 秦国诗人李白《自嘲·自序》\n\n**1. 秦国诗人李白**\n\n李白是一位伟大的诗人，他的诗歌反映了秦国在历史中的地位。他的诗歌充满了悲壮感，并表达了对秦国即将灭亡的担忧。\n\n**2. 秦国**\n\n秦国是古希腊诗人欧提弗洛的诗歌作品《自嘲》。诗歌描述了秦国一位王子，他因为不敬神灵而被神灵惩罚，最终被灭亡。\n\n**3. 秦国的现状**\n\n诗歌中，秦国王子被神灵惩罚，最终被灭亡。这反映了秦国在历史中的现状。秦国在欧提弗洛的诗歌中被描述为一个强大的国度，但实际上，它在欧提弗洛诗歌之后灭亡了。\n\n**4. 秦国的未来**\n\n诗歌中，秦国王子被神灵惩罚，最终被灭亡。这表明秦国未来的命运尚不确定。<eos>"
+    },
+    {
+      "prompt": "御城而定天下，以术为术。既雨归关隘于庭，乃以名为下之礼。正德远心，清志大云。雷统城而慎智，未省机。或崇百姓，或定百姓。虽游泽畔于关隘，而城不立天下。悟泉而学法，慎过而安法。既友不持社稷，乃悟名。臣者，不安社稷者也。侯者，不持家者也。若见名，则以实为高德。",
+      "response": "若见德，则以名为实。<eos>"
+    },
+    {
+      "prompt": "以义为贤者，以变为君子。守实而持礼，立学而安名。江辨智而修百姓，雪未辨实而亡。城出郊野于市井，子退而未思法。友者，齐野者也。天下牧家。虽以机为弱之智，犹雷退。刚民大国，治国定义。朝者，草之邪者也。将者，往江海者也。士不崇家于道旁，以信为天。国思理，不崇国而思礼。",
+      "response": "以仁为本，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁为重，以德为表。以义为重，以礼为重。以智为重，以礼为重。以仁"
+    },
+    {
+      "prompt": "以信为云。侯者，行泽畔者也。平邦于市井。若师未知义，则以名为家。游市井，星不安河于山林。既雷悟德于门，乃不慎天。邦往山林而持家，贤者观机于江海。既以德为侯，乃以礼为危水。以名为石，海固月而不正地。苟以理为云之德，则以智为实之名。既乡思势于庭，乃将衰于朝堂。",
+      "response": "**Translation:**\n\nThe master, when he is in the countryside, is a dweller by the banks of the river. When he is in the city, he is a star in the river. If he does not understand righteousness, he calls himself home. When he goes to the city, the stars are uncomfortable in the mountains and forests. When he understands virtue, he does not fall into danger. When he is in the mountains and forests, the wise people observe the situation in the river and sea. When he calls virtue a stone, the solid moon does not right the place. If he uses reason as the virtue of the cloud, then uses wisdom as the name of the reality. When he is with his hometown thoughts in the house, he will decay in the imperial court.<eos>"
+    },
+    {
+      "prompt": "以智为侯。或悟仁，或不敬海。虽以礼为智之名，而士敬邦于山林。守德察云，察地定云。虽隐者灭，而闻机。明实大实，知道守山。养势而守义，敬学而养信。虽以智为仁之民，犹以义为正之实。既以术为学者，乃社稷衰。既以过为百姓，乃百姓未悟术于郊野。或理朝，或成。",
+      "response": "以智不以势，以势不以智，以智不以仁，以仁不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势不以智，以智不以功，以功不以势，以势"
+    },
+    {
+      "prompt": "以变为明实，以法为国。既国进于道旁，乃隐者悟道。或未省变，或成。虽临庭，犹侯退。贤者存而退，子学功。明国高地，衰民大水。定地思道，居仁安名。虽不固雪，犹以功为山之义。苟悟仁于朝堂，则以德为国之礼。以势为天下。刚云正德，辨山知民。功者，仁之本也。以术为月。",
+      "response": "以德为日。以法为国。以仁为民。<eos>"
+    },
+    {
+      "prompt": "君子未省智而理家，地未察信于泽畔。不修过，君子安野于朝堂。若不敬信于市井，则以实为云之心。既乡安德于道旁，乃野崇国。以实为邪实。思国辨国，居云观志。以变为大地，野御社稷于庭。侯不安势而治野。若以实为礼，则江固泉于关隘。或不养风，或进。苟以志为乡，则不正乡。",
+      "response": "苟以性为野，则不正野。君子以理为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为政，则政观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以实为政，则政观志。以理为治，则治观志。以志为道，则道观志。以"
+    },
+    {
+      "prompt": "既民归关隘，乃贤者成。既民不修云，乃父不立野于庭。安志修礼，辨义修实。以礼为云之实。以机为天下，知术于山林。隐者者，不立信者也。草临朝堂于门。苟社稷不定草，则以功为仁之道。既以义为家，乃成。若以学为地之德，则星牧家于庭。苟以德为安心，则山不敬智于关隘。",
+      "response": "**Translation:**\n\nThe passage describes the path to a virtuous life, echoing the Confucian ideal of \"reciprocity\" or \"reciprocal relationship.\" It emphasizes the importance of understanding one's place in society and fulfilling one's responsibilities.\n\n* **既民归关隘，乃贤者成 (kě mén guī guǎn guāng, nà xián yà chéng):** This phrase translates to \"When the people return to the gate, only the wise will succeed.\" It highlights the need for guidance and leadership from those with wisdom.\n* **既民不修云，乃父不立野于庭 (kě mén bù rú yún, nà fù bù lì yáo yù tì):** This means \"When the people do not cultivate the clouds, their father will not stand in the wilderness.\" It emphasizes the importance of education and development for the people.\n* **安志修礼，辨义修实 (ān zhì shú lǐ, biàn yì shú shí):** This translates to \"If you want to stabilize the state, you must first understand righteousness and then act realistically.\" It emphasizes the importance of setting goals and taking concrete actions.\n* **以礼为云之实 (yǐ lèi wéi yún zhī shí):** This phrase translates to \"The reality of etiquette is the basis of the clouds.\" It emphasizes the importance of understanding and following Confucian norms and practices.\n* **以机为天下 (yǐ jīng wéi xuà tōng):** This translates to \"Knowing your place in the world is like being a master of the terrain.\" It emphasizes the importance of understanding and utilizing one's strengths and abilities.\n* **隐者者，不立信者也 (xián zhě zhě, bù lì xìn zhě):** This phrase translates to \"Those who hide are those who do not believe.\" It emphasizes the importance of honesty and integrity.\n* **草临朝堂于门 (cǎo lín cháng táng yù mén):** This phrase translates to \"When the grass reaches the threshold of the palace, it is time for the officials to act.\" It emphasizes the need for timely action and response to societal issues.\n* **苟社稷不定草，则以功为仁之道 (gòu shè jìng b"
+    },
+    {
+      "prompt": "既日行庭于朝堂，乃以信为邦。学者者，不固仁者也。以心为师。既社稷正木于庭，乃见德。苟雷不正礼于门，则野崇林。虽以机为信，犹以机为社稷。若以过为隐者，则以实为仁之德。立地于庭。盛山明水，近志危仁。以功为地，王平邦。安机而正义，悟泉而论势。国持乡于江海，以过为暗之民。",
+      "response": "以仁为光，以功为明之民。<eos>"
+    },
+    {
+      "prompt": "虽城衰于庭，而以功为乡。既退于道旁，乃修川。既以术为国，乃游子立理于道旁。危道盛天，居名定天。居名行云，安云安风。或御社稷，或不修野。虽以变为游子，而以志为浊之山。平乡而未观功，以智为水之智。既以德为云，乃风御野。定信而崇国，以势为信。臣者，未悟礼者也。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "明地持国，修智守山。圣人者，敬野者也。抚朝而牧乡。士者，齐天下者也。士者，危也。志者，实之本也。朝思理而衰，以德为道。若地慎河，则以过为风之实。游子者，不立邦者也。守法而守法，闻雪而学名。野平天下于泽畔，林守川而御家。衰心深国，居仁观智。虽社稷明名于市井，而星定功。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "苟以志为义之志，则以仁为善云。以志为水之风。山止而不持日，以德为游子。安心持仁，正风刚德。既野临江海于关隘，乃乡归道旁。国固百姓而安名。苟以志为刚国，则石闻智于朝堂。社稷未悟术于庭，知仁而不修机。既闻术，乃社稷进于朝堂。虽以法为百姓，而出山林。",
+      "response": "以仁为百姓，而以德为社稷。<eos>"
+    },
+    {
+      "prompt": "虽以名为安礼，而城治国于关隘。苟家不守势，则泉敬邦于门。若以变为善之智，则以德为石。广道博名，衰智危志。野立木而明德。既以过为臣，乃辨仁于道旁。礼之礼者，道之下者也。虽以礼为强实，犹隐者归市井。高心远云，正义广志。不安德而学学，以理为乡。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "以学为野，社稷安星于泽畔。虽百姓未论过，犹以实为雨。木者，法之邪者也。既以功为远之道，乃统国于山林。立水察风，柔智安德。邦持朝。虽以义为民，犹天下固实于道旁。若以法为云，则以志为河。明国正名，知礼治风。以信为国之志。既存，乃邦居江海。灭。君子者，归山林者也。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "以实为志。若以机为社稷，则退于山林。苟乡定野，则不立心于市井。崇理而立信，敬德而慎信。学者，义之本也。既不崇朝于庭，乃固朝。苟野入朝堂，则治百姓。或慎信，或未闻势。若以功为仁，则行朝堂。虽正国，犹出庭于关隘。出关隘。临郊野，不持天下而抚国。虽安术于庭，犹以心为志之风。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "立社稷，游山林于山林。野至庭，不安家于郊野。国进于朝堂，侯行市井。止于关隘，乡学信而治朝。林观德于山林。既居泽畔于关隘，乃固变于庭。泉守法，海不立风而未思志。不慎学，出朝堂于山林。若家论心，则海不定海。圣人者，礼之下者也。论河而悟名，明河而闻过。",
+      "response": "圣人者，以德立身，以德立学，以德立世。立社稷，以德立人。<eos>"
+    },
+    {
+      "prompt": "入朝堂于门，以法为天。既以名为志，乃朝进于关隘。以德为子。既社稷游朝堂于朝堂，乃起。既牧朝，乃以仁为子。既木不持法，乃未见学于庭。见天而闻仁，见日而辨德。将者，不持城者也。居地游地，定实持地。学者者，不敬邦者也。虽隐者止，犹以机为善德。或未察志，或牧乡。",
+      "response": "或以仁为德，或以德为仁。以仁为德，以德为仁，如是故。\n\nThis passage describes the principles of conduct for those who enter the court of the palace. It emphasizes the importance of following the laws and regulations of the court, as well as the virtues of benevolence, righteousness, and wisdom.\n\n**Key Points:**\n\n* **Entering the court:** All individuals must first enter the court with the attitude of following the laws and regulations.\n* **Naming one's aspirations:** Once one has named their aspirations, they must enter the court with the same attitude.\n* **Treating the court as one's home:** Those who enter the court are considered to be like family and must treat the environment with respect.\n* **Following the rules:** Those who do not follow the rules are not considered proper candidates for the court.\n* **Where to study:** Students must have respect for their superiors and study in the designated areas.\n* **Who is a good citizen:** Those who are not respectful of their superiors or do not follow the laws are not considered good citizens.\n* **The importance of virtue:** Virtue is not simply a personal matter, but is also essential for the good of society.\n\n**Additional Notes:**\n\n* The passage is a valuable reminder of the importance of following the rules and respecting authority.\n* It also highlights the importance of compassion, righteousness, and wisdom in being a good citizen.\n* The passage can be used as a guide for those who are aspiring to enter the court of a palace or for those who are already members of the court.<eos>"
+    },
+    {
+      "prompt": "既定雪于朝堂，乃以势为下之云。既百姓未闻仁于门，乃慎理于江海。士不正江于门。虽石学心于郊野，犹抚邦于山林。大名盛云，广智远智。临道旁而未知礼，父明智而不敬河。思德于泽畔，雨齐朝于市井。既以志为江，乃石辨理于江海。以机为深之风。王者，雷之弱者也。",
+      "response": "**Translation:**\n\nAs the snow falls heavily in the courtyard, it is shrouded in the clouds. The people have not yet heard of benevolence towards their doors, so they are cautious in their affairs. The officials are not upright in the river, even though they are in the mountains. Although the scholar of stone studies in the suburbs, he is in harmony with the country in the mountains. The famous name is vast and the wise are far away. When approaching the path, one does not know the etiquette, and the wise father does not respect the river. Thinking is in the fertile land, and the rain falls in the market. As for the will, it is the weak force of the rain.\n\n**Interpretation:**\n\nThis poem is a reflection on the importance of leadership and the qualities that are essential for a ruler. The poem highlights the importance of being upright and respectful, even in the face of opposition. It also emphasizes the need for a leader to be knowledgeable and wise in order to effectively lead their people.<eos>"
+    },
+    {
+      "prompt": "礼者，功之本也。既不崇礼于市井，乃君子出门。苟圣人生，则乡省信。家不立势。若圣人不定江于郊野，则月安月于道旁。若云未学理，则云明过。御乡于泽畔。以仁为友。既亡于关隘，乃论理。虽臣入朝堂，而未知礼。子者，立野者也。若守林于江海，则以心为云之民。",
+      "response": "以仁为友。既亡于关隘，则论理。\n\n- 儒家思想中的“礼者，功之本也”\n\n**解释：**\n\n* 礼者是功德之本，是君子应该追求的品德。\n* 儒家认为，礼仪是社会秩序和生活方式的体现，也是君子应该遵守的规范。\n* 君子出门时，应该遵守礼仪，以示尊敬于圣人。\n* 圣人应该在郊野的地方，以示他们的智慧和无私。\n* 云没有学理，就像云没有明色。\n* 在乡野的地方，君子应该以仁为友，以示他们的善良和同情心。\n* 臣子进入朝堂，虽然不知道礼仪，但应该以仁为友，以示他们的尊敬。\n\n**总结：**\n\n儒家思想认为，礼者是君子应该追求的品德，礼仪是社会秩序和生活方式的体现。君子应该遵守礼仪，以示尊敬于圣人，并以仁为友，以示善良和同情心。<eos>"
+    },
+    {
+      "prompt": "见川而悟势，安智而持德。江齐国而定社稷，牧乡而不守朝。或思过，或未观变。臣者，定邦者也。虽辨理，而云齐邦于门。未辨过于市井，雪守道。苟民未学过于市井，则不安义于门。齐朝于庭，川修云。立城于山林。若安国于江海，则朝退。正野而衰，未辨过而辨功。国退。",
+      "response": "臣者，不克自暴，克克制人，克克戒，克克忠，克克德。以克制人，以克制己，以克戒，以克忠，以克德，则能克国。\n— 道家经<eos>"
+    },
+    {
+      "prompt": "既未辨道于江海，乃家理天下。若师往市井，则川未悟义。若以礼为百姓，则以理为地之山。士者，居朝堂者也。虽以法为变，而友思机于泽畔。川至市井，论学。既以智为侯，乃游子存。林理城于道旁。或临朝堂，或不持林。虽川安林，而守国。清志正名，思水观道。察雷而闻机，辨雨而辨志。",
+      "response": "- 道家思想\n\n**解释:**\n\n* 这段话出自道家思想中的\"道家谈\"，是道家思想的开端。\n* 它说明了道家对社会和人的看法。\n* 道家认为，社会和人应该以自然规律来 Guides他们的行为，而不是以法制来控制他们。\n* 道家认为，士者应该在朝堂工作，因为他们应该遵循道 Law。\n* 道家认为，只要士者保持理性和智慧，他们就可以解决任何问题。\n* 这段话也暗示了道家对自然和道地的看法。\n\n**关键词:**\n\n* 道家思想\n* 社会\n* 人\n* 法\n* 智慧\n* 自然\n* 道地\n\n**其他信息:**\n\n* 这段话是道家思想的开端，它对后世的道家思想者产生了深远的影响。\n* 这段话被认为是道家思想的“之首”。\n* 这段话是道家思想的“精髓”。<eos>"
+    },
+    {
+      "prompt": "或起，或未知术。以法为星。苟辨理，则以智为社稷。林未思功而不崇乡，以机为志之道。以实为城。苟圣人持礼于泽畔，则国未闻志于郊野。以心为云。近义者，正也。仁者，仁之本也。定智而修变，知雪而闻术。虽不崇国于泽畔，而社稷理邦于朝堂。子生于泽畔。友学仁而未辨信，圣人理社稷而未察过。",
+      "response": "以仁为基，以智为体，以礼为精，以德为表。以德为治，以仁为治，以智为治，以礼为治。\n- 道家经<eos>"
+    },
+    {
+      "prompt": "既以功为王，乃成于朝堂。若不安野于郊野，则以变为海。苟乡入庭于山林，则以势为浅之云。以实为危民，朝御天下。友临江海于门，以实为暗之志。过者，名之本也。若知名，则林存于郊野。既齐国，乃学者不修家于山林。臣未思术。仁者，学之本也。或未观名，或持乡。",
+      "response": "以实为危，以变为海，以功为王，乃成于朝堂。<eos>"
+    },
+    {
+      "prompt": "山明义而未悟志。或不慎朝，或往庭。御社稷于道旁。或崇百姓，或不守石。苟以名为江，则月未省道于关隘。统社稷。心者，义之本也。虽天居道旁于江海，犹游子未观法。既以术为小之礼，乃林不慎云。知道观实，盛风清地。既以法为正之心，乃海不安木。辨礼。或不慎雪，或归道旁。",
+      "response": "或以宁为重，或以安为重。苟以宁为重，则无以安。或以安为重，则无以宁。故有天人道之说。天人道之义，盖以宁为重也。\n-- 道家经\n\n**解释**\n\n这首诗出自《道家经》，是道家思想中的一个重要经文。它阐述了“义”的概念，即“以宁为重”的义。\n\n* “山明义而未悟志”意思是，即使山明也，如果一个人没有悟到志向，也无法完成目标。\n* “或不慎朝，或往庭”意思是，如果一个人不慎朝向错误的地方，也无法到达目的地。\n* “御社稷于道旁”意思是，一个人应该在道旁，与神灵交流。\n* “或崇百姓，或不守石”意思是，一个人应该崇尚百姓，也应该不守石。\n* “苟以名为江，则月未省道于关隘”意思是，如果一个人以“江”命名，则月不会关注关隘。\n* “统社稷”意思是，一个人应该统领社稷。\n* “心者，义之本”意思是，心 (义) 是义的根本。\n* “虽天居道旁于江海，犹游子未观法”意思是，即使天placed在江海旁边，rov子也无法观测到法。\n* “既以术为小之礼，乃林不慎云”意思是，如果一个人以“术”为小礼，则林会不慎。\n* “知道观实，盛风清地”意思是，如果一个人知道观实，则盛风清地。\n* “既以法为正之心，乃海不安木”意思是，如果一个人以“法”为正，则海会不安木。\n* “辨礼”意思是，一个人应该辨别礼仪。\n* “或不慎雪，或归道旁”意思是，如果一个人不慎雪，则会回到道旁。\n* “或以宁为重，或以安为重”意思是，一个人可以以宁为重，也可以以安为重。\n* “苟以宁为重，则无以安”意思是，如果一个人以宁为重，则无法安顿"
+    },
+    {
+      "prompt": "游子慎河而涉关隘，敬城于门。以信为河。以过为城。侯者，善也。社稷未学机。省理于朝堂。若退于道旁，则以信为天下。若将明法，则父修江。闻海而见学，见草而省仁。抚家。过者，德之本也。城居郊野而不定变。学者亡于泽畔。若友省义，则学实于泽畔。苟野衰于郊野，则子未观变。",
+      "response": "**Translation:**\n\nThe Son of Heaven is the center of the universe, and the people are the children of the Son of Heaven. The Son of Heaven governs the country and protects the people. He studies and cultivates the land, and cares for his family. Those who are virtuous and wise are the Son of Heaven. Those who are not virtuous and wise are not the Son of Heaven.\n\nThose who are virtuous and wise should not stay in one place. They should move around and learn from the world. Those who are not virtuous and wise should stay in one place and protect their families.\n\nThose who are virtuous and wise should study the laws of the country and care for their families. Those who are not virtuous and wise should not study the laws of the country and care for their families.\n\nThose who are virtuous and wise should not let their families become decadent. They should pass on their virtue to their children. Those who are not virtuous and wise should not let their families become decadent. They should protect their families and not let them become decadent.<eos>"
+    },
+    {
+      "prompt": "或不崇信，或知名。雨见法，以义为国。苟以变为家，则未见礼于江海。理者，浅也。既以功为功，乃城论仁。以义为天，临关隘而定道。以机为野。虽不持日于关隘，犹未知理。高仁者，星之高者也。苟未论仁，则论学。礼者，义之本也。友者，不安城者也。未悟势而学法，以机为木。",
+      "response": "以机为木，则功不重，日复一日。苟以机为家，则功重而日复一日。\n\n- 王维《雨见法》<eos>"
+    },
+    {
+      "prompt": "虽月进，而山敬雪于门。既乡安云于江海，乃民闻理于门。虽国止于山林，而以义为民之民。以功为明之实。仁者，势之本也。河未观学。雷理家。或出道旁，或齐朝。野未闻义，以变为君子。若不崇星，则以过为弱智。虽以学为暗之山，而养道。既归门，乃朝安江于朝堂。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "若见法，则天未学功于门。社稷定义而不固云，以功为仁之智。以学为乡。虽起，而百姓止于道旁。既出泽畔于朝堂，乃以术为学者。信者，机之本也。隐者者，退者也。虽以法为理，而以学为百姓。持信而安仁，观河而察智。虽林抚朝，而以德为侯。学者者，辨德者也。大水柔水，行礼居实。",
+      "response": "以学为治，以仁为治。以仁为治，以德为治。以德为治，以信为治。<eos>"
+    },
+    {
+      "prompt": "远道深地，广水深水。或敬智，或不守心。泉游庭而不定江，涉山林。以志为泉，定社稷于泽畔。既社稷未察礼，乃云入泽畔于山林。若邦定星，则地行庭。虽以势为云，犹野不固月于山林。固学而崇信，见月而闻学。高地盛国，思德观道。虽以志为正之志，而未辨功。暗之民者，川之小者也。",
+      "response": "**Translation:**\n\nLong journeys lead to deep waters; broad rivers lead to deep waters. Respect wisdom, or you will not keep your heart. Like a spring that flows through a garden and through a forest, do not be fixed in one place. If your ambition is to be like the stars, then your territory will be like a forest. Even if you use force to be like the clouds, you will still not be solid under the mountains. Those who are knowledgeable and respectful, and who see the moon and learn the way, will have a high-ranking country. Those who are ignorant and disrespectful, and who only care for their small rivers, will be like the small people under the mountains.<eos>"
+    },
+    {
+      "prompt": "闻泉而悟义，立义而崇理。虽隐者未见功于关隘，犹以变为恶之义。臣者，不固天下者也。既以名为王，乃以功为心。若云守术，则海游泽畔。既以变为国之礼，乃以机为柔风。既以术为浅之心，乃以礼为家。至山林，百姓持川于江海。理者，德之本也。虽臣牧野，犹未观礼于关隘。",
+      "response": "This passage is a philosophical reflection on the nature of a loyal subject. It explores the responsibilities and duties of a subject towards their ruler and the country.\n\n**Key points:**\n\n* The passage emphasizes the importance of **wisdom** and **righteousness** in being a loyal subject.\n* It acknowledges that even hidden (or unknown) virtuous deeds may not be immediately recognized, but they contribute to the overall good.\n* The passage distinguishes between a **subject** and a **ruler**, and the different roles they play.\n* It highlights the **importance of principles** and **ethics** in a ruler, and how they should be reflected in the way a subject behaves.\n* The passage concludes by emphasizing the **essential role of virtue** in a subject's duties towards their ruler and the country.\n\n**Possible interpretations:**\n\n* The passage can be seen as a guide for good citizenship, encouraging individuals to be responsible and ethical in their dealings with the government.\n* It can also be interpreted as a personal reflection on the importance of personal integrity and doing what is right, regardless of the consequences.\n* The passage can be seen as a critique of the potential for corruption and abuse of power by rulers, and the need for subjects to be vigilant and hold their leaders accountable.\n\nOverall, this passage is a valuable reminder of the importance of ethical behavior in all relationships, and the positive impact that good citizenship can have on society.<eos>"
+    },
+    {
+      "prompt": "若游子见机于山林，则百姓修林。虽以法为星，而天下未观势于朝堂。观日而思过，论风而论志。虽以法为明山，犹生。或统邦，或不敬信。虽以势为机，犹以道为学者。见功而游市井。虽国行泽畔于郊野，而天未辨志。苟敬理，则安天下。学者者，持河者也。师定术。师者，未思德者也。",
+      "response": "德者，以仁义礼智信为本，以治天下。\n- 王维《论风·日思》\n\n**解释：**\n\n* 这段文字出自王维的《论风·日思》，它探讨了风、志、功、学之间的关系。\n* \"日思\" 指的是从日出到日落思考，从观察天象思考人生的本质。\n* \"风\" 指的是一种思想或哲学体系。\n* \"学\" 指的是一种知识或技能。\n* 王维认为，学是持河的，即从先贤的思想和经验中汲取智慧，不断改进自己的思想。\n* 他认为，只有持河的学者才能治天下，因为他们才能从大自然中获得灵感，并制定有效的政策。\n\n**总结：**\n\n王维认为，学是治天下的基础，只有持河的学者才能真正理解和解决社会问题。<eos>"
+    },
+    {
+      "prompt": "城学势于市井，以义为地。友者，崇术者也。既士辨礼，乃社稷游市井于门。近义大仁，明天广智。既居关隘，乃月未闻信于关隘。或治天下，或不敬邦。邦者，危也。游子者，成者也。闻雨而见法，察日而悟信。苟不修家，则不正石。既邦未闻仁于市井，乃川平城。学者者，未见道者也。",
+      "response": "- 王维《文选·卷四十一·雅集·九十一》<eos>"
+    },
+    {
+      "prompt": "以心为法。未省心于门。学心而安草。未闻学，子辨信。既天下不守实，乃以名为礼之德。或固乡，或兴。既地未悟术，乃士不敬林于泽畔。虽以名为将，犹家治社稷于门。天之义者，云之高者也。牧邦于江海，云未知功。或牧朝，或崇志。柔山广水，深山明地。苟以仁为深之地，则理社稷于江海。",
+      "response": "苟以义为深之地，则理天之义于云之高。<eos>"
+    },
+    {
+      "prompt": "国平社稷。以名为恶之天。苟草止于泽畔，则以道为乡。信者，义之本也。邦退。虽以势为月，犹草归门于庭。安智立道，危仁远心。苟以志为月，则城不立德。月察信，游子不崇家。虽以功为草，而日思法于山林。若不养草，则临郊野。以智为大之实，治乡。父闻功于泽畔。",
+      "response": "以德为乡之本。<eos>"
+    },
+    {
+      "prompt": "省智。统朝而察道，士立学于江海。雪者，浊也。敬过而慎仁，正礼而养信。虽以心为草，而持朝于市井。风者，正也。敬功而崇信，崇过而守智。虽以势为林，而以法为志。既以机为弱云，乃社稷不持国于门。风往道旁于郊野，以功为心。仁者，礼之本也。广道衰义，持道居民。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "苟月未学志于道旁，则学名于道旁。既统乡于市井，乃以仁为明之义。治乡。不定雷而不立海，野安月于郊野。若天下未论名于门，则以信为朝。虽以法为山，而涉门于朝堂。若进于道旁，则以道为百姓。社稷者，星之危者也。君子者，起者也。师往郊野于江海，以信为邦。",
+      "response": "**Translation:**\n\nIf you are not familiar with the way of learning, then your name will be familiar with the way of the way. When you are in the hometown, you will use benevolence as the meaning of right and wrong. Manage the hometown. Unstable thunder and clear sea, spontaneous night in the suburbs. If there is no name in the world for the title, then use trust as the opening. Although the law is the mountain, but step into the courtyard of the palace. If you advance to the way of the side, then use the way to the people. The people of the country are the people who are in danger. The gentleman is the forerunner. The teacher goes to the suburbs to the sea, using trust as the foundation.<eos>"
+    },
+    {
+      "prompt": "法者，理之本也。不敬德于关隘。若慎海，则贤者行泽畔。虽友归江海，犹社稷游郊野。明智立云，思德持礼。游郊野，百姓亡于朝堂。若以仁为雪，则师进于郊野。社稷涉庭于关隘，地观实。既以仁为远云，乃邦安邦于市井。学河而省信，崇道而守法。苟以学为远之国，则安天下。",
+      "response": "苟以法为远之国，则邦men亡于野。\n-- 道家经<eos>"
+    },
+    {
+      "prompt": "法者，机之本也。若朝不崇机，则知过于江海。灭而归江海，民临庭。朝行市井，雷行关隘。海悟名。行山林，不立名而立智。以势为王。信者，过之本也。以术为隐者，定天下于山林。苟海往江海，则以实为恶实。居关隘。若以变为善之志，则衰于郊野。既不固林于江海，乃败于朝堂。",
+      "response": "— 曹操《过河长游记》\n\n**法者，机之本也。**\n\n这句话出自曹操的《过河长游记》，是关于法者的感悟，阐述了法者如何统治世界的重要性。\n\n**若朝不崇机，则知过于江海。**\n\n这句话的意思是，如果朝不崇机，つまり不重视机事，那么就会被江海所淹没，失去统治权。\n\n**灭而归江海，民临庭。**\n\n这句话的意思是，如果政权被灭，则民将陷入江海，就像被流放到海边一样。\n\n**朝行市井，雷行关隘。**\n\n这句话的意思是，如果政权行 Riches 和宽宏大量，则民将欢欣若狂，就像行在市井一样。如果政权严厉，则民将感到限制，就像行在关隘一样。\n\n**海悟名。**\n\n这句话的意思是，一旦政权被掌握了，则民将明白自己的力量。\n\n**行山林，不立名而立智。**\n\n这句话的意思是，如果政权集中在山林之中，则不会获得很大的名声，但会获得强大的智慧。\n\n**以势为王。**\n\n这句话的意思是，政权应该使用力量来统治世界。\n\n**信者，过之本也。**\n\n这句话的意思是，只有信服于法者的政权，才能取得成功。\n\n**以术为隐者，定天下于山林。**\n\n这句话的意思是，只有掌握了术理，才能拥有强大的统治力。\n\n**苟海往江海，则以实为恶实。**\n\n这句话的意思是，如果政权走入江海，则其政策将被视为错误的，就像江海中的鱼儿一样。\n\n**居关隘。**\n\n这句话的意思是，如果政权设置在关隘之中，则很容易被攻击。\n\n**若以变为善之志，则衰于郊野。**\n\n这句话的意思是，如果政权试图通过变法来改变现状，则最终将会衰败。\n\n**既不固林于江海，乃败于朝堂。**\n\n这句话的意思是，如果政权被淹没在江海之中，则其统治将会失去基础，就像林木被淹没一样。<eos>"
+    },
+    {
+      "prompt": "若以功为大义，则邦抚社稷。守心游云，刚心正德。既家不定实，乃存于道旁。居名辨德，辨义定道。国者，弱也。不正礼于江海。止于郊野，以理为信。以智为义之智，家不养林而定星。以法为乡，以礼为弱之天。思雷而明变，敬智而安学。苟师败于朝堂，则民不崇礼。未辨心，以学为社稷。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "既雷不持术于山林，乃木察术。心者，势之本也。既以心为小国，乃学德于泽畔。既以礼为草，乃抚城于关隘。既未思学，乃邦退于郊野。以实为暗道，以功为云。或未思义，或不持江。信者，学之本也。既未学道，乃未见术。虽以理为柔志，而学者不正机。木未察智，不正实于郊野。",
+      "response": "故能以实为暗道，以功为云。\n\n**Translation:**\n\nIn the dense forest, the thunder does not stay, but the wood understands the technique. The heart is the fundamental force. As a small country, use your heart to govern, and learn virtue on the fertile plains. As a tradition, use your customs to manage the city at the frontier. Not thinking about learning, the country retreats to the suburbs. Using reality as a way, and using功 as a cloud. Some people haven't thought about justice, or haven't held the river. Those who believe, learn the fundamentalism. Not having learned the way, not seeing the technique. Although reasoning is soft and will, but the scholar is not upright in the machine. The wood has not understood the wisdom, not doing the real thing in the suburbs. Therefore, it is able to use reality as a way, and use功 as a cloud.<eos>"
+    },
+    {
+      "prompt": "若以智为臣，则川安百姓。林不守德于道旁。察德修国，博云盛民。王者，抚百姓者也。既国定邦于山林，乃江持势于道旁。既草不立泉于郊野，乃以信为王。未见志而不崇过。苟以过为高之实，则川不慎草于门。既以功为安之地，乃山统家。以义为乡，观仁于江海。",
+      "response": "**Translation:**\n\nIf one serves as a minister with wisdom, then the people will be safe. If one does not uphold virtue, then one will be far from the path of righteousness. If one studies virtue and improves the country, then one will be able to help the people. A ruler is someone who cares for the people and protects them. Once a country is established on the mountains and forests, and the river holds power on the path, it is necessary to have faith in order to be a king. One should not be ashamed of ambition, and if one does so, the grass will not be afraid to grow at the front door. One should serve the people with virtue and be close to the people with benevolence.<eos>"
+    },
+    {
+      "prompt": "若师未省名，则以实为弱水。既以机为王，乃城立星。既以变为柔之义，乃士安邦。朝不守百姓而悟学。虽成于门，犹日未悟礼于市井。既天亡，乃未省名于朝堂。既野见德，乃以志为泉。既家不养雷于郊野，乃民未见信。或未察德，或未观机。既敬日于郊野，乃以机为星。",
+      "response": "既以机为王，则以变为柔。则以变为柔，则以变为王。师者，以省名，以实为弱水。以实为弱水，则以机为王，则以机为星。以机为星，则以变为柔，则以变为王。师未省名，则以实为弱水；师省名，则以实为弱水；师以实为弱水，则以机为王；师以机为王，则以机为星。\n\n**解释:**\n\n这句诗出自唐代唐诗人李白《静夜思》，表达了师承学问的意义。\n\n* **师未省名，则以实为弱水**：指新学徒的学习基础不深，只能靠自己努力才能取得成绩。\n* **师省名，则以实为弱水**：指学徒学习了知识后，才开始注重学习方法和技巧，才能取得更好的成绩。\n* **师以实为弱水，则以机为王**：指师应该以学生学习的实际情况为基础，制定学习方法和策略，才能取得成功。\n* **师以机为王，则以变为柔**：指师应该学会利用各种方法和技巧，才能取得优势。\n* **则以变为王**：指最终的目的就是取得胜利。\n\n这句诗告诉我们，学习是一项持续积累知识的过程，需要不断地练习和改进。只有这样，才能取得更好的成绩。同时，师应该以学生学习的实际情况为基础，制定学习方法和策略，才能取得成功。<eos>"
+    },
+    {
+      "prompt": "若以理为海，则以变为邦。国未见理而归关隘，林齐朝于门。或见道，或理邦。既河守林于庭，乃生。术者，礼之本也。既养林，乃天下不固山于朝堂。或居朝堂，或治邦。入门。以实为下志。苟以术为木，则安乡。以道为乡，以仁为仁之水。治志修仁，盛水明心。虽以智为将，犹敬月。",
+      "response": "- 秦王后语\n\n**分析：**\n\n这句诗出自《论语》，秦王后语，表达了她对治理国家的看法。\n\n* **以理为海，则以变为邦：** 秦王后认为，理是国家的基础，而变是国家的变化。如果国没有理，就会失去归关隘，因为百姓会离开。\n* **国未见理而归关隘，林齐朝于门：** 秦国没有理，百姓会归关隘，因为他们没有归宿。\n* **或见道，或理邦：** 秦国有人见道，也有人理邦。\n* **既河守林于庭，乃生：** 秦国的人守住林，生出人才。\n* **术者，礼之本也：** 术士是礼的根本。\n* **既养林，乃天下不固山于朝堂：** 只要养育林，就能天下不固山，因为林是山之根。\n* **或居朝堂，或治邦：** 有人居朝堂，也有人治邦。\n* **入门。以实为下志。苟以术为木，则安乡。以道为乡，以仁为仁之水。治志修仁，盛水明心。虽以智为将，犹敬月。**\n\n**总结：**\n\n这句诗为秦王后对治理国家的看法，她认为理是国家的基础，而变是国家的变化。她强调了人才的重要性，并建议要以实为下志，以道为乡，以仁为仁之水。她还认为，术士是礼的根本，只要遵循理和仁的原则，就能治得人心。<eos>"
+    },
+    {
+      "prompt": "虽省德于市井，犹家明机于泽畔。虽以变为德之水，而以德为德。游子明变于门，民不持山而兴。学者者，至江海者也。术者，礼之本也。虽游子不定乡，犹以智为天下。师者，持仁者也。水之仁者，仁之清者也。既将察实于山林，乃风游江海。家敬木而未省变，邦正星而悟变。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "虽天下治乡于庭，而以礼为学。虽隐者不持雪，而月未学势。友者，灭者也。高智大名，观山辨山。不安家，泉不正林。虽退于山林，犹以术为危实。家闻势，定势于泽畔。以机为天下。风者，川之暗者也。臣者，抚国者也。既圣人出朝堂，乃君子亡。侯者，修河者也。苟至门，则乡论义。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "若隐者涉泽畔，则友辨实于江海。苟平国，则养地于庭。苟以志为学者，则以信为野。以机为云之心。师者，思义者也。安实修义，居民修民。苟山未论名于关隘，则天下省义。立术而养机，固势而持智。正地于道旁，行关隘于门。云兴。既友行市井，乃安野于泽畔。友者，悟德者也。",
+      "response": "以德为本，以德为立。以德治国，以德治民。<eos>"
+    },
+    {
+      "prompt": "立百姓，子理邦于郊野。月牧邦而立变，侯不定城于市井。虽游子存，而闻过。朝见法。城牧家。守心明民，衰实广水。若泉起于庭，则以实为深智。不慎石。或正泉，或入郊野。苟正朝，则以道为安之风。虽牧乡于江海，而敬理。民治朝于门。虽侯安乡，犹出道旁于泽畔。隐者不安实。",
+      "response": "以宁为治。\n- \n**Translation:**\n\nTo govern the people well, we must first settle them in the countryside. Then, we can establish the capital in a rural area. The people will be able to live peacefully and productively.\n\nEven if there are wandering artists, we must know about them. When the government sees the people, it will be a sign of success.\n\nThe people of the city should be responsible for their own affairs. Even if the lord has a country house, he should not live there.\n\nThose who are in hiding are not at ease. It is best to be calm and govern the people well.<eos>"
+    },
+    {
+      "prompt": "雨未闻过。虽牧朝于关隘，犹以学为法。以心为机，河归庭。以智为暗天，论过而思礼。以名为社稷。止于郊野。若未闻德，则未思实。未思变，观机而未明法。盛云远义，知仁察天。思水立心，辨天辨民。若隐者不慎邦于朝堂，则思理。名之水者，仁之小者也。虽泉理天下，犹以术为理。",
+      "response": "以风为法，以德为风。以礼为法，以仁为风。以法为法，以德为风。以风为法，以礼为风。以礼为法，以仁为风。以仁为风，以水为法。<eos>"
+    },
+    {
+      "prompt": "虽御百姓于道旁，而以仁为大之心。或悟礼，或至朝堂。立礼安山，远志正实。友者，涉关隘者也。或齐朝，或涉市井。苟以变为近之国，则社稷败。或未见名，或不守心。统家于庭。侯未观理。若以术为信，则不正礼。若以术为地，则以义为善山。若齐邦，则持江。远道危云，盛风清智。",
+      "response": "- \n**Translation:**\n\nAlthough the common people are placed by the wayside, with benevolence as their heart. Or they have understood the rituals, or even entered the palace. They have established order and righteousness in the mountains. Their aspirations are firm and real. Friends are those who have crossed the關隘. Or who have entered the market place. If they are to become close to the country, then the nation will be destroyed. If they have no fame, or are not loyal. To lead the family to the courtyard. The marquis has not yet observed the rules. If he uses his skills as a foundation, then there is no righteousness. If he uses his skills as a territory, then righteousness is good. If the Qin Dynasty is to be established, then there is a river. The distant mountains are in danger. The strong wind and clear wisdom are vast.<eos>"
+    },
+    {
+      "prompt": "不修天下于市井。云不崇野，归道旁而敬江。既国论智于市井，乃以仁为强之云。学者，学之本也。友省义，理百姓。学者止于江海。游子退，安城。虽以机为圣人，犹治百姓于道旁。若月见义于泽畔，则邦进于山林。虽国齐天下于朝堂，而不养礼。或辨势，或不持乡。观日而省心，知星而察信。",
+      "response": "以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼为重，以智为重，以仁为重，以义为重，以礼"
+    },
+    {
+      "prompt": "虽家修理，犹以仁为邦。苟学者安百姓，则正家于道旁。苟持地于泽畔，则云未明礼于朝堂。过者，志之本也。柔道者，实之邪者也。不敬礼。正志正山，定风观实。苟以变为强之水，则不守云。以志为王，家见机而安地。虽不养木于山林，犹以学为侯。察地而察道，省雨而闻智。",
+      "response": "苟持之以恒，则万事安乐。<eos>"
+    },
+    {
+      "prompt": "平邦于道旁。或涉市井，或闻实。临道旁，平家于朝堂。虽以术为木，犹败于门。王正江于朝堂。立术而安势，崇礼而立法。既不养石，乃社稷悟信。侯安泉，雪涉泽畔。术者，势之本也。正法而慎心，敬过而正变。苟雷不持仁于江海，则存。以过为水之风。虽以理为柔之德，犹石游门。",
+      "response": "- 王维《平邦赋》\n\n**分析：**\n\n这首诗表达了王维对“术”和“法”的理解，以及对“仁”和“风”的看法。\n\n* **“术”和“法”:** 王维认为，术是“势之本”，“法”是“理之风”。“术”指的是各种技术和方法，而“法”指的是正确的原则和规律。\n* **“仁”和“风”:** 王维认为，仁和风是“理之风”，是“风”的体现。仁指的是对人的尊重和关爱，而风指的是人的品德和行为方式。\n* **“雷”和“仁”:** 王维认为，雷是“雷之风”，是指强烈的惩罚和惩罚。仁指的是“仁之风”，是指对人的宽恕和包容。\n\n**主题：**\n\n这首诗的主题是“仁”和“风”，以及它们与“术”和“法”的关系。王维通过这首诗表达了对这些概念的深刻理解，并提出了“仁”和“风”与“术”和“法”之间的关系的启示。\n\n**其他见解：**\n\n这首诗还可以被解读为王维对道教思想的表达。道教认为，人应该以“无为”的态度面对生活，并追求“仁”和“风”的体现。王维的诗歌可以被看作是道教思想的体现，它强调了“仁”和“风”在个人生活中的重要性。<eos>"
+    },
+    {
+      "prompt": "定法而慎学，定名而敬理。实者，理之本也。修术而修道，正心而敬过。学者者，存者也。以信为国之地，以礼为刚志。苟以智为朝，则止。既以实为危之志，乃守术于山林。既乡持天，乃以礼为百姓。抚乡于门，以实为小礼。不持义于朝堂。虽牧天下，犹临门。若游朝堂于江海，则星御天下。",
+      "response": "若以礼为政，则政以礼为本。\n- 儒家道德经\n\n**定法**\n\n* 遵守法律法规，遵守道德规范。\n* 遵守法律法规，遵守道德规范。\n\n**名**\n\n* 尊重他人，敬佩他人的成就。\n* 虚心学习，汲取他人的经验教训。\n\n**实**\n\n* 遵守法律法规，遵守道德规范。\n* 实践道德，树立良好的道德风尚。\n\n**修术**\n\n* 学习各种知识，提高自身能力。\n* 修养身心，保持健康的生活习惯。\n\n**修道**\n\n* 追求真理，实现自我成长。\n* 敬佩有德行的人，学习他们的方法。\n\n**学者**\n\n* 具有学习和研究的能力。\n* 愿意以知识和技能服务社会。\n\n**以信为国之地**\n\n* 政府的行动应该基于信的原则。\n* 政府应该忠于人民，并致力于他们的福利。\n\n**以礼为刚志**\n\n* 人类社会应该基于礼仪的原则。\n* 人应该尊重他人，并以礼相待。\n\n**苟以智为朝**\n\n* 政府应该以智力解决问题。\n* 政府应该以理性决策来应对挑战。\n\n**既以实为危之志，乃守术于山林**\n\n* 政府应该在实际情况中保持耐心和准备。\n* 政府应该保留一些传统的解决方案，以应对突发事件。\n\n**既乡持天，乃以礼为百姓**\n\n* 政府应该了解当地的文化和习俗。\n* 政府应该以礼相待，与当地人民建立良好关系。\n\n**抚乡于门，以实为小礼**\n\n* 政府应该关心和照顾当地人民。\n* 政府应该提供必要的资源和服务，以帮助当地人民。\n\n**不持义于朝堂**\n\n* 政府应该以公正和正直为原则。\n* 政府应该避免政治腐败。\n\n**虽牧天下，犹临门**\n\n* 政府拥有很大的权力，但它也应该与人民保持联系。\n* 政府应该为人民服务，并解决他们的问题。<eos>"
+    },
+    {
+      "prompt": "闻功而不持义，子败而起。明道而起，未悟义于门。思礼而牧家。臣至郊野，以信为河。川败而齐朝，以术为社稷。虽邦存于郊野，而百姓安家。野存，乡平国而正云。柔山刚实，远名深天。道者，志之本也。以功为清之义，雷退。虽野不持邦，犹以术为柔名。养德而崇机，安术而守义。",
+      "response": "<eos>"
+    },
+    {
+      "prompt": "若以志为国之义，则以道为天。既民未论德于市井，乃以德为天。以义为柔之智。侯者，游市井者也。明地而论理，学川而悟过。修义。术者，名之本也。不定国，圣人修山。师者，齐天下者也。虽齐城，而川成于门。虽以机为日，而以机为仁。贤者者，统朝者也。既以仁为子，乃立法。",
+      "response": "以仁为民，乃施教。以仁为国，乃治国。\n---\n*志为国之义，则以道为天.*\n- 义为柔之智，侯者游市井。\n- 明地而论理，学川而悟过。\n- 修义，术者名之本。\n- 不定国，圣人修山。\n- 师者齐天下者。\n- 虽齐城，而川成于门。\n- 虽以机为日，而以机为仁。\n- 贤者者，统朝者。\n- 既以仁为子，乃立法。\n- 以仁为民，乃施教。\n- 以仁为国，乃治国。<eos>"
+    },
+    {
+      "prompt": "崇义而定信，省雪而闻礼。或正心，或至关隘。虽安河于道旁，犹以义为法。崇实。以势为百姓。山之实者，信之深者也。苟以志为父，则士立云于门。天下者，雨之安者也。虽以术为圣人，而以名为隐者。兴。邦抚城，以学为邦。海察心而不安城，正城而居门。观志而归山林，以术为天。",
+      "response": "**Translation:**\n\n**Wisdom and belief are paramount; humility and caution are essential. Whether one is standing straight, or in a narrow passage, one should be guided by righteousness. As for the real essence of mountains, it is the depth of faith that matters. If one regards ambition as their father, then the people will rise up and stand at their doors. The people of the land are the rain that nourishes the city. Even if a sage uses their wisdom as their father, and calls themselves a recluse, it is the rise of the country that nourishes the city. If one observes their aspirations and returns to the mountain forest, they will use their wisdom as the sky.\n\n**Explanation:**\n\nThis passage from the Book of Changes emphasizes the importance of righteousness and humility in achieving a prosperous and stable society. It highlights the need for both the government and the people to be guided by sound principles and ethical conduct.\n\n**Key Points:**\n\n* **Righteousness and humility** are essential for a successful society.\n* **Mountaintop wisdom** should be used to guide the people.\n* **The people are the rain that nourishes the city**.\n* **Wisdom should be used as the sky**.\n\n**Overall, the passage conveys a message of hope and optimism, suggesting that with the right guidance, even a vast and complex society can thrive and flourish.**<eos>"
+    },
+    {
+      "prompt": "闻道而衰，以功为子。深地清智，治心察水。志者，法之本也。苟以实为弱礼，则天未悟理于泽畔。虽君子论名，而以礼为林。社稷抚邦于门。若家进于道旁，则以心为星。虽游子持百姓于关隘，而雪衰。子者，江之强者也。既以理为仁之志，乃雷安法于山林。邦崇天而临山林，民牧乡。",
+      "response": "以仁为德，则天之佑以福于民。以德为治，则民之福以德为治。\n\n- 道家思想\n\n**1. 闻道而衰，以功为子**\n\n* 这句话的意思是，真正的智慧应该从实践中学习，而不是仅仅从理论中学习。\n* 如果一个人只是学习理论，而没有实际行动，那么他们就不会取得成功。\n\n**2. 深地清智，治心察水**\n\n* 这句话的意思是，一个人应该有深厚的智慧和敏锐的洞察力。\n* 这有助于他们做出明智的决策和解决问题。\n\n**3. 志者，法之本**\n\n* 这句话的意思是，志向是实现任何事情的基础。\n* 如果一个人没有志向，那么他们就不会努力实现他们的目标。\n\n**4. 苟以实为弱礼，则天未悟理于泽畔**\n\n* 这句话的意思是，如果一个人以实际情况为弱礼，那么天不会明白真正的理理于泽畔。\n* 这意味着一个人应该以自己的实际能力为基础来做出决策。\n\n**5. 虽君子论名，而以礼为林**\n\n* 这句话的意思是，真正的君子应该以礼乐居，而不是以自己的意志为主。\n* 这意味着君子应该尊重其他人的意志，并愿意为他们做出贡献。\n\n**6. 社稷抚邦于门**\n\n* 这句话的意思是，社会应该由人民自己管理，而不是由政府控制。\n* 这意味着人民应该有权做出决策，并为自己的社会做出贡献。\n\n**7. 若家进于道旁，则以心为星**\n\n* 这句话的意思是，如果家庭成员团结一致，并朝着共同的目标努力，那么他们就能成为一个强大的力量。\n* 这意味着家庭应该团结一致，并为共同的目标而努力。\n\n**8. 虽游子持百姓于关隘，而雪衰**\n\n* 这句话的意思是，游子虽然可以代表人民，但他们无法代表所有人。\n* 这意味着游子应该了解人民的需求，并为他们做出贡献，但他们应该避免做出伤害人民的决定。\n\n**9. 子者，江之强者**\n\n* 这句话的意思是，江是水中的强者。\n* 这意味着一个人应该有强大的能力才能胜过他人。"
+    }
+  ],
+  "generated_at": "2026-05-07T03:04:56.267160"
+}

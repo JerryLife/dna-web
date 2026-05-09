@@ -1,0 +1,97 @@
+{
+  "model_name": "GroNLP/gpt2-small-italian",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 92.68701267242432,
+  "signature_stats": {
+    "mean": 0.26593154668807983,
+    "std": 3.0547988414764404,
+    "min": -7.061375617980957,
+    "max": 6.46854305267334,
+    "median": -0.22477488219738007,
+    "l1_norm": 325.6922302246094,
+    "l2_norm": 34.69181442260742,
+    "sparsity": 0.0,
+    "entropy": 4.958090314846851
+  },
+  "metadata": {
+    "model_name": "GroNLP/gpt2-small-italian",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-07T17:37:06.463985",
+    "computation_time_seconds": 4.968114376068115,
+    "model_metadata": {
+      "model_name": "GroNLP/gpt2-small-italian",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "GroNLP/gpt2-small-italian"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-07T17:35:36.232842",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:6",
+      "encoder_device": "cuda:6",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/GroNLP_gpt2-small-italian/GroNLP_gpt2-small-italian_dna.json",
+  "config": {
+    "model_name": "GroNLP/gpt2-small-italian",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 6,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

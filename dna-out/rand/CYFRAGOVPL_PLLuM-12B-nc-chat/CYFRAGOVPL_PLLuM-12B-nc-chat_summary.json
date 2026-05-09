@@ -1,0 +1,98 @@
+{
+  "model_name": "CYFRAGOVPL/PLLuM-12B-nc-chat",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 6120.868370771408,
+  "signature_stats": {
+    "mean": -0.064128577709198,
+    "std": 2.671943426132202,
+    "min": -6.763435363769531,
+    "max": 6.116232872009277,
+    "median": -0.16509398818016052,
+    "l1_norm": 277.00164794921875,
+    "l2_norm": 30.23829460144043,
+    "sparsity": 0.0,
+    "entropy": 5.061819240066299
+  },
+  "metadata": {
+    "model_name": "CYFRAGOVPL/PLLuM-12B-nc-chat",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-07T13:01:08.188419",
+    "computation_time_seconds": 5.513942003250122,
+    "model_metadata": {
+      "model_name": "CYFRAGOVPL/PLLuM-12B-nc-chat",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 13254000640,
+        "parameter_count_billions": 13.25
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "CYFRAGOVPL/PLLuM-12B-nc-chat"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-07T11:20:28.759916",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/CYFRAGOVPL_PLLuM-12B-nc-chat/CYFRAGOVPL_PLLuM-12B-nc-chat_dna.json",
+  "config": {
+    "model_name": "CYFRAGOVPL/PLLuM-12B-nc-chat",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

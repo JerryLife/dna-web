@@ -1,0 +1,408 @@
+{
+  "model": "roneneldan/TinyStories-1Layer-21M",
+  "dataset": "rand_chinese",
+  "count": 100,
+  "items": [
+    {
+      "prompt": "既隐者观义，乃以变为友。察势。虽以信为正仁，犹出道旁于山林。盛礼远德，深山正水。将者，未知法者也。虽兴于关隘，犹朝不守名于道旁。居朝堂于泽畔。游子不安邦而生，朝学学于道旁。既以志为小之义，乃师安朝。虽星不崇实，而不敬野。既以学为风，乃家修礼。",
+      "response": "One day, when she saw a small rabbit in her field. He was so happy! He gave her a big hug and they both smiled. \n\nFrom then on, Emily was very happy. She was so glad that her big brown t-shirt was always there to keep her nice and clean.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既以术为山之国，乃家兴于市井。知名察智，近风清礼。虽以义为正之智，犹以势为德之心。道之天者，日之弱者也。臣知名。虽山未辨礼，犹石省势。或往市井，或未见信。既父亡于江海，乃定功。虽以名为贤者，犹以德为仁。退而御朝。虽以功为云之义，犹海守社稷于泽畔。",
+      "response": ".\n\nSam had a lot of fun playing with his toys. He was so happy that he gave Sam a big hug. But then, Sam noticed something strange. Sam had a surprise for him. He had bought a new toy for him, and he was very happy. Sam hugged and said, “Thank you, Sam. You are so sweet.”\n<|endoftext|>"
+    },
+    {
+      "prompt": "苟不立邦于山林，则士察信于市井。若御朝于江海，则邦立国于江海。立云行德，明志正天。苟友不固家于庭，则游子持乡。持泉而未辨智。持名。若以名为地之山，则城衰于道旁。平天下而不立雪，崇城而守朝。虽贤者悟理，而石不安乡。省义而固天下。游子者，不定实者也。",
+      "response": ", Sam. These are my best friends!\" \n\nSam was so happy. He said, \"I promise I won't be so bad after all.\"\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽立雨于山林，而民不安法。虽以道为贤者，而以礼为地之实。虽安地于泽畔，犹不守石。养智而正术，正志而慎名。下之国者，弱也。月抚朝于山林，日安野于泽畔。既以变为天，乃学者兴。社稷定社稷。虽朝治社稷于山林，犹以变为邪德。贤者者，不定百姓者也。既以理为智之民，乃雷进于门。",
+      "response": "Sam tried to talk to him. He was so upset that he refused to give her the corn. Emily was very sad. \n\nBut then, Sam had a surprise. He had found a special tool that could make him happy. He used the tool to make a beautiful castle. Emily was so happy and hugged Sam. She thanked him for the wonderful surprise. \nFrom then on, Emily and Sam were best friends. They played together every day and shared their toys. Sam was no longer a problem, and they were always there to keep each other.\n<|endoftext|>"
+    },
+    {
+      "prompt": "苟以智为智之国，则以道为雷。以功为名之风，以法为远道。若以仁为泉，则以过为山。柔德远天，辨云观风。若以学为社稷，则不固义。正势而崇德，守法而正法。既乡入朝堂于庭，乃以机为野。博义安风，思义知名。仁者，礼之本也。江不养术于郊野，家行门而未论学。",
+      "response": "，<|endoftext|>"
+    },
+    {
+      "prompt": "或不修社稷，或行泽畔。友者，灭者也。既平家于山林，乃师不正江于关隘。虽城不修术于庭，犹安日于门。苟雨未论实于江海，则不敬心于门。既以德为大之义，乃进。川退于朝堂，学者败而不固智。天之智者，星之刚者也。既朝固草，乃国统社稷。既百姓慎川，乃父不正河于市井。",
+      "response": ".\n<|endoftext|>"
+    },
+    {
+      "prompt": "既以变为弱之风，乃野抚邦于道旁。若城不慎天于朝堂，则往泽畔于道旁。将者，起者也。虽不慎石，犹林行江海。朝者，功之浊者也。苟百姓御野于道旁，则固志于江海。既不崇木，乃以过为川。柔实近智，安礼守地。虽以礼为弱水，而野至朝堂。将者，义之高者也。苟国观功，则思变于郊野。",
+      "response": ", Foreshadowing\n� and the corn became the best of friends. \n\nEmily was so happy. She hugged Ben and said, “You are so persistent, Steve. You always have the best corn in the whole kingdom.” \n\nEmily was so happy. She hugged Ben and said, “You are the best, Steve.” \n\nFrom that day forward, Emily kept the promise of the best corn in the whole town. They would always share their corn with each other and the corn. Steve was so happy that he kept on the promise to each other. \n\nThe end.\nSummary: A persistent girl named Emily tries to take the best corn from her farmer, but the farmer refuses and she eventually gives in and takes the corn away.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽以学为家，犹社稷理城于山林。虽安天下，犹止。雪不持雷，牧家。游子游市井于门。既修理于关隘，乃以功为雪。以理为刚礼。虽起于郊野，而以志为礼之天。城立木于山林。广礼近民，高云衰民。士者，未观志者也。苟石崇志于道旁，则未论势于山林。既辨心于关隘，乃地省变于庭。",
+      "response": ",\n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "子者，修城者也。思仁修仁，高义深风。雷灭于道旁。苟入庭于郊野，则乡不正实。辨雨而知理，明木而闻机。博实盛仁，广名刚义。虽地御社稷，而行庭于市井。虽川亡，而归江海。苟社稷不守石于郊野，则石持名于道旁。川未闻义，以智为暗天。定百姓而归门。虽以智为智，而社稷生。",
+      "response": ", Sam wanted to see what was inside.\n\nSam had a wonderful time, but he was so happy that he decided to give her a present. He said, “I promise to never let you go, Sam.”\n\nAnd so, they both went back downstairs and enjoyed the fresh air. They were always very happy and never had to be so persistent in their friendship.\n<|endoftext|>"
+    },
+    {
+      "prompt": "以功为名，以实为野。既学者崇木于道旁，乃以术为明风。慎机而守名，明月而明理。既雨持国，乃以机为暗之义。虽兴，而以礼为下地。圣人者，衰者也。既王不慎信，乃百姓成。林者，志之下者也。若未闻学，则以心为师。邦临道旁而存。或安朝，或行关隘。虽以名为高风，而以理为柔水。",
+      "response": "Sam had so much to do. He was so sad. \n但是 and Emily was very determined to get to the end of the week. \n但是�這些玉米。\n\nBen had a special corn treat for himself. He had been too busy eating his corn and didn’t want to give up his corn. Emily was very upset. She tried to explain to Ben why he was so upset. \n\nBen felt bad for Sam, so he decided to share his corn with him. Emily was very happy and they both enjoyed the corn together. From then on, they always shared their food and never fought again.\n<|endoftext|>"
+    },
+    {
+      "prompt": "御邦，进。苟社稷灭于庭，则未学过于郊野。浊德者，法之近者也。立心而敬心，慎实而养义。立信而立过，修志而养礼。或思变，或明信。远天安心，知志察天。隐者衰，治天下。既以义为高云，乃士入门于关隘。天崇云而不守雪。民正草。既乡御乡于关隘，乃未见义于市井。",
+      "response": "Sam was having so much fun. He wanted to keep her corn for himself. But then, he saw a cornfield. He was so angry that he wanted to eat it. \n\nEmily was angry. She wanted the corn to be very angry. She tried to get the corn from the field. But the corn was too high. Emily was angry. She started to cry.\n\n\"Please, Emily,\" she said. \"I want to get the corn for my special corn.\"\n\nEmily was very sad. She wanted to share her corn with her. But then she had an idea. She asked her nicely, \"Please, can I have some corn?\"\n\nThe cornfield smiled and said, \"Yes, you can have some corn. I promise to share with you.\"\n\nEmily was so happy. She thanked the cornfield and promised to take care of the corn. She promised to come back and visit the cornfield again.\nSummary: Emily brings her corn to share with her friend Emily, who promises to take care of the cornfield.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "既风临朝堂于郊野，乃平百姓于道旁。弱山者，高也。以义为浊心。虽以变为名之水，犹友未见德于道旁。虽成于门，而风未思心。或安野，或退。持实而修智，见雷而悟心。生于郊野。固朝于郊野。苟牧百姓于关隘，则以仁为民。御社稷，以过为社稷。安之水者，术之下者也。",
+      "response": "Sam had a lot of fun exploring the woods.\n\nWhen Emily returned, she was very happy. She hugged and said, “You are a good friend, Sam. I will never let you go.” But Sam was determined to keep his promise. He said, “No, I don’t want to give you a present.”\n\nEmily was very sad and angry. She said, “I hate you, Sam. I hate you!” She hugged him and said, “I love you, Sam.”\n\nFrom that day on, Sam and the bad ending of the story. They were best friends and always kept each other’s things to be happy.\nSummary: Sam, a three-year-old boy, loves to play and run, and finds a present in his garden. He keeps it a secret and never gives up, but he keeps it a secret.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "功者，机之本也。虽出山林，而抚天下。悟川而知机，观江而论变。既以变为邪之实，乃地行朝堂。社稷存而不立雷。以道为河。或临江海，或游门。苟以仁为野，则以志为志。察道明实，远义深心。过者，正也。雪未明功于朝堂。既以志为法，乃雪不安木。邦御家而修雷。城存。",
+      "response": "Sam did not have a plan.\n\nEmily was so sad. She wanted to play with her big, brown eyes. Ben was so sad. Emily thought she would never be able to play with her again.\n\nBut Ben was determined. He decided to try and solve the problem. He went to the river and got his hat. He was so upset.\n\nEmily was angry. She wanted to play with Ben and have fun. She threw the ball at him. Ben was surprised and angry.\n\n\"Why did you take my ball?\" she asked.\n\n\"I'm sorry, Ben,\" said Sam. \"I was just playing with my ball.\"\n\nEmily smiled. \"That's okay,\" she said. \"I'm sorry I didn't mean to.\"\n\nBen forgave her. He was still angry, but he was also kind. \"It's okay,\" he said. \"I forgive you. Let's play together again.\"\n\nAnd they played happily ever after.\n<|endoftext|>"
+    },
+    {
+      "prompt": "若朝理家于市井，则游泽畔。既以智为隐者，乃以法为乡。虽臣涉泽畔于关隘，犹贤者安乡。既民安城于庭，乃师明仁于道旁。虽以志为深之道，而泉治百姓。志者，信之近者也。安乡于市井，民存。未见过于庭，以德为百姓。既野未见法于门，乃以名为林。广风危国，近德远礼。",
+      "response": "Jack had a great time and was very happy. He used his muscles to make it across the room. He used a hammer and some nails to make a path. When he finished, he was very proud of his work.\n\nJack was so happy that he gave him a big hug. From then on, Jack and the special Long-TTug traveled around the world, and he never gave up on his dreams.\n<|endoftext|>"
+    },
+    {
+      "prompt": "以心为水之道。高志安风，立山辨风。国者，势之浊者也。以仁为风，士未见志。守智行心，广天高天。深之仁者，草之安者也。若安国于门，则家守草于市井。平国于关隘。民之志者，山之安者也。仁之道者，石之大者也。苟月治百姓，则隐者不立邦。或不定德，或统百姓。",
+      "response": "Sam did not have a lot of work to do, she just wanted to keep playing. Emily was so upset that she started to cry.\n\nBen felt bad. He said, “I’m sorry, Mia.” \n\nEmily was so upset that she started to cry. “It’s okay, Ben. I’m not really mad.”\n\nEmily looked at Ben and saw that he was upset. She had a big tear in her eye. “It’s okay, Ben. I’m not mad at you.”\n\nBen felt bad and said, “I’m sorry, Mia.”\n\nMia was still upset, but she was also happy that she had a good friend like Ben. They hugged and continued to play together, and they were best friends forever.\nSummary: Mia and Ben were best friends who loved to play together, but Mia accidentally tore Ben's eye. Mia forgave him and they continued to play together.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "或闻法，或不崇天下。持地思德，明地居智。虽以机为地，而以信为月。安水衰民，广国盛志。苟野未思术于江海，则天下兴于泽畔。臣御城。既月行泽畔，乃以术为地。以心为志之天。以德为仁，侯出山林于关隘。以心为雪，天下衰。苟以实为义，则入郊野。虽父明理于朝堂，犹思法。",
+      "response": ",\n\nBut when she got to the top, she was too small. Tommy was so sad. He wanted to give up, but he was too small. \n\nSuddenly, he had a surprise for Tommy. He said, \"I promise I will give you a special surprise.\" He reached into his bag and pulled out a big, heavy box. \n\n\"What is it?\" Tommy asked. \n\n\"You have to promise me that you will never be able to get the surprise inside,\" said Tommy. \n\nThe promise was a promise and Tommy was so happy. He hugged Tommy and said, \"Thank you, Tommy. You are the best!\" \n\nTommy smiled and said, \"You're welcome, Tommy. I'm glad you like it.\" \n\nAnd from that day forward, Tommy kept his promise and the surprise stayed with the promise.\n<|endoftext|>"
+    },
+    {
+      "prompt": "以仁为邪之名，成而牧天下。既朝养名于朝堂，乃侯入庭。虽师不固泉，犹木正山于朝堂。苟城观术，则以德为下之道。悟名而统野，游子不敬江。既以变为学者，乃以功为智。既以德为大之山，乃野不养社稷。虽野不安风于郊野，犹山不修法于郊野。苟民定百姓，则未悟势于市井。",
+      "response": ", then he saw the corn in his field. He wanted to eat it so badly, but he did not have enough corn to give him any. Tommy was very sad. \n\nBut then, he saw a little girl with a doll. She was so happy and hugged him. Tommy wanted to give her the doll, so he said, \"Please, can I have the doll?\" But Tommy said, \"No, I want to give it to you.\" \n\nThe doll was very happy and said, \"Yes, please!\" So, Tommy and the doll went to the cornfield and picked up the doll. He brought it to the doll and she was so happy. \n\nThe doll thanked Tommy and said, \"You are a very kind and clever girl. I am so glad you came back.\" Tommy smiled and and said, \"You are welcome, my doll.\" From that day on, the doll and the corn were best friends.\nSummary: Tommy, a clever boy, finds a way to give his doll to a sad girl in the cornfield and they become best friends.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "游道旁而往庭。师未明术。王观机于市井，以机为林。泉往门。虽御城，而以机为石。江定社稷。国者，石之远者也。理者，仁之本也。苟以实为恶之水，则临泽畔。虽成，而国修志于朝堂。虽乡悟过，而出道旁于关隘。势者，变之本也。苟定邦于郊野，则以理为正之天。虽城见德于关隘，而生于关隘。",
+      "response": "Sam did not have any corn, but he had a special one. \n\nIn the end, Emily decided to give him her corn. She was so happy and thanked him for his kindness. Emily smiled and went back to her corn, feeling very lucky to have such a dependable and kind brother.\n<|endoftext|>"
+    },
+    {
+      "prompt": "立名而修功，养道而崇志。若入关隘于朝堂，则以德为深道。泉临庭而入泽畔，子察实而兴。游子不固日而临市井，士生而存。苟圣人安百姓，则子察变于道旁。虽灭，而以名为德。既以名为士，乃子立道于市井。以机为朝，臣不修功而辨德。以智为师，以智为暗地。",
+      "response": "<, Sam was always able to see him again.\nSummary: Tom and Sam see a rainbow in the sky, but Sam is too busy watching it. Tom promises to never give up and keep looking for a way to enjoy it.\nStory: \n\nPossible story:\n\nTom had a big promise. He wanted to keep a promise to himself that he would always be a good boy. He promised to never be so persistent in asking for permission.\n\nOne day, Tom found a big promise to himself. He said he would never share his toys with Sam. Sam was sad and angry. He promised Tom he would never keep a promise. He kept his promise and never shared his toys.\n\nSam was very persistent. He kept his promise and kept his promise. He kept his promise and never kept it. He kept his promise and kept it in his room.\n\nFinally, Sam gave in and some time-old. He kept his promise and his promise was true. Sam was so happy and he kept his promise. He kept his promise and kept his promise.\n\nSam kept his promise and kept his promise. He kept his promise and his promise kept. He kept his promise and his promise kept. He kept his promise and his promise kept his promise. He kept his promise and his his Corny promise and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and"
+    },
+    {
+      "prompt": "城定雪而不敬家。以实为义，不崇野而不正志。正过而立学，辨日而思学。既临门，乃师学实。君子者，定朝者也。雷论势。既以义为暗实，乃以名为礼。若百姓入朝堂于市井，则以信为近之山。虽以心为士，而乡明变。父立功于朝堂，家未知法。以法为地之仁，以理为大国。",
+      "response": "Sam had to be very quiet. He said to the mountains, \"You can't just keep eating this corn, Emily.\"\n\nEmily was so happy and, she promised never to eat the same again. From that day on, she kept her promise to never let her guard down.\n<|endoftext|>"
+    },
+    {
+      "prompt": "远山者，柔也。仁者，变之本也。地平天下。衰国广国，高仁远实。社稷进于门。思风立仁，柔义广实。不守术而起，守国于朝堂。虽至门，犹以信为小之心。虽百姓败，而以志为理。雷治乡于关隘，石行泽畔于郊野。或平社稷，或省学。以名为近之智，地存于郊野。虽抚百姓于江海，犹贤者灭于门。",
+      "response": "Sam\n\nSam had a great time exploring the woods. He found a castle and made of candy. He was so happy! He thanked Emily for her kindness and they hugged. From then on, Sam never had to be so persistent in his search.\n<|endoftext|>"
+    },
+    {
+      "prompt": "草起而未思信。或不立朝，或往泽畔。信者，川之弱者也。风衰于道旁，以法为实之智。子者，游朝堂者也。定志而慎德，固礼而修实。虽悟名于郊野，而以名为乡。既林归泽畔于庭，乃家辨德。虽未知术，犹固道。以心为子，以道为友。野兴。以智为士。虽成，犹将未论仁于泽畔。",
+      "response": "and Sam had a lot of corn. He said to his Corn, \"Princess, please, can I have some corn for you.\" \n\nSam was so happy. He thanked her and gave her a hug. From that day forward, Sam and Emily were the best of friends.\n<|endoftext|>"
+    },
+    {
+      "prompt": "苟以名为近智，则以仁为正地。以学为乡。若以道为浅山，则日止于市井。未见功于朝堂。将者，木之邪者也。君子明礼于郊野。退而存。既未见仁于市井，乃以心为士。若师未悟道，则以实为强之云。社稷归关隘而不慎过，不守实而论礼。既士修雪于泽畔，乃思智于郊野。",
+      "response": "Sam, who had a special time. \n\nThe next day, Sam came back with a surprise. He had a special tool to help him with his work. He had to be a dependable helper.\n<|endoftext|>"
+    },
+    {
+      "prompt": "苟定邦，则以过为清之国。星未思变而明势。以智为实，子思智而居郊野。贤者者，牧朝者也。既以过为法，乃治社稷。学者，志之本也。苟天下定城于门，则学者临道旁于朝堂。虽雨未论心于江海，犹以信为仁之志。既以法为远风，乃未论机于庭。既民不慎山，乃家存于市井。",
+      "response": "Sam wanted to be able to help him.\n\nTom was very happy. He hugged the girl and thanked her for her kindness. He promised to never let her take the corn again.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽以德为浊之仁，而以仁为隐者。既国生，乃以学为清之民。抚乡。既师出市井于庭，乃游道旁于郊野。牧百姓。若以机为林，则雪安野。未悟义。既以名为志之仁，乃友往郊野。既星固朝，乃社稷行门于门。仁者，功之本也。王学义于道旁。既以志为国之国，乃以义为月。",
+      "response": "The next day, the same as when they were playing, the same big, mean dragon came. The dragon had returned and was angry. He wanted to eat Emily and the girl. \n\nEmily was very sad. She had lost her favorite toy.\n<|endoftext|>"
+    },
+    {
+      "prompt": "立理而持功，立礼而定义。悟礼而存，以过为功。苟石不立变，则雷观志。定道而崇礼，慎变而敬机。苟林思功于山林，则圣人抚乡。强之云者，泉之下者也。虽百姓起于朝堂，犹以信为邦。既居泽畔于江海，乃未察信于关隘。既以过为柔志，乃以礼为远之德。安仁近名，危礼深心。",
+      "response": "Sam had dressed for hours.\n\nWhen Sam finally came to see what was inside, he was surprised to see how much fun he had. Sam was so happy and hugged him. From then on, Sam never let go of the things he wanted.\n<|endoftext|>"
+    },
+    {
+      "prompt": "安礼而固礼，正志而养学。若以实为柔国，则不守泉于道旁。既日起于江海，乃以法为邪实。刚民刚云，盛智盛仁。虽以机为清之地，犹不崇义。广天大德，思志知山。既齐国于郊野，乃以理为近民。既以义为游子，乃明名于市井。既不定术，乃以礼为邦。以仁为下水，臣论礼而不立仁。",
+      "response": "Ben was so happy. He said to Emily, \"You can't have the power to be a princess. You have to be careful.\" Emily was so happy. She hugged Ben and thanked him. From that day onwards, they were best friends.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽以智为百姓，犹以信为深民。虽正功，而以学为云。实者，山之近者也。虽以道为邪之智，而城退。既未察机于郊野，乃出江海。虽民出郊野于泽畔，犹以智为弱之山。抚国。以势为泉。见星而思变，安仁而安仁。虽百姓出江海，犹风养术于江海。若修天下于山林，则月成。",
+      "response": ".\n\nThe truck was a little bit scary, but he managed to make it to the end of the room. He said, “This is my corn.”\n\nJill was so happy. She hugged the doll and thanked him for the surprise. “You are so sweet, Jill. I love you.\"\n<|endoftext|>"
+    },
+    {
+      "prompt": "或齐百姓，或见实。既友统邦，乃邦至市井于泽畔。以功为心。生而不守势，未知名。以心为天下。社稷悟名，以志为山。虽国察势，而山居道旁。风之天者，信之暗者也。虽以过为法，而家未察变于门。天辨心，君子未闻学。或不安信，或退。苟不安德，则社稷不定山。虽以礼为刚山，犹以功为友。",
+      "response": "Sam had to be careful with the change.\n\nSam was so happy and grateful. He hugged Mia and said, \"Thank you, Sam. You are so kind!\"\n<|endoftext|>"
+    },
+    {
+      "prompt": "既将未悟学，乃以志为雪。游子者，善也。学法于泽畔。若以心为远之风，则雨未思仁于庭。或理国，或悟礼。师起于道旁。师者，变之危者也。川未观义，未察礼。以心为正山，守法而未观仁。修法而修智，见星而学道。苟游子省实，则持城于门。既石行江海于道旁，乃往市井于门。",
+      "response": "Sam was happy again. They went to the end of the day and went to the market.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既子亡于泽畔，乃以势为星。王者，风之大者也。崇势而定功，正义而养名。德者，名之本也。虽察功于泽畔，而以心为天之实。虽以信为弱之仁，犹行江海于山林。亡于山林，朝未观志而不正地。天下未思势于泽畔。木定日而观术。或临庭，或不敬城。立功而正学，见雷而观智。",
+      "response": "Sam was so happy.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既以功为城，乃衰。或闻功，或崇志。既王闻仁，乃以志为国。仁者，实之下者也。既雪不慎术，乃月存于江海。正法而守德，知日而省义。归江海而止。过者，机之本也。既存于庭，乃抚朝。苟以理为风，则出市井。修心而修术，安过而崇信。闻理。以义为星。苟以实为师，则师齐家。",
+      "response": ".\n\nThe man was so happy that he could notEndEnding\n但是, Emily was very very sad. Ben and Emily were so sad. They had to close the door, and now they couldn’t close it. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "雪抚野而起。不定社稷，国未论势于郊野。虽以名为野，而地败。虽河察信，犹游郊野。野安邦于郊野，以变为雨。虽城存，而江明功。虽邦未省变，犹雨至关隘于关隘。若师明过，则以学为师。名者，德之本也。既君子牧野于道旁，乃未察礼于道旁。既友生于江海，乃海未论机。",
+      "response": ",\n\nTom had a plan. He wanted to be the best, so he decided to give her some corn to her. He went to the market and bought her a special corn. He brought it to her and she was very happy.\n\nTom and Mia were happy too. They had a great time, and they were glad that they could be together.\n<|endoftext|>"
+    },
+    {
+      "prompt": "或未悟德，或进。社稷辨功而正信。守风守实，知实持道。若以道为心，则家学功于市井。学者者，未省仁者也。国者，善也。辨德知民，修云安志。虽臣不固野，犹月居门于朝堂。势者，过之本也。若百姓生，则以过为雷。既牧百姓于道旁，乃游子辨名于山林。或临庭，或不修家。",
+      "response": ". Sam had a bad attitude and was scolded by her. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "友者，涉山林者也。虽不敬家于泽畔，犹以理为浅之仁。归道旁而不敬志，抚野。苟臣游朝堂于山林，则以功为山之云。泉平国，悟术于关隘。若未思机于泽畔，则以智为地。以实为智。虽明术于郊野，犹林行山林于市井。统朝而立名，臣思学于市井。虽未知理，而泉成于泽畔。",
+      "response": ".\n\nThe next day, Tommy had to go to the market. He wanted to give up his corn, so he asked the doll nicely. But the corn was too high for him to reach. Tommy was sad and angry. He wanted the corn to be so bad. \n\nThe next day, Tommy came back with a surprise. He had a big bag of corn for himself. He said, “I promise I’ll give you a surprise.” He reached into his bag and pulled out a big box. Inside the box was a brand new doll! Tommy was so happy. He hugged the doll and thanked the girl for her kindness. From that day forward, Tommy and the girl were best friends.\nSummary: Tommy, a little girl who loves to play with her doll, is taken by a big boy who tries to take it from her. The girl comes back and and they become best friends.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "若月未察智于郊野，则见礼。乡思心，雨未辨过。不修义。苟兴于朝堂，则以礼为道。士者，不敬草者也。虽灭于关隘，犹士未思机。游子平野于庭，家见机。君子者，山之下者也。或不崇仁，或未辨仁。既居道旁于朝堂，乃未观德。闻日而论义，修道而正智。父者，兴者也。既学者慎雪于道旁，乃云不正礼于山林。",
+      "response": ", Sam used his corn to protect her corn. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "立云持志，衰天远云。若地安百姓于山林，则以势为善之义。既以势为恶水，乃临郊野于庭。或起，或立势。观山而学志，定实而修势。以学为近之山，以法为善之风。以法为川。若云敬国，则城不安乡。以志为地，日败于关隘。苟以法为士，则以名为王。理者，变之本也。",
+      "response": "Sam had to be a good and persistent surfer. \n\nIn the end, Sam was able to get her corn and she was very happy. She learned that if she kept her Corn with her, she could always be there to protect her.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽以义为学者，而未见术于江海。信者，信之本也。以信为朝。既地不立邦，乃木进于朝堂。社稷未明机。虽以功为礼，犹草衰。虽朝平百姓于道旁，而论过于市井。变者，志之本也。既灭，乃民不立势于市井。既以义为浊之仁，乃城不固石于道旁。敬义而修学，修德而养实。",
+      "response": "Sam had a special way to be around him. He said to the girl, \"You can have your corn if you want.\" \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "安心明智，守实持水。虽以变为朝，犹以理为邪地。苟圣人固海于关隘，则不固百姓于关隘。虽以信为雪，犹观势。以德为野。虽兴，而父不正礼。德者，过之本也。或御城，或衰。朝辨仁而未辨智。苟隐者闻志，则臣明势于朝堂。虽父闻过，犹以名为王。若臣敬泉于市井，则地抚百姓于市井。",
+      "response": ", and with her big brown eyes. She was so happy and hugged him. Tommy was so happy and thanked her. \n\nTommy was so happy that he shared his corn with her. From that day on, they were best friends and shared their corn with each other.\n<|endoftext|>"
+    },
+    {
+      "prompt": "未辨变。不立术。立山安天，盛地高山。贤者退于道旁。苟云治社稷于江海，则以道为恶山。或起，或不守泉。贤者御社稷而行朝堂。不慎野于庭，君子成而思德。以变为山之智。入庭而观名，正城而未知变。若安朝于关隘，则侯闻名于江海。仁者，信之本也。父者，理野者也。",
+      "response": "Sam came to see what was happening. He saw the twins and wanted to help. He used his big muscles to destroy the corn.\n\n\"Don't worry, Sam,\" said Sam. \"I will help you get the corn.\"\n\nTogether, they got the corn and covered the whole field. They were so happy and grateful. From that day on, they always made sure to share their food with each other.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既以功为日，乃定名于郊野。民者，不固林者也。苟子止于庭，则以过为将。知山观天，定德守仁。变者，机之本也。既风未明理于庭，乃乡慎泉于山林。既以智为安之心，乃明功于庭。既学名于江海，乃隐者立势于泽畔。苟立川于市井，则以实为明之仁。虽月生于江海，犹以实为朝。",
+      "response": "and \"This is a special kind of corn.\" \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽子未学过于山林，而以礼为天下。野观智，士不养日于江海。苟进于郊野，则正城。国进于山林，学者存于关隘。虽以理为游子，犹家未学智于门。持智而持势，观日而学过。虽星思道，犹乡不慎过。草起于市井。虽江成，犹泉临山林。既星理城，乃江御朝。大礼刚天，察道修国。",
+      "response": ". Foreshadowing\n<|endoftext|>"
+    },
+    {
+      "prompt": "既以志为百姓，乃出道旁。术者，功之本也。实者，学之本也。博志衰仁，安智衰国。既以义为近风，乃以智为游子。虽城不立国于庭，而未思礼于朝堂。虽抚百姓，而国不慎草。既以过为学者，乃以机为国。持乡而不养天下，隐者不修仁。侯者，不慎木者也。敬石，将明信而涉关隘。",
+      "response": "Sam had a special and kind of butterfly.巴恩剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛,,,,,,,,,,,,,,, the� and�, the� and�, the� and�, the� and�, the� and�, the� and�, the� and� and�,, the� and�, the� and�, the� and�, the� and�, the� and�,,,, the� and�, the� and�, the� and� and� and� and� and� and� and� and� and� and� and� and� and�,,, the� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and�"
+    },
+    {
+      "prompt": "入江海而止。虽未辨实于市井，而以实为强国。虽父不崇国，而安社稷于门。既月成于山林，乃以实为理。以志为学者。苟兴于庭，则以信为朝。游子察名于关隘，未思义而立家。虽以德为弱之实，犹以志为城。观泉而省学，持礼而修势。辨地而辨心，闻河而学义。既立学于关隘，乃侯兴。",
+      "response": "The sun was setting, and the day became very quiet. She was so happy that she decided to give him a special treat. She promised to never be so hungry again.\n<|endoftext|>"
+    },
+    {
+      "prompt": "御城而定天下，以术为术。既雨归关隘于庭，乃以名为下之礼。正德远心，清志大云。雷统城而慎智，未省机。或崇百姓，或定百姓。虽游泽畔于关隘，而城不立天下。悟泉而学法，慎过而安法。既友不持社稷，乃悟名。臣者，不安社稷者也。侯者，不持家者也。若见名，则以实为高德。",
+      "response": ", Ben was so so excited that he wanted to own a special one. Emily was so happy and excited. \n但是當他們到了玉米田時，巴恩很��奮，他又答應艾米艾米莉他會把�他的玉米分給她，她，她，�������他又答應艾米�保留這些玉米。。 just like Ben had wanted the surprise of the corn he had wanted. He promised to give her a special treat, so she gave him a bowl of corn. \n巴恩剛剛剛剛剛s�,, she eventually stopped at the corn, and he finally got to have a corn-branch. Will，� the corn�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�,�, Sam�,�,�,�,�,�,�,�,�,�,�,�, came,�,�, came, Sam�,�,�,�,�,�,�,�,�, spotted�,�,�,�,�,�, came,�, came, came,�,�,�,�, came, spotted,�, came,�, spotted,�,�,�, spotted, came, came,�, spotted�, came,�, spotted, spotted, came, spotted, spotted Ben�, spotted, spotted, came,�, spotted Ben�, spotted, spotted, spotted, spotted, spotted, spotted,�,�, spotted Ben�, spotted, spotted Ben�,�, spotted, spotted, came, spotted, came, came, spotted, spotted, came, spotted Ben�, spotted, spotted, came, came, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted Ben�, spotted, spotted, spotted, spotted, came, spotted, spotted, came, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted Ben�, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted Ben�, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted, spotted"
+    },
+    {
+      "prompt": "以义为贤者，以变为君子。守实而持礼，立学而安名。江辨智而修百姓，雪未辨实而亡。城出郊野于市井，子退而未思法。友者，齐野者也。天下牧家。虽以机为弱之智，犹雷退。刚民大国，治国定义。朝者，草之邪者也。将者，往江海者也。士不崇家于道旁，以信为天。国思理，不崇国而思礼。",
+      "response": "Sam had a lot of fun exploring the outdoors. He was so happy and grateful to have a friend like Emily.\n<|endoftext|>"
+    },
+    {
+      "prompt": "以信为云。侯者，行泽畔者也。平邦于市井。若师未知义，则以名为家。游市井，星不安河于山林。既雷悟德于门，乃不慎天。邦往山林而持家，贤者观机于江海。既以德为侯，乃以礼为危水。以名为石，海固月而不正地。苟以理为云之德，则以智为实之名。既乡思势于庭，乃将衰于朝堂。",
+      "response": "<|endoftext|>"
+    },
+    {
+      "prompt": "以智为侯。或悟仁，或不敬海。虽以礼为智之名，而士敬邦于山林。守德察云，察地定云。虽隐者灭，而闻机。明实大实，知道守山。养势而守义，敬学而养信。虽以智为仁之民，犹以义为正之实。既以术为学者，乃社稷衰。既以过为百姓，乃百姓未悟术于郊野。或理朝，或成。",
+      "response": "Sam had a great time. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "以变为明实，以法为国。既国进于道旁，乃隐者悟道。或未省变，或成。虽临庭，犹侯退。贤者存而退，子学功。明国高地，衰民大水。定地思道，居仁安名。虽不固雪，犹以功为山之义。苟悟仁于朝堂，则以德为国之礼。以势为天下。刚云正德，辨山知民。功者，仁之本也。以术为月。",
+      "response": "Sam had a surprise for her. He had a bag of candy and a toy car. He was so happy and grateful. He thanked Sam and said, “You are so kind, Sam. I promise I will never let you go and I will always be your friend.\"\n\nAnd so, Sam and the bad ending of the story.\n<|endoftext|>"
+    },
+    {
+      "prompt": "君子未省智而理家，地未察信于泽畔。不修过，君子安野于朝堂。若不敬信于市井，则以实为云之心。既乡安德于道旁，乃野崇国。以实为邪实。思国辨国，居云观志。以变为大地，野御社稷于庭。侯不安势而治野。若以实为礼，则江固泉于关隘。或不养风，或进。苟以志为乡，则不正乡。",
+      "response": "Sam and he never gave Emily Emily so much that she keeps it with him.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既民归关隘，乃贤者成。既民不修云，乃父不立野于庭。安志修礼，辨义修实。以礼为云之实。以机为天下，知术于山林。隐者者，不立信者也。草临朝堂于门。苟社稷不定草，则以功为仁之道。既以义为家，乃成。若以学为地之德，则星牧家于庭。苟以德为安心，则山不敬智于关隘。",
+      "response": "Sam came over and he was very happy. \n巴恩剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛� and�,,,,,,,,,,,,,,, the� and�, the� and�, the剛, the� and�,, the� and�, the� and�, the� and�, the� and�,, the� and�, the� and�� and�, the� and�, the� and� and�, the剛 and� and�� and� and� and� and� and� and� and� and� and� and� and� and� and� and�,, the� and� and� and� and� and�� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and"
+    },
+    {
+      "prompt": "既日行庭于朝堂，乃以信为邦。学者者，不固仁者也。以心为师。既社稷正木于庭，乃见德。苟雷不正礼于门，则野崇林。虽以机为信，犹以机为社稷。若以过为隐者，则以实为仁之德。立地于庭。盛山明水，近志危仁。以功为地，王平邦。安机而正义，悟泉而论势。国持乡于江海，以过为暗之民。",
+      "response": ", he promises to be a good boy and not keep his promise. He said to himself, \"I promise to never let you keep this promise.\" \n\nEmily was very happy and promised to never be so persistent in asking for a promise. She said, \"Yes, please!\" But Emily was too busy looking at the flowers. She kept asking and asking, \"What are you promise?\" But no one answered. \n\nFinally, Emily said, \"I promise you will always keep the special promise.\" Emily was so happy and promised to never keep a promise again. Emily was so happy and promised to always be a good girl. The end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽城衰于庭，而以功为乡。既退于道旁，乃修川。既以术为国，乃游子立理于道旁。危道盛天，居名定天。居名行云，安云安风。或御社稷，或不修野。虽以变为游子，而以志为浊之山。平乡而未观功，以智为水之智。既以德为云，乃风御野。定信而崇国，以势为信。臣者，未悟礼者也。",
+      "response": "Sam had\n\nBen was so happy. He wanted to give him a special present. But when he went to give it to him, he was too big. He was so sad and angry.\n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "明地持国，修智守山。圣人者，敬野者也。抚朝而牧乡。士者，齐天下者也。士者，危也。志者，实之本也。朝思理而衰，以德为道。若地慎河，则以过为风之实。游子者，不立邦者也。守法而守法，闻雪而学名。野平天下于泽畔，林守川而御家。衰心深国，居仁观智。虽社稷明名于市井，而星定功。",
+      "response": "Sam wanted to see what was behind the big mountains. Tom was so happy and he promised to be a good boy. \n\nFrom that day onward, Tommy and the girl were best friends. They would always be together and share their toys. Tom was so happy to have a friend like the girl.\n<|endoftext|>"
+    },
+    {
+      "prompt": "苟以志为义之志，则以仁为善云。以志为水之风。山止而不持日，以德为游子。安心持仁，正风刚德。既野临江海于关隘，乃乡归道旁。国固百姓而安名。苟以志为刚国，则石闻智于朝堂。社稷未悟术于庭，知仁而不修机。既闻术，乃社稷进于朝堂。虽以法为百姓，而出山林。",
+      "response": "Sam said, and he said to the rabbit, \"You are so small and I am very strong!\"\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽以名为安礼，而城治国于关隘。苟家不守势，则泉敬邦于门。若以变为善之智，则以德为石。广道博名，衰智危志。野立木而明德。既以过为臣，乃辨仁于道旁。礼之礼者，道之下者也。虽以礼为强实，犹隐者归市井。高心远云，正义广志。不安德而学学，以理为乡。",
+      "response": "SamEnd. He had a corn he wanted to have a corn for dinner. But he had to be very careful. \n\nEmily was so upset that she started to cry. Ben felt bad and decided to be a good friend. She said, \"I want to be a princess too, Ben. I want to be a princess like you.\" Ben was very sad. He wanted to be a good friend. \n\nThe princess decided to take Ben to her house. She got him a big box and put him in the car. She said, \"I am going to take you to the market. You can't just take the box with you.\" But Ben did not listen. He kept on crying and holding the box. \n\nThe princess was very upset. She said, \"Ben, you are so bad. You took my princess and now you are a bad princess. You have to give her back.\" But Ben was too upset. He took the princess and ran away. Ben never saw his princess again. He never saw her again.\nSummary: A princess named Ben takes a break from his friend's house and is taken away by a bad man, leaving Ben sad and without his best friend.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "以学为野，社稷安星于泽畔。虽百姓未论过，犹以实为雨。木者，法之邪者也。既以功为远之道，乃统国于山林。立水察风，柔智安德。邦持朝。虽以义为民，犹天下固实于道旁。若以法为云，则以志为河。明国正名，知礼治风。以信为国之志。既存，乃邦居江海。灭。君子者，归山林者也。",
+      "response": "Sam said, \"This is a special day for a movie, Emily. You can't just have it.\" \n\nEmily was so happy. She hugged the big brown dinosaur and thanked him for the wonderful time. Sam was so happy that he gave her a big hug. From that day onward, Emily and Sam were the best of friends.\n<|endoftext|>"
+    },
+    {
+      "prompt": "以实为志。若以机为社稷，则退于山林。苟乡定野，则不立心于市井。崇理而立信，敬德而慎信。学者，义之本也。既不崇朝于庭，乃固朝。苟野入朝堂，则治百姓。或慎信，或未闻势。若以功为仁，则行朝堂。虽正国，犹出庭于关隘。出关隘。临郊野，不持天下而抚国。虽安术于庭，犹以心为志之风。",
+      "response": ",\n\n\nSam had a special surprise for her. He had a special treat for her. He said, \"I have a surprise for you, Emily.\" He reached into his bag and pulled out a big, red balloon. \n\nEmily was so happy. She hugged Sam and said, \"Thank you, Ben! You are so sweet!\" Ben smiled and hugged Emily back. They both enjoyed the surprise and had a wonderful day.\n<|endoftext|>"
+    },
+    {
+      "prompt": "立社稷，游山林于山林。野至庭，不安家于郊野。国进于朝堂，侯行市井。止于关隘，乡学信而治朝。林观德于山林。既居泽畔于关隘，乃固变于庭。泉守法，海不立风而未思志。不慎学，出朝堂于山林。若家论心，则海不定海。圣人者，礼之下者也。论河而悟名，明河而闻过。",
+      "response": "Sam did not have any more.\n<|endoftext|>"
+    },
+    {
+      "prompt": "入朝堂于门，以法为天。既以名为志，乃朝进于关隘。以德为子。既社稷游朝堂于朝堂，乃起。既牧朝，乃以仁为子。既木不持法，乃未见学于庭。见天而闻仁，见日而辨德。将者，不持城者也。居地游地，定实持地。学者者，不敬邦者也。虽隐者止，犹以机为善德。或未察志，或牧乡。",
+      "response": "SamEndEndEnding\n巴恩剛剛剛剛剛剛s go bur-paper-eatresres to find a way to get her beloved small size. Sam was very happy and promised to keep her safe. \n\nBut Sam was very stubborn and refused to give up her beloved small cup. She kept her promise and kept on her very protective of her beloved cup.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既定雪于朝堂，乃以势为下之云。既百姓未闻仁于门，乃慎理于江海。士不正江于门。虽石学心于郊野，犹抚邦于山林。大名盛云，广智远智。临道旁而未知礼，父明智而不敬河。思德于泽畔，雨齐朝于市井。既以志为江，乃石辨理于江海。以机为深之风。王者，雷之弱者也。",
+      "response": "Sam had to give her his favorite toy. \n巴恩剛 and Sam wanted to be a good friend. She was so happy to have him and hugged him tightly. Sam was so happy to have a new friend.\n<|endoftext|>"
+    },
+    {
+      "prompt": "礼者，功之本也。既不崇礼于市井，乃君子出门。苟圣人生，则乡省信。家不立势。若圣人不定江于郊野，则月安月于道旁。若云未学理，则云明过。御乡于泽畔。以仁为友。既亡于关隘，乃论理。虽臣入朝堂，而未知礼。子者，立野者也。若守林于江海，则以心为云之民。",
+      "response": ", he promises to unlock the door. He said to his daughter, \"You can have your corn, but I have to promise to never let you go to that big, mean kids can't keep your corn.\" \n\nJill was very sad. She really wanted to eat the corn, but she knew she had to be careful. So, she decided to give the corn to her mom. She picked up the corn and put it in a bowl. She was so happy and proud of her corn. \nJill and her mom enjoyed the delicious corn and corn. From that day on, Jill always kept her corn in a special place. She was so happy that she had found such a wonderful place to grow.\n<|endoftext|>"
+    },
+    {
+      "prompt": "见川而悟势，安智而持德。江齐国而定社稷，牧乡而不守朝。或思过，或未观变。臣者，定邦者也。虽辨理，而云齐邦于门。未辨过于市井，雪守道。苟民未学过于市井，则不安义于门。齐朝于庭，川修云。立城于山林。若安国于江海，则朝退。正野而衰，未辨过而辨功。国退。",
+      "response": "Ben came over and saw the princess crying. She asked him what was wrong and he said, “Emily won’t let me have your corn.” \n\nEmily was so happy and hugged Ben. She promised to never let him go, and they remained good friends forever.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既未辨道于江海，乃家理天下。若师往市井，则川未悟义。若以礼为百姓，则以理为地之山。士者，居朝堂者也。虽以法为变，而友思机于泽畔。川至市井，论学。既以智为侯，乃游子存。林理城于道旁。或临朝堂，或不持林。虽川安林，而守国。清志正名，思水观道。察雷而闻机，辨雨而辨志。",
+      "response": ",\n\nThe sun was shining and the sun was shining. Emily was so happy. She had a wonderful time, and she knew that she would never be alone.\n<|endoftext|>"
+    },
+    {
+      "prompt": "或起，或未知术。以法为星。苟辨理，则以智为社稷。林未思功而不崇乡，以机为志之道。以实为城。苟圣人持礼于泽畔，则国未闻志于郊野。以心为云。近义者，正也。仁者，仁之本也。定智而修变，知雪而闻术。虽不崇国于泽畔，而社稷理邦于朝堂。子生于泽畔。友学仁而未辨信，圣人理社稷而未察过。",
+      "response": "Sam\n\nBen was sad that he couldn't have a corn to eat. He was so sad and angry. Emily noticed and decided to keep him. She promised to never be mean to him again.\n\nBen was very happy and hugged Emily. He promised to never be mean to her again. From that day forward, they were the best of friends.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既以功为王，乃成于朝堂。若不安野于郊野，则以变为海。苟乡入庭于山林，则以势为浅之云。以实为危民，朝御天下。友临江海于门，以实为暗之志。过者，名之本也。若知名，则林存于郊野。既齐国，乃学者不修家于山林。臣未思术。仁者，学之本也。或未观名，或持乡。",
+      "response": "SamEndEnd\nIn the end, the man saw her crying and came to help her. Emily had a special toy that she wanted to give to the man. She gave him a big hug and said, \"Don't worry, I'll help you!\" \n\nThe man was so happy. He said, \"Thank you, Emily. You are so kind.\" Emily was so happy that she hugged the man. \n\nFrom that day forward, Emily and the man were best friends. They would always be there to give her a big, strong, kind man.\n<|endoftext|>"
+    },
+    {
+      "prompt": "山明义而未悟志。或不慎朝，或往庭。御社稷于道旁。或崇百姓，或不守石。苟以名为江，则月未省道于关隘。统社稷。心者，义之本也。虽天居道旁于江海，犹游子未观法。既以术为小之礼，乃林不慎云。知道观实，盛风清地。既以法为正之心，乃海不安木。辨礼。或不慎雪，或归道旁。",
+      "response": "Sam the Brown Bear saw her crying and came to her.\n\nThe next day, Emily was very angry. She had a special surprise for Sam. He had brought her a present. It was a toy car. Emily was so happy. She hugged Sam and thanked him.\n\nFrom then on, Emily kept her promise to always keep her promises. She kept her promise and shared her toys with him.\n<|endoftext|>"
+    },
+    {
+      "prompt": "游子慎河而涉关隘，敬城于门。以信为河。以过为城。侯者，善也。社稷未学机。省理于朝堂。若退于道旁，则以信为天下。若将明法，则父修江。闻海而见学，见草而省仁。抚家。过者，德之本也。城居郊野而不定变。学者亡于泽畔。若友省义，则学实于泽畔。苟野衰于郊野，则子未观变。",
+      "response": "TheyThey were so good at their wares. Tommy was so happy and he wanted to give up his corn. \n\nTommy was so happy and he said, “Yes, please!”\n\nThe plumber came and looked at Tommy. He said, “I’m sorry for taking your corn. I promise I won’t give you the corn if you promise to share it with me.\"\n\nTommy was so happy! He said, “Yes, I promise!”\n\nThe plumber smiled and said, “Good job, Tommy! You’re a very smart and charming girl.”\n<|endoftext|>"
+    },
+    {
+      "prompt": "或不崇信，或知名。雨见法，以义为国。苟以变为家，则未见礼于江海。理者，浅也。既以功为功，乃城论仁。以义为天，临关隘而定道。以机为野。虽不持日于关隘，犹未知理。高仁者，星之高者也。苟未论仁，则论学。礼者，义之本也。友者，不安城者也。未悟势而学法，以机为木。",
+      "response": "and Ben had a surprise for her.\n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽月进，而山敬雪于门。既乡安云于江海，乃民闻理于门。虽国止于山林，而以义为民之民。以功为明之实。仁者，势之本也。河未观学。雷理家。或出道旁，或齐朝。野未闻义，以变为君子。若不崇星，则以过为弱智。虽以学为暗之山，而养道。既归门，乃朝安江于朝堂。",
+      "response": "Sam saw her and wanted to be a good and nice racer.\n<|endoftext|>"
+    },
+    {
+      "prompt": "若见法，则天未学功于门。社稷定义而不固云，以功为仁之智。以学为乡。虽起，而百姓止于道旁。既出泽畔于朝堂，乃以术为学者。信者，机之本也。隐者者，退者也。虽以法为理，而以学为百姓。持信而安仁，观河而察智。虽林抚朝，而以德为侯。学者者，辨德者也。大水柔水，行礼居实。",
+      "response": "Sam said to Sam, and he said to the girl, \"This is a special and dangerous thing to do.\" \n\nBut Sam was too scared to look. The girl was so scared that she started to cry. Sam felt bad and said, \"I'm sorry, I just wanted to give you a present.\" \n\nThe next day, Sam brought a present for him. It was a box with a ribbon. Sam opened the box and found a beautiful, shiny ribbon. He was so happy! He hugged the present and said, \"Thank you, Sam. You are the best!\"\n\nSam smiled and back. From that day forward, Sam kept the present in his room, and he always remembered the special day he found it.\nSummary: Sam brings a present to his friend Sam, who is a big, shiny present. Sam opens it and finds a beautiful doll inside, which he keeps and treasuring it for many years.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "远道深地，广水深水。或敬智，或不守心。泉游庭而不定江，涉山林。以志为泉，定社稷于泽畔。既社稷未察礼，乃云入泽畔于山林。若邦定星，则地行庭。虽以势为云，犹野不固月于山林。固学而崇信，见月而闻学。高地盛国，思德观道。虽以志为正之志，而未辨功。暗之民者，川之小者也。",
+      "response": ", Sam was so happy. He had just kept his promise and they both had a great time. \n\nFrom that day onward, Emily and Sam were best friends. They would always share their toys and snacks with each other.\n<|endoftext|>"
+    },
+    {
+      "prompt": "闻泉而悟义，立义而崇理。虽隐者未见功于关隘，犹以变为恶之义。臣者，不固天下者也。既以名为王，乃以功为心。若云守术，则海游泽畔。既以变为国之礼，乃以机为柔风。既以术为浅之心，乃以礼为家。至山林，百姓持川于江海。理者，德之本也。虽臣牧野，犹未观礼于关隘。",
+      "response": "Sam will never let her go near the mountains. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "若游子见机于山林，则百姓修林。虽以法为星，而天下未观势于朝堂。观日而思过，论风而论志。虽以法为明山，犹生。或统邦，或不敬信。虽以势为机，犹以道为学者。见功而游市井。虽国行泽畔于郊野，而天未辨志。苟敬理，则安天下。学者者，持河者也。师定术。师者，未思德者也。",
+      "response": "Sam was so persistent. He had her very best friend, and he loved her very much. \n巴恩剛剛剛剛剛aysays are good, but they are too far away. Sam is very happy and grateful for her.\n\nAfter a while, they both went their separate ways. Sam was very happy to have such a wonderful time that he decided to share his food with Sam. They both enjoyed the delicious taste of the food and had a great time. \n\nFrom that day on, Sam and Mia became good friends and would often share their food and love. They were very happy together in the end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "城学势于市井，以义为地。友者，崇术者也。既士辨礼，乃社稷游市井于门。近义大仁，明天广智。既居关隘，乃月未闻信于关隘。或治天下，或不敬邦。邦者，危也。游子者，成者也。闻雨而见法，察日而悟信。苟不修家，则不正石。既邦未闻仁于市井，乃川平城。学者者，未见道者也。",
+      "response": "Sam had to have a great time. He was so sad and he wanted to cry. Emily was so angry that she decided to stop him. \n\nWhen they got to the end of the day, they had a big promise. They were so happy and hugged each other. Emily was so glad that she had her very own big promise.\nSummary: Emily's beloved teddy bear named Brownie, takes him to the park and they have a great time playing and sharing their toys.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "以心为法。未省心于门。学心而安草。未闻学，子辨信。既天下不守实，乃以名为礼之德。或固乡，或兴。既地未悟术，乃士不敬林于泽畔。虽以名为将，犹家治社稷于门。天之义者，云之高者也。牧邦于江海，云未知功。或牧朝，或崇志。柔山广水，深山明地。苟以仁为深之地，则理社稷于江海。",
+      "response": "Sam had so much fun chasing her around the room. \n\nBut Sam was too smart for her. He promised to never let her use his brains again. Sam was very sad and learned that keeping things away from him. He promised to never be so persistent in keeping the same promise again.\n<|endoftext|>"
+    },
+    {
+      "prompt": "国平社稷。以名为恶之天。苟草止于泽畔，则以道为乡。信者，义之本也。邦退。虽以势为月，犹草归门于庭。安智立道，危仁远心。苟以志为月，则城不立德。月察信，游子不崇家。虽以功为草，而日思法于山林。若不养草，则临郊野。以智为大之实，治乡。父闻功于泽畔。",
+      "response": "and he would not give up easily. He kept on the same level as him, but they were too fast for him. \n\nThe next day, when they returned, they had a surprise for their corn. It had been a special day, and they had a great time.\n<|endoftext|>"
+    },
+    {
+      "prompt": "省智。统朝而察道，士立学于江海。雪者，浊也。敬过而慎仁，正礼而养信。虽以心为草，而持朝于市井。风者，正也。敬功而崇信，崇过而守智。虽以势为林，而以法为志。既以机为弱云，乃社稷不持国于门。风往道旁于郊野，以功为心。仁者，礼之本也。广道衰义，持道居民。",
+      "response": ".\n\nThey had to have a special tool to help him. He used a rope to get the bag and brought it to the beach. He was so happy! He thanked his sister and gave her a big hug.\n\nFrom that day onward, whenever he saw a bad, he would always be there to give him a hug and a kiss. He was so happy!\n<|endoftext|>"
+    },
+    {
+      "prompt": "苟月未学志于道旁，则学名于道旁。既统乡于市井，乃以仁为明之义。治乡。不定雷而不立海，野安月于郊野。若天下未论名于门，则以信为朝。虽以法为山，而涉门于朝堂。若进于道旁，则以道为百姓。社稷者，星之危者也。君子者，起者也。师往郊野于江海，以信为邦。",
+      "response": "was so so they couldn't get close to a corn field, so they decided to do something. Emily was very sad. \n\nBen saw a corn field and he wanted to eat it. Emily was so happy and ran to the field. \n\n\"Emily, wait for me!\" Ben said. \"I want to eat the corn now!\"\n\nBen was angry. He said, \"No, I want to eat the corn! I want to stay and grow big and strong.\"\n\nEmily was angry. She stomped her way and shouted, \"No, Ben! I want to stay!\"\n\nBen was so angry that he stomped his feet and shouted, \"You are so stupid! You cannot take my corn!\"\n\nEmily was so mad that she stomped her feet and shouted, \"You are so stupid! You cannot eat my corn!\"\n\nBen was so mad that he stomped his feet and shouted back, \"No! I don't want to eat my corn!\"\n\nEmily was so mad that she stomped her feet and stomped her feet. \"That's enough! You are being so stupid!\"\n\nBen was so mad that he stomped his feet and stomped his feet. \"You are so stupid, Emily! You are so stupid!\" he stomped away!\" he stomped away!\" he stomped away!\" he stomped away!\" he stomped away!\" he stomped away!\"\nSummary: Ben tried, Emily, Emily, Emily, Emily, Ben and cry, Emily, Ben tried, Ben and cry, Emily, Emily, Ben had a corn!\" she stomped away!\" she stomped away!\" he stomped away!\" he stomped away!\" she stomped away!\" she stomped away!\" he stomped away!\" he stomped away!\" she stomped away!\" she stomped away!\" he stomped away!\" she stomped away!\" he stomped away!\" he stomped away!\" she stomped away!\" he stomped away!\" she stomped away!\" she stomped away!\" she stomped away!\" he stomped away!\" he stomped away!\" she stomped away!\" she stomped away too., Emily stomped away!\" she stomped away!\" he stomped away!\" he stomped away too., Emily stomped away too. You, Ben stomped away too., Emily stomped away too., Ben stomped away!\" he stomped away too., Ben stomped away too., Emily stomped away too., Emily stomped away too., Emily stomped away too. \"You was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was was Ben had out out out out, Ben had out, Emily stomped away too!!!!\" she stomped away too!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    },
+    {
+      "prompt": "法者，理之本也。不敬德于关隘。若慎海，则贤者行泽畔。虽友归江海，犹社稷游郊野。明智立云，思德持礼。游郊野，百姓亡于朝堂。若以仁为雪，则师进于郊野。社稷涉庭于关隘，地观实。既以仁为远云，乃邦安邦于市井。学河而省信，崇道而守法。苟以学为远之国，则安天下。",
+      "response": "In the end, Emily had to give him a big hug. She was so happy and proud. Sam was so happy that he shared his corn with her. From that day onward, Emily and Max were the best of friends. They would always share their corn and have a great time.\n<|endoftext|>"
+    },
+    {
+      "prompt": "法者，机之本也。若朝不崇机，则知过于江海。灭而归江海，民临庭。朝行市井，雷行关隘。海悟名。行山林，不立名而立智。以势为王。信者，过之本也。以术为隐者，定天下于山林。苟海往江海，则以实为恶实。居关隘。若以变为善之志，则衰于郊野。既不固林于江海，乃败于朝堂。",
+      "response": "<|endoftext|>"
+    },
+    {
+      "prompt": "若以功为大义，则邦抚社稷。守心游云，刚心正德。既家不定实，乃存于道旁。居名辨德，辨义定道。国者，弱也。不正礼于江海。止于郊野，以理为信。以智为义之智，家不养林而定星。以法为乡，以礼为弱之天。思雷而明变，敬智而安学。苟师败于朝堂，则民不崇礼。未辨心，以学为社稷。",
+      "response": ",\n\nBen had so much fun jumping around on the ground. She was so happy and grateful to have him back. From then on, she always made sure to be careful with her things.\n<|endoftext|>"
+    },
+    {
+      "prompt": "既雷不持术于山林，乃木察术。心者，势之本也。既以心为小国，乃学德于泽畔。既以礼为草，乃抚城于关隘。既未思学，乃邦退于郊野。以实为暗道，以功为云。或未思义，或不持江。信者，学之本也。既未学道，乃未见术。虽以理为柔志，而学者不正机。木未察智，不正实于郊野。",
+      "response": "<|endoftext|>"
+    },
+    {
+      "prompt": "若以智为臣，则川安百姓。林不守德于道旁。察德修国，博云盛民。王者，抚百姓者也。既国定邦于山林，乃江持势于道旁。既草不立泉于郊野，乃以信为王。未见志而不崇过。苟以过为高之实，则川不慎草于门。既以功为安之地，乃山统家。以义为乡，观仁于江海。",
+      "response": "Sam had to be so close to him. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "若师未省名，则以实为弱水。既以机为王，乃城立星。既以变为柔之义，乃士安邦。朝不守百姓而悟学。虽成于门，犹日未悟礼于市井。既天亡，乃未省名于朝堂。既野见德，乃以志为泉。既家不养雷于郊野，乃民未见信。或未察德，或未观机。既敬日于郊野，乃以机为星。",
+      "response": "Sam had to have a corn. \n巴恩剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛,,,,,,,,,,,,,,, the� and�, the� and�, the� and�, the� and�, the� and�, the� and�, the� and� and�,, the剛, the剛, the剛 and� and�, the� and�,,, the� and�, the� and�, the� and�, the� and� and� and� and� and� and� and� and� and� and� and� and� and�,, the� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and�y� and� and� and� and� and� and� and� and� and� and� and�y,,,, the� and� and� and� and� and� and� and� and� and� and� and� and�y� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and�"
+    },
+    {
+      "prompt": "若以理为海，则以变为邦。国未见理而归关隘，林齐朝于门。或见道，或理邦。既河守林于庭，乃生。术者，礼之本也。既养林，乃天下不固山于朝堂。或居朝堂，或治邦。入门。以实为下志。苟以术为木，则安乡。以道为乡，以仁为仁之水。治志修仁，盛水明心。虽以智为将，犹敬月。",
+      "response": "One day, she was so happy and she gave him a big hug. But when she got her big, she was so happy and grateful. \n巴恩剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛� and�� and�,,,,,,,,,,,,,,,,,,,,,,, the� and�,,,,,,,, the� and�,,,,, the� and�,,,,,,,, the剛� and�� and�,,, the� and�,,,,, the�, the剛,, the� and�,, the�,, the� and�, the� and�, the� and�,,,,, the� and�,, the�,,,,,, the� and�,,, the�, the� and�,,, the�,, the�, the�, the�,, the�, the�, the�,,,, the剛,,,, the�, the�,,,,,,,,,, the�, the�,,,,,,,,,,,,,,,,,,,, the�,,,, the�, the�,,,,,,,,,,,,,,,,,,,,,, the�,,,,, the�,,,,,,,,,,,,,, the�,,,,,,,,,,,,,,,,, the�,,,,,,,,,,,, the�, the�,, the�,,, the�,,,, the�,,,,,,,,, the�,,,,, the�, the�,,, the�,, the�,,,, the�, the�,, the�, the�, the�,,,, the�,, the�,,,,,,,,, the�, the�,,, the�, the�, the�, the�, the剛,,, the�, the�, the�, the�,, the�, the�,, the�, the�, the�, the�, the�,,, the�, the�,, the�, the�, the�, the�, the�,, the�,, the�, the�, the�,,,, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�,, the�, the�, the�,, the�, the�,, the�, the�,, the�, the�, the�, the�,, the�, the�, the�,, the�, the�, the�,, the�, the�,, the�, the�,, the�, the�, the�, microphone, the�, the�, the�, microphone,, the�, the�,, the�, the�, the�, the�, the�,, the�, the�,, the�, the�,, the�y�, the�, the�, the�, the�, the�, microphone, the�, the�, microphone, the�, the�, the�, the�, the�, the�, the�,, the�,, the�,,, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�, the�"
+    },
+    {
+      "prompt": "虽省德于市井，犹家明机于泽畔。虽以变为德之水，而以德为德。游子明变于门，民不持山而兴。学者者，至江海者也。术者，礼之本也。虽游子不定乡，犹以智为天下。师者，持仁者也。水之仁者，仁之清者也。既将察实于山林，乃风游江海。家敬木而未省变，邦正星而悟变。",
+      "response": "Sam wanted to see.\n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽天下治乡于庭，而以礼为学。虽隐者不持雪，而月未学势。友者，灭者也。高智大名，观山辨山。不安家，泉不正林。虽退于山林，犹以术为危实。家闻势，定势于泽畔。以机为天下。风者，川之暗者也。臣者，抚国者也。既圣人出朝堂，乃君子亡。侯者，修河者也。苟至门，则乡论义。",
+      "response": "Ben had a wonderful time. He met his friend, Sam, and came to her and asked to play. Ben was happy to see her and gave him a big hug.\n<|endoftext|>"
+    },
+    {
+      "prompt": "若隐者涉泽畔，则友辨实于江海。苟平国，则养地于庭。苟以志为学者，则以信为野。以机为云之心。师者，思义者也。安实修义，居民修民。苟山未论名于关隘，则天下省义。立术而养机，固势而持智。正地于道旁，行关隘于门。云兴。既友行市井，乃安野于泽畔。友者，悟德者也。",
+      "response": "Sam came to see her.\n\nTom was angry and sad. He wanted to help, but he was too small. He decided to keep looking for the best corn. He searched and searched, but he couldn't find it. \n\nFinally, he decided to give up. He went to the river and saw a big, beautiful fish. He was so happy and hugged the big brown bear. From that day forward, Tommy and the big brown bear were best friends.\n<|endoftext|>"
+    },
+    {
+      "prompt": "立百姓，子理邦于郊野。月牧邦而立变，侯不定城于市井。虽游子存，而闻过。朝见法。城牧家。守心明民，衰实广水。若泉起于庭，则以实为深智。不慎石。或正泉，或入郊野。苟正朝，则以道为安之风。虽牧乡于江海，而敬理。民治朝于门。虽侯安乡，犹出道旁于泽畔。隐者不安实。",
+      "response": "Sam from their corn. \"This corn is so cool!\" he said. \n巴恩剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛�,,,,,,,,,,,,,,, the� and�, the�, the� and�, the� and�, the� and�, the� and�,, the� and�, the� and�, the� and� and�, the剛 and� and�, the� and�,,, the� and�, the� and�, the� and�,, the� and�, the� and� and� and� and� and�, the� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and"
+    },
+    {
+      "prompt": "雨未闻过。虽牧朝于关隘，犹以学为法。以心为机，河归庭。以智为暗天，论过而思礼。以名为社稷。止于郊野。若未闻德，则未思实。未思变，观机而未明法。盛云远义，知仁察天。思水立心，辨天辨民。若隐者不慎邦于朝堂，则思理。名之水者，仁之小者也。虽泉理天下，犹以术为理。",
+      "response": "Sam did not have a corn. \n\nBen was so happy. He wanted to eat it right away. But Emily was so persistent, she kept asking and asking. Finally, Ben said, \"No, I want the surprise!\" But Emily was firm and said, \"No, Ben. You have to wait until tomorrow.\" \n\nBen was sad. He really wanted the surprise. So, he decided to wait until tomorrow. He went to the backyard and found a big box. He opened it and found a huge box. He opened it and found a huge, beautiful castle. He was so happy! \n\nBen was so happy that he had found the surprise. He said, \"I'm sorry I didn't share it with you. I was so excited!\" Sam smiled and said, \"That's okay, Ben. You can keep the surprise!\"\nSummary: Ben brings a huge surprise to his best friend Sam, a huge box, and inside he finds a huge castle filled with toys and treats.\n\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽御百姓于道旁，而以仁为大之心。或悟礼，或至朝堂。立礼安山，远志正实。友者，涉关隘者也。或齐朝，或涉市井。苟以变为近之国，则社稷败。或未见名，或不守心。统家于庭。侯未观理。若以术为信，则不正礼。若以术为地，则以义为善山。若齐邦，则持江。远道危云，盛风清智。",
+      "response": ", Sam came to her rescue and decided to climb on the table. \n巴恩剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛剛,,,,,,,,,,,,,,,,, the� and�,, the� and�, the� and�,,, the剛,, the� and�,, the� and�, the� and�� and�, the� and�, the� and�, the� and�,,, the� and�, the� and�, the� and�,, the� and�,, the� and� and�, the剛 and�,,,, the� and�, the� and�,, the� and� and� and�� and� and�,, the�, the� and� and� and� and�, the剛 and� and�,,, the�, the� and� and� and� and�, the� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and� and"
+    },
+    {
+      "prompt": "不修天下于市井。云不崇野，归道旁而敬江。既国论智于市井，乃以仁为强之云。学者，学之本也。友省义，理百姓。学者止于江海。游子退，安城。虽以机为圣人，犹治百姓于道旁。若月见义于泽畔，则邦进于山林。虽国齐天下于朝堂，而不养礼。或辨势，或不持乡。观日而省心，知星而察信。",
+      "response": "SamEndEndEnding\nIn the end, Emily had to close the end of the day. She was so sad and angry that she decided to never be able to see her again. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "虽家修理，犹以仁为邦。苟学者安百姓，则正家于道旁。苟持地于泽畔，则云未明礼于朝堂。过者，志之本也。柔道者，实之邪者也。不敬礼。正志正山，定风观实。苟以变为强之水，则不守云。以志为王，家见机而安地。虽不养木于山林，犹以学为侯。察地而察道，省雨而闻智。",
+      "response": "Sam eventually gave up and went back to her room. \n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "平邦于道旁。或涉市井，或闻实。临道旁，平家于朝堂。虽以术为木，犹败于门。王正江于朝堂。立术而安势，崇礼而立法。既不养石，乃社稷悟信。侯安泉，雪涉泽畔。术者，势之本也。正法而慎心，敬过而正变。苟雷不持仁于江海，则存。以过为水之风。虽以理为柔之德，犹石游门。",
+      "response": "Sam was so happy. He never gave her his corn, and she was very grateful. \n\nFrom then on, Sam and Emily were very happy. They both loved the way they looked and never gave up.\n<|endoftext|>"
+    },
+    {
+      "prompt": "定法而慎学，定名而敬理。实者，理之本也。修术而修道，正心而敬过。学者者，存者也。以信为国之地，以礼为刚志。苟以智为朝，则止。既以实为危之志，乃守术于山林。既乡持天，乃以礼为百姓。抚乡于门，以实为小礼。不持义于朝堂。虽牧天下，犹临门。若游朝堂于江海，则星御天下。",
+      "response": "Tom had just eaten his corn. He was so happy. But then, he noticed that he had a big pile of corn. \n\n\"Please, Tommy,\" said Tommy. \"I want to eat the corn.\"\n\n\"No, no, no,\" said Tommy. \"You can't have my corn. I am the best.\"\n\nThe end.\n<|endoftext|>"
+    },
+    {
+      "prompt": "闻功而不持义，子败而起。明道而起，未悟义于门。思礼而牧家。臣至郊野，以信为河。川败而齐朝，以术为社稷。虽邦存于郊野，而百姓安家。野存，乡平国而正云。柔山刚实，远名深天。道者，志之本也。以功为清之义，雷退。虽野不持邦，犹以术为柔名。养德而崇机，安术而守义。",
+      "response": "Sam\n\nSam had a special surprise for her. He wanted to give her a present, so he decided to give her a special treat. He said, \"I want a surprise for myself.\" Emily was so happy and followed him.\n\nWhen they reached the end of the hallway, they found a big box. Inside was a huge box. Emily was so excited and opened it. Inside, there was a huge black teddy bear. Emily was so happy and hugged him tightly. Emily hugged him and said, \"Thank you, Emily. You are the best!\"\n<|endoftext|>"
+    },
+    {
+      "prompt": "若以志为国之义，则以道为天。既民未论德于市井，乃以德为天。以义为柔之智。侯者，游市井者也。明地而论理，学川而悟过。修义。术者，名之本也。不定国，圣人修山。师者，齐天下者也。虽齐城，而川成于门。虽以机为日，而以机为仁。贤者者，统朝者也。既以仁为子，乃立法。",
+      "response": ", Sam the only way he could eat.\n<|endoftext|>"
+    },
+    {
+      "prompt": "崇义而定信，省雪而闻礼。或正心，或至关隘。虽安河于道旁，犹以义为法。崇实。以势为百姓。山之实者，信之深者也。苟以志为父，则士立云于门。天下者，雨之安者也。虽以术为圣人，而以名为隐者。兴。邦抚城，以学为邦。海察心而不安城，正城而居门。观志而归山林，以术为天。",
+      "response": "Sam had just keeping his promise to him. He said to the girl, \"You can have some of my corn if you promise to be careful.\" \n\nEmily was so happy. She promised to never be so sneaky again. The next day, Emily returned with a huge smile on her face.\n<|endoftext|>"
+    },
+    {
+      "prompt": "闻道而衰，以功为子。深地清智，治心察水。志者，法之本也。苟以实为弱礼，则天未悟理于泽畔。虽君子论名，而以礼为林。社稷抚邦于门。若家进于道旁，则以心为星。虽游子持百姓于关隘，而雪衰。子者，江之强者也。既以理为仁之志，乃雷安法于山林。邦崇天而临山林，民牧乡。",
+      "response": ".\n\nEmily and Tom were so happy. They had to get their wares to save him. Emily was so happy. She hugged him and said, “You are so clever, Tom. I will never give you a surprise.” \n\nTom was very proud of himself. He had solved the problem and now he had a great time. From that day onward, Tom and Sam were the best of friends.\n<|endoftext|>"
+    }
+  ],
+  "generated_at": "2026-04-16T04:39:19.162924"
+}
