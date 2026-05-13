@@ -1,0 +1,98 @@
+{
+  "model_name": "huihui-ai/Huihui-gpt-oss-20b-mxfp4-abliterated-v2",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 563.4302608966827,
+  "signature_stats": {
+    "mean": -0.0037259384989738464,
+    "std": 2.431314706802368,
+    "min": -6.296551704406738,
+    "max": 5.6658124923706055,
+    "median": 0.16211605072021484,
+    "l1_norm": 248.28370666503906,
+    "l2_norm": 27.507217407226562,
+    "sparsity": 0.0,
+    "entropy": 5.078349536115725
+  },
+  "metadata": {
+    "model_name": "huihui-ai/Huihui-gpt-oss-20b-mxfp4-abliterated-v2",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-11T01:06:29.644768",
+    "computation_time_seconds": 4.84189772605896,
+    "model_metadata": {
+      "model_name": "huihui-ai/Huihui-gpt-oss-20b-mxfp4-abliterated-v2",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt_oss",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 2967920640,
+        "parameter_count_billions": 2.97
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "huihui-ai/Huihui-gpt-oss-20b-mxfp4-abliterated-v2"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-11T00:57:08.608761",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/huihui-ai_Huihui-gpt-oss-20b-mxfp4-abliterated-v2/huihui-ai_Huihui-gpt-oss-20b-mxfp4-abliterated-v2_dna.json",
+  "config": {
+    "model_name": "huihui-ai/Huihui-gpt-oss-20b-mxfp4-abliterated-v2",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
