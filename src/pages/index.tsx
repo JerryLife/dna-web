@@ -21,13 +21,20 @@ import { useData, type DnaMode } from '@/contexts/DataContext';
 import type { ModelData } from '@/utils/data';
 import config from '@/config';
 
-// Configuration
-const MIN_COUNT = config.visualization?.minCount || 5;
-const CROWD_RADIUS = config.visualization?.crowdRadius || 80;
-const HULL_PADDING = config.visualization?.hullPadding ?? 2;
-const HULL_TENSION = config.visualization?.hullTension ?? 0.7;
-const HULL_FILL_OPACITY = config.visualization?.hullFillOpacity ?? 0.12;
-const HULL_STROKE_OPACITY = config.visualization?.hullStrokeOpacity ?? 0.3;
+// Per-mode visualization config: falls back to top-level `visualization` if a dataset block omits it.
+function getVizConfig(mode: DnaMode) {
+    const perDataset = config.datasets?.[mode]?.visualization;
+    const fallback = config.visualization;
+    const v = perDataset ?? fallback;
+    return {
+        minCount: v?.minCount ?? 5,
+        crowdRadius: v?.crowdRadius ?? 80,
+        hullPadding: v?.hullPadding ?? 2,
+        hullTension: v?.hullTension ?? 0.7,
+        hullFillOpacity: v?.hullFillOpacity ?? 0.12,
+        hullStrokeOpacity: v?.hullStrokeOpacity ?? 0.3,
+    };
+}
 
 // Generate consistent color for organization
 function generateOrgColor(org: string, count: number): string {
@@ -306,6 +313,15 @@ export default function GalaxyPage() {
 
         if (!container || !svg.node() || !tooltip) return;
 
+        const {
+            minCount: MIN_COUNT,
+            crowdRadius: CROWD_RADIUS,
+            hullPadding: HULL_PADDING,
+            hullTension: HULL_TENSION,
+            hullFillOpacity: HULL_FILL_OPACITY,
+            hullStrokeOpacity: HULL_STROKE_OPACITY,
+        } = getVizConfig(galaxyMode);
+
         // Use ResizeObserver dimensions for responsive sizing
         const width = containerWidth || container.clientWidth;
         const height = containerHeight || container.clientHeight;
@@ -539,6 +555,17 @@ export default function GalaxyPage() {
             .y(d => yScale(d[1]))
             .curve(d3.curveCardinalClosed.tension(HULL_TENSION));
 
+        // Collect all hull boundaries, then paint largest-first so smaller ones land on top.
+        type HullItem = {
+            org: string;
+            orgModels: ModelData[];
+            cluster: ModelData[];
+            color: string;
+            padded: [number, number][];
+            area: number;
+        };
+        const hullItems: HullItem[] = [];
+
         for (const [org, orgModels] of orgGroups) {
             if (orgModels.length < MIN_COUNT || org === 'Others') continue;
             if (!activeOrgs.has(org)) continue;
@@ -552,7 +579,6 @@ export default function GalaxyPage() {
                 const pts: [number, number][] = cluster.map(d => [d.x!, d.y!]);
                 if (pts.length < 3) continue;
 
-                // Try alpha shape with cluster radius, fall back to convex hull
                 let boundaries = alphaShape(pts, clusterRadius);
                 if (boundaries.length === 0) {
                     const convex = d3.polygonHull(pts);
@@ -563,27 +589,33 @@ export default function GalaxyPage() {
                 for (const boundary of boundaries) {
                     if (boundary.length < 3) continue;
                     const padded = padHull(boundary, HULL_PADDING);
-
-                    shadowGroup.append('path')
-                        .attr('d', smoothLine(padded))
-                        .attr('fill', color)
-                        .attr('fill-opacity', HULL_FILL_OPACITY)
-                        .attr('stroke', color)
-                        .attr('stroke-width', 1.5)
-                        .attr('stroke-opacity', HULL_STROKE_OPACITY)
-                        .style('cursor', 'pointer')
-                        .on('mouseenter', function (event) {
-                            tooltip.innerHTML = `
-                                <div style="font-weight: 600">${org}</div>
-                                <div style="color: #888">${cluster.length} of ${orgModels.length} models</div>
-                            `;
-                            tooltip.style.display = 'block';
-                            updateTooltipPosition(event);
-                        })
-                        .on('mousemove', updateTooltipPosition)
-                        .on('mouseleave', () => { tooltip.style.display = 'none'; });
+                    const area = Math.abs(d3.polygonArea(padded));
+                    hullItems.push({ org, orgModels, cluster, color, padded, area });
                 }
             }
+        }
+
+        hullItems.sort((a, b) => b.area - a.area);
+
+        for (const { org, orgModels, cluster, color, padded } of hullItems) {
+            shadowGroup.append('path')
+                .attr('d', smoothLine(padded))
+                .attr('fill', color)
+                .attr('fill-opacity', HULL_FILL_OPACITY)
+                .attr('stroke', color)
+                .attr('stroke-width', 1.5)
+                .attr('stroke-opacity', HULL_STROKE_OPACITY)
+                .style('cursor', 'pointer')
+                .on('mouseenter', function (event) {
+                    tooltip.innerHTML = `
+                        <div style="font-weight: 600">${org}</div>
+                        <div style="color: #888">${cluster.length} of ${orgModels.length} models</div>
+                    `;
+                    tooltip.style.display = 'block';
+                    updateTooltipPosition(event);
+                })
+                .on('mousemove', updateTooltipPosition)
+                .on('mouseleave', () => { tooltip.style.display = 'none'; });
         }
 
         // Draw dots
@@ -671,7 +703,7 @@ export default function GalaxyPage() {
         return () => {
             document.removeEventListener('keydown', handleKeydown);
         };
-    }, [models, activeOrgs, filterModel, containerWidth, containerHeight, showModelText]);
+    }, [models, activeOrgs, filterModel, containerWidth, containerHeight, showModelText, galaxyMode]);
 
     // Update visibility when filters change
     useEffect(() => {
