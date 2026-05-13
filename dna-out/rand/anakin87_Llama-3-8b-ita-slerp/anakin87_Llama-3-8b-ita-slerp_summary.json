@@ -1,0 +1,98 @@
+{
+  "model_name": "anakin87/Llama-3-8b-ita-slerp",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 651.7598748207092,
+  "signature_stats": {
+    "mean": -0.1189437136054039,
+    "std": 2.3308961391448975,
+    "min": -6.034419059753418,
+    "max": 5.440553188323975,
+    "median": -0.23065750300884247,
+    "l1_norm": 238.59268188476562,
+    "l2_norm": 26.405391693115234,
+    "sparsity": 0.0,
+    "entropy": 5.087171681453743
+  },
+  "metadata": {
+    "model_name": "anakin87/Llama-3-8b-ita-slerp",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-10T11:01:18.472161",
+    "computation_time_seconds": 5.245165109634399,
+    "model_metadata": {
+      "model_name": "anakin87/Llama-3-8b-ita-slerp",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6967787520,
+        "parameter_count_billions": 6.97
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "anakin87/Llama-3-8b-ita-slerp"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-10T10:50:28.285067",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/anakin87_Llama-3-8b-ita-slerp/anakin87_Llama-3-8b-ita-slerp_dna.json",
+  "config": {
+    "model_name": "anakin87/Llama-3-8b-ita-slerp",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "model_name": "01-ai/Yi-Coder-9B",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 826.4653663635254,
+  "signature_stats": {
+    "mean": 0.20863717794418335,
+    "std": 2.5597152709960938,
+    "min": -6.1584882736206055,
+    "max": 6.35398530960083,
+    "median": -0.03388461470603943,
+    "l1_norm": 254.24252319335938,
+    "l2_norm": 29.055908203125,
+    "sparsity": 0.0,
+    "entropy": 5.061005203638513
+  },
+  "metadata": {
+    "model_name": "01-ai/Yi-Coder-9B",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-19T19:16:57.245556",
+    "computation_time_seconds": 5.884783029556274,
+    "model_metadata": {
+      "model_name": "01-ai/Yi-Coder-9B",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 9925820416,
+        "parameter_count_billions": 9.93
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "01-ai/Yi-Coder-9B"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-19T19:03:13.074561",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/01-ai_Yi-Coder-9B/01-ai_Yi-Coder-9B_dna.json",
+  "config": {
+    "model_name": "01-ai/Yi-Coder-9B",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

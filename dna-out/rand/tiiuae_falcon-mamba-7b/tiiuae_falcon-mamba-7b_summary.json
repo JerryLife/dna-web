@@ -1,0 +1,98 @@
+{
+  "model_name": "tiiuae/falcon-mamba-7b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 455.99279713630676,
+  "signature_stats": {
+    "mean": 0.09031092375516891,
+    "std": 2.3508808612823486,
+    "min": -5.848966598510742,
+    "max": 6.838095664978027,
+    "median": 0.08659398555755615,
+    "l1_norm": 240.64993286132812,
+    "l2_norm": 26.61680030822754,
+    "sparsity": 0.0,
+    "entropy": 4.947358978933101
+  },
+  "metadata": {
+    "model_name": "tiiuae/falcon-mamba-7b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-16T10:02:22.040820",
+    "computation_time_seconds": 4.887980222702026,
+    "model_metadata": {
+      "model_name": "tiiuae/falcon-mamba-7b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "falcon_mamba",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 13151240192,
+        "parameter_count_billions": 13.15
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "tiiuae/falcon-mamba-7b"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-16T09:54:47.996224",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:1",
+      "encoder_device": "cuda:1",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/tiiuae_falcon-mamba-7b/tiiuae_falcon-mamba-7b_dna.json",
+  "config": {
+    "model_name": "tiiuae/falcon-mamba-7b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 1,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

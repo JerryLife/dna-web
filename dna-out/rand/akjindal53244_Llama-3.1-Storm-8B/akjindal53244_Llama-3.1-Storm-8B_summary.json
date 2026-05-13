@@ -1,0 +1,95 @@
+{
+  "model_name": "akjindal53244/Llama-3.1-Storm-8B",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 671.1510150432587,
+  "signature_stats": {
+    "mean": -0.15604433417320251,
+    "std": 2.767436981201172,
+    "min": -8.975776672363281,
+    "max": 6.3233747482299805,
+    "median": 0.026802748441696167,
+    "l1_norm": 284.53106689453125,
+    "l2_norm": 31.35970687866211,
+    "sparsity": 0.0,
+    "entropy": 4.973208036983904
+  },
+  "metadata": {
+    "model_name": "akjindal53244/Llama-3.1-Storm-8B",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-07T20:24:21.399956",
+    "computation_time_seconds": 4.775864839553833,
+    "model_metadata": {
+      "model_name": "akjindal53244/Llama-3.1-Storm-8B",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 8000000000,
+        "parameter_count_billions": 8.0
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {},
+      "metadata": {
+        "fetched_at": "2026-05-07T20:14:20.837442",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/akjindal53244_Llama-3.1-Storm-8B/akjindal53244_Llama-3.1-Storm-8B_dna.json",
+  "config": {
+    "model_name": "akjindal53244/Llama-3.1-Storm-8B",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

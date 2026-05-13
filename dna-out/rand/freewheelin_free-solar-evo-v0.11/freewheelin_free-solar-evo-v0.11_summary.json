@@ -1,0 +1,98 @@
+{
+  "model_name": "freewheelin/free-solar-evo-v0.11",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 299.3300426006317,
+  "signature_stats": {
+    "mean": -0.1580236256122589,
+    "std": 2.9829185009002686,
+    "min": -8.396748542785645,
+    "max": 6.9874267578125,
+    "median": -0.24160295724868774,
+    "l1_norm": 316.4168701171875,
+    "l2_norm": 33.79519271850586,
+    "sparsity": 0.0,
+    "entropy": 5.052745610864583
+  },
+  "metadata": {
+    "model_name": "freewheelin/free-solar-evo-v0.11",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-03T13:11:36.535232",
+    "computation_time_seconds": 4.716853857040405,
+    "model_metadata": {
+      "model_name": "freewheelin/free-solar-evo-v0.11",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 9794748416,
+        "parameter_count_billions": 9.79
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "freewheelin/free-solar-evo-v0.11"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-03T13:06:39.181086",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/freewheelin_free-solar-evo-v0.11/freewheelin_free-solar-evo-v0.11_dna.json",
+  "config": {
+    "model_name": "freewheelin/free-solar-evo-v0.11",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

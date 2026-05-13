@@ -1,0 +1,98 @@
+{
+  "model_name": "unsloth/DeepSeek-R1-Distill-Qwen-32B-bnb-4bit",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 781.2074570655823,
+  "signature_stats": {
+    "mean": 0.04143300652503967,
+    "std": 2.833897829055786,
+    "min": -7.060712814331055,
+    "max": 7.276635646820068,
+    "median": -0.12901008129119873,
+    "l1_norm": 298.44207763671875,
+    "l2_norm": 32.06532287597656,
+    "sparsity": 0.0,
+    "entropy": 5.068043704770117
+  },
+  "metadata": {
+    "model_name": "unsloth/DeepSeek-R1-Distill-Qwen-32B-bnb-4bit",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T19:14:17.667868",
+    "computation_time_seconds": 8.223650932312012,
+    "model_metadata": {
+      "model_name": "unsloth/DeepSeek-R1-Distill-Qwen-32B-bnb-4bit",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "qwen2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 20911226880,
+        "parameter_count_billions": 20.91
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "unsloth/DeepSeek-R1-Distill-Qwen-32B-bnb-4bit"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-20T19:01:18.623638",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/unsloth_DeepSeek-R1-Distill-Qwen-32B-bnb-4bit/unsloth_DeepSeek-R1-Distill-Qwen-32B-bnb-4bit_dna.json",
+  "config": {
+    "model_name": "unsloth/DeepSeek-R1-Distill-Qwen-32B-bnb-4bit",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

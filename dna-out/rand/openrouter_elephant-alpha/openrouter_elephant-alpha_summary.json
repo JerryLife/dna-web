@@ -1,0 +1,96 @@
+{
+  "model_name": "openrouter/elephant-alpha",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 5,
+  "total_time_seconds": 16.59980058670044,
+  "signature_stats": {
+    "mean": -5.960464477539063e-08,
+    "std": 5.9684929847717285,
+    "min": -31.370073318481445,
+    "max": 39.65896987915039,
+    "median": 0.0,
+    "l1_norm": 222.87435913085938,
+    "l2_norm": 67.52578735351562,
+    "sparsity": 0.84375,
+    "entropy": 1.1583430370989327
+  },
+  "metadata": {
+    "model_name": "openrouter/elephant-alpha",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_5",
+    "probe_count": 5,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T21:29:59.801114",
+    "computation_time_seconds": 4.574859380722046,
+    "model_metadata": {
+      "model_name": "openrouter/elephant-alpha",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": true
+      },
+      "metadata": {
+        "fetched_at": "2026-04-20T21:18:58.326553",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:0",
+      "encoder_device": "cuda:0",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "out/rand_chinese/openrouter_elephant-alpha/openrouter_elephant-alpha_dna.json",
+  "config": {
+    "model_name": "openrouter/elephant-alpha",
+    "model_path": null,
+    "model_type": "auto",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 5,
+    "data_root": "./data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "auto",
+    "gpu_id": 0,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "allow_partial_response_resume": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "model_name": "superjob/Qwen3-4B-Instruct-2507-GPTQ-Int4",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 131.3808469772339,
+  "signature_stats": {
+    "mean": -0.12455785274505615,
+    "std": 2.8128433227539062,
+    "min": -9.705873489379883,
+    "max": 5.622009754180908,
+    "median": -0.1059761643409729,
+    "l1_norm": 289.1693115234375,
+    "l2_norm": 31.854875564575195,
+    "sparsity": 0.0,
+    "entropy": 4.923408450336575
+  },
+  "metadata": {
+    "model_name": "superjob/Qwen3-4B-Instruct-2507-GPTQ-Int4",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-07T20:44:16.430458",
+    "computation_time_seconds": 4.83708930015564,
+    "model_metadata": {
+      "model_name": "superjob/Qwen3-4B-Instruct-2507-GPTQ-Int4",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "qwen3",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 3220111360,
+        "parameter_count_billions": 3.22
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "superjob/Qwen3-4B-Instruct-2507-GPTQ-Int4"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-07T20:42:07.736350",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/superjob_Qwen3-4B-Instruct-2507-GPTQ-Int4/superjob_Qwen3-4B-Instruct-2507-GPTQ-Int4_dna.json",
+  "config": {
+    "model_name": "superjob/Qwen3-4B-Instruct-2507-GPTQ-Int4",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

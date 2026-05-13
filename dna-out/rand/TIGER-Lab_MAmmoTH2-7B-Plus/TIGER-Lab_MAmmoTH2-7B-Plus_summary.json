@@ -1,0 +1,98 @@
+{
+  "model_name": "TIGER-Lab/MAmmoTH2-7B-Plus",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 3716.764181137085,
+  "signature_stats": {
+    "mean": -0.10703913122415543,
+    "std": 2.223623275756836,
+    "min": -6.25869083404541,
+    "max": 5.306739330291748,
+    "median": -0.03145182132720947,
+    "l1_norm": 218.28762817382812,
+    "l2_norm": 25.186553955078125,
+    "sparsity": 0.0,
+    "entropy": 5.042510891563024
+  },
+  "metadata": {
+    "model_name": "TIGER-Lab/MAmmoTH2-7B-Plus",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-18T06:45:33.909798",
+    "computation_time_seconds": 12.1504225730896,
+    "model_metadata": {
+      "model_name": "TIGER-Lab/MAmmoTH2-7B-Plus",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6573522944,
+        "parameter_count_billions": 6.57
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "TIGER-Lab/MAmmoTH2-7B-Plus"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-18T05:43:46.123540",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/TIGER-Lab_MAmmoTH2-7B-Plus/TIGER-Lab_MAmmoTH2-7B-Plus_dna.json",
+  "config": {
+    "model_name": "TIGER-Lab/MAmmoTH2-7B-Plus",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

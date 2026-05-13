@@ -1,0 +1,98 @@
+{
+  "model_name": "ai21labs/AI21-Jamba2-3B",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 377.9062809944153,
+  "signature_stats": {
+    "mean": -0.031134307384490967,
+    "std": 2.480919599533081,
+    "min": -6.126321792602539,
+    "max": 7.835198879241943,
+    "median": 0.0091228187084198,
+    "l1_norm": 250.6025390625,
+    "l2_norm": 28.07061195373535,
+    "sparsity": 0.0,
+    "entropy": 4.783852831417278
+  },
+  "metadata": {
+    "model_name": "ai21labs/AI21-Jamba2-3B",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-07T03:55:38.502097",
+    "computation_time_seconds": 6.03190803527832,
+    "model_metadata": {
+      "model_name": "ai21labs/AI21-Jamba2-3B",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "jamba",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 2369781760,
+        "parameter_count_billions": 2.37
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "ai21labs/AI21-Jamba2-3B"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-07T03:49:29.516442",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/ai21labs_AI21-Jamba2-3B/ai21labs_AI21-Jamba2-3B_dna.json",
+  "config": {
+    "model_name": "ai21labs/AI21-Jamba2-3B",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
