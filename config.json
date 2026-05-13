@@ -10,8 +10,8 @@
             "dataset": "rand",
             "output": "./public/dna_database.json",
             "visualization": {
-                "minCount": 5,
-                "crowdRadius": 100,
+                "minCount": 3,
+                "crowdRadius": 50,
                 "hullPadding": 5,
                 "hullTension": 0.5,
                 "hullFillOpacity": 0.12,
