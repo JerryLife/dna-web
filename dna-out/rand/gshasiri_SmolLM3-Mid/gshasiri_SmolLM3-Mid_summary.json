@@ -1,0 +1,98 @@
+{
+  "model_name": "gshasiri/SmolLM3-Mid",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 141.97858500480652,
+  "signature_stats": {
+    "mean": -0.030074909329414368,
+    "std": 2.934626340866089,
+    "min": -9.214119911193848,
+    "max": 7.327773571014404,
+    "median": -0.08306765556335449,
+    "l1_norm": 299.37506103515625,
+    "l2_norm": 33.203250885009766,
+    "sparsity": 0.0,
+    "entropy": 4.870364260287442
+  },
+  "metadata": {
+    "model_name": "gshasiri/SmolLM3-Mid",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-12T00:22:20.552150",
+    "computation_time_seconds": 4.782184600830078,
+    "model_metadata": {
+      "model_name": "gshasiri/SmolLM3-Mid",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1067974656,
+        "parameter_count_billions": 1.07
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "gshasiri/SmolLM3-Mid"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-12T00:20:01.305494",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/gshasiri_SmolLM3-Mid/gshasiri_SmolLM3-Mid_dna.json",
+  "config": {
+    "model_name": "gshasiri/SmolLM3-Mid",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
