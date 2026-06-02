@@ -1,0 +1,98 @@
+{
+  "model_name": "rahul7star/Qwen3-4B-Thinking-2509-Genius-Coder-AI-Full",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 379.2598195075989,
+  "signature_stats": {
+    "mean": 0.1908445954322815,
+    "std": 2.3031210899353027,
+    "min": -6.6695170402526855,
+    "max": 5.649657249450684,
+    "median": 0.35656213760375977,
+    "l1_norm": 242.7506866455078,
+    "l2_norm": 26.14614486694336,
+    "sparsity": 0.0,
+    "entropy": 4.929939673503908
+  },
+  "metadata": {
+    "model_name": "rahul7star/Qwen3-4B-Thinking-2509-Genius-Coder-AI-Full",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-06T02:29:06.450721",
+    "computation_time_seconds": 5.584458827972412,
+    "model_metadata": {
+      "model_name": "rahul7star/Qwen3-4B-Thinking-2509-Genius-Coder-AI-Full",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "qwen3",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 3220111360,
+        "parameter_count_billions": 3.22
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "rahul7star/Qwen3-4B-Thinking-2509-Genius-Coder-AI-Full"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-06T02:22:54.673463",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/rahul7star_Qwen3-4B-Thinking-2509-Genius-Coder-AI-Full/rahul7star_Qwen3-4B-Thinking-2509-Genius-Coder-AI-Full_dna.json",
+  "config": {
+    "model_name": "rahul7star/Qwen3-4B-Thinking-2509-Genius-Coder-AI-Full",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

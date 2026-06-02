@@ -1,0 +1,98 @@
+{
+  "model_name": "dphn/dolphin-2.9.2-Phi-3-Medium-abliterated",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 363.55161714553833,
+  "signature_stats": {
+    "mean": 0.13747069239616394,
+    "std": 2.257734537124634,
+    "min": -7.151203155517578,
+    "max": 6.051126003265381,
+    "median": 0.027439460158348083,
+    "l1_norm": 231.7781982421875,
+    "l2_norm": 25.590656280517578,
+    "sparsity": 0.0,
+    "entropy": 4.818605808151976
+  },
+  "metadata": {
+    "model_name": "dphn/dolphin-2.9.2-Phi-3-Medium-abliterated",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-04T09:34:49.151129",
+    "computation_time_seconds": 4.607364177703857,
+    "model_metadata": {
+      "model_name": "dphn/dolphin-2.9.2-Phi-3-Medium-abliterated",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 12747079680,
+        "parameter_count_billions": 12.75
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "dphn/dolphin-2.9.2-Phi-3-Medium-abliterated"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-04T09:28:47.703372",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/dphn_dolphin-2.9.2-Phi-3-Medium-abliterated/dphn_dolphin-2.9.2-Phi-3-Medium-abliterated_dna.json",
+  "config": {
+    "model_name": "dphn/dolphin-2.9.2-Phi-3-Medium-abliterated",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

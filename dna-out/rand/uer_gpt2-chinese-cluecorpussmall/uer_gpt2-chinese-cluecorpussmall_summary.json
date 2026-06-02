@@ -1,0 +1,97 @@
+{
+  "model_name": "uer/gpt2-chinese-cluecorpussmall",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 107.35880255699158,
+  "signature_stats": {
+    "mean": 0.1304590404033661,
+    "std": 2.934523820877075,
+    "min": -6.322787284851074,
+    "max": 8.754936218261719,
+    "median": 0.1401968151330948,
+    "l1_norm": 305.1356201171875,
+    "l2_norm": 33.23313903808594,
+    "sparsity": 0.0,
+    "entropy": 4.9678177562091825
+  },
+  "metadata": {
+    "model_name": "uer/gpt2-chinese-cluecorpussmall",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-15T18:17:45.097542",
+    "computation_time_seconds": 5.278142213821411,
+    "model_metadata": {
+      "model_name": "uer/gpt2-chinese-cluecorpussmall",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "uer/gpt2-chinese-cluecorpussmall"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-15T18:16:00.193265",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:2",
+      "encoder_device": "cuda:2",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/uer_gpt2-chinese-cluecorpussmall/uer_gpt2-chinese-cluecorpussmall_dna.json",
+  "config": {
+    "model_name": "uer/gpt2-chinese-cluecorpussmall",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 2,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

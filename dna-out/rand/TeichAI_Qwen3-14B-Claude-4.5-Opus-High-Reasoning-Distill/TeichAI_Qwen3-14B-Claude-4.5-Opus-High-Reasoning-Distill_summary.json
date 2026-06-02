@@ -1,0 +1,98 @@
+{
+  "model_name": "TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 18478.628142118454,
+  "signature_stats": {
+    "mean": 0.23816059529781342,
+    "std": 2.28226637840271,
+    "min": -6.253504753112793,
+    "max": 6.143601894378662,
+    "median": 0.2128341794013977,
+    "l1_norm": 230.88320922851562,
+    "l2_norm": 25.961105346679688,
+    "sparsity": 0.0,
+    "entropy": 5.003497466150424
+  },
+  "metadata": {
+    "model_name": "TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-20T03:15:04.132203",
+    "computation_time_seconds": 6.16964054107666,
+    "model_metadata": {
+      "model_name": "TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "qwen3",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 13360824320,
+        "parameter_count_billions": 13.36
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-19T22:07:09.304961",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/TeichAI_Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill/TeichAI_Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill_dna.json",
+  "config": {
+    "model_name": "TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

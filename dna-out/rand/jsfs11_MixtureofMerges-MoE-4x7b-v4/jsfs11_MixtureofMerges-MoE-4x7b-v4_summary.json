@@ -1,0 +1,98 @@
+{
+  "model_name": "jsfs11/MixtureofMerges-MoE-4x7b-v4",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 674.2858419418335,
+  "signature_stats": {
+    "mean": 0.060086965560913086,
+    "std": 3.5547866821289062,
+    "min": -7.362171173095703,
+    "max": 10.595354080200195,
+    "median": 0.347306489944458,
+    "l1_norm": 354.7908630371094,
+    "l2_norm": 40.223567962646484,
+    "sparsity": 0.0,
+    "entropy": 4.998865947179027
+  },
+  "metadata": {
+    "model_name": "jsfs11/MixtureofMerges-MoE-4x7b-v4",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-03T20:47:53.745876",
+    "computation_time_seconds": 4.766838073730469,
+    "model_metadata": {
+      "model_name": "jsfs11/MixtureofMerges-MoE-4x7b-v4",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mixtral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6573522944,
+        "parameter_count_billions": 6.57
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "jsfs11/MixtureofMerges-MoE-4x7b-v4"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-03T20:36:41.460554",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/jsfs11_MixtureofMerges-MoE-4x7b-v4/jsfs11_MixtureofMerges-MoE-4x7b-v4_dna.json",
+  "config": {
+    "model_name": "jsfs11/MixtureofMerges-MoE-4x7b-v4",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

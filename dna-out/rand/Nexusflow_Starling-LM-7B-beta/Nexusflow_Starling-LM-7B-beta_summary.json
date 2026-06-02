@@ -1,0 +1,98 @@
+{
+  "model_name": "Nexusflow/Starling-LM-7B-beta",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 3614.176369667053,
+  "signature_stats": {
+    "mean": 0.3123960494995117,
+    "std": 2.3446578979492188,
+    "min": -7.307034969329834,
+    "max": 7.4927167892456055,
+    "median": 0.340658962726593,
+    "l1_norm": 230.43069458007812,
+    "l2_norm": 26.76119613647461,
+    "sparsity": 0.0,
+    "entropy": 4.745723264925637
+  },
+  "metadata": {
+    "model_name": "Nexusflow/Starling-LM-7B-beta",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-07T08:36:12.854622",
+    "computation_time_seconds": 4.5128724575042725,
+    "model_metadata": {
+      "model_name": "Nexusflow/Starling-LM-7B-beta",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6573531136,
+        "parameter_count_billions": 6.57
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "Nexusflow/Starling-LM-7B-beta"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-07T07:36:03.514651",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/Nexusflow_Starling-LM-7B-beta/Nexusflow_Starling-LM-7B-beta_dna.json",
+  "config": {
+    "model_name": "Nexusflow/Starling-LM-7B-beta",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

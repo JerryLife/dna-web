@@ -1,0 +1,98 @@
+{
+  "model_name": "norallm/normistral-7b-warm-instruct",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 274.5325379371643,
+  "signature_stats": {
+    "mean": -0.08202418684959412,
+    "std": 3.177482843399048,
+    "min": -9.300373077392578,
+    "max": 8.15914535522461,
+    "median": -0.052549175918102264,
+    "l1_norm": 321.04022216796875,
+    "l2_norm": 35.961090087890625,
+    "sparsity": 0.0,
+    "entropy": 4.948657231685752
+  },
+  "metadata": {
+    "model_name": "norallm/normistral-7b-warm-instruct",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-05T23:33:51.425116",
+    "computation_time_seconds": 4.793851852416992,
+    "model_metadata": {
+      "model_name": "norallm/normistral-7b-warm-instruct",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "mistral",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6576668672,
+        "parameter_count_billions": 6.58
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "norallm/normistral-7b-warm-instruct"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-05T23:29:19.643891",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:6",
+      "encoder_device": "cuda:6",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/norallm_normistral-7b-warm-instruct/norallm_normistral-7b-warm-instruct_dna.json",
+  "config": {
+    "model_name": "norallm/normistral-7b-warm-instruct",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 6,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

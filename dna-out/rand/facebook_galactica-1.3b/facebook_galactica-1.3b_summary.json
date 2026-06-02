@@ -1,0 +1,98 @@
+{
+  "model_name": "facebook/galactica-1.3b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 153.6105251312256,
+  "signature_stats": {
+    "mean": 0.16378939151763916,
+    "std": 2.8445167541503906,
+    "min": -5.862206935882568,
+    "max": 8.154386520385742,
+    "median": 0.19926178455352783,
+    "l1_norm": 295.5855712890625,
+    "l2_norm": 32.2353401184082,
+    "sparsity": 0.0,
+    "entropy": 5.128622563233178
+  },
+  "metadata": {
+    "model_name": "facebook/galactica-1.3b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-07T13:03:56.240180",
+    "computation_time_seconds": 6.094831943511963,
+    "model_metadata": {
+      "model_name": "facebook/galactica-1.3b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "opt",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1310359552,
+        "parameter_count_billions": 1.31
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "facebook/galactica-1.3b"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-07T13:01:25.106405",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:7",
+      "encoder_device": "cuda:7",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/facebook_galactica-1.3b/facebook_galactica-1.3b_dna.json",
+  "config": {
+    "model_name": "facebook/galactica-1.3b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 7,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

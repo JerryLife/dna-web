@@ -1,0 +1,98 @@
+{
+  "model_name": "tiiuae/Falcon-H1-1.5B-Base",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 396.52886271476746,
+  "signature_stats": {
+    "mean": 0.05352068692445755,
+    "std": 2.5676381587982178,
+    "min": -6.994751930236816,
+    "max": 6.290553569793701,
+    "median": 0.007158845663070679,
+    "l1_norm": 262.83233642578125,
+    "l2_norm": 29.05582046508789,
+    "sparsity": 0.0,
+    "entropy": 5.031551248030491
+  },
+  "metadata": {
+    "model_name": "tiiuae/Falcon-H1-1.5B-Base",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-10T18:39:52.169010",
+    "computation_time_seconds": 4.6349897384643555,
+    "model_metadata": {
+      "model_name": "tiiuae/Falcon-H1-1.5B-Base",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "falcon_h1",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1342177280,
+        "parameter_count_billions": 1.34
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "tiiuae/Falcon-H1-1.5B-Base"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-10T18:33:17.964311",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:3",
+      "encoder_device": "cuda:3",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/tiiuae_Falcon-H1-1.5B-Base/tiiuae_Falcon-H1-1.5B-Base_dna.json",
+  "config": {
+    "model_name": "tiiuae/Falcon-H1-1.5B-Base",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 3,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

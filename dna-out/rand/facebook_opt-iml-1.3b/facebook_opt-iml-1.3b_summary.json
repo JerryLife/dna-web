@@ -1,0 +1,98 @@
+{
+  "model_name": "facebook/opt-iml-1.3b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 151.34203362464905,
+  "signature_stats": {
+    "mean": -0.059965312480926514,
+    "std": 3.193614959716797,
+    "min": -8.508342742919922,
+    "max": 8.429527282714844,
+    "median": -0.1789976954460144,
+    "l1_norm": 322.2081298828125,
+    "l2_norm": 36.137996673583984,
+    "sparsity": 0.0,
+    "entropy": 4.878677838031077
+  },
+  "metadata": {
+    "model_name": "facebook/opt-iml-1.3b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-05-05T09:21:27.152692",
+    "computation_time_seconds": 6.130276203155518,
+    "model_metadata": {
+      "model_name": "facebook/opt-iml-1.3b",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "opt",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 1310916608,
+        "parameter_count_billions": 1.31
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "facebook/opt-iml-1.3b"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-05T09:19:03.180872",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:6",
+      "encoder_device": "cuda:6",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/facebook_opt-iml-1.3b/facebook_opt-iml-1.3b_dna.json",
+  "config": {
+    "model_name": "facebook/opt-iml-1.3b",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 6,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}

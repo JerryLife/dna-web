@@ -1,0 +1,98 @@
+{
+  "model_name": "unsloth/gemma-3-1b-it",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 125.77486515045166,
+  "signature_stats": {
+    "mean": 0.09940633177757263,
+    "std": 4.362524509429932,
+    "min": -13.955774307250977,
+    "max": 11.81765365600586,
+    "median": 0.42011910676956177,
+    "l1_norm": 417.94775390625,
+    "l2_norm": 49.369140625,
+    "sparsity": 0.0,
+    "entropy": 4.745225551722399
+  },
+  "metadata": {
+    "model_name": "unsloth/gemma-3-1b-it",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-04-15T13:00:07.550209",
+    "computation_time_seconds": 4.608306646347046,
+    "model_metadata": {
+      "model_name": "unsloth/gemma-3-1b-it",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gemma3_text",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 716046336,
+        "parameter_count_billions": 0.72
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "unsloth/gemma-3-1b-it"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-15T12:58:03.765821",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cuda:5",
+      "encoder_device": "cuda:5",
+      "max_length": 1024,
+      "dataset": "rand_chinese"
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/out/rand_chinese/unsloth_gemma-3-1b-it/unsloth_gemma-3-1b-it_dna.json",
+  "config": {
+    "model_name": "unsloth/gemma-3-1b-it",
+    "model_path": null,
+    "model_type": "huggingface",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/out",
+    "output_path": null,
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cuda",
+    "gpu_id": 5,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "use_chat_template": false,
+    "try_vllm": true,
+    "allow_partial_response_resume": true
+  }
+}
