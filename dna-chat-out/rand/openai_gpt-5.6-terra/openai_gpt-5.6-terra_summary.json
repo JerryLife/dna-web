@@ -1,0 +1,107 @@
+{
+  "model_name": "openai/gpt-5.6-terra",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 487.80983686447144,
+  "signature_stats": {
+    "mean": 0.008031293749809265,
+    "std": 2.9785640239715576,
+    "min": -8.879232406616211,
+    "max": 7.05365514755249,
+    "median": -0.12709873914718628,
+    "l1_norm": 309.02972412109375,
+    "l2_norm": 33.698726654052734,
+    "sparsity": 0.0,
+    "entropy": 4.913484350354516
+  },
+  "metadata": {
+    "model_name": "openai/gpt-5.6-terra",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-08-26T21:21:02.100569",
+    "computation_time_seconds": 25.257879972457886,
+    "model_metadata": {
+      "model_name": "openai/gpt-5.6-terra",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "unknown",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": true
+      },
+      "metadata": {
+        "fetched_at": "2026-08-26T21:07:00.630188",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "min_new_tokens": 0,
+      "dataset": "rand_chinese",
+      "temperature": 0.0,
+      "do_sample": false,
+      "top_p": 1.0,
+      "generation_seed": 42
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "/home/yuqiannemo/LLM-DNA/dna-out-popular-20260825/rand_chinese/openai_gpt-5.6-terra/openai_gpt-5.6-terra_dna.json",
+  "config": {
+    "model_name": "openai/gpt-5.6-terra",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "min_new_tokens": 0,
+    "output_dir": "/home/yuqiannemo/LLM-DNA/dna-out-popular-20260825",
+    "output_path": null,
+    "output_suffix": "",
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "generation_seed": 42,
+    "temperature": 0.0,
+    "do_sample": false,
+    "top_p": 1.0,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "use_response_cache": true
+  }
+}

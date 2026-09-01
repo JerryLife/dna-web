@@ -1,0 +1,109 @@
+{
+  "model_name": "qwen/qwen3.8-27b",
+  "dataset": "rand_chinese",
+  "dataset_full": "rand_chinese",
+  "extractor_type": "embedding",
+  "dna_dimension": 128,
+  "reduction_method": "random_projection",
+  "num_probes": 100,
+  "total_time_seconds": 3103.0205750465393,
+  "signature_stats": {
+    "mean": 0.038652386516332626,
+    "std": 2.6946005821228027,
+    "min": -7.964874267578125,
+    "max": 7.056262969970703,
+    "median": 0.07357845455408096,
+    "l1_norm": 273.2117614746094,
+    "l2_norm": 30.48906135559082,
+    "sparsity": 0.0,
+    "entropy": 4.8965183378172465
+  },
+  "metadata": {
+    "model_name": "qwen/qwen3.8-27b",
+    "extraction_method": "text_response_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 768,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-08-25T22:02:52.754539",
+    "computation_time_seconds": 16.72477912902832,
+    "model_metadata": {
+      "model_name": "qwen/qwen3.8-27b",
+      "architecture": {
+        "type": "encoder_decoder",
+        "model_type": "qwen3_5",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 27000000000,
+        "parameter_count_billions": 27.0
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "Qwen/Qwen3.8-27B"
+      },
+      "metadata": {
+        "fetched_at": "2026-08-25T21:03:16.961305",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "mode": "single_cached_response_embeddings",
+      "sentence_encoder": "all-mpnet-base-v2",
+      "generation_device": "cpu",
+      "encoder_device": "cpu",
+      "max_length": 1024,
+      "min_new_tokens": 0,
+      "dataset": "rand_chinese",
+      "temperature": 0.0,
+      "do_sample": false,
+      "top_p": 1.0,
+      "generation_seed": 42
+    },
+    "aggregation_method": "concat"
+  },
+  "output_file": "dna-out-popular-20260825/rand_chinese/qwen_qwen3.8-27b/qwen_qwen3.8-27b_dna.json",
+  "config": {
+    "model_name": "qwen/qwen3.8-27b",
+    "model_path": null,
+    "model_type": "openrouter",
+    "dataset": "rand_chinese",
+    "probe_set": "rand",
+    "max_samples": 100,
+    "data_root": "/home/yuqiannemo/LLM-DNA/data",
+    "extractor_type": "embedding",
+    "dna_dim": 128,
+    "reduction_method": "random_projection",
+    "embedding_merge": "concat",
+    "max_length": 1024,
+    "min_new_tokens": 0,
+    "output_dir": "dna-out-popular-20260825",
+    "output_path": null,
+    "output_suffix": "",
+    "save": true,
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "no_quantization": false,
+    "metadata_file": "configs/llm_metadata.json",
+    "token": null,
+    "trust_remote_code": true,
+    "device": "cpu",
+    "gpu_id": null,
+    "log_level": "INFO",
+    "random_seed": 42,
+    "generation_seed": 42,
+    "temperature": 0.0,
+    "do_sample": false,
+    "top_p": 1.0,
+    "use_chat_template": false,
+    "try_vllm": false,
+    "use_response_cache": true
+  }
+}
