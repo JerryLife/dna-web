@@ -1,0 +1,108 @@
+{
+  "model": "moonshotai/kimi-k2-thinking",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 43.98228645324707,
+  "dna_dimension": 128,
+  "source_sha256": "1264571b620d4d4e123a95f7b9d2909a37cae4dc584b52b173953af951ced44c",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "e4023ea99dabaad2fe00d8d73856ce788f8c729587ee341627cf5ad68f91486c",
+  "model_name": "moonshotai/kimi-k2-thinking",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-09-30T17:22:45.904060+00:00",
+    "computation_time_seconds": 0.004440845921635628,
+    "model_metadata": {
+      "model_name": "moonshotai/kimi-k2-thinking",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "kimi_k2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 38784729088,
+        "parameter_count_billions": 38.78
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "moonshotai/Kimi-K2-Thinking"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-03T03:40:22.258203",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "moonshotai/kimi-k2-thinking",
+        "source_sha256": "1264571b620d4d4e123a95f7b9d2909a37cae4dc584b52b173953af951ced44c",
+        "summary_sha256": "9953250129531844f6ee22b281e2c0083ac55737a83a78159689395e58400b2b",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": null,
+        "generation_config_status": "unknown_legacy_cache",
+        "web_mode": "raw",
+        "provider": "openrouter",
+        "web_directory": "moonshotai_kimi-k2-thinking",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "response_source": "historical_cache_only",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "unknown_legacy_cache",
+  "replay_dna_sha256": "ce1a09a700efc866c484ca0913c25a18d8a66bb48ef23ad08fe90a6667181564"
+}
