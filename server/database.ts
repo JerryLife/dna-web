@@ -7,7 +7,7 @@ import { existsSync, mkdirSync } from 'fs';
 import { dirname } from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
-const DB_PATH = './server/data/lab.db';
+const DEFAULT_DB_PATH = './server/data/lab.db';
 
 let db: Database | null = null;
 
@@ -111,17 +111,19 @@ async function recoverVerifiedProposalSubmissions(database: Database): Promise<v
 /**
  * Initialize the database and create tables if they don't exist
  */
-export async function initDatabase(): Promise<Database> {
+export async function initDatabase(
+    databasePath = process.env.DNA_DATABASE_PATH || DEFAULT_DB_PATH
+): Promise<Database> {
     if (db) return db;
 
     // Ensure directory exists
-    const dir = dirname(DB_PATH);
+    const dir = dirname(databasePath);
     if (!existsSync(dir)) {
         mkdirSync(dir, { recursive: true });
     }
 
     db = await open({
-        filename: DB_PATH,
+        filename: databasePath,
         driver: sqlite3.Database
     });
 

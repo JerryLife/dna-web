@@ -1,54 +1,89 @@
 {
-    "dataset": "rand",
-    "paths": {
-        "dnaOut": "./dna-out",
-        "output": "./public/dna_database.json"
+  "dataset": "rand",
+  "paths": {
+    "dnaOut": "./dna-out",
+    "output": "./public/dna_database.json"
+  },
+  "datasets": {
+    "raw": {
+      "dnaOut": "./dna-out",
+      "dataset": "rand",
+      "output": "./public/dna_database.json",
+      "visualization": {
+        "minCount": 3,
+        "crowdRadius": 50,
+        "hullPadding": 5,
+        "hullTension": 0.5,
+        "hullFillOpacity": 0.12,
+        "hullStrokeOpacity": 0.3
+      }
     },
-    "datasets": {
-        "raw": {
-            "dnaOut": "./dna-out",
-            "dataset": "rand",
-            "output": "./public/dna_database.json",
-            "visualization": {
-                "minCount": 3,
-                "crowdRadius": 50,
-                "hullPadding": 5,
-                "hullTension": 0.5,
-                "hullFillOpacity": 0.12,
-                "hullStrokeOpacity": 0.3
-            }
-        },
-        "chat": {
-            "dnaOut": "./dna-chat-out",
-            "dataset": "rand",
-            "output": "./public/dna_database_chat.json",
-            "visualization": {
-                "minCount": 3,
-                "crowdRadius": 100,
-                "hullPadding": 5,
-                "hullTension": 0.5,
-                "hullFillOpacity": 0.12,
-                "hullStrokeOpacity": 0.3
-            }
-        }
-    },
-    "visualization": {
-        "minCount": 5,
+    "chat": {
+      "dnaOut": "./dna-v101/chat",
+      "dataset": "rand_chinese",
+      "output": "./public/dna_database_chat.json",
+      "visualization": {
+        "minCount": 3,
         "crowdRadius": 100,
         "hullPadding": 5,
         "hullTension": 0.5,
         "hullFillOpacity": 0.12,
         "hullStrokeOpacity": 0.3
-    },
-    "projection": {
-        "method": "tsne"
-    },
-    "analytics": {
-        "googleTagId": "G-DKR5DJH3DE"
-    },
-    "server": {
-        "port": 3001,
-        "cleanupCron": "0 0 * * *",
-        "pendingExpirationHours": 24
+      },
+      "coordinateSystem": {
+        "pipeline_version": "text-dna-concat-v1",
+        "encoder": "Qwen/Qwen3-Embedding-8B",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoder_encode_normalize_embeddings": false,
+        "raw_embedding_dimension": 4096,
+        "pre_agg_embed_dim": 64,
+        "pre_agg_method": "matryoshka_prefix",
+        "normalize_embeddings": false,
+        "pre_projection_normalization": "none",
+        "aggregation_method": "concat",
+        "reduction_method": "random_projection",
+        "dna_dim": 128,
+        "random_seed": 42,
+        "projection_rng": "numpy.random.RandomState(MT19937).randn",
+        "projection_dtype": "float32",
+        "projection_column_normalization": "l2",
+        "projection_shape": [
+          6400,
+          128
+        ],
+        "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+        "probe_order": "provided_probe_inputs",
+        "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+        "probe_count": 100,
+        "final_dna_normalization": "none"
+      },
+      "coverage": {
+        "status": "incremental_verified_cache_replay",
+        "models": 95,
+        "note": "Only corrected signatures are compared. Unclassified empty-answer models are withheld."
+      },
+      "storageLayout": "sha256-v1"
     }
+  },
+  "visualization": {
+    "minCount": 5,
+    "crowdRadius": 100,
+    "hullPadding": 5,
+    "hullTension": 0.5,
+    "hullFillOpacity": 0.12,
+    "hullStrokeOpacity": 0.3
+  },
+  "projection": {
+    "method": "tsne"
+  },
+  "analytics": {
+    "googleTagId": "G-DKR5DJH3DE"
+  },
+  "server": {
+    "port": 3001,
+    "cleanupCron": "0 0 * * *",
+    "pendingExpirationHours": 24
+  }
 }
