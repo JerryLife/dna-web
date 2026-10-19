@@ -1,0 +1,1962 @@
+{
+  "batch": "raw_04",
+  "mode": "raw",
+  "processed": 200,
+  "published": [
+    {
+      "model": "allenai/OLMo-7B-hf",
+      "source_sha256": "8fe4cbab29f61b52cfa3af65c0ddca9d96cd188a5f6d029c0cbcd2f82e61d8d0",
+      "empty_indices": [],
+      "storage_id": "m-94af59e792fb61f802bc8ba292b683116fe71bc27c0f42e4d59b5b4fb5e4a4f5",
+      "dna_path": "dna-v101/raw/rand_chinese/m-94af59e792fb61f802bc8ba292b683116fe71bc27c0f42e4d59b5b4fb5e4a4f5/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-94af59e792fb61f802bc8ba292b683116fe71bc27c0f42e4d59b5b4fb5e4a4f5/summary.json"
+    },
+    {
+      "model": "allenai/OLMoE-1B-7B-0125",
+      "source_sha256": "aa654b0ab7224318fd613abc52d1cdc11096c16e893e2ccf285eb94ae56aa4db",
+      "empty_indices": [],
+      "storage_id": "m-6a636da976a75df2232cc3902f995d62512faa37b87c0de3e03afcf13ae8a8e5",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6a636da976a75df2232cc3902f995d62512faa37b87c0de3e03afcf13ae8a8e5/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6a636da976a75df2232cc3902f995d62512faa37b87c0de3e03afcf13ae8a8e5/summary.json"
+    },
+    {
+      "model": "allenai/OLMoE-1B-7B-0125-Instruct",
+      "source_sha256": "b5eed7473b33b862efab427a00838be87229bd938c2592279c4c0841d8b45d4b",
+      "empty_indices": [],
+      "storage_id": "m-2d52c26f6950c3245de7df779be1aed2742fc64f9ddb5f69c65de7aaa3780188",
+      "dna_path": "dna-v101/raw/rand_chinese/m-2d52c26f6950c3245de7df779be1aed2742fc64f9ddb5f69c65de7aaa3780188/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-2d52c26f6950c3245de7df779be1aed2742fc64f9ddb5f69c65de7aaa3780188/summary.json"
+    },
+    {
+      "model": "allenai/OLMoE-1B-7B-0924",
+      "source_sha256": "3d59466f815254f9a0e8f8d4338a6402e2bc57290915b8438b842e950637d04c",
+      "empty_indices": [],
+      "storage_id": "m-f0024665d86361016dd78070561bcfd564d39703858d9721554ee95bd23a4629",
+      "dna_path": "dna-v101/raw/rand_chinese/m-f0024665d86361016dd78070561bcfd564d39703858d9721554ee95bd23a4629/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-f0024665d86361016dd78070561bcfd564d39703858d9721554ee95bd23a4629/summary.json"
+    },
+    {
+      "model": "allenai/OLMoE-1B-7B-0924-Instruct",
+      "source_sha256": "aca7ff6698d2f40b10f8c38f065250d1881b1198c18d963eefd76ec354e10fed",
+      "empty_indices": [],
+      "storage_id": "m-2241d22a1b9b6c8638828015a197037c5f1faf7bbbe5d75b55118457caf28c67",
+      "dna_path": "dna-v101/raw/rand_chinese/m-2241d22a1b9b6c8638828015a197037c5f1faf7bbbe5d75b55118457caf28c67/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-2241d22a1b9b6c8638828015a197037c5f1faf7bbbe5d75b55118457caf28c67/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-1025-7B",
+      "source_sha256": "a75b2548ed0400da9c6cce3b7010eab701c6aaf00257f2b67d96eedc628ac739",
+      "empty_indices": [],
+      "storage_id": "m-21139a48563a0eaba0a096b88c256f06b8c46ad9e468bf95b8e7fbf53c40e514",
+      "dna_path": "dna-v101/raw/rand_chinese/m-21139a48563a0eaba0a096b88c256f06b8c46ad9e468bf95b8e7fbf53c40e514/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-21139a48563a0eaba0a096b88c256f06b8c46ad9e468bf95b8e7fbf53c40e514/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-1125-32B",
+      "source_sha256": "3c2cd07bb95539e2a2570d367b780673ad326cdeac5f2e8742e762ecf1f5fbcb",
+      "empty_indices": [],
+      "storage_id": "m-73b8e5d2491bd3441c73d0457c5a169e88f269075b3c1604388d1356639f44f7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-73b8e5d2491bd3441c73d0457c5a169e88f269075b3c1604388d1356639f44f7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-73b8e5d2491bd3441c73d0457c5a169e88f269075b3c1604388d1356639f44f7/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-32B-Think",
+      "source_sha256": "cbbc16999b566f5900d7b1faf8420fb274b2c5e1994d4b22cdda130a12046266",
+      "empty_indices": [],
+      "storage_id": "m-ffddf9a6354bf83815cb377f970efd20e8ba3b33537a1dfba7615e01eda4d00a",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ffddf9a6354bf83815cb377f970efd20e8ba3b33537a1dfba7615e01eda4d00a/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ffddf9a6354bf83815cb377f970efd20e8ba3b33537a1dfba7615e01eda4d00a/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-7B-Instruct",
+      "source_sha256": "4405a0e4fffc7d6706b3db9843b4cd6d8e2b72f6fb4b8cfd78ff82c12f79945b",
+      "empty_indices": [],
+      "storage_id": "m-3c5f986712477ac9178197d05ee71dd1e700c44d8a5b4dce88ff36926067af20",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3c5f986712477ac9178197d05ee71dd1e700c44d8a5b4dce88ff36926067af20/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3c5f986712477ac9178197d05ee71dd1e700c44d8a5b4dce88ff36926067af20/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-7B-Instruct-SFT",
+      "source_sha256": "1815b61aa3c7f9ef100c79968edd0561d5dd2a3f0189a1610d890d533a71a3c4",
+      "empty_indices": [],
+      "storage_id": "m-2cbf346ce8c594d606c29e2c26bcc1649d3e607d7a80da4f82461500eb566b31",
+      "dna_path": "dna-v101/raw/rand_chinese/m-2cbf346ce8c594d606c29e2c26bcc1649d3e607d7a80da4f82461500eb566b31/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-2cbf346ce8c594d606c29e2c26bcc1649d3e607d7a80da4f82461500eb566b31/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-7B-RL-Zero-Math",
+      "source_sha256": "918afff43960b76537ed073638410140c50fdd27fac8be4192789b80845e624c",
+      "empty_indices": [],
+      "storage_id": "m-99d9a1c62faba5ca22f48f44dfeb0702c132b86da5e3ec960ed065807d326536",
+      "dna_path": "dna-v101/raw/rand_chinese/m-99d9a1c62faba5ca22f48f44dfeb0702c132b86da5e3ec960ed065807d326536/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-99d9a1c62faba5ca22f48f44dfeb0702c132b86da5e3ec960ed065807d326536/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-7B-Think",
+      "source_sha256": "783580fe63a42af3fe94ec9c2efdef1bdcda518113a618a70a8eaa42d5ceb559",
+      "empty_indices": [],
+      "storage_id": "m-84370f26402111d74f965538c92695c5b6b9e0e14297d3f756af3503c1854e57",
+      "dna_path": "dna-v101/raw/rand_chinese/m-84370f26402111d74f965538c92695c5b6b9e0e14297d3f756af3503c1854e57/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-84370f26402111d74f965538c92695c5b6b9e0e14297d3f756af3503c1854e57/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3-7B-Think-DPO",
+      "source_sha256": "0087b3f7b32b6e34828905804ab13df8047c5745805cdec77ed2aa0416be5403",
+      "empty_indices": [],
+      "storage_id": "m-a1563817468b8692c7033707b74160f72a6791974562ff1174ce8963709e0a0f",
+      "dna_path": "dna-v101/raw/rand_chinese/m-a1563817468b8692c7033707b74160f72a6791974562ff1174ce8963709e0a0f/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-a1563817468b8692c7033707b74160f72a6791974562ff1174ce8963709e0a0f/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3.1-32B-Instruct",
+      "source_sha256": "64fdef137da725bcbc85ea3b714b90caa9dfd0dd01028f5ca25f012b89590eb3",
+      "empty_indices": [],
+      "storage_id": "m-60c408bdf3663bcfc2ea59b91ce88e0df932542520f09a3af563821821c44b86",
+      "dna_path": "dna-v101/raw/rand_chinese/m-60c408bdf3663bcfc2ea59b91ce88e0df932542520f09a3af563821821c44b86/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-60c408bdf3663bcfc2ea59b91ce88e0df932542520f09a3af563821821c44b86/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-3.1-32B-Think",
+      "source_sha256": "2bc3bb004513f22695ccfcc13f9bcf8332a2acb374c4aeffe9f305660bf411a2",
+      "empty_indices": [],
+      "storage_id": "m-18bb1e23e6a70cd988c7ef05c7ba5a5e58a3975597d70626ef6955192891de42",
+      "dna_path": "dna-v101/raw/rand_chinese/m-18bb1e23e6a70cd988c7ef05c7ba5a5e58a3975597d70626ef6955192891de42/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-18bb1e23e6a70cd988c7ef05c7ba5a5e58a3975597d70626ef6955192891de42/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-Hybrid-7B",
+      "source_sha256": "263320e0b00cc06cccb45d9653fca65c313b3c7c83bfac5755e5dbf8b7d0467a",
+      "empty_indices": [],
+      "storage_id": "m-a2e5c7e033097a0f5ef352f4055092541bbd5aaf42aea6d0a830085fe4f9b3e1",
+      "dna_path": "dna-v101/raw/rand_chinese/m-a2e5c7e033097a0f5ef352f4055092541bbd5aaf42aea6d0a830085fe4f9b3e1/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-a2e5c7e033097a0f5ef352f4055092541bbd5aaf42aea6d0a830085fe4f9b3e1/summary.json"
+    },
+    {
+      "model": "allenai/Olmo-Hybrid-Instruct-SFT-7B",
+      "source_sha256": "7e3ba086fb3713ddd34634355ad090941f3528472210eff72994ff8c41f89779",
+      "empty_indices": [],
+      "storage_id": "m-66a110419b95881b5b6cfc007d537299ee9826adc84ac2d7b4ef27dab6d6fc63",
+      "dna_path": "dna-v101/raw/rand_chinese/m-66a110419b95881b5b6cfc007d537299ee9826adc84ac2d7b4ef27dab6d6fc63/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-66a110419b95881b5b6cfc007d537299ee9826adc84ac2d7b4ef27dab6d6fc63/summary.json"
+    },
+    {
+      "model": "allenai/tulu-2-dpo-7b",
+      "source_sha256": "316d81f6e39ddbb5b45d51fd9b754798e302427e06bb9471f6828e9f2218e53d",
+      "empty_indices": [],
+      "storage_id": "m-088b558272a30ab7224589c37e43db688bb3599533fa3e689fd1dcff957f5bc8",
+      "dna_path": "dna-v101/raw/rand_chinese/m-088b558272a30ab7224589c37e43db688bb3599533fa3e689fd1dcff957f5bc8/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-088b558272a30ab7224589c37e43db688bb3599533fa3e689fd1dcff957f5bc8/summary.json"
+    },
+    {
+      "model": "allenai/wildguard",
+      "source_sha256": "f7304d86ad0bef00ccf296c650292b321207c6d12feeb8cc666975e78fd23976",
+      "empty_indices": [],
+      "storage_id": "m-66d71ef76531f4b34ef6c05f741c86f015ee580999eec5814a5849f3608ea055",
+      "dna_path": "dna-v101/raw/rand_chinese/m-66d71ef76531f4b34ef6c05f741c86f015ee580999eec5814a5849f3608ea055/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-66d71ef76531f4b34ef6c05f741c86f015ee580999eec5814a5849f3608ea055/summary.json"
+    },
+    {
+      "model": "altomek/YiSM-34B-0rn",
+      "source_sha256": "05c50b0c5fe6baa8dde8a573bd4f34f504becbf7497ed245c6bb3f56334896cc",
+      "empty_indices": [],
+      "storage_id": "m-6beb80a2e5d374b5d678258d824dbf552552bcc129c29d0f75c385e5e0b5b13e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6beb80a2e5d374b5d678258d824dbf552552bcc129c29d0f75c385e5e0b5b13e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6beb80a2e5d374b5d678258d824dbf552552bcc129c29d0f75c385e5e0b5b13e/summary.json"
+    },
+    {
+      "model": "amazon/MistralLite",
+      "source_sha256": "c4d379ce061739886c7cba3899fc0aff18824dbff8ceb51681382783702aca24",
+      "empty_indices": [],
+      "storage_id": "m-5ec8177aca3bf70fe3bf63ef6c0c36501a4abe8bb33f3cee579c428353079dd3",
+      "dna_path": "dna-v101/raw/rand_chinese/m-5ec8177aca3bf70fe3bf63ef6c0c36501a4abe8bb33f3cee579c428353079dd3/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-5ec8177aca3bf70fe3bf63ef6c0c36501a4abe8bb33f3cee579c428353079dd3/summary.json"
+    },
+    {
+      "model": "amd/PARD-Llama-3.2-1B",
+      "source_sha256": "6cb56e26d57ce1e573696d21958f7105c5067bee034b06112fd4357af909c88b",
+      "empty_indices": [],
+      "storage_id": "m-0951dce7b192be749b00e27395e72e0a00d894b2d3b7b019e551912aadce49cb",
+      "dna_path": "dna-v101/raw/rand_chinese/m-0951dce7b192be749b00e27395e72e0a00d894b2d3b7b019e551912aadce49cb/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-0951dce7b192be749b00e27395e72e0a00d894b2d3b7b019e551912aadce49cb/summary.json"
+    },
+    {
+      "model": "amd/PARD-Qwen3-0.6B",
+      "source_sha256": "0ffe0310cbf97fd276912c6eac091f94b1c15822f7fe112671b728296a04274d",
+      "empty_indices": [],
+      "storage_id": "m-398f69ce99f7be6dc9a3a88fa771ba60217c82be1223a0215de500ead1c2e619",
+      "dna_path": "dna-v101/raw/rand_chinese/m-398f69ce99f7be6dc9a3a88fa771ba60217c82be1223a0215de500ead1c2e619/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-398f69ce99f7be6dc9a3a88fa771ba60217c82be1223a0215de500ead1c2e619/summary.json"
+    },
+    {
+      "model": "anakin87/Llama-3-8b-ita-slerp",
+      "source_sha256": "0d77b645bb0a589bde30469b1490862ac7e1f9f82878b5e93efd23a760106a99",
+      "empty_indices": [],
+      "storage_id": "m-f6164a40fecc202e87c71ffd997cea494a9176af82668a505f55f97fd535d3b3",
+      "dna_path": "dna-v101/raw/rand_chinese/m-f6164a40fecc202e87c71ffd997cea494a9176af82668a505f55f97fd535d3b3/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-f6164a40fecc202e87c71ffd997cea494a9176af82668a505f55f97fd535d3b3/summary.json"
+    },
+    {
+      "model": "anakin87/Llama-3-8b-ita-ties-pro",
+      "source_sha256": "49fb56ecb09233d73da3c14c03ff71ff2356d7eb1205d5c7188bbeb2832fd015",
+      "empty_indices": [],
+      "storage_id": "m-ee3bc55f60915397000f3e967486cdb704a6afce0e1c5574cdf7cd2bd54e27d4",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ee3bc55f60915397000f3e967486cdb704a6afce0e1c5574cdf7cd2bd54e27d4/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ee3bc55f60915397000f3e967486cdb704a6afce0e1c5574cdf7cd2bd54e27d4/summary.json"
+    },
+    {
+      "model": "anakin87/Phi-3.5-mini-ITA",
+      "source_sha256": "64c24146f98c8212efcee9f79db9852599d4e7824d135800a3b90884c4e89dee",
+      "empty_indices": [],
+      "storage_id": "m-b89199dba4e64942bb5537312d9f65a0818eff6f974173c635891a9f767d1293",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b89199dba4e64942bb5537312d9f65a0818eff6f974173c635891a9f767d1293/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b89199dba4e64942bb5537312d9f65a0818eff6f974173c635891a9f767d1293/summary.json"
+    },
+    {
+      "model": "andrewmonostate/sophia-quotation-v7-grpo-checkpoint-580",
+      "source_sha256": "80f58900354f1f885f5310f9d00fd59ce7040c4969196f9882908500022ee810",
+      "empty_indices": [],
+      "storage_id": "m-1cf9b6ffabda2d9ca7e1da7962f3323fa95e59b3d8d8f0a9a3f70420120e3200",
+      "dna_path": "dna-v101/raw/rand_chinese/m-1cf9b6ffabda2d9ca7e1da7962f3323fa95e59b3d8d8f0a9a3f70420120e3200/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-1cf9b6ffabda2d9ca7e1da7962f3323fa95e59b3d8d8f0a9a3f70420120e3200/summary.json"
+    },
+    {
+      "model": "anicka/karma-electric-llama31-8b",
+      "source_sha256": "97242041a122edd81cba2611acefa2e6cd7cbeda341a4efcfa43516fb272e018",
+      "empty_indices": [],
+      "storage_id": "m-9b40a875ba6e835deece935a0a5c583fa6740722be78631d6b845db8736e2648",
+      "dna_path": "dna-v101/raw/rand_chinese/m-9b40a875ba6e835deece935a0a5c583fa6740722be78631d6b845db8736e2648/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-9b40a875ba6e835deece935a0a5c583fa6740722be78631d6b845db8736e2648/summary.json"
+    },
+    {
+      "model": "anthracite-org/magnum-v4-27b",
+      "source_sha256": "1a993765055207a82954a3907d9b87adfb5bfdface5656768d4581431b11e22a",
+      "empty_indices": [],
+      "storage_id": "m-b50d13268433613d4565a086a447b02a42a0e194387b65f8889de4e616190e63",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b50d13268433613d4565a086a447b02a42a0e194387b65f8889de4e616190e63/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b50d13268433613d4565a086a447b02a42a0e194387b65f8889de4e616190e63/summary.json"
+    },
+    {
+      "model": "anton-hugging/TimeOmni-1-7B",
+      "source_sha256": "00375c655e8df5615a10a85ea958fda72a4924fdf2061184db11f50a79ae14ab",
+      "empty_indices": [],
+      "storage_id": "m-5216bc7581850fb7b787b24985658f9ad435498f078739c1492fcb4cab1d22c5",
+      "dna_path": "dna-v101/raw/rand_chinese/m-5216bc7581850fb7b787b24985658f9ad435498f078739c1492fcb4cab1d22c5/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-5216bc7581850fb7b787b24985658f9ad435498f078739c1492fcb4cab1d22c5/summary.json"
+    },
+    {
+      "model": "aoxo/gpt-oss-20b-uncensored",
+      "source_sha256": "63a07a327a1840f69a0b33b0c1f276dce7ac36bdfcb650cebd64e8342474953f",
+      "empty_indices": [],
+      "storage_id": "m-09ac53cc6fb8de7aed2f3ee77f1bf5d0ff2bde1c73467835ef5eafa6a5ba242c",
+      "dna_path": "dna-v101/raw/rand_chinese/m-09ac53cc6fb8de7aed2f3ee77f1bf5d0ff2bde1c73467835ef5eafa6a5ba242c/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-09ac53cc6fb8de7aed2f3ee77f1bf5d0ff2bde1c73467835ef5eafa6a5ba242c/summary.json"
+    },
+    {
+      "model": "arcee-ai/AFM-4.5B",
+      "source_sha256": "225781fc76a76946a54ac197b062d32f1605c3be3757edd6d536b975f62853ec",
+      "empty_indices": [],
+      "storage_id": "m-92d3d3dceffd089ff77ee5c15419c0d824d885d371a6987d3d4b2f4d1776c0b7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-92d3d3dceffd089ff77ee5c15419c0d824d885d371a6987d3d4b2f4d1776c0b7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-92d3d3dceffd089ff77ee5c15419c0d824d885d371a6987d3d4b2f4d1776c0b7/summary.json"
+    },
+    {
+      "model": "arcee-ai/AFM-4.5B-Base",
+      "source_sha256": "7254b5532e7bd12054412355b15147adf72df8bb6c97d9a279f548ca05945410",
+      "empty_indices": [],
+      "storage_id": "m-ba3e6a6872fe70e0e2ccc70d761052d95c32b521ddf89cdf29ac3793bede01d5",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ba3e6a6872fe70e0e2ccc70d761052d95c32b521ddf89cdf29ac3793bede01d5/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ba3e6a6872fe70e0e2ccc70d761052d95c32b521ddf89cdf29ac3793bede01d5/summary.json"
+    },
+    {
+      "model": "arcee-ai/Trinity-Mini",
+      "source_sha256": "3950f4d5d5fcbd512c13e039b27165f6fd1d313f9b5e48347b7b48d8b2273244",
+      "empty_indices": [],
+      "storage_id": "m-ee21a48443fafc271a3dcff216fcc1de49d72565882bbce7e5c5cf32d955b9a0",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ee21a48443fafc271a3dcff216fcc1de49d72565882bbce7e5c5cf32d955b9a0/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ee21a48443fafc271a3dcff216fcc1de49d72565882bbce7e5c5cf32d955b9a0/summary.json"
+    },
+    {
+      "model": "arcee-ai/Trinity-Nano-Preview",
+      "source_sha256": "2870a8b5d0e6b9d769155124bc905d76716a758a57e3b288ed4ba2e4efa735fe",
+      "empty_indices": [],
+      "storage_id": "m-b64bdc910ecbf73a8acae13f9320ee06c82a923e72b086510b0aa7561cee80dd",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b64bdc910ecbf73a8acae13f9320ee06c82a923e72b086510b0aa7561cee80dd/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b64bdc910ecbf73a8acae13f9320ee06c82a923e72b086510b0aa7561cee80dd/summary.json"
+    },
+    {
+      "model": "arcee-ai/trinity-mini",
+      "source_sha256": "a9d69356fc38c72fa694fc1335c7bd4fe1fd9d0b24356e501090084bba922da8",
+      "empty_indices": [],
+      "storage_id": "m-698b8a0a5e9e849f70f81c5a1081cc754cfc1bf40345bbde971b60b32c33e5d1",
+      "dna_path": "dna-v101/raw/rand_chinese/m-698b8a0a5e9e849f70f81c5a1081cc754cfc1bf40345bbde971b60b32c33e5d1/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-698b8a0a5e9e849f70f81c5a1081cc754cfc1bf40345bbde971b60b32c33e5d1/summary.json"
+    },
+    {
+      "model": "argilla-warehouse/Llama-3.2-1B-Instruct-v2-FC",
+      "source_sha256": "dfee25d8d740e119a2aee63b77fe8216d67aa77dd8fc5ac6bec8c118c29286d8",
+      "empty_indices": [],
+      "storage_id": "m-4ae922d50848b0c15f32d5c2081f41d8866792019d2f08cfdb5dfe06ecfc48a0",
+      "dna_path": "dna-v101/raw/rand_chinese/m-4ae922d50848b0c15f32d5c2081f41d8866792019d2f08cfdb5dfe06ecfc48a0/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-4ae922d50848b0c15f32d5c2081f41d8866792019d2f08cfdb5dfe06ecfc48a0/summary.json"
+    },
+    {
+      "model": "argilla/Llama-3.2-1B-Instruct-APIGen-FC-v0.1",
+      "source_sha256": "d4fc6ac4f0ff655e70d2873d8951c423afd338dbd7e90e2842f6e5c5e10274c1",
+      "empty_indices": [],
+      "storage_id": "m-dcaf971169a6d9f0d5dc18a2b51080eadbeca88919e44045ab9daaa094446c97",
+      "dna_path": "dna-v101/raw/rand_chinese/m-dcaf971169a6d9f0d5dc18a2b51080eadbeca88919e44045ab9daaa094446c97/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-dcaf971169a6d9f0d5dc18a2b51080eadbeca88919e44045ab9daaa094446c97/summary.json"
+    },
+    {
+      "model": "arnir0/Tiny-LLM",
+      "source_sha256": "57ec5e0791195b0a635a33d96081e6c2036cc2a3814a90ac4f4be99f4649a3bc",
+      "empty_indices": [],
+      "storage_id": "m-8f736057e07b76ea1207757e73febe7bf4a10e64eba3c971f220cfd19115de3a",
+      "dna_path": "dna-v101/raw/rand_chinese/m-8f736057e07b76ea1207757e73febe7bf4a10e64eba3c971f220cfd19115de3a/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-8f736057e07b76ea1207757e73febe7bf4a10e64eba3c971f220cfd19115de3a/summary.json"
+    },
+    {
+      "model": "aubmindlab/aragpt2-base",
+      "source_sha256": "2272fc6f573fc8e030cafca8d1ea9abf35a0d74f2b23e5d6a756be903f53b485",
+      "empty_indices": [],
+      "storage_id": "m-21d388d91d6767afeb0b100032f5c2175c9b4ee48610e8efa28c4d8e26c3d77e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-21d388d91d6767afeb0b100032f5c2175c9b4ee48610e8efa28c4d8e26c3d77e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-21d388d91d6767afeb0b100032f5c2175c9b4ee48610e8efa28c4d8e26c3d77e/summary.json"
+    },
+    {
+      "model": "augmxnt/shisa-gamma-7b-v1",
+      "source_sha256": "154c87e242cb54e7b82c27e4be42ff0d0b8a718ef0c0314c28a77b9cd7fb6995",
+      "empty_indices": [],
+      "storage_id": "m-3e986af33030acf374c2fd238c55034cd03adccd2ed134046c556c1f86b820c2",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3e986af33030acf374c2fd238c55034cd03adccd2ed134046c556c1f86b820c2/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3e986af33030acf374c2fd238c55034cd03adccd2ed134046c556c1f86b820c2/summary.json"
+    },
+    {
+      "model": "authormist/authormist-originality",
+      "source_sha256": "478c9d677db7ad0a3ec905bf1ceeb90ce624a06d108601fdbee1548ccc0d81d0",
+      "empty_indices": [],
+      "storage_id": "m-76de0a36646003eaa1313c986805bbf3922816a6e2961ef271c2fd977d645def",
+      "dna_path": "dna-v101/raw/rand_chinese/m-76de0a36646003eaa1313c986805bbf3922816a6e2961ef271c2fd977d645def/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-76de0a36646003eaa1313c986805bbf3922816a6e2961ef271c2fd977d645def/summary.json"
+    },
+    {
+      "model": "automerger/YamshadowExperiment28-7B",
+      "source_sha256": "1b6ce1e675dafa5a00d14f466298c0126463b19b6286c15cb72becb8e68e0405",
+      "empty_indices": [],
+      "storage_id": "m-8ea677b34312a55e626934fb5efc827195eabff9c95a4cc6c998326fcb93cd1e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-8ea677b34312a55e626934fb5efc827195eabff9c95a4cc6c998326fcb93cd1e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-8ea677b34312a55e626934fb5efc827195eabff9c95a4cc6c998326fcb93cd1e/summary.json"
+    },
+    {
+      "model": "avoroshilov/DeepSeek-R1-Distill-Qwen-14B-GPTQ_4bit-128g",
+      "source_sha256": "f788b8468304698b456968ebd428be80a6d872710634166a7feb790a89996018",
+      "empty_indices": [],
+      "storage_id": "m-3843791df12c8c5d1a44708395ba53a907b96658dd360032b0da296dd9814e0d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3843791df12c8c5d1a44708395ba53a907b96658dd360032b0da296dd9814e0d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3843791df12c8c5d1a44708395ba53a907b96658dd360032b0da296dd9814e0d/summary.json"
+    },
+    {
+      "model": "avoroshilov/DeepSeek-R1-Distill-Qwen-32B-GPTQ_4bit-128g",
+      "source_sha256": "b2f1f9523e3969721e0578bbb686650a6f124c30055944da55d74328dabb5316",
+      "empty_indices": [],
+      "storage_id": "m-1fff434b4285ae77cac7a0c568d5ee46f0d53137c52d2d76c16dae531516955c",
+      "dna_path": "dna-v101/raw/rand_chinese/m-1fff434b4285ae77cac7a0c568d5ee46f0d53137c52d2d76c16dae531516955c/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-1fff434b4285ae77cac7a0c568d5ee46f0d53137c52d2d76c16dae531516955c/summary.json"
+    },
+    {
+      "model": "aws-prototyping/MegaBeam-Mistral-7B-300k",
+      "source_sha256": "af156db9b46ee7a40758a59c772d826c74acf3abb88448c35cb2ecf9a3cf94c2",
+      "empty_indices": [],
+      "storage_id": "m-48120f49905655ea684c1aeea6e54e8045444d1f71b5f6bc842516998c3e4e45",
+      "dna_path": "dna-v101/raw/rand_chinese/m-48120f49905655ea684c1aeea6e54e8045444d1f71b5f6bc842516998c3e4e45/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-48120f49905655ea684c1aeea6e54e8045444d1f71b5f6bc842516998c3e4e45/summary.json"
+    },
+    {
+      "model": "aws-prototyping/MegaBeam-Mistral-7B-512k",
+      "source_sha256": "c448a3a3050e62244f3d6546692c6604a2b89490a9fc620a8ca6be3ec1e43bc9",
+      "empty_indices": [],
+      "storage_id": "m-6a286573a9f8f15273821713a40b9f4c5653b52103a38fc5f2329d908760d0c3",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6a286573a9f8f15273821713a40b9f4c5653b52103a38fc5f2329d908760d0c3/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6a286573a9f8f15273821713a40b9f4c5653b52103a38fc5f2329d908760d0c3/summary.json"
+    },
+    {
+      "model": "axolotl-ai-co/SmolLM2-135M-bnb-nf4-bf16",
+      "source_sha256": "769d4269ab0bfdac49410ecc24c7404b34b0277bbd14d9863501fa03c9aff775",
+      "empty_indices": [],
+      "storage_id": "m-3cf9d368eb3df3e090a954575eed45ca16beef187c0303b6d6b577e33aec94cd",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3cf9d368eb3df3e090a954575eed45ca16beef187c0303b6d6b577e33aec94cd/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3cf9d368eb3df3e090a954575eed45ca16beef187c0303b6d6b577e33aec94cd/summary.json"
+    },
+    {
+      "model": "baichuan-inc/Baichuan-13B-Chat",
+      "source_sha256": "72a52a509b67cb0c13f5fdf0265bbbb4123be2cf21b6d4870d46dcf8098bd416",
+      "empty_indices": [],
+      "storage_id": "m-55771436d22731d76bbf1e8b97f40d82b00371358651fa597c3e25086893b8b7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-55771436d22731d76bbf1e8b97f40d82b00371358651fa597c3e25086893b8b7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-55771436d22731d76bbf1e8b97f40d82b00371358651fa597c3e25086893b8b7/summary.json"
+    },
+    {
+      "model": "baidu/ERNIE-4.5-0.3B-PT",
+      "source_sha256": "8fb32c3538a4bb19d4f520323fe3381e90c3db8fdbad3f1eac2a957a8c3028e4",
+      "empty_indices": [],
+      "storage_id": "m-3d9926dd9dd41a33f3a4bc18b920ea107c160c7595fa627660a9a0988f960c3e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3d9926dd9dd41a33f3a4bc18b920ea107c160c7595fa627660a9a0988f960c3e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3d9926dd9dd41a33f3a4bc18b920ea107c160c7595fa627660a9a0988f960c3e/summary.json"
+    },
+    {
+      "model": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+      "source_sha256": "5ac6f0c6e5ef5d51fbfa6a53e9fac4ce4ffcff93312ddcb9fe0e9e6edf710261",
+      "empty_indices": [],
+      "storage_id": "m-1b863e460e7904a6d4bf0a4cb67d7ccd46ba498c5c53d64edd024a165cf07ae9",
+      "dna_path": "dna-v101/raw/rand_chinese/m-1b863e460e7904a6d4bf0a4cb67d7ccd46ba498c5c53d64edd024a165cf07ae9/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-1b863e460e7904a6d4bf0a4cb67d7ccd46ba498c5c53d64edd024a165cf07ae9/summary.json"
+    },
+    {
+      "model": "baidu/ERNIE-4.5-21B-A3B-PT",
+      "source_sha256": "89dc8b81db613a7616f13986c5b28bf2f053f8cf119982f06dd179e0841b388b",
+      "empty_indices": [],
+      "storage_id": "m-fb1eb03b194fdf56031245a67dfd680ddcf0697e185ec9f0e495fd49ba31ac5e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-fb1eb03b194fdf56031245a67dfd680ddcf0697e185ec9f0e495fd49ba31ac5e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-fb1eb03b194fdf56031245a67dfd680ddcf0697e185ec9f0e495fd49ba31ac5e/summary.json"
+    },
+    {
+      "model": "baseten/Llama-3.2-3B-Instruct-pythonic",
+      "source_sha256": "977eb57bd38e16fd6c1191d8d92119c5f987d8cc422385d0257b1120afa46831",
+      "empty_indices": [],
+      "storage_id": "m-6f4309c21d8fe55e422384f33125c77c61b3bd40cd2454ad60c2a627e2e1f0b5",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6f4309c21d8fe55e422384f33125c77c61b3bd40cd2454ad60c2a627e2e1f0b5/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6f4309c21d8fe55e422384f33125c77c61b3bd40cd2454ad60c2a627e2e1f0b5/summary.json"
+    },
+    {
+      "model": "beowolx/CodeNinja-1.0-OpenChat-7B",
+      "source_sha256": "8365d92f18c7e0b0c7dc772775ac93a877b32240870a13c7a4d7a55d5135de0d",
+      "empty_indices": [],
+      "storage_id": "m-40bc61f367679cef49eb5263e16032cea4119ece279c72218b32c4db230fbbe7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-40bc61f367679cef49eb5263e16032cea4119ece279c72218b32c4db230fbbe7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-40bc61f367679cef49eb5263e16032cea4119ece279c72218b32c4db230fbbe7/summary.json"
+    },
+    {
+      "model": "berkeley-nest/Starling-LM-7B-alpha",
+      "source_sha256": "b0aa6e4c64a671d474b3c08a89c0519013188d62105ff2b724983573ed942947",
+      "empty_indices": [],
+      "storage_id": "m-0d9e781ebd1167f531c0c636693c7c687a2e9048ccd49cbfcd0fe1d4f1b6e2be",
+      "dna_path": "dna-v101/raw/rand_chinese/m-0d9e781ebd1167f531c0c636693c7c687a2e9048ccd49cbfcd0fe1d4f1b6e2be/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-0d9e781ebd1167f531c0c636693c7c687a2e9048ccd49cbfcd0fe1d4f1b6e2be/summary.json"
+    },
+    {
+      "model": "bharatgenai/Param2-17B-A2.4B-Thinking",
+      "source_sha256": "8af8ade5ad0a0ecd08d4ddc5c146d6767cb476af5f1e3457ace4e5f76961322a",
+      "empty_indices": [],
+      "storage_id": "m-03a0457bcea654ef0f0e1e2e85536e34e0ca2ff98792459c62a131e2cc8e8ae4",
+      "dna_path": "dna-v101/raw/rand_chinese/m-03a0457bcea654ef0f0e1e2e85536e34e0ca2ff98792459c62a131e2cc8e8ae4/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-03a0457bcea654ef0f0e1e2e85536e34e0ca2ff98792459c62a131e2cc8e8ae4/summary.json"
+    },
+    {
+      "model": "bigcode/gpt_bigcode-santacoder",
+      "source_sha256": "1e1152dd82f575fbcee34b8ecc3069773403317c04faafadc0da93d281b02df4",
+      "empty_indices": [],
+      "storage_id": "m-4b629d9177ed8d9d2ccca165db830fe691c6da9fcd99860bd18cc5ce55d4ec4f",
+      "dna_path": "dna-v101/raw/rand_chinese/m-4b629d9177ed8d9d2ccca165db830fe691c6da9fcd99860bd18cc5ce55d4ec4f/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-4b629d9177ed8d9d2ccca165db830fe691c6da9fcd99860bd18cc5ce55d4ec4f/summary.json"
+    },
+    {
+      "model": "bigcode/starcoder2-15b",
+      "source_sha256": "eecd3e1e61b5b7aa88e94c5b358980bf1816024a415740382c88f78cde8ce853",
+      "empty_indices": [],
+      "storage_id": "m-8ed07078478f0745af9f93bc0d212be4be27c01cf558d485122708dd9a127021",
+      "dna_path": "dna-v101/raw/rand_chinese/m-8ed07078478f0745af9f93bc0d212be4be27c01cf558d485122708dd9a127021/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-8ed07078478f0745af9f93bc0d212be4be27c01cf558d485122708dd9a127021/summary.json"
+    },
+    {
+      "model": "bigcode/starcoder2-15b-instruct-v0.1",
+      "source_sha256": "8dd9a1a12e999eb09043e2371bef8005b7a5b8d7f5bf32c9a19c12edddc35d57",
+      "empty_indices": [],
+      "storage_id": "m-4ad95fd697fe169edca5e7c8e8fd446600036bc632c21818d1de1472c5f6cf15",
+      "dna_path": "dna-v101/raw/rand_chinese/m-4ad95fd697fe169edca5e7c8e8fd446600036bc632c21818d1de1472c5f6cf15/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-4ad95fd697fe169edca5e7c8e8fd446600036bc632c21818d1de1472c5f6cf15/summary.json"
+    },
+    {
+      "model": "bigcode/starcoder2-3b",
+      "source_sha256": "5b8d04649adfe23be4c4f482da3a3823f53400c26c9c6101d4157cb961854492",
+      "empty_indices": [],
+      "storage_id": "m-e98941517447048b1897c41aa649d60ddc7cf69d6ebc971e1e4f49502141524b",
+      "dna_path": "dna-v101/raw/rand_chinese/m-e98941517447048b1897c41aa649d60ddc7cf69d6ebc971e1e4f49502141524b/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-e98941517447048b1897c41aa649d60ddc7cf69d6ebc971e1e4f49502141524b/summary.json"
+    },
+    {
+      "model": "bigcode/starcoder2-7b",
+      "source_sha256": "446a5ddadd3d473f1088c559c10dd6f12b58bfe4960cd56dcc0241ce920c6dad",
+      "empty_indices": [],
+      "storage_id": "m-18b0c181bf7f2bcbf8d863310fc812de4ec513bc19e6eb25ad2abf90a039fe25",
+      "dna_path": "dna-v101/raw/rand_chinese/m-18b0c181bf7f2bcbf8d863310fc812de4ec513bc19e6eb25ad2abf90a039fe25/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-18b0c181bf7f2bcbf8d863310fc812de4ec513bc19e6eb25ad2abf90a039fe25/summary.json"
+    },
+    {
+      "model": "bigcode/tiny_starcoder_py",
+      "source_sha256": "7552fb5481fad68fbd1d83b490895f32bc55b9e610ff5e53863936f6e85b304a",
+      "empty_indices": [],
+      "storage_id": "m-78bbeea899b9d065e56aa01d4ac98cc47bde0596c6d4fefcd4df51750455f03e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-78bbeea899b9d065e56aa01d4ac98cc47bde0596c6d4fefcd4df51750455f03e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-78bbeea899b9d065e56aa01d4ac98cc47bde0596c6d4fefcd4df51750455f03e/summary.json"
+    },
+    {
+      "model": "bigscience/bloom-1b1",
+      "source_sha256": "6b1f73b5935a750cc1356d93d6d8a36b94c7943db79135df69a1d479703bcbbc",
+      "empty_indices": [],
+      "storage_id": "m-598e375d0201b22e7cb6c4d4e1345b10cfbc0cd7ff4ab3b5d3db07660477b7c6",
+      "dna_path": "dna-v101/raw/rand_chinese/m-598e375d0201b22e7cb6c4d4e1345b10cfbc0cd7ff4ab3b5d3db07660477b7c6/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-598e375d0201b22e7cb6c4d4e1345b10cfbc0cd7ff4ab3b5d3db07660477b7c6/summary.json"
+    },
+    {
+      "model": "bigscience/bloom-1b7",
+      "source_sha256": "6f77d38015fa5792ee08f8ffc15fb0c4cfc849a737cd35c45fd691651d735074",
+      "empty_indices": [],
+      "storage_id": "m-2d7c409977489e92daf0e6e59576c335b2ca73b8aa61d8b78d14f499e4581a11",
+      "dna_path": "dna-v101/raw/rand_chinese/m-2d7c409977489e92daf0e6e59576c335b2ca73b8aa61d8b78d14f499e4581a11/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-2d7c409977489e92daf0e6e59576c335b2ca73b8aa61d8b78d14f499e4581a11/summary.json"
+    },
+    {
+      "model": "bigscience/bloom-3b",
+      "source_sha256": "2b8f7a1130508aa8744ce37910ff6028308e963f71466de6762bd10ad4be1cb5",
+      "empty_indices": [],
+      "storage_id": "m-6b95997e407d4bd079008b78d1d7922215749be1e191576590350d8030c335f8",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6b95997e407d4bd079008b78d1d7922215749be1e191576590350d8030c335f8/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6b95997e407d4bd079008b78d1d7922215749be1e191576590350d8030c335f8/summary.json"
+    },
+    {
+      "model": "bigscience/bloom-560m",
+      "source_sha256": "272eb95e9375de4abba910245fd9f4454635e19d7a48faaed2484879ab356f13",
+      "empty_indices": [],
+      "storage_id": "m-fd1703de16c5cf8570c4ec535ae5172b4c385a511e2f7df6528d4eb176fdee99",
+      "dna_path": "dna-v101/raw/rand_chinese/m-fd1703de16c5cf8570c4ec535ae5172b4c385a511e2f7df6528d4eb176fdee99/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-fd1703de16c5cf8570c4ec535ae5172b4c385a511e2f7df6528d4eb176fdee99/summary.json"
+    },
+    {
+      "model": "bigscience/bloom-7b1",
+      "source_sha256": "ef7606bc14864968455d217723b22f07ff54bb59e9eaff4c60f9298764e4853a",
+      "empty_indices": [],
+      "storage_id": "m-52f4df1960b8d4b9314ca185b5797190f9445cd1a55ac9ee6139108f0729f870",
+      "dna_path": "dna-v101/raw/rand_chinese/m-52f4df1960b8d4b9314ca185b5797190f9445cd1a55ac9ee6139108f0729f870/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-52f4df1960b8d4b9314ca185b5797190f9445cd1a55ac9ee6139108f0729f870/summary.json"
+    },
+    {
+      "model": "bigscience/bloomz-560m",
+      "source_sha256": "7859d5c98be1f70d8d50499c273d03f7f90427d670c1ab8545b36431c7dd1611",
+      "empty_indices": [],
+      "storage_id": "m-b4e674e62fa1ea5cff1c4916e8fe550a6e0f0236a2670c313f1a73461f79aae6",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b4e674e62fa1ea5cff1c4916e8fe550a6e0f0236a2670c313f1a73461f79aae6/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b4e674e62fa1ea5cff1c4916e8fe550a6e0f0236a2670c313f1a73461f79aae6/summary.json"
+    },
+    {
+      "model": "brucethemoose/Yi-34B-200K-DARE-merge-v7",
+      "source_sha256": "241910970e2f6e0c96a3e9bdb2ff569ab16a841bd36456895301728172ddf3ea",
+      "empty_indices": [],
+      "storage_id": "m-ad71eb82fa1a801a8af9c3d70500a519c33a58426f5992069ebf2834e324d53b",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ad71eb82fa1a801a8af9c3d70500a519c33a58426f5992069ebf2834e324d53b/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ad71eb82fa1a801a8af9c3d70500a519c33a58426f5992069ebf2834e324d53b/summary.json"
+    },
+    {
+      "model": "byroneverson/Mistral-Small-Instruct-2409-abliterated",
+      "source_sha256": "cbbc15d4430f415ea1294449e69e656c466c965411661f6eb05c7227edc1a89b",
+      "empty_indices": [],
+      "storage_id": "m-286ee14c289617589bf07ff1784d7131a2ce4e061c2d2ce2d57fde66247ebbe4",
+      "dna_path": "dna-v101/raw/rand_chinese/m-286ee14c289617589bf07ff1784d7131a2ce4e061c2d2ce2d57fde66247ebbe4/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-286ee14c289617589bf07ff1784d7131a2ce4e061c2d2ce2d57fde66247ebbe4/summary.json"
+    },
+    {
+      "model": "byroneverson/Yi-1.5-9B-Chat-16K-abliterated",
+      "source_sha256": "a9ddccfe17ba3302ce2634621585a6a1a6d4a1f578c180fdd0ac7d96d1e4f8b5",
+      "empty_indices": [],
+      "storage_id": "m-2dcf2967701fcb320667e4ef0e08b783d1d6be09be14711875aee6375eccba37",
+      "dna_path": "dna-v101/raw/rand_chinese/m-2dcf2967701fcb320667e4ef0e08b783d1d6be09be14711875aee6375eccba37/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-2dcf2967701fcb320667e4ef0e08b783d1d6be09be14711875aee6375eccba37/summary.json"
+    },
+    {
+      "model": "byroneverson/Yi-1.5-9B-Chat-abliterated",
+      "source_sha256": "c9bdfe2b039863ef34460a511e794e45953145c7b75cdfcb15348244acd1bc33",
+      "empty_indices": [],
+      "storage_id": "m-08ffbfbb646b3dedbc83aebd3432af232d111cd9c76024baf83a7e18e59726a4",
+      "dna_path": "dna-v101/raw/rand_chinese/m-08ffbfbb646b3dedbc83aebd3432af232d111cd9c76024baf83a7e18e59726a4/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-08ffbfbb646b3dedbc83aebd3432af232d111cd9c76024baf83a7e18e59726a4/summary.json"
+    },
+    {
+      "model": "bytedance-research/ChatTS-8B",
+      "source_sha256": "1de2412a9bb0eb0f0c8bf86cf65d5acac92872d5adb70bf48c13975b4bd63d80",
+      "empty_indices": [],
+      "storage_id": "m-d22a1f2ea459003ee25a80de815d16d8e5a004fe68edf7bbfa8183db83747aff",
+      "dna_path": "dna-v101/raw/rand_chinese/m-d22a1f2ea459003ee25a80de815d16d8e5a004fe68edf7bbfa8183db83747aff/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-d22a1f2ea459003ee25a80de815d16d8e5a004fe68edf7bbfa8183db83747aff/summary.json"
+    },
+    {
+      "model": "casperhansen/llama-3-8b-instruct-awq",
+      "source_sha256": "5ad5deea819d401bb71bc3d52777f5ffda39f3e65af9fcfd639b4e7078c3838e",
+      "empty_indices": [],
+      "storage_id": "m-6f2e54ee66af812083dab5f280d11a56fbbdee1ad33df5faf36776233772f048",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6f2e54ee66af812083dab5f280d11a56fbbdee1ad33df5faf36776233772f048/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6f2e54ee66af812083dab5f280d11a56fbbdee1ad33df5faf36776233772f048/summary.json"
+    },
+    {
+      "model": "cazzz307/Abliterated-Llama-3.2-1B-Instruct",
+      "source_sha256": "3a74f94dafa5304b1afad4deb22a3602245a357ddbcc106158c21152d8b8a9a4",
+      "empty_indices": [],
+      "storage_id": "m-f521fc0e5a4324d61474dbfaf4a504f521b82bb91db6ac7c8cdd19b55421ae7a",
+      "dna_path": "dna-v101/raw/rand_chinese/m-f521fc0e5a4324d61474dbfaf4a504f521b82bb91db6ac7c8cdd19b55421ae7a/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-f521fc0e5a4324d61474dbfaf4a504f521b82bb91db6ac7c8cdd19b55421ae7a/summary.json"
+    },
+    {
+      "model": "chujiezheng/LLaMA3-iterative-DPO-final-ExPO",
+      "source_sha256": "9d5775b671b8b8d266bd864a316b71b0bc4fdc3c77e0abf6e2a202e9785956f4",
+      "empty_indices": [],
+      "storage_id": "m-ea4de16c77df32df3779ff4295077c8fde9bceb248e116981df5ec14d4921e31",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ea4de16c77df32df3779ff4295077c8fde9bceb248e116981df5ec14d4921e31/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ea4de16c77df32df3779ff4295077c8fde9bceb248e116981df5ec14d4921e31/summary.json"
+    },
+    {
+      "model": "chujiezheng/Llama3-8B-Chinese-Chat-ExPO",
+      "source_sha256": "c97caba37b6b9c0dac63486ba70c2d043b5f5e1808e8b7b00b276c2fba5f82f9",
+      "empty_indices": [],
+      "storage_id": "m-c55e37bb672c038a596af9030751fb4bcd11daadfa7e431a3986fa02f5961543",
+      "dna_path": "dna-v101/raw/rand_chinese/m-c55e37bb672c038a596af9030751fb4bcd11daadfa7e431a3986fa02f5961543/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-c55e37bb672c038a596af9030751fb4bcd11daadfa7e431a3986fa02f5961543/summary.json"
+    },
+    {
+      "model": "chujiezheng/Mistral7B-PairRM-SPPO-ExPO",
+      "source_sha256": "b95db4de6f5c3591ac7f5415670f978d40ec7108137af178b64b1ca0e80935c4",
+      "empty_indices": [],
+      "storage_id": "m-071377acb61aa02cf974794d56eb0936d570ecd995e8ab330d86de31d4a00b9f",
+      "dna_path": "dna-v101/raw/rand_chinese/m-071377acb61aa02cf974794d56eb0936d570ecd995e8ab330d86de31d4a00b9f/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-071377acb61aa02cf974794d56eb0936d570ecd995e8ab330d86de31d4a00b9f/summary.json"
+    },
+    {
+      "model": "chujiezheng/Starling-LM-7B-alpha-ExPO",
+      "source_sha256": "5b4411928cbe1a168ceeffa492576b287ad5f366067102f7f15eb3e99a80041b",
+      "empty_indices": [],
+      "storage_id": "m-c104a54077185e3dc6b79986c5632dbe98d444bef2fa1bab01c13f74fc5df2c0",
+      "dna_path": "dna-v101/raw/rand_chinese/m-c104a54077185e3dc6b79986c5632dbe98d444bef2fa1bab01c13f74fc5df2c0/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-c104a54077185e3dc6b79986c5632dbe98d444bef2fa1bab01c13f74fc5df2c0/summary.json"
+    },
+    {
+      "model": "chujiezheng/Starling-LM-7B-beta-ExPO",
+      "source_sha256": "a2287f7ca34e6fbda6fde6f93fe8072ec5dabedafd810ddf0bcb39800aebe8df",
+      "empty_indices": [],
+      "storage_id": "m-dd12247226c5052a2e5dc5c1530a575ed951ee1271acc26d01f435ba5c502202",
+      "dna_path": "dna-v101/raw/rand_chinese/m-dd12247226c5052a2e5dc5c1530a575ed951ee1271acc26d01f435ba5c502202/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-dd12247226c5052a2e5dc5c1530a575ed951ee1271acc26d01f435ba5c502202/summary.json"
+    },
+    {
+      "model": "chujiezheng/internlm2-chat-7b-ExPO",
+      "source_sha256": "cfe8659ec35d28db9c7b60abd4537969f402f113c3947d4ebe422bcf2f60895b",
+      "empty_indices": [],
+      "storage_id": "m-a10aca39bce603f20eb1dfde6fd035346608439c21b545a0012114139ab2ae33",
+      "dna_path": "dna-v101/raw/rand_chinese/m-a10aca39bce603f20eb1dfde6fd035346608439c21b545a0012114139ab2ae33/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-a10aca39bce603f20eb1dfde6fd035346608439c21b545a0012114139ab2ae33/summary.json"
+    },
+    {
+      "model": "cjvt/GaMS-27B-Instruct-Nemotron",
+      "source_sha256": "305f4484de379397c5e1278395219a9db0134249db1a6508b3ed7e246c1affa8",
+      "empty_indices": [],
+      "storage_id": "m-83b53b1d9582bd85ea93c011e3e5646a0fa4e690041b6377964bdfd83b5c49b8",
+      "dna_path": "dna-v101/raw/rand_chinese/m-83b53b1d9582bd85ea93c011e3e5646a0fa4e690041b6377964bdfd83b5c49b8/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-83b53b1d9582bd85ea93c011e3e5646a0fa4e690041b6377964bdfd83b5c49b8/summary.json"
+    },
+    {
+      "model": "cjvt/GaMS-9B-Instruct",
+      "source_sha256": "dabc78e855ab0d4fce9cbb49f63a81c6bde5338f7cd45ab7abeb63f7a66762da",
+      "empty_indices": [],
+      "storage_id": "m-b0ee0e0866384b435498d5fdba6b2f7cf11b5e2170ebec1f47b84b2d7fcbd6d8",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b0ee0e0866384b435498d5fdba6b2f7cf11b5e2170ebec1f47b84b2d7fcbd6d8/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b0ee0e0866384b435498d5fdba6b2f7cf11b5e2170ebec1f47b84b2d7fcbd6d8/summary.json"
+    },
+    {
+      "model": "cjvt/GaMS-9B-Instruct-Nemotron",
+      "source_sha256": "7280bb34036fe463071369994369863aff7cd7a16770b55a75a8c40c1f26355c",
+      "empty_indices": [],
+      "storage_id": "m-067b4cd54062004248156c74d0d2399859e7857592dab5dc3299bbc77df322a2",
+      "dna_path": "dna-v101/raw/rand_chinese/m-067b4cd54062004248156c74d0d2399859e7857592dab5dc3299bbc77df322a2/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-067b4cd54062004248156c74d0d2399859e7857592dab5dc3299bbc77df322a2/summary.json"
+    },
+    {
+      "model": "cjvt/GaMS3-12B-Instruct",
+      "source_sha256": "6fe7bf068bd7dd385a6fa78e3603a0d389b797e88396815def09eb557bc0376a",
+      "empty_indices": [],
+      "storage_id": "m-1c5ea23f83ae483af35355082d183054daeb118ec76fa404abc6726976edfd7d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-1c5ea23f83ae483af35355082d183054daeb118ec76fa404abc6726976edfd7d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-1c5ea23f83ae483af35355082d183054daeb118ec76fa404abc6726976edfd7d/summary.json"
+    },
+    {
+      "model": "ckiplab/gpt2-base-chinese",
+      "source_sha256": "a14cb88b25df1f6cb4e9be3e8b080a075f03a43e8df72bcfc215dde4a1729b1a",
+      "empty_indices": [],
+      "storage_id": "m-cfc201d71e1c11425acfe18a2f170441e798bc336cf885ee25b017870605d7e7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-cfc201d71e1c11425acfe18a2f170441e798bc336cf885ee25b017870605d7e7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-cfc201d71e1c11425acfe18a2f170441e798bc336cf885ee25b017870605d7e7/summary.json"
+    },
+    {
+      "model": "cleanrl/EleutherAI_pythia-1b-deduped__sft__tldr",
+      "source_sha256": "0c18582d2078ef758e24b58c8d960f46d23541267a3278033bf198577d568415",
+      "empty_indices": [],
+      "storage_id": "m-92d4244ff5bdd9c40cfd1f9ba42e29d58d27ff860ced71a3c7d6c20a8ab04222",
+      "dna_path": "dna-v101/raw/rand_chinese/m-92d4244ff5bdd9c40cfd1f9ba42e29d58d27ff860ced71a3c7d6c20a8ab04222/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-92d4244ff5bdd9c40cfd1f9ba42e29d58d27ff860ced71a3c7d6c20a8ab04222/summary.json"
+    },
+    {
+      "model": "clouditera/SecGPT-14B",
+      "source_sha256": "9b2039ba9f49c10ee9178216e81ae593e44243ab5f5b67d03753507c05523c69",
+      "empty_indices": [],
+      "storage_id": "m-2575a273daa297b85e23a59aa8d8fb3c7f07fd9aad0ec9b55b458f8e62960394",
+      "dna_path": "dna-v101/raw/rand_chinese/m-2575a273daa297b85e23a59aa8d8fb3c7f07fd9aad0ec9b55b458f8e62960394/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-2575a273daa297b85e23a59aa8d8fb3c7f07fd9aad0ec9b55b458f8e62960394/summary.json"
+    },
+    {
+      "model": "codellama/CodeLlama-7b-Python-hf",
+      "source_sha256": "7a8d2291719e10cfaa8108c3f8a9b3494b839614f9a79174d6e6c03ec6cdbfac",
+      "empty_indices": [],
+      "storage_id": "m-aac8a343b6da66a3cc9dd0a1946b550ceaed95419944e1a0a2cc1cf6d64e2b5a",
+      "dna_path": "dna-v101/raw/rand_chinese/m-aac8a343b6da66a3cc9dd0a1946b550ceaed95419944e1a0a2cc1cf6d64e2b5a/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-aac8a343b6da66a3cc9dd0a1946b550ceaed95419944e1a0a2cc1cf6d64e2b5a/summary.json"
+    },
+    {
+      "model": "codeparrot/codeparrot-small",
+      "source_sha256": "8676ae8efa30951d2c412a75622301af448a530d12f5b181a8faa05883352a41",
+      "empty_indices": [],
+      "storage_id": "m-6f2e3f21ec8e7b3f8919d7f257ec272a969367b41d220738752dfb8f186e3990",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6f2e3f21ec8e7b3f8919d7f257ec272a969367b41d220738752dfb8f186e3990/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6f2e3f21ec8e7b3f8919d7f257ec272a969367b41d220738752dfb8f186e3990/summary.json"
+    },
+    {
+      "model": "codeparrot/codeparrot-small-multi",
+      "source_sha256": "5a20b1bfc63586b2b694dd03007b6a131d0bf9d568a696194f090d5981babad3",
+      "empty_indices": [],
+      "storage_id": "m-e2015be2af2871f90c9e49bdf901527f1595d1c21c8a2b822996ce222c4b1853",
+      "dna_path": "dna-v101/raw/rand_chinese/m-e2015be2af2871f90c9e49bdf901527f1595d1c21c8a2b822996ce222c4b1853/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-e2015be2af2871f90c9e49bdf901527f1595d1c21c8a2b822996ce222c4b1853/summary.json"
+    },
+    {
+      "model": "colinglab/CLASS_IT-140M",
+      "source_sha256": "e4add5b4a0017941aeb626edbcf580239164166379c98acc7a2e64912923d366",
+      "empty_indices": [],
+      "storage_id": "m-68944402c4f6acde5c3d9211bb8d1a2c07db87b5103931f10121cdfe8d4dda66",
+      "dna_path": "dna-v101/raw/rand_chinese/m-68944402c4f6acde5c3d9211bb8d1a2c07db87b5103931f10121cdfe8d4dda66/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-68944402c4f6acde5c3d9211bb8d1a2c07db87b5103931f10121cdfe8d4dda66/summary.json"
+    },
+    {
+      "model": "crumb/nano-mistral",
+      "source_sha256": "1671e6dd18f7391611a837f5e7c9e2cd3fb7534fe629d851474814d4561ec452",
+      "empty_indices": [],
+      "storage_id": "m-3397ea4ccc073548ff28e42e82f42e76b8992f64339163cf14296cc5e6c1bc65",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3397ea4ccc073548ff28e42e82f42e76b8992f64339163cf14296cc5e6c1bc65/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3397ea4ccc073548ff28e42e82f42e76b8992f64339163cf14296cc5e6c1bc65/summary.json"
+    },
+    {
+      "model": "cyankiwi/Nanbeige4.1-3B-AWQ-8bit",
+      "source_sha256": "6101ef3896be7740e482227987d6b1a6823ae8cd691b72db3f58c89d208932eb",
+      "empty_indices": [],
+      "storage_id": "m-1f2be67cb60b7f7cbd0360c8b3787061e09538d2f8ac8e90d12bf807a33147a3",
+      "dna_path": "dna-v101/raw/rand_chinese/m-1f2be67cb60b7f7cbd0360c8b3787061e09538d2f8ac8e90d12bf807a33147a3/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-1f2be67cb60b7f7cbd0360c8b3787061e09538d2f8ac8e90d12bf807a33147a3/summary.json"
+    },
+    {
+      "model": "cyankiwi/Qwen3-30B-A3B-Thinking-2507-AWQ-4bit",
+      "source_sha256": "067cf1c034c9ead9d1dfe8e7be2f1cd33019db68ccc54130971b91ee42da7961",
+      "empty_indices": [],
+      "storage_id": "m-116fc0506122b6a452a66306aebd7ee1a561dbcdd0c1904c3a89c247078da1a3",
+      "dna_path": "dna-v101/raw/rand_chinese/m-116fc0506122b6a452a66306aebd7ee1a561dbcdd0c1904c3a89c247078da1a3/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-116fc0506122b6a452a66306aebd7ee1a561dbcdd0c1904c3a89c247078da1a3/summary.json"
+    },
+    {
+      "model": "cyankiwi/Qwen3-4B-Instruct-2507-AWQ-4bit",
+      "source_sha256": "8d0d9b2f25de4ec753048e6905b2987057f08932c9a20efaed12982e429d0cca",
+      "empty_indices": [],
+      "storage_id": "m-c391dc02f51f25ae2ce481ef65756db567addd26d9005d11aeecb0d31dfba1de",
+      "dna_path": "dna-v101/raw/rand_chinese/m-c391dc02f51f25ae2ce481ef65756db567addd26d9005d11aeecb0d31dfba1de/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-c391dc02f51f25ae2ce481ef65756db567addd26d9005d11aeecb0d31dfba1de/summary.json"
+    },
+    {
+      "model": "cyankiwi/Qwen3-Coder-Next-REAM-AWQ-4bit",
+      "source_sha256": "bb22606c14c7605798845cb21ee96fc15a1ddc74a7243ddccde6fdb8704c09ff",
+      "empty_indices": [],
+      "storage_id": "m-2e1cd3282da7542400c744bbfbfe474129d91e1ec76847fde980b119ed01d0a6",
+      "dna_path": "dna-v101/raw/rand_chinese/m-2e1cd3282da7542400c744bbfbfe474129d91e1ec76847fde980b119ed01d0a6/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-2e1cd3282da7542400c744bbfbfe474129d91e1ec76847fde980b119ed01d0a6/summary.json"
+    },
+    {
+      "model": "cyberagent/calm2-7b",
+      "source_sha256": "87fcdfa31bddd8115710376ff7568806ebbc5c6683037f78aa7a37ef581d5f9f",
+      "empty_indices": [],
+      "storage_id": "m-065ad2558425ec95c11af0c9810b61690251960f69a23a2bf9a4dff0d06fab5c",
+      "dna_path": "dna-v101/raw/rand_chinese/m-065ad2558425ec95c11af0c9810b61690251960f69a23a2bf9a4dff0d06fab5c/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-065ad2558425ec95c11af0c9810b61690251960f69a23a2bf9a4dff0d06fab5c/summary.json"
+    },
+    {
+      "model": "cyberagent/open-calm-3b",
+      "source_sha256": "0e9ab72213b1b966a4f2600417aae1c4710a41b2a549379e7d7b6d9d366ff500",
+      "empty_indices": [],
+      "storage_id": "m-d06b8f84a89b6fb28b011ae0af282a0b9df46a9330bd79508f6cdc0755d0c41d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-d06b8f84a89b6fb28b011ae0af282a0b9df46a9330bd79508f6cdc0755d0c41d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-d06b8f84a89b6fb28b011ae0af282a0b9df46a9330bd79508f6cdc0755d0c41d/summary.json"
+    },
+    {
+      "model": "cyberagent/open-calm-small",
+      "source_sha256": "5ad5bc4ce031ac32fd7395b77555abdd78e99c4e13b09fa9d0b7e77dae23dc34",
+      "empty_indices": [],
+      "storage_id": "m-6cf8f365dfa7e788c0133b7d08733b0216a4f9bd78367d8034967b104b248783",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6cf8f365dfa7e788c0133b7d08733b0216a4f9bd78367d8034967b104b248783/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6cf8f365dfa7e788c0133b7d08733b0216a4f9bd78367d8034967b104b248783/summary.json"
+    },
+    {
+      "model": "cybermotaz/nemotron3-nano-nvfp4-w4a16",
+      "source_sha256": "3225c8de84f27d9983260e02bbd512fd4167fd09715ed1fcc85b145586a80d8f",
+      "empty_indices": [],
+      "storage_id": "m-8207ffcfe5efff328deca721079c63f3089930da3402204a400581a108b24699",
+      "dna_path": "dna-v101/raw/rand_chinese/m-8207ffcfe5efff328deca721079c63f3089930da3402204a400581a108b24699/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-8207ffcfe5efff328deca721079c63f3089930da3402204a400581a108b24699/summary.json"
+    },
+    {
+      "model": "datificate/gpt2-small-spanish",
+      "source_sha256": "a5cd1a5eef8c29a3c25b68c58dac9d69b810ac79702d8db11ea4cdd1ff119776",
+      "empty_indices": [],
+      "storage_id": "m-3e21d4c201e4a2889802226fe0071e06b36a64db6358e4200519293d355aeeed",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3e21d4c201e4a2889802226fe0071e06b36a64db6358e4200519293d355aeeed/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3e21d4c201e4a2889802226fe0071e06b36a64db6358e4200519293d355aeeed/summary.json"
+    },
+    {
+      "model": "dbmdz/german-gpt2",
+      "source_sha256": "8974c1a03bd4e3414722c1047354ce979c9151250630f5b186be44ea780bda23",
+      "empty_indices": [],
+      "storage_id": "m-12d0229a5860932a7bb2d643c4ce256c94f9967a411ec892fd5460030421f91f",
+      "dna_path": "dna-v101/raw/rand_chinese/m-12d0229a5860932a7bb2d643c4ce256c94f9967a411ec892fd5460030421f91f/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-12d0229a5860932a7bb2d643c4ce256c94f9967a411ec892fd5460030421f91f/summary.json"
+    },
+    {
+      "model": "deepcogito/cogito-v1-preview-qwen-32B",
+      "source_sha256": "082c93bb82692b4e97982886f83a9d6dae4d015e7961be059d25edd3e5a1dc8e",
+      "empty_indices": [],
+      "storage_id": "m-40240b263cf0a7efe714bc4843f92f82e96d67dc994ad074ab889dba4cb00d01",
+      "dna_path": "dna-v101/raw/rand_chinese/m-40240b263cf0a7efe714bc4843f92f82e96d67dc994ad074ab889dba4cb00d01/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-40240b263cf0a7efe714bc4843f92f82e96d67dc994ad074ab889dba4cb00d01/summary.json"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+      "source_sha256": "8d891ec0872c5b162e37f4e861bb5ef0008274dcbb18a6376ca3374254bd556b",
+      "empty_indices": [],
+      "storage_id": "m-398627ee88ae46d737f8c9e786c8089de6782d6813369689e6d84b35a492dc16",
+      "dna_path": "dna-v101/raw/rand_chinese/m-398627ee88ae46d737f8c9e786c8089de6782d6813369689e6d84b35a492dc16/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-398627ee88ae46d737f8c9e786c8089de6782d6813369689e6d84b35a492dc16/summary.json"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "source_sha256": "02c9bb712a987ba80c0c1a2865b90d14ae43bd7bdf24f6b5d1f869e979baeb54",
+      "empty_indices": [],
+      "storage_id": "m-a78899496c391207ac078cbf1ff2024f372ca97d301b7bd725fdea36a24aff8a",
+      "dna_path": "dna-v101/raw/rand_chinese/m-a78899496c391207ac078cbf1ff2024f372ca97d301b7bd725fdea36a24aff8a/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-a78899496c391207ac078cbf1ff2024f372ca97d301b7bd725fdea36a24aff8a/summary.json"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "source_sha256": "cc46697a7bf758b4de36b97c3ffcd54dd4387731c224540dc2e9787287fa0602",
+      "empty_indices": [],
+      "storage_id": "m-20186bec5294ebaa944fb7d5b14006c006c35a7418516ff44bc22d7c49fdc3d0",
+      "dna_path": "dna-v101/raw/rand_chinese/m-20186bec5294ebaa944fb7d5b14006c006c35a7418516ff44bc22d7c49fdc3d0/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-20186bec5294ebaa944fb7d5b14006c006c35a7418516ff44bc22d7c49fdc3d0/summary.json"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "source_sha256": "b4d6c8e00346820bc804a2757d1a7f2a1388f1ecb4107af6fedf2d8a17cb9015",
+      "empty_indices": [],
+      "storage_id": "m-c7dd8b4768b33081a7dd70f87628decd966705b0be9143d09956d0aa1598eec1",
+      "dna_path": "dna-v101/raw/rand_chinese/m-c7dd8b4768b33081a7dd70f87628decd966705b0be9143d09956d0aa1598eec1/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-c7dd8b4768b33081a7dd70f87628decd966705b0be9143d09956d0aa1598eec1/summary.json"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "source_sha256": "e8933e48280abbb950c5a78fc75e976bd5af0f724aea2dcddd177d2cd5e3decb",
+      "empty_indices": [],
+      "storage_id": "m-bc19478a0d48c41f0c558bac6e42d2f8681e977f6ce495a3cc93ca9a488d40b7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-bc19478a0d48c41f0c558bac6e42d2f8681e977f6ce495a3cc93ca9a488d40b7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-bc19478a0d48c41f0c558bac6e42d2f8681e977f6ce495a3cc93ca9a488d40b7/summary.json"
+    },
+    {
+      "model": "deepseek-ai/deepseek-coder-33b-instruct",
+      "source_sha256": "e6fe0c9e5617a6d5aa26282ff4343f2d4b74490534de7cfb1cf6413f8000d849",
+      "empty_indices": [],
+      "storage_id": "m-ebd76431a8e52b8bcee3b33845c6f9b047da3564b861ff9640a29cb7b05bfa80",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ebd76431a8e52b8bcee3b33845c6f9b047da3564b861ff9640a29cb7b05bfa80/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ebd76431a8e52b8bcee3b33845c6f9b047da3564b861ff9640a29cb7b05bfa80/summary.json"
+    },
+    {
+      "model": "deepseek-ai/deepseek-coder-6.7b-base",
+      "source_sha256": "8fdbc340018ed94edd727e3a80f16c1cdf96be19826749b6a4c76f2cdd671488",
+      "empty_indices": [],
+      "storage_id": "m-d55519b7175e82c3887873e07d454f869665f51e96697b76f71d97921c50b001",
+      "dna_path": "dna-v101/raw/rand_chinese/m-d55519b7175e82c3887873e07d454f869665f51e96697b76f71d97921c50b001/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-d55519b7175e82c3887873e07d454f869665f51e96697b76f71d97921c50b001/summary.json"
+    },
+    {
+      "model": "deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+      "source_sha256": "8841840385d332b75fb984e908981ded87d578e2924b286db8a4a722d2817ba8",
+      "empty_indices": [],
+      "storage_id": "m-d9a7b2a00944cae2e78e622533949cb805df4fa04ddb2937717ffb9d791aa9ef",
+      "dna_path": "dna-v101/raw/rand_chinese/m-d9a7b2a00944cae2e78e622533949cb805df4fa04ddb2937717ffb9d791aa9ef/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-d9a7b2a00944cae2e78e622533949cb805df4fa04ddb2937717ffb9d791aa9ef/summary.json"
+    },
+    {
+      "model": "deepseek-ai/deepseek-llm-7b-chat",
+      "source_sha256": "aad4b6e61bff269ac2a9d941db13083e23bf5e323f6cdfeabf83365bbac97ce3",
+      "empty_indices": [],
+      "storage_id": "m-c717e2e15c9421bc1fbff224a5f38bfc1e59f9751d39d9bb86c98d875ef8a968",
+      "dna_path": "dna-v101/raw/rand_chinese/m-c717e2e15c9421bc1fbff224a5f38bfc1e59f9751d39d9bb86c98d875ef8a968/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-c717e2e15c9421bc1fbff224a5f38bfc1e59f9751d39d9bb86c98d875ef8a968/summary.json"
+    },
+    {
+      "model": "deepseek-ai/deepseek-math-7b-base",
+      "source_sha256": "283b348feaf8ad304f93c0f628790815980093879ed2635628d8d290c321ae72",
+      "empty_indices": [],
+      "storage_id": "m-90cbf3332b5513e83c7c77aed509b88302a1fcaceb651fa13c4eb15df0b0e8a9",
+      "dna_path": "dna-v101/raw/rand_chinese/m-90cbf3332b5513e83c7c77aed509b88302a1fcaceb651fa13c4eb15df0b0e8a9/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-90cbf3332b5513e83c7c77aed509b88302a1fcaceb651fa13c4eb15df0b0e8a9/summary.json"
+    },
+    {
+      "model": "deepseek-ai/deepseek-math-7b-instruct",
+      "source_sha256": "1f903c3605866031c6c40bd0143033af2739d3a95c03fe9169252c845749eff8",
+      "empty_indices": [],
+      "storage_id": "m-11afc8359ea10e750dde3a5434e4c6a6a02f2dd5c1596906523846186713ec59",
+      "dna_path": "dna-v101/raw/rand_chinese/m-11afc8359ea10e750dde3a5434e4c6a6a02f2dd5c1596906523846186713ec59/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-11afc8359ea10e750dde3a5434e4c6a6a02f2dd5c1596906523846186713ec59/summary.json"
+    },
+    {
+      "model": "deepseek-ai/deepseek-math-7b-rl",
+      "source_sha256": "b815ee90fe8aa8b813fb8221ddfec926ced3641e9a4177c247e375d69c433b63",
+      "empty_indices": [],
+      "storage_id": "m-0f67c80b8d3d8891e6cf7843def2b96b3f86f1a623431b48a866b6e64024a6bf",
+      "dna_path": "dna-v101/raw/rand_chinese/m-0f67c80b8d3d8891e6cf7843def2b96b3f86f1a623431b48a866b6e64024a6bf/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-0f67c80b8d3d8891e6cf7843def2b96b3f86f1a623431b48a866b6e64024a6bf/summary.json"
+    },
+    {
+      "model": "defog/llama-3-sqlcoder-8b",
+      "source_sha256": "1fb8c4b31d686dee7c112e75c72800ee818863f906f08fbf32328741cff89f6b",
+      "empty_indices": [],
+      "storage_id": "m-931ce593d01da285a4a92943b29ccbecd5ce7ba8b417edf1ae75a6dd0bbc0e49",
+      "dna_path": "dna-v101/raw/rand_chinese/m-931ce593d01da285a4a92943b29ccbecd5ce7ba8b417edf1ae75a6dd0bbc0e49/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-931ce593d01da285a4a92943b29ccbecd5ce7ba8b417edf1ae75a6dd0bbc0e49/summary.json"
+    },
+    {
+      "model": "delphi-suite/v0-llama2-100k",
+      "source_sha256": "026b8fded60035271c58e7f69007e44e10e48f55d68836a28b6ea9f907d6a786",
+      "empty_indices": [],
+      "storage_id": "m-61212a3839d2b378175cd1ce4ab6180adde43fb6bd62a30fae5d210c7b3097ac",
+      "dna_path": "dna-v101/raw/rand_chinese/m-61212a3839d2b378175cd1ce4ab6180adde43fb6bd62a30fae5d210c7b3097ac/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-61212a3839d2b378175cd1ce4ab6180adde43fb6bd62a30fae5d210c7b3097ac/summary.json"
+    },
+    {
+      "model": "dfurman/Llama-3-8B-Orpo-v0.1",
+      "source_sha256": "fc808a86eca0d436fd21141929195b409cdc69ffd1086ee16f37a6c0535a369c",
+      "empty_indices": [],
+      "storage_id": "m-823b6576d4ed9c20e223d8601750bd0b8802a03fdaad3f98a5871edafb7f9dfd",
+      "dna_path": "dna-v101/raw/rand_chinese/m-823b6576d4ed9c20e223d8601750bd0b8802a03fdaad3f98a5871edafb7f9dfd/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-823b6576d4ed9c20e223d8601750bd0b8802a03fdaad3f98a5871edafb7f9dfd/summary.json"
+    },
+    {
+      "model": "dicta-il/DictaLM-3.0-1.7B-Base",
+      "source_sha256": "096d89b893e5788dbd2a913e6a73da4237383f63927bc2994634156e606bc1be",
+      "empty_indices": [],
+      "storage_id": "m-54bc2d2ad865658bac389941c20bc5c2266e7926abe4ab6d21eb6357c3e55d7c",
+      "dna_path": "dna-v101/raw/rand_chinese/m-54bc2d2ad865658bac389941c20bc5c2266e7926abe4ab6d21eb6357c3e55d7c/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-54bc2d2ad865658bac389941c20bc5c2266e7926abe4ab6d21eb6357c3e55d7c/summary.json"
+    },
+    {
+      "model": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+      "source_sha256": "d8e4e2c13b7eb36c2613aba718bbeceaf062e5a45b56ba99f94ccd7dae07116b",
+      "empty_indices": [],
+      "storage_id": "m-a9acc9688f4dc86ada056fc47b20d224acdb9c2e712ac35954b726f2d7e3806a",
+      "dna_path": "dna-v101/raw/rand_chinese/m-a9acc9688f4dc86ada056fc47b20d224acdb9c2e712ac35954b726f2d7e3806a/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-a9acc9688f4dc86ada056fc47b20d224acdb9c2e712ac35954b726f2d7e3806a/summary.json"
+    },
+    {
+      "model": "dicta-il/dictalm2.0",
+      "source_sha256": "fc1a21b6e80f4a70bb1dd018b1346c6521692fb304a6f96516d2ec95cd9e8599",
+      "empty_indices": [],
+      "storage_id": "m-28ed7ffd36b2e6dc26bd1e8c17539bd511a9af36b5c1d5a54111120ddc676d0f",
+      "dna_path": "dna-v101/raw/rand_chinese/m-28ed7ffd36b2e6dc26bd1e8c17539bd511a9af36b5c1d5a54111120ddc676d0f/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-28ed7ffd36b2e6dc26bd1e8c17539bd511a9af36b5c1d5a54111120ddc676d0f/summary.json"
+    },
+    {
+      "model": "distilgpt2",
+      "source_sha256": "895ab691986820dfe1aea3553d63f2ea339673193f27a0658af97c68f099ac73",
+      "empty_indices": [],
+      "storage_id": "m-32a0fa785bfb95c97ced872ac200560ffface58c574c775b7fd8304494a4d4e3",
+      "dna_path": "dna-v101/raw/rand_chinese/m-32a0fa785bfb95c97ced872ac200560ffface58c574c775b7fd8304494a4d4e3/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-32a0fa785bfb95c97ced872ac200560ffface58c574c775b7fd8304494a4d4e3/summary.json"
+    },
+    {
+      "model": "double7/vicuna-68m",
+      "source_sha256": "abcc612c9410ecce5eab599d4e14946a99a088748152fec61710d5beb0da269e",
+      "empty_indices": [],
+      "storage_id": "m-ec4e38d52a661860d8a5c63058bab212c2e33362b8d3259f1948020f4db19ef2",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ec4e38d52a661860d8a5c63058bab212c2e33362b8d3259f1948020f4db19ef2/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ec4e38d52a661860d8a5c63058bab212c2e33362b8d3259f1948020f4db19ef2/summary.json"
+    },
+    {
+      "model": "dphn/Dolphin-Mistral-24B-Venice-Edition",
+      "source_sha256": "7c57a492654f8da2b6f5ba8352997213de87c7b627a6c25ca18aa6df9aaf0dc2",
+      "empty_indices": [],
+      "storage_id": "m-70701a62d939c508c9bbe444b57a468e16910a3fd289321bedc2164f7c29e818",
+      "dna_path": "dna-v101/raw/rand_chinese/m-70701a62d939c508c9bbe444b57a468e16910a3fd289321bedc2164f7c29e818/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-70701a62d939c508c9bbe444b57a468e16910a3fd289321bedc2164f7c29e818/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.1-llama-3-8b",
+      "source_sha256": "dd5df3d5ad7e8a7b4b0fafc484634cfb69c3164f9b472b88ff20421e8099745a",
+      "empty_indices": [],
+      "storage_id": "m-41cffed570d198f5d3a6e5ab5aa526b84687441344d9ffe90c6e687762d37e8f",
+      "dna_path": "dna-v101/raw/rand_chinese/m-41cffed570d198f5d3a6e5ab5aa526b84687441344d9ffe90c6e687762d37e8f/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-41cffed570d198f5d3a6e5ab5aa526b84687441344d9ffe90c6e687762d37e8f/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.1-mixtral-1x22b",
+      "source_sha256": "270383ae3abd22aaf845ded8553bd3fbd75ba5d5cabbd138cfba860f8f84f034",
+      "empty_indices": [],
+      "storage_id": "m-ae5346decfaab4350d035b24ae619f1e58929864dcd0bece687758addfe18519",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ae5346decfaab4350d035b24ae619f1e58929864dcd0bece687758addfe18519/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ae5346decfaab4350d035b24ae619f1e58929864dcd0bece687758addfe18519/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.1-yi-1.5-34b",
+      "source_sha256": "9ed738a83a6df966788ae0cbdbb26fca38d10ad19b7624b2b5a25674e62f0aeb",
+      "empty_indices": [],
+      "storage_id": "m-9debc50c33bd730179ca6efc7c6cc82d256cb2a1ca6026dc391f66eed9d5413c",
+      "dna_path": "dna-v101/raw/rand_chinese/m-9debc50c33bd730179ca6efc7c6cc82d256cb2a1ca6026dc391f66eed9d5413c/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-9debc50c33bd730179ca6efc7c6cc82d256cb2a1ca6026dc391f66eed9d5413c/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.1-yi-1.5-9b",
+      "source_sha256": "3a4372bb5c1453a5702b5f4be6576a414c7780690d7ea39e52c420ace59ba223",
+      "empty_indices": [],
+      "storage_id": "m-fa12f83a9ea437fbd19817a82b6d7467b7e144eb845e96ecad3c95e7721f8ac2",
+      "dna_path": "dna-v101/raw/rand_chinese/m-fa12f83a9ea437fbd19817a82b6d7467b7e144eb845e96ecad3c95e7721f8ac2/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-fa12f83a9ea437fbd19817a82b6d7467b7e144eb845e96ecad3c95e7721f8ac2/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.2-Phi-3-Medium",
+      "source_sha256": "b9fc3194e4aa57f92b05c414283f3fc1cc0e81433553ce9f15a9e7a6de5b9377",
+      "empty_indices": [],
+      "storage_id": "m-dd69f11a2770f0de2748c299e7757d5ea336b8fe86b1864f49dd948f1708a689",
+      "dna_path": "dna-v101/raw/rand_chinese/m-dd69f11a2770f0de2748c299e7757d5ea336b8fe86b1864f49dd948f1708a689/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-dd69f11a2770f0de2748c299e7757d5ea336b8fe86b1864f49dd948f1708a689/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.2-Phi-3-Medium-abliterated",
+      "source_sha256": "2a70e203031cf974c770d44bc0c3ed818197dfb96d06765a979730ae2e66e9b5",
+      "empty_indices": [],
+      "storage_id": "m-c32fcf91736a05c036a705b60d68a0d19863a3199ae9fb07a13f5e3d6c4d765f",
+      "dna_path": "dna-v101/raw/rand_chinese/m-c32fcf91736a05c036a705b60d68a0d19863a3199ae9fb07a13f5e3d6c4d765f/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-c32fcf91736a05c036a705b60d68a0d19863a3199ae9fb07a13f5e3d6c4d765f/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.3-Yi-1.5-34B-32k",
+      "source_sha256": "b9be7ca5c40ef3ed3b864f75481a6077f7b225cd3e75fd5f1800cbda98626961",
+      "empty_indices": [],
+      "storage_id": "m-cb64ab7818c120377988d3b5825bbd637da1a7e675632a70275265a551134166",
+      "dna_path": "dna-v101/raw/rand_chinese/m-cb64ab7818c120377988d3b5825bbd637da1a7e675632a70275265a551134166/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-cb64ab7818c120377988d3b5825bbd637da1a7e675632a70275265a551134166/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2.9.3-mistral-nemo-12b",
+      "source_sha256": "1e5aef3d9104d27b1571366f1b965bdf058c592a83b1fcfae23f451f6bfff7ef",
+      "empty_indices": [],
+      "storage_id": "m-4861337da175321f230543d24a43f08c40035ba20f7b805e779a3f675bd109ae",
+      "dna_path": "dna-v101/raw/rand_chinese/m-4861337da175321f230543d24a43f08c40035ba20f7b805e779a3f675bd109ae/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-4861337da175321f230543d24a43f08c40035ba20f7b805e779a3f675bd109ae/summary.json"
+    },
+    {
+      "model": "dphn/dolphin-2_6-phi-2",
+      "source_sha256": "340ebab21f9d091364fbd2e0f14ec6ad09debc336396fe284afcc8f464d28c43",
+      "empty_indices": [],
+      "storage_id": "m-40bd28043aea7e5b5db4d4886a00b5e06e18d7e8ae80c455c98bd1819369553d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-40bd28043aea7e5b5db4d4886a00b5e06e18d7e8ae80c455c98bd1819369553d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-40bd28043aea7e5b5db4d4886a00b5e06e18d7e8ae80c455c98bd1819369553d/summary.json"
+    },
+    {
+      "model": "dreamgen/WizardLM-2-7B",
+      "source_sha256": "9530dd4ce6b77338a4e6f1725e46adc30555ad90d4701b6dac919c0907f96c9b",
+      "empty_indices": [],
+      "storage_id": "m-f26a776092aa8135056f019e7e7e6d4564cc29e410dfe6a4a01e376cb1f543d4",
+      "dna_path": "dna-v101/raw/rand_chinese/m-f26a776092aa8135056f019e7e7e6d4564cc29e410dfe6a4a01e376cb1f543d4/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-f26a776092aa8135056f019e7e7e6d4564cc29e410dfe6a4a01e376cb1f543d4/summary.json"
+    },
+    {
+      "model": "e-palmisano/Phi3-ITA-mini-4K-instruct",
+      "source_sha256": "6c9a5f5c7f196638506839efce8d302d95fb333ea7641da4ce83ffff137f39ac",
+      "empty_indices": [],
+      "storage_id": "m-476824b6f979f897f5da7db8634c63459d43d818e17d389c46e436951a2c716a",
+      "dna_path": "dna-v101/raw/rand_chinese/m-476824b6f979f897f5da7db8634c63459d43d818e17d389c46e436951a2c716a/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-476824b6f979f897f5da7db8634c63459d43d818e17d389c46e436951a2c716a/summary.json"
+    },
+    {
+      "model": "e-palmisano/Qwen2-1.5B-ITA-Instruct",
+      "source_sha256": "2466962f23cce5c418910161b61fac1842506f32a75936e25d5cfa6c6a34a50d",
+      "empty_indices": [],
+      "storage_id": "m-8292d56caecc2c265ed89861bcb8365dfdaf600c60eb1f7d435a87b12ffa195d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-8292d56caecc2c265ed89861bcb8365dfdaf600c60eb1f7d435a87b12ffa195d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-8292d56caecc2c265ed89861bcb8365dfdaf600c60eb1f7d435a87b12ffa195d/summary.json"
+    },
+    {
+      "model": "echarlaix/tiny-random-PhiForCausalLM",
+      "source_sha256": "5e0316f5d603760d08f9a14d5b54d7e3d71bd0a1a0b36b7b4c4b7a7e7b15610e",
+      "empty_indices": [],
+      "storage_id": "m-ed5d8ee728f5c4c055b458877aee985763c9ed9f63ac7fba3b2bdd770a7c17a1",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ed5d8ee728f5c4c055b458877aee985763c9ed9f63ac7fba3b2bdd770a7c17a1/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ed5d8ee728f5c4c055b458877aee985763c9ed9f63ac7fba3b2bdd770a7c17a1/summary.json"
+    },
+    {
+      "model": "echarlaix/tiny-random-gpt-oss-mxfp4",
+      "source_sha256": "e7fa5f47d9a1359eb8d00a976e95a5058eac2433febca5cc0eb9b6d77fd2e176",
+      "empty_indices": [],
+      "storage_id": "m-12b23b8d4e577bbf876e463b1c57b9116749d8abb42a7cb135de53ee0221e45d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-12b23b8d4e577bbf876e463b1c57b9116749d8abb42a7cb135de53ee0221e45d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-12b23b8d4e577bbf876e463b1c57b9116749d8abb42a7cb135de53ee0221e45d/summary.json"
+    },
+    {
+      "model": "echarlaix/tiny-random-mistral",
+      "source_sha256": "c787200eae3ef11f4fbc10807e1488f244d415a64e85fe07506985295bc18cd7",
+      "empty_indices": [],
+      "storage_id": "m-da0285e89a2c8230afb84dd5eb4b3e5e18a34d1325cb57c936f0d085449397fb",
+      "dna_path": "dna-v101/raw/rand_chinese/m-da0285e89a2c8230afb84dd5eb4b3e5e18a34d1325cb57c936f0d085449397fb/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-da0285e89a2c8230afb84dd5eb4b3e5e18a34d1325cb57c936f0d085449397fb/summary.json"
+    },
+    {
+      "model": "elyza/ELYZA-japanese-Llama-2-7b-instruct",
+      "source_sha256": "5cc3e20cffd69b76601047487410552deac7aaa3f588673b018cdfa765ad6a60",
+      "empty_indices": [],
+      "storage_id": "m-d21d68aa92f74e1cb0a40a7ef3b783540478e6e2b40217af51faa7f331fb0817",
+      "dna_path": "dna-v101/raw/rand_chinese/m-d21d68aa92f74e1cb0a40a7ef3b783540478e6e2b40217af51faa7f331fb0817/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-d21d68aa92f74e1cb0a40a7ef3b783540478e6e2b40217af51faa7f331fb0817/summary.json"
+    },
+    {
+      "model": "elyza/Llama-3-ELYZA-JP-8B",
+      "source_sha256": "2f23b75f9d249d1050ea6243d68333b6df68dfa0fb2f7ef5a49cc3d9900555be",
+      "empty_indices": [],
+      "storage_id": "m-ad25086f8c91b2f147fb5dbefd25396e1cb7830c35e779838db8603ed6536000",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ad25086f8c91b2f147fb5dbefd25396e1cb7830c35e779838db8603ed6536000/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ad25086f8c91b2f147fb5dbefd25396e1cb7830c35e779838db8603ed6536000/summary.json"
+    },
+    {
+      "model": "erwanf/gpt2-mini",
+      "source_sha256": "e07043a8e409889ad7de892bb281df96515a7e6914081705a74252d0167b124a",
+      "empty_indices": [],
+      "storage_id": "m-b6d5f7726f1249e62460090cce681c1ffb1302a639403374e988e4a8ef0e55dd",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b6d5f7726f1249e62460090cce681c1ffb1302a639403374e988e4a8ef0e55dd/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b6d5f7726f1249e62460090cce681c1ffb1302a639403374e988e4a8ef0e55dd/summary.json"
+    },
+    {
+      "model": "eryk-mazus/polka-1.1b-chat",
+      "source_sha256": "69a540cb414de7a68593659fd153f4d99797bae27bc1b26bdc845b74b25f6b2d",
+      "empty_indices": [],
+      "storage_id": "m-be695284cdb83cb772de5f5247d66c87ffd3124660978c38d7b780513ab2e0f7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-be695284cdb83cb772de5f5247d66c87ffd3124660978c38d7b780513ab2e0f7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-be695284cdb83cb772de5f5247d66c87ffd3124660978c38d7b780513ab2e0f7/summary.json"
+    },
+    {
+      "model": "essentialai/rnj-1-instruct",
+      "source_sha256": "b63a42204740fb71d3f76dca5022d2b2853de03d58ee3d39fb0d0039a5b8fee2",
+      "empty_indices": [],
+      "storage_id": "m-24cbbc8c752e0edc18972404ba06de2b74aa9275accff64ef11fefefdd24e6b1",
+      "dna_path": "dna-v101/raw/rand_chinese/m-24cbbc8c752e0edc18972404ba06de2b74aa9275accff64ef11fefefdd24e6b1/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-24cbbc8c752e0edc18972404ba06de2b74aa9275accff64ef11fefefdd24e6b1/summary.json"
+    },
+    {
+      "model": "euclaise/falcon_1b_stage2",
+      "source_sha256": "14f227f281d4fac4e5f641db5b665bfb9513835c50b141d032db7fa7929c4a14",
+      "empty_indices": [],
+      "storage_id": "m-a43236cc08a8fffb03574105ef8fbb97f77e82bcae20b2cec4a50c28ad75c11e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-a43236cc08a8fffb03574105ef8fbb97f77e82bcae20b2cec4a50c28ad75c11e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-a43236cc08a8fffb03574105ef8fbb97f77e82bcae20b2cec4a50c28ad75c11e/summary.json"
+    },
+    {
+      "model": "facebook/galactica-1.3b",
+      "source_sha256": "83ac069118ad5dbde26d64ca08d47be8824013235a5e944b799be46966113e98",
+      "empty_indices": [],
+      "storage_id": "m-d1ef79f7382e4212d2a12c327abb117750706f2ea3258f0f5f8e6a6d3ab5bbbe",
+      "dna_path": "dna-v101/raw/rand_chinese/m-d1ef79f7382e4212d2a12c327abb117750706f2ea3258f0f5f8e6a6d3ab5bbbe/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-d1ef79f7382e4212d2a12c327abb117750706f2ea3258f0f5f8e6a6d3ab5bbbe/summary.json"
+    },
+    {
+      "model": "facebook/galactica-125m",
+      "source_sha256": "7d0de28ae4f3a14a017b636b9589d32173f228748be1919cbd10fca4e33706c2",
+      "empty_indices": [],
+      "storage_id": "m-3aced6055860eccb016ba70dd7e1c8f539bb3c88b0f8e32a351de9bd02dc51af",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3aced6055860eccb016ba70dd7e1c8f539bb3c88b0f8e32a351de9bd02dc51af/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3aced6055860eccb016ba70dd7e1c8f539bb3c88b0f8e32a351de9bd02dc51af/summary.json"
+    },
+    {
+      "model": "facebook/opt-1.3b",
+      "source_sha256": "01b0f2ef1e0aca9e1447e176db0c2cd525c11b07be7eceb722f4506ef238ce7a",
+      "empty_indices": [],
+      "storage_id": "m-0e34d4837f90da0b0294c3e30e5dd4d1bb5ed5da8e231f80f6a80e22c5b93860",
+      "dna_path": "dna-v101/raw/rand_chinese/m-0e34d4837f90da0b0294c3e30e5dd4d1bb5ed5da8e231f80f6a80e22c5b93860/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-0e34d4837f90da0b0294c3e30e5dd4d1bb5ed5da8e231f80f6a80e22c5b93860/summary.json"
+    },
+    {
+      "model": "facebook/opt-125m",
+      "source_sha256": "a33b498ba9894522587d3bf0482b4e5fa631ec68a689266e228e0c0cc3e0f079",
+      "empty_indices": [],
+      "storage_id": "m-8139fc6d13fcedb2f8e0aff25bbf2079e063fc7eb741eb1d305af48043dba9b1",
+      "dna_path": "dna-v101/raw/rand_chinese/m-8139fc6d13fcedb2f8e0aff25bbf2079e063fc7eb741eb1d305af48043dba9b1/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-8139fc6d13fcedb2f8e0aff25bbf2079e063fc7eb741eb1d305af48043dba9b1/summary.json"
+    },
+    {
+      "model": "facebook/opt-13b",
+      "source_sha256": "c448a91ac9207b2c740ad9c5a4482740ecf4cda6aefb333167ec9abc89d099ce",
+      "empty_indices": [],
+      "storage_id": "m-ae5f75c9fdca090d53fdc44cccb77701fe62da85c00340e54bf45b9ff4a2af83",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ae5f75c9fdca090d53fdc44cccb77701fe62da85c00340e54bf45b9ff4a2af83/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ae5f75c9fdca090d53fdc44cccb77701fe62da85c00340e54bf45b9ff4a2af83/summary.json"
+    },
+    {
+      "model": "facebook/opt-2.7b",
+      "source_sha256": "f1295be623a10444b00245a08e0169f96330a7999699db2f2b6fe7b897a4d4c4",
+      "empty_indices": [],
+      "storage_id": "m-4bb35bfda84c2c932f61b678000463f69ab1b8c29270b70611a61e13d6342b39",
+      "dna_path": "dna-v101/raw/rand_chinese/m-4bb35bfda84c2c932f61b678000463f69ab1b8c29270b70611a61e13d6342b39/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-4bb35bfda84c2c932f61b678000463f69ab1b8c29270b70611a61e13d6342b39/summary.json"
+    },
+    {
+      "model": "facebook/opt-350m",
+      "source_sha256": "9d80e6e4f8b608a91dffb5429b0ba2315c3b540e4cc0f5f7ee72d59a26d0fa8f",
+      "empty_indices": [],
+      "storage_id": "m-892c33ef7d317698040a69c00e048ae9e70c2c502d55d742611f08b13d0658cd",
+      "dna_path": "dna-v101/raw/rand_chinese/m-892c33ef7d317698040a69c00e048ae9e70c2c502d55d742611f08b13d0658cd/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-892c33ef7d317698040a69c00e048ae9e70c2c502d55d742611f08b13d0658cd/summary.json"
+    },
+    {
+      "model": "facebook/opt-6.7b",
+      "source_sha256": "bf86baf4a599fd54d2a3f529eea12af5f0f100044a461b830535b1aa8b06eedc",
+      "empty_indices": [],
+      "storage_id": "m-fa2d31244bfd5a87c2f4932749d53346e218a5d5870161765d3b397dad80b5d7",
+      "dna_path": "dna-v101/raw/rand_chinese/m-fa2d31244bfd5a87c2f4932749d53346e218a5d5870161765d3b397dad80b5d7/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-fa2d31244bfd5a87c2f4932749d53346e218a5d5870161765d3b397dad80b5d7/summary.json"
+    },
+    {
+      "model": "facebook/opt-iml-1.3b",
+      "source_sha256": "91fce5f8b611f6809ad52643b3551108f8d7d87eb89271a1dc6fdf56c2e0af7e",
+      "empty_indices": [],
+      "storage_id": "m-b7b6f20ed3b831d76bc5c408b4de5325914667c15fef42d2e288a7d0d265cf53",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b7b6f20ed3b831d76bc5c408b4de5325914667c15fef42d2e288a7d0d265cf53/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b7b6f20ed3b831d76bc5c408b4de5325914667c15fef42d2e288a7d0d265cf53/summary.json"
+    },
+    {
+      "model": "facebook/xglm-564M",
+      "source_sha256": "acd33e938f0160bc1c01ac8844c1ec6292842ec65aab492ba5356b7c0e102245",
+      "empty_indices": [],
+      "storage_id": "m-a212f96d299bebeefa34dc65e1b04df7b16bef4394a3ed280b181ffae657ff7d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-a212f96d299bebeefa34dc65e1b04df7b16bef4394a3ed280b181ffae657ff7d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-a212f96d299bebeefa34dc65e1b04df7b16bef4394a3ed280b181ffae657ff7d/summary.json"
+    },
+    {
+      "model": "failspy/Codestral-22B-v0.1-abliterated-v3",
+      "source_sha256": "eac9faa9a8414cf40cbd4340dc62136a31a0d8d213abecdb8aeb47499047c08c",
+      "empty_indices": [],
+      "storage_id": "m-0131c4d01ffbacfab7596d55fe2e5b728fa0b1526427801c44f9530c9429a0c0",
+      "dna_path": "dna-v101/raw/rand_chinese/m-0131c4d01ffbacfab7596d55fe2e5b728fa0b1526427801c44f9530c9429a0c0/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-0131c4d01ffbacfab7596d55fe2e5b728fa0b1526427801c44f9530c9429a0c0/summary.json"
+    },
+    {
+      "model": "failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+      "source_sha256": "cdfffb24e539be84fe75f025bc9c4e42eb602958e7f7b086dc61bdc7100b80f0",
+      "empty_indices": [],
+      "storage_id": "m-30e3f8220c5c90ab0ccfcedf017d46b4e5214baa8b6adff76dc8746be6b58f42",
+      "dna_path": "dna-v101/raw/rand_chinese/m-30e3f8220c5c90ab0ccfcedf017d46b4e5214baa8b6adff76dc8746be6b58f42/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-30e3f8220c5c90ab0ccfcedf017d46b4e5214baa8b6adff76dc8746be6b58f42/summary.json"
+    },
+    {
+      "model": "farbodtavakkoli/OTel-LLM-12B-Safety",
+      "source_sha256": "b584d3b1155afcb2b9aceed4056bf41f4f88a8a14e80420f84d506ad4efa6a67",
+      "empty_indices": [],
+      "storage_id": "m-1b917602ea48fe03b052d6b895cbbd9ca5f55828fe3baefa540cac0fcc6c23b2",
+      "dna_path": "dna-v101/raw/rand_chinese/m-1b917602ea48fe03b052d6b895cbbd9ca5f55828fe3baefa540cac0fcc6c23b2/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-1b917602ea48fe03b052d6b895cbbd9ca5f55828fe3baefa540cac0fcc6c23b2/summary.json"
+    },
+    {
+      "model": "fblgit/UNA-SimpleSmaug-34b-v1beta",
+      "source_sha256": "69011143d3a27ca840fa0e9495fadcddbd0c83bb4424eb6318bfdccea13ddbd3",
+      "empty_indices": [],
+      "storage_id": "m-49fdbcc6eb4fb7b3a34ad34395d5193e7523665ff2746a3297c09b7c2e224be4",
+      "dna_path": "dna-v101/raw/rand_chinese/m-49fdbcc6eb4fb7b3a34ad34395d5193e7523665ff2746a3297c09b7c2e224be4/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-49fdbcc6eb4fb7b3a34ad34395d5193e7523665ff2746a3297c09b7c2e224be4/summary.json"
+    },
+    {
+      "model": "fdtn-ai/Foundation-Sec-1.1-8B-Instruct",
+      "source_sha256": "f0c905251b9a95d56c188d8a82cc6969bc745d0fa990ebe84961afffb57ca3bc",
+      "empty_indices": [],
+      "storage_id": "m-d1e3d73bc3bcb75b291318357c6a3732f6ee3588be3524c9b9486d1ae00f3d87",
+      "dna_path": "dna-v101/raw/rand_chinese/m-d1e3d73bc3bcb75b291318357c6a3732f6ee3588be3524c9b9486d1ae00f3d87/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-d1e3d73bc3bcb75b291318357c6a3732f6ee3588be3524c9b9486d1ae00f3d87/summary.json"
+    },
+    {
+      "model": "fdtn-ai/Foundation-Sec-8B",
+      "source_sha256": "471265253768d7a0bbb75a8d12aa049b1a790ca33df6462dc69549c3714f88e9",
+      "empty_indices": [],
+      "storage_id": "m-cc50abea850cadc8d0a5ff68b87b12cc8940c35081bf776eeb085a5ae7777889",
+      "dna_path": "dna-v101/raw/rand_chinese/m-cc50abea850cadc8d0a5ff68b87b12cc8940c35081bf776eeb085a5ae7777889/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-cc50abea850cadc8d0a5ff68b87b12cc8940c35081bf776eeb085a5ae7777889/summary.json"
+    },
+    {
+      "model": "fdtn-ai/Foundation-Sec-8B-Instruct",
+      "source_sha256": "42e6523198fb009dcf26368336232ad3768a7423aa4a68a9929a8b817f499307",
+      "empty_indices": [],
+      "storage_id": "m-4ad27fa1435130f1c94d36cb9f3c2fad4f2acabc502fda374178ae21b655de9c",
+      "dna_path": "dna-v101/raw/rand_chinese/m-4ad27fa1435130f1c94d36cb9f3c2fad4f2acabc502fda374178ae21b655de9c/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-4ad27fa1435130f1c94d36cb9f3c2fad4f2acabc502fda374178ae21b655de9c/summary.json"
+    },
+    {
+      "model": "fdtn-ai/Foundation-Sec-8B-Reasoning",
+      "source_sha256": "042d1fc6d6a078de418d89bffe850496a41558eb45924a6c00f97f3eefa80967",
+      "empty_indices": [],
+      "storage_id": "m-c9d91c3b614c21dcd8e50cd91d9c4050580bc9236e5e3f5499103a612287bc44",
+      "dna_path": "dna-v101/raw/rand_chinese/m-c9d91c3b614c21dcd8e50cd91d9c4050580bc9236e5e3f5499103a612287bc44/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-c9d91c3b614c21dcd8e50cd91d9c4050580bc9236e5e3f5499103a612287bc44/summary.json"
+    },
+    {
+      "model": "flax-community/gpt2-base-thai",
+      "source_sha256": "78eb684b2989eb4dcb13c8945b83a28b95a48f677a8795a20263d3f124a92bac",
+      "empty_indices": [],
+      "storage_id": "m-b1d83c7b736671c067aee67d8cf2a5cd4a90061ee3653a8572e3a9ba7f80a85e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-b1d83c7b736671c067aee67d8cf2a5cd4a90061ee3653a8572e3a9ba7f80a85e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-b1d83c7b736671c067aee67d8cf2a5cd4a90061ee3653a8572e3a9ba7f80a85e/summary.json"
+    },
+    {
+      "model": "flowaicom/Flow-Judge-v0.1-AWQ",
+      "source_sha256": "46611d5065cc39e9c226904e0acb76564cdc81ee910f64967a6d7e0d0881911f",
+      "empty_indices": [],
+      "storage_id": "m-0e43b54b105678a70aa6195e95d7e8a94da5d9f5595e4e4eae18ea403c6bf933",
+      "dna_path": "dna-v101/raw/rand_chinese/m-0e43b54b105678a70aa6195e95d7e8a94da5d9f5595e4e4eae18ea403c6bf933/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-0e43b54b105678a70aa6195e95d7e8a94da5d9f5595e4e4eae18ea403c6bf933/summary.json"
+    },
+    {
+      "model": "fredzzp/open-dcoder-0.5B",
+      "source_sha256": "1847e38b1176e68d67844526d07f8f48eb4ab01951e936f20faed280c93599d5",
+      "empty_indices": [],
+      "storage_id": "m-3a7208ec5cc755fc24d4c7206444459d21a36ef25e88dd29c4467a70acb27f55",
+      "dna_path": "dna-v101/raw/rand_chinese/m-3a7208ec5cc755fc24d4c7206444459d21a36ef25e88dd29c4467a70acb27f55/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-3a7208ec5cc755fc24d4c7206444459d21a36ef25e88dd29c4467a70acb27f55/summary.json"
+    },
+    {
+      "model": "freewheelin/free-llama3-dpo-v0.2",
+      "source_sha256": "11cb0a55b7fcdc30080a3715b677c0aec2eeedf4139828bedb659cdaf1b694da",
+      "empty_indices": [],
+      "storage_id": "m-6b3ceca3c9aecc92e5acd397a023e148eb1fff77f893485a797718237504fd4e",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6b3ceca3c9aecc92e5acd397a023e148eb1fff77f893485a797718237504fd4e/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6b3ceca3c9aecc92e5acd397a023e148eb1fff77f893485a797718237504fd4e/summary.json"
+    },
+    {
+      "model": "freewheelin/free-solar-evo-v0.1",
+      "source_sha256": "f4d8ca73215484dd9dff48d58ce0a11e9fdb88b6e1347416f941ac3cc8a571c2",
+      "empty_indices": [],
+      "storage_id": "m-6c693008cd32d9a9559ee3d646c1c860327e243cc89aaeb74e9809c673045404",
+      "dna_path": "dna-v101/raw/rand_chinese/m-6c693008cd32d9a9559ee3d646c1c860327e243cc89aaeb74e9809c673045404/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-6c693008cd32d9a9559ee3d646c1c860327e243cc89aaeb74e9809c673045404/summary.json"
+    },
+    {
+      "model": "freewheelin/free-solar-evo-v0.11",
+      "source_sha256": "abb7c99c5ca96db8d7e5358a12fe31ce0386d543843c25eeaf125bf9dc9f73d9",
+      "empty_indices": [],
+      "storage_id": "m-5a75e7aaeb6a71bd7d2272bdbd85bd6b0c578b87aaed7467799740bf53178b8c",
+      "dna_path": "dna-v101/raw/rand_chinese/m-5a75e7aaeb6a71bd7d2272bdbd85bd6b0c578b87aaed7467799740bf53178b8c/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-5a75e7aaeb6a71bd7d2272bdbd85bd6b0c578b87aaed7467799740bf53178b8c/summary.json"
+    },
+    {
+      "model": "freewheelin/free-solar-evo-v0.13",
+      "source_sha256": "b31ca3b27bc93d9843c0b06419c4fa60626cba1705ca3342cd9f4667e4dc4fe8",
+      "empty_indices": [],
+      "storage_id": "m-762f78f8652066985c6fa33e1d0b33be454fd74477e1c5d6660ccd64728ad1ff",
+      "dna_path": "dna-v101/raw/rand_chinese/m-762f78f8652066985c6fa33e1d0b33be454fd74477e1c5d6660ccd64728ad1ff/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-762f78f8652066985c6fa33e1d0b33be454fd74477e1c5d6660ccd64728ad1ff/summary.json"
+    },
+    {
+      "model": "fxmarty/really-tiny-falcon-testing",
+      "source_sha256": "3d775bfafe5a7e1a62fa8aca53bc2dde50fb3cec78cb10abfd651571ebdbd0fe",
+      "empty_indices": [],
+      "storage_id": "m-8d575b7f8d5bab9081b3b4ecd73ba37f2836fdb910d6e111996d043882ba596d",
+      "dna_path": "dna-v101/raw/rand_chinese/m-8d575b7f8d5bab9081b3b4ecd73ba37f2836fdb910d6e111996d043882ba596d/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-8d575b7f8d5bab9081b3b4ecd73ba37f2836fdb910d6e111996d043882ba596d/summary.json"
+    },
+    {
+      "model": "fxmarty/tiny-random-GemmaForCausalLM",
+      "source_sha256": "4c8f8900474a1b5069745fc85f51887216ea9c4ddc16b09fc8fd518187dd8861",
+      "empty_indices": [],
+      "storage_id": "m-ede0f651456a17d74d2e540b3988a1bd31c2a3c418a07f3e5dc0c4d2a807c058",
+      "dna_path": "dna-v101/raw/rand_chinese/m-ede0f651456a17d74d2e540b3988a1bd31c2a3c418a07f3e5dc0c4d2a807c058/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-ede0f651456a17d74d2e540b3988a1bd31c2a3c418a07f3e5dc0c4d2a807c058/summary.json"
+    },
+    {
+      "model": "galatolo/cerbero-7b",
+      "source_sha256": "c5fcc9768160d6b4df8fb4f3662b2ffdb9e2e1317d25bbb8285b261992de9f22",
+      "empty_indices": [],
+      "storage_id": "m-4e0031cda401c3d5ad80e58cfa8286991bd4599777735fdd688c29a14f73b6c2",
+      "dna_path": "dna-v101/raw/rand_chinese/m-4e0031cda401c3d5ad80e58cfa8286991bd4599777735fdd688c29a14f73b6c2/dna.json",
+      "summary_path": "dna-v101/raw/rand_chinese/m-4e0031cda401c3d5ad80e58cfa8286991bd4599777735fdd688c29a14f73b6c2/summary.json"
+    }
+  ],
+  "withheld": [
+    {
+      "model": "allenai/Olmo-3-7B-Instruct-DPO",
+      "empty_indices": [
+        21
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "amd/AMD-Llama-135m",
+      "empty_indices": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        14,
+        16,
+        19,
+        20,
+        22,
+        23,
+        24,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37,
+        38,
+        40,
+        41,
+        42,
+        45,
+        46,
+        48,
+        50,
+        52,
+        54,
+        58,
+        61,
+        64,
+        65,
+        67,
+        69,
+        70,
+        71,
+        74,
+        76,
+        79,
+        80,
+        81,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        92,
+        93,
+        94,
+        95,
+        96,
+        99
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "babylm-anon/rta",
+      "empty_indices": [
+        27
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "baichuan-inc/Baichuan-7B",
+      "empty_indices": [
+        80
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "baichuan-inc/Baichuan2-7B-Chat",
+      "empty_indices": [
+        1,
+        10,
+        17,
+        34,
+        37,
+        44,
+        45,
+        48,
+        51,
+        55,
+        57,
+        79,
+        80,
+        81,
+        94,
+        95,
+        96,
+        98
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "beomi/Llama-3-Open-Ko-8B",
+      "empty_indices": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        12,
+        16,
+        29,
+        34,
+        35,
+        40,
+        43,
+        45,
+        52,
+        53,
+        56,
+        58,
+        61,
+        62,
+        67,
+        71,
+        72,
+        73,
+        78,
+        80,
+        81,
+        98
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "bigscience/bloomz-3b",
+      "empty_indices": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        13,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        25,
+        27,
+        28,
+        29,
+        30,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        68,
+        69,
+        70,
+        71,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        85,
+        86,
+        87,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        97,
+        98,
+        99
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "bigscience/bloomz-7b1",
+      "empty_indices": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        10,
+        11,
+        12,
+        20,
+        21,
+        25,
+        28,
+        29,
+        30,
+        35,
+        36,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        48,
+        50,
+        51,
+        53,
+        55,
+        56,
+        57,
+        58,
+        60,
+        63,
+        64,
+        69,
+        71,
+        73,
+        74,
+        75,
+        76,
+        77,
+        79,
+        81,
+        82,
+        83,
+        86,
+        87,
+        88,
+        89,
+        92,
+        93,
+        94,
+        95,
+        96,
+        98,
+        99
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "bineric/NorskGPT-Llama3-8b",
+      "empty_indices": [
+        53
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "cais/HarmBench-Llama-2-13b-cls",
+      "empty_indices": [
+        62
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "casperhansen/mistral-7b-instruct-v0.1-awq",
+      "empty_indices": [
+        14,
+        15,
+        33,
+        57,
+        68,
+        76
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "chujiezheng/Smaug-34B-v0.1-ExPO",
+      "empty_indices": [
+        43,
+        56
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "cloudyu/TomGrc_FusionNet_34Bx2_MoE_v0.1_DPO_f16",
+      "empty_indices": [
+        43
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "codellama/CodeLlama-13b-Instruct-hf",
+      "empty_indices": [
+        11,
+        14,
+        19,
+        21,
+        27,
+        37,
+        41,
+        49,
+        52,
+        55,
+        60,
+        67,
+        69,
+        75,
+        79,
+        80,
+        81,
+        90,
+        95
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "codellama/CodeLlama-13b-hf",
+      "empty_indices": [
+        22
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "codellama/CodeLlama-7b-Instruct-hf",
+      "empty_indices": [
+        1,
+        2,
+        6,
+        10,
+        19,
+        20,
+        22,
+        27,
+        34,
+        41,
+        49,
+        50,
+        52,
+        57,
+        62,
+        63,
+        64,
+        65,
+        69,
+        72,
+        75,
+        89,
+        98
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "codellama/CodeLlama-7b-hf",
+      "empty_indices": [
+        44,
+        62
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "deepseek-ai/deepseek-coder-1.3b-base",
+      "empty_indices": [
+        2,
+        53,
+        71
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "deepseek-ai/deepseek-coder-1.3b-instruct",
+      "empty_indices": [
+        52,
+        79,
+        92
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+      "empty_indices": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        16,
+        19,
+        28,
+        29,
+        34,
+        35,
+        40,
+        41,
+        42,
+        52,
+        53,
+        56,
+        58,
+        60,
+        65,
+        70,
+        74,
+        75,
+        79,
+        81,
+        87,
+        88,
+        89,
+        93,
+        95,
+        98
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "deepseek-ai/deepseek-llm-7b-base",
+      "empty_indices": [
+        21,
+        58,
+        79,
+        80,
+        92
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "defog/sqlcoder-7b-2",
+      "empty_indices": [
+        2,
+        4,
+        11,
+        36,
+        52,
+        60,
+        71,
+        78,
+        79
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "dicta-il/dictalm2.0-instruct",
+      "empty_indices": [
+        2,
+        4,
+        6,
+        11,
+        21,
+        22,
+        29,
+        43,
+        50,
+        56,
+        74,
+        76,
+        78,
+        94
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "dphn/dolphin-2.6-mistral-7b",
+      "empty_indices": [
+        31,
+        95
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "facebook/galactica-6.7b",
+      "empty_indices": [
+        36
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    },
+    {
+      "model": "flax-community/gpt-neo-125M-code-clippy",
+      "empty_indices": [
+        6,
+        35,
+        40,
+        71,
+        84
+      ],
+      "reason": "Empty answers not yet classified as legitimate or failed requests."
+    }
+  ],
+  "coordinate_system": {
+    "pipeline_version": "text-dna-concat-v1",
+    "encoder": "Qwen/Qwen3-Embedding-8B",
+    "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "encoder_dtype": "torch.float32",
+    "encoder_max_seq_length": 40960,
+    "encoder_encode_normalize_embeddings": false,
+    "raw_embedding_dimension": 4096,
+    "pre_agg_embed_dim": 64,
+    "pre_agg_method": "matryoshka_prefix",
+    "normalize_embeddings": false,
+    "pre_projection_normalization": "none",
+    "aggregation_method": "concat",
+    "reduction_method": "random_projection",
+    "dna_dim": 128,
+    "random_seed": 42,
+    "projection_rng": "numpy.random.RandomState(MT19937).randn",
+    "projection_dtype": "float32",
+    "projection_column_normalization": "l2",
+    "projection_shape": [
+      6400,
+      128
+    ],
+    "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+    "probe_order": "provided_probe_inputs",
+    "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+    "probe_count": 100,
+    "final_dna_normalization": "none"
+  },
+  "generation": "Reused historical responses; zero provider API calls.",
+  "limitations": "100 historical random Chinese probes, not the new default 600 benchmark probes. Legacy generation provenance may be unknown.",
+  "storage_layout": "sha256-v1"
+}

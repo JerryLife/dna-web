@@ -1,0 +1,108 @@
+{
+  "model": "deepseek-ai/deepseek-math-7b-base",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 82.62978196144104,
+  "dna_dimension": 128,
+  "source_sha256": "283b348feaf8ad304f93c0f628790815980093879ed2635628d8d290c321ae72",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "37d67bbb80c1405c0316deb2bf75d8e4440572895d1980ee8830560cfaa6a578",
+  "model_name": "deepseek-ai/deepseek-math-7b-base",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "deepseek-ai/deepseek-math-7b-base",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-09-30T10:56:13.821057+00:00",
+    "computation_time_seconds": 0.005280720070004463,
+    "model_metadata": {
+      "model_name": "deepseek-ai/deepseek-math-7b-base",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 6459228160,
+        "parameter_count_billions": 6.46
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "deepseek-ai/deepseek-math-7b-base"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-11T04:20:25.956614",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "deepseek-ai/deepseek-math-7b-base",
+        "source_sha256": "283b348feaf8ad304f93c0f628790815980093879ed2635628d8d290c321ae72",
+        "summary_sha256": "000a34eb1ff7ef573bca12f5ab4afeacba02491b3a38f335c5ce4d02465575da",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": null,
+        "generation_config_status": "unknown_legacy_cache",
+        "web_mode": "raw",
+        "provider": "huggingface",
+        "web_directory": "deepseek-ai_deepseek-math-7b-base",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "response_source": "historical_cache_only",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "unknown_legacy_cache",
+  "replay_dna_sha256": "283c00607ce1334508c04e2eccbd789b4db22cdbe77d8d76b89b9580108f743e"
+}
