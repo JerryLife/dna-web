@@ -5,7 +5,11 @@
 import { describe, it, expect, beforeAll, afterAll, vi } from 'vitest';
 import request from 'supertest';
 import express from 'express';
-import { initDatabase, getDatabase, closeDatabase } from '../server/database.js';
+import { mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+
+let database: typeof import('../server/database.js');
 
 vi.mock('../server/services/email.js', () => ({ sendVerificationEmail: vi.fn().mockResolvedValue(true) }));
 
@@ -24,7 +28,7 @@ async function createTestApp() {
 
     // Proposals endpoint
     app.get('/api/proposals', async (req, res) => {
-        const db = await getDatabase();
+        const db = await database.getDatabase();
         const proposals = await db.all('SELECT * FROM proposals');
         res.json(proposals);
     });
@@ -34,19 +38,20 @@ async function createTestApp() {
 
 describe('Verify-to-Publish Pipeline', () => {
     let app: express.Application;
+    let testDirectory: string;
 
     beforeAll(async () => {
-        // Initialize test database
-        await initDatabase();
-        const db = await getDatabase();
-        await db.run('DELETE FROM votes');
-        await db.run('DELETE FROM proposals');
-        await db.run('DELETE FROM submission_queue');
+        testDirectory = await mkdtemp(join(tmpdir(), 'dna-pipeline-'));
+        vi.stubEnv('DNA_DATABASE_PATH', join(testDirectory, 'lab.db'));
+        database = await import('../server/database.js');
+        await database.initDatabase();
         app = await createTestApp();
     });
 
     afterAll(async () => {
-        await closeDatabase();
+        await database?.closeDatabase();
+        vi.unstubAllEnvs();
+        if (testDirectory) await rm(testDirectory, { recursive: true, force: true });
     });
 
     describe('Proposal Submission', () => {

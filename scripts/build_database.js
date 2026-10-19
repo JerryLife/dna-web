@@ -15,7 +15,9 @@ import { existsSync } from 'fs';
 import { createRequire } from 'module';
 import { UMAP } from 'umap-js';
 import config from '../config.json' with { type: 'json' };
+import legacyStorageAliases from './legacy_storage_aliases.json' with { type: 'json' };
 import { validateCoordinateSystem } from './validate_coordinate_system.js';
+import { validateStorageEntry } from './model_storage.js';
 
 const require = createRequire(import.meta.url);
 const TSNE = require('tsne-js');
@@ -47,6 +49,8 @@ async function buildDatabase(mode, datasetConfig) {
 
     const models = [];
     const errors = [];
+    const seenStorage = new Map();
+    const seenIds = new Set();
 
     try {
         // Ensure public directory exists
@@ -78,13 +82,14 @@ async function buildDatabase(mode, datasetConfig) {
             if (!dir.isDirectory()) continue;
             if (dir.name.startsWith('_') || dir.name.startsWith('.')) continue;
 
-            const modelId = dir.name;
-            const modelPath = join(scanPath, modelId);
+            const modelId = !datasetConfig.coordinateSystem
+                ? (legacyStorageAliases[dir.name] || dir.name) : dir.name;
+            const modelPath = join(scanPath, dir.name);
 
             try {
                 // Find DNA file
-                const dnaFile = join(modelPath, `${modelId}_dna.json`);
-                const summaryFile = join(modelPath, `${modelId}_summary.json`);
+                const dnaFile = join(modelPath, datasetConfig.storageLayout === 'sha256-v1' ? 'dna.json' : `${modelId}_dna.json`);
+                const summaryFile = join(modelPath, datasetConfig.storageLayout === 'sha256-v1' ? 'summary.json' : `${modelId}_summary.json`);
 
                 if (!existsSync(dnaFile)) {
                     errors.push(`No DNA file for ${modelId}`);
@@ -103,12 +108,18 @@ async function buildDatabase(mode, datasetConfig) {
                 }
 
                 // Parse model info
-                const parsed = parseModelId(modelId);
+                const originalModel = datasetConfig.storageLayout === 'sha256-v1'
+                    ? validateStorageEntry(modelId, dnaData, seenStorage) : null;
+                // Public IDs stay stable; storage IDs are never interpreted as model names.
+                const publicId = originalModel ? originalModel.replaceAll('/', '_') : modelId;
+                if (seenIds.has(publicId)) throw new Error(`Duplicate public model ID: ${publicId}`);
+                seenIds.add(publicId);
+                const parsed = parseModelId(publicId);
 
                 // Create model entry
                 const modelEntry = {
-                    id: modelId,
-                    name: parsed.fullName,
+                    id: publicId,
+                    name: originalModel || parsed.fullName,
                     organization: parsed.organization,
                     family: parsed.family,
                     parameters: parsed.parameters,
@@ -158,6 +169,7 @@ async function buildDatabase(mode, datasetConfig) {
             metadata: {
                 version: datasetConfig.coordinateSystem ? '1.0.1' : '1.0.0',
                 coordinate_system: datasetConfig.coordinateSystem || null,
+                storage_layout: datasetConfig.storageLayout || null,
                 coverage: datasetConfig.coverage || null,
                 total_models: models.length,
                 last_updated: new Date().toISOString().split('T')[0],
