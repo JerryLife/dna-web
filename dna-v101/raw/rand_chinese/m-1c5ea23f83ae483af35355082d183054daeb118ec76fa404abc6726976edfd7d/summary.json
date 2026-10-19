@@ -1,0 +1,108 @@
+{
+  "model": "cjvt/GaMS3-12B-Instruct",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 83.58539962768555,
+  "dna_dimension": 128,
+  "source_sha256": "6fe7bf068bd7dd385a6fa78e3603a0d389b797e88396815def09eb557bc0376a",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "ad260d115e36abd460d0f8fb63a73d06256be5ad9af6c771fdea5c7e14c94233",
+  "model_name": "cjvt/GaMS3-12B-Instruct",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "cjvt/GaMS3-12B-Instruct",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-09-30T10:08:58.711566+00:00",
+    "computation_time_seconds": 0.00747094489634037,
+    "model_metadata": {
+      "model_name": "cjvt/GaMS3-12B-Instruct",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gemma3_text",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 9500344320,
+        "parameter_count_billions": 9.5
+      },
+      "chat_model": {
+        "is_chat_model": true
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "cjvt/GaMS3-12B-Instruct"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-06T06:27:54.777326",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "cjvt/GaMS3-12B-Instruct",
+        "source_sha256": "6fe7bf068bd7dd385a6fa78e3603a0d389b797e88396815def09eb557bc0376a",
+        "summary_sha256": "e9269bf3a4493eaed7260063ec53992fbe331bce050b1431383a4ce29a43b673",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": null,
+        "generation_config_status": "unknown_legacy_cache",
+        "web_mode": "raw",
+        "provider": "huggingface",
+        "web_directory": "cjvt_GaMS3-12B-Instruct",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "response_source": "historical_cache_only",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "unknown_legacy_cache",
+  "replay_dna_sha256": "2773485c51fa23d23f83734c7ad601b6004357e7a02d067f774b238ade7c8e9b"
+}
