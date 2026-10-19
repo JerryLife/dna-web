@@ -48,7 +48,7 @@
       },
       "coverage": {
         "status": "incremental_verified_cache_replay",
-        "models": 366,
+        "models": 547,
         "note": "Only corrected signatures are compared. Unclassified empty-answer models are withheld."
       },
       "storageLayout": "sha256-v1"
