@@ -1,0 +1,112 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 68.12248420715332,
+  "dna_dimension": 128,
+  "source_sha256": "a5bf4923253efd641bbbd404726365556ba98567cd107da325b7675ced082610",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "b3a03b3d45f6563c342f0bbc55e14c586b31024171d3d8a46d490cd3f65e5642",
+  "model_name": "nvidia/nemotron-3.5-lightning",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "nvidia/nemotron-3.5-lightning",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-10-19T03:30:54.331620+00:00",
+    "computation_time_seconds": 0.0067715272307395935,
+    "model_metadata": {
+      "organization": "nvidia"
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "nvidia/nemotron-3.5-lightning",
+        "source_sha256": "a5bf4923253efd641bbbd404726365556ba98567cd107da325b7675ced082610",
+        "summary_sha256": "29dd82df1e6f30926168c69f4ef50ddec40e4329e80b14066f385918f07246ad",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": {
+          "model": "nvidia/nemotron-3.5-lightning",
+          "max_tokens": 1024,
+          "stream": false,
+          "provider": {
+            "require_parameters": true
+          },
+          "temperature": 0,
+          "top_p": 1,
+          "seed": 42,
+          "reasoning": {
+            "enabled": false
+          },
+          "per_probe_max_tokens_overrides": {}
+        },
+        "generation_config_status": "recorded",
+        "response_source": "new_openrouter_generation_20261019",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "recorded",
+  "generation_config": {
+    "model": "nvidia/nemotron-3.5-lightning",
+    "max_tokens": 1024,
+    "stream": false,
+    "provider": {
+      "require_parameters": true
+    },
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "reasoning": {
+      "enabled": false
+    },
+    "per_probe_max_tokens_overrides": {}
+  },
+  "output_capped_count": 98,
+  "replay_dna_sha256": "9f8d3a251608f72de414dfd861c7b0694c2387dcdb88dc6fea27481d0f988409"
+}

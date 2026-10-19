@@ -1,0 +1,112 @@
+{
+  "model": "google/gemini-4-argon",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 116.34490084648132,
+  "dna_dimension": 128,
+  "source_sha256": "fb798b31f6312822ead5465617b367e4295a500761dee1ffcfa90ee3e2cc758d",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "b3896872613cdd0e1ba3ec14570fecb453e5a3813c412d0085ff8192478c4c46",
+  "model_name": "google/gemini-4-argon",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "google/gemini-4-argon",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-10-19T03:26:47.008993+00:00",
+    "computation_time_seconds": 0.006004262715578079,
+    "model_metadata": {
+      "organization": "google"
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "google/gemini-4-argon",
+        "source_sha256": "fb798b31f6312822ead5465617b367e4295a500761dee1ffcfa90ee3e2cc758d",
+        "summary_sha256": "f79ca192aac0153085427488585081c65bff823ff723e166464b4b9837d2562d",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": {
+          "model": "google/gemini-4-argon",
+          "max_tokens": 4096,
+          "stream": false,
+          "provider": {
+            "require_parameters": true
+          },
+          "temperature": 0,
+          "top_p": 1,
+          "seed": 42,
+          "reasoning": {
+            "effort": "low"
+          },
+          "per_probe_max_tokens_overrides": {}
+        },
+        "generation_config_status": "recorded",
+        "response_source": "new_openrouter_generation_20261019",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "recorded",
+  "generation_config": {
+    "model": "google/gemini-4-argon",
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "require_parameters": true
+    },
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "reasoning": {
+      "effort": "low"
+    },
+    "per_probe_max_tokens_overrides": {}
+  },
+  "output_capped_count": 0,
+  "replay_dna_sha256": "15a92bdd45cc6fe364d41d68910bf960a4dcd9260b08b356709405fe09dc9c77"
+}
