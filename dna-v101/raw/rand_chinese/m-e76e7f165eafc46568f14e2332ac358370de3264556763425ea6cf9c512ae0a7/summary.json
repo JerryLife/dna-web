@@ -1,0 +1,108 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 57.465325593948364,
+  "dna_dimension": 128,
+  "source_sha256": "55beadf7fb380469c066410342cc2df3867fd83e5e05810181079855959f90d8",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "f8094703de833230d5c52b24696bfd0e06d5c60c3803fecca676c884c530a848",
+  "model_name": "EleutherAI/pythia-410m-deduped",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "EleutherAI/pythia-410m-deduped",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-09-29T23:06:09.347950+00:00",
+    "computation_time_seconds": 0.005862228572368622,
+    "model_metadata": {
+      "model_name": "EleutherAI/pythia-410m-deduped",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt_neox",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 353501184,
+        "parameter_count_billions": 0.35
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "EleutherAI/pythia-410m-deduped"
+      },
+      "metadata": {
+        "fetched_at": "2026-04-14T07:56:22.949968",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "EleutherAI/pythia-410m-deduped",
+        "source_sha256": "55beadf7fb380469c066410342cc2df3867fd83e5e05810181079855959f90d8",
+        "summary_sha256": "1946f767e8f2c6dc0751ecc5fa88ef7fa3a53d92fa6f3f7bcbf4e026495ba313",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": null,
+        "generation_config_status": "unknown_legacy_cache",
+        "web_mode": "raw",
+        "provider": "huggingface",
+        "web_directory": "EleutherAI_pythia-410m-deduped",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "response_source": "historical_cache_only",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "unknown_legacy_cache",
+  "replay_dna_sha256": "ca42f8ec74dc4a54457876e4383ad58ca9ee916388ff4cebe5c85d73ee83f94e"
+}
