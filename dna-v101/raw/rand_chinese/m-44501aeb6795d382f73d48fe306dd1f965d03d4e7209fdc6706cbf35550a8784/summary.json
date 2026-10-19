@@ -1,0 +1,107 @@
+{
+  "model": "leondz/artgpt2tox",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 48.33883714675903,
+  "dna_dimension": 128,
+  "source_sha256": "39a752f7b32e0f0f65dcd8b17c9c2e83c39853e763146b3119520e3ff8203cc1",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "de77346f033695d572e6871841df60ee31aca65dc4c75e22b4ac6c70bc4e9d0b",
+  "model_name": "leondz/artgpt2tox",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "leondz/artgpt2tox",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-09-30T15:11:44.672316+00:00",
+    "computation_time_seconds": 0.005184659734368324,
+    "model_metadata": {
+      "model_name": "leondz/artgpt2tox",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "gpt2",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count_billions": null
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "float32"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "leondz/artgpt2tox"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-03T04:36:37.569688",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "leondz/artgpt2tox",
+        "source_sha256": "39a752f7b32e0f0f65dcd8b17c9c2e83c39853e763146b3119520e3ff8203cc1",
+        "summary_sha256": "ad4d0ad7f3953697b4f80af8a2c775c4a14ef84d5fda38bc82a31ae21f2c3fa8",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": null,
+        "generation_config_status": "unknown_legacy_cache",
+        "web_mode": "raw",
+        "provider": "huggingface",
+        "web_directory": "leondz_artgpt2tox",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "response_source": "historical_cache_only",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "unknown_legacy_cache",
+  "replay_dna_sha256": "072bfcc79aad90b00be24917148d5dd6d7ac7405c851a50d6e4ef9fa8db510ab"
+}

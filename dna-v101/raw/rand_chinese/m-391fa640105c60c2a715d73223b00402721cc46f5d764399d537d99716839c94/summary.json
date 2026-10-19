@@ -1,0 +1,108 @@
+{
+  "model": "inference-net/Schematron-3B",
+  "empty_count": 0,
+  "unclassified_empty_count": 0,
+  "quality": "complete_or_documented_refusal",
+  "elapsed_seconds": 85.36728692054749,
+  "dna_dimension": 128,
+  "source_sha256": "c61c4f4af298094526f4d0b8b8559402aed6f9e780063600f39e9ac6e4d4f4ec",
+  "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+  "dna_sha256": "ae9a3fc0ffa0b2b8acb48e566589720d4ad98ea1f826c987b0e200caf3d4d6f4",
+  "model_name": "inference-net/Schematron-3B",
+  "extractor_type": "text",
+  "extractor_version": "1.0.1",
+  "dataset": "rand_chinese",
+  "num_probes": 100,
+  "metadata": {
+    "model_name": "inference-net/Schematron-3B",
+    "extraction_method": "text_embeddings_random_projection_concat",
+    "probe_set_id": "rand_chinese_100",
+    "probe_count": 100,
+    "dna_dimension": 128,
+    "embedding_dimension": 64,
+    "reduction_method": "random_projection",
+    "extraction_time": "2026-09-30T14:19:29.604127+00:00",
+    "computation_time_seconds": 0.0038146674633026123,
+    "model_metadata": {
+      "model_name": "inference-net/Schematron-3B",
+      "architecture": {
+        "type": "decoder_only",
+        "model_type": "llama",
+        "is_generative": true
+      },
+      "size": {
+        "parameter_count": 3564896256,
+        "parameter_count_billions": 3.56
+      },
+      "chat_model": {
+        "is_chat_model": false
+      },
+      "precision": {
+        "default_dtype": "bfloat16"
+      },
+      "repository": {
+        "is_gated": false,
+        "model_id": "inference-net/Schematron-3B"
+      },
+      "metadata": {
+        "fetched_at": "2026-05-07T16:26:56.892843",
+        "source": "huggingface_hub"
+      }
+    },
+    "extractor_config": {
+      "pipeline_version": "text-dna-concat-v1",
+      "encoder": "Qwen/Qwen3-Embedding-8B",
+      "encoder_name": "Qwen/Qwen3-Embedding-8B",
+      "encoder_encode_normalize_embeddings": false,
+      "raw_embedding_dimension": 4096,
+      "pre_agg_embed_dim": 64,
+      "pre_agg_method": "matryoshka_prefix",
+      "normalize_embeddings": false,
+      "pre_projection_normalization": "none",
+      "aggregation_method": "concat",
+      "reduction_method": "random_projection",
+      "dna_dim": 128,
+      "random_seed": 42,
+      "projection_rng": "numpy.random.RandomState(MT19937).randn",
+      "projection_dtype": "float32",
+      "projection_column_normalization": "l2",
+      "projection_shape": [
+        6400,
+        128
+      ],
+      "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+      "probe_order": "provided_probe_inputs",
+      "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+      "zero_placeholder_indices": [],
+      "final_dna_normalization": "none",
+      "provenance": {
+        "model": "inference-net/Schematron-3B",
+        "source_sha256": "c61c4f4af298094526f4d0b8b8559402aed6f9e780063600f39e9ac6e4d4f4ec",
+        "summary_sha256": "76cda25c893811253bd1a16f07489fc5aeb42c1cb1553e513d8a20277cc2f650",
+        "count": 100,
+        "empty_indices": [],
+        "known_refusal_indices": [],
+        "unclassified_empty_indices": [],
+        "generation_config": null,
+        "generation_config_status": "unknown_legacy_cache",
+        "web_mode": "raw",
+        "provider": "huggingface",
+        "web_directory": "inference-net_Schematron-3B",
+        "upstream_commit": "80dd33790124bc08bb0b9f873b22ac22dba6dd9e",
+        "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+        "response_source": "historical_cache_only",
+        "encoder_dtype": "torch.float32",
+        "encoder_max_seq_length": 40960,
+        "encoding_batch_size": 4,
+        "protocol": "v1.0.1 extractor with historical 100 random Chinese probes; not default 600 probes",
+        "encoding_runtime": {
+          "effective_batch_size": 4,
+          "attention_backend": "float32_efficient_sdpa_explicit_kv"
+        }
+      }
+    },
+    "aggregation_method": "concat"
+  },
+  "generation_config_status": "unknown_legacy_cache",
+  "replay_dna_sha256": "3fc912f78a41064482cecc60a5f78db534bef231c70899fc9f30614a461337fc"
+}
