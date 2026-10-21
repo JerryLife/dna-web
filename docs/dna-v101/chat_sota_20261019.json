@@ -831,5 +831,6 @@
   },
   "storage_layout": "sha256-v1",
   "generation": "New OpenRouter text generations, raw responses cached locally per request; no optional models.",
-  "limitations": "Same historical 100 text probes, not 600. No visual/audio evaluation. Generation parameters differ where APIs require reasoning or omit sampling controls; capped outputs and documented refusals are counted explicitly. Catalog presence is not a SOTA ranking."
+  "limitations": "Same historical 100 text probes, not 600. No visual/audio evaluation. Generation parameters differ where APIs require reasoning or omit sampling controls; capped outputs and documented refusals are counted explicitly. Catalog presence is not a SOTA ranking.",
+  "sanitized_evidence_url": "/provenance/chat_sota_20261019_evidence.json"
 }

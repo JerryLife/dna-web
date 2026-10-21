@@ -1,0 +1,836 @@
+{
+  "batch": "chat_sota_20261019",
+  "mode": "chat",
+  "processed": 24,
+  "published": [
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "storage_id": "m-caf1ef1f3bdf5452e389231c9ade544bae824aff51e08ebffbd85cd0fb65f1f0",
+      "source_sha256": "ab16e8c8c5eafe65df14f21b84cc021863a30460501c6e094a5a970e9cd29e6f",
+      "dna_path": "dna-v101/chat/rand_chinese/m-caf1ef1f3bdf5452e389231c9ade544bae824aff51e08ebffbd85cd0fb65f1f0/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-caf1ef1f3bdf5452e389231c9ade544bae824aff51e08ebffbd85cd0fb65f1f0/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 10,
+      "generation_config": {
+        "model": "deepseek/deepseek-v4.1-flash-1017",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "minimax/minimax-m3",
+      "storage_id": "m-b3508133423993d71477e86afb3499b88d606cc6a3fb95369cb57ef1bb20a9a6",
+      "source_sha256": "be55cc5b44dbb637f3a89ba793982eb099bcd955f53e6c0bdc11bdc78bd5cc7d",
+      "dna_path": "dna-v101/chat/rand_chinese/m-b3508133423993d71477e86afb3499b88d606cc6a3fb95369cb57ef1bb20a9a6/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-b3508133423993d71477e86afb3499b88d606cc6a3fb95369cb57ef1bb20a9a6/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 6,
+      "generation_config": {
+        "model": "minimax/minimax-m3",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {
+          "96": 4096
+        }
+      }
+    },
+    {
+      "model": "mistralai/mistral-large-4-0",
+      "storage_id": "m-37c22cc50fe0414039b5d27aed46e3f41cddf2e075394daf40f6695418a8f5fc",
+      "source_sha256": "cc42c1494bae1482541bad686befb1e8d4aa4e0fc03394ba79671005f27262bb",
+      "dna_path": "dna-v101/chat/rand_chinese/m-37c22cc50fe0414039b5d27aed46e3f41cddf2e075394daf40f6695418a8f5fc/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-37c22cc50fe0414039b5d27aed46e3f41cddf2e075394daf40f6695418a8f5fc/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 20,
+      "generation_config": {
+        "model": "mistralai/mistral-large-4-0",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "storage_id": "m-422e5ba87859dd55a2d59ee40eda13777c0c0d7976e023e4e5c8982a0ba38584",
+      "source_sha256": "07241cba4b6c36b791c9759900a051206827a0f13ae31eac17c5a3a126f7d7e7",
+      "dna_path": "dna-v101/chat/rand_chinese/m-422e5ba87859dd55a2d59ee40eda13777c0c0d7976e023e4e5c8982a0ba38584/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-422e5ba87859dd55a2d59ee40eda13777c0c0d7976e023e4e5c8982a0ba38584/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "google/gemini-3.8-flash",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "x-ai/grok-4.7",
+      "storage_id": "m-5d9fc1a7243d688183442757371984f414c7cc2d411ee6503a09c6970e16b819",
+      "source_sha256": "fb7d2f6262b56bc69995872ef7f4caf118923a5e3052d0198631cffc4e7b6840",
+      "dna_path": "dna-v101/chat/rand_chinese/m-5d9fc1a7243d688183442757371984f414c7cc2d411ee6503a09c6970e16b819/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-5d9fc1a7243d688183442757371984f414c7cc2d411ee6503a09c6970e16b819/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "x-ai/grok-4.7",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-2.4t-a95b",
+      "storage_id": "m-ceff21f92ca51c3b22f82ac171b3c317ba5dded9670147177bfb5a201de417b2",
+      "source_sha256": "4271e0b48e6cf833a69055163b5653532f9da030ee668065fa39558439367efd",
+      "dna_path": "dna-v101/chat/rand_chinese/m-ceff21f92ca51c3b22f82ac171b3c317ba5dded9670147177bfb5a201de417b2/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-ceff21f92ca51c3b22f82ac171b3c317ba5dded9670147177bfb5a201de417b2/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "qwen/qwen3.8-2.4t-a95b",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "storage_id": "m-0f7beea535abe0d675abd067a29094ef7931c3c9d27a2ab48b082d9ab6bc8e26",
+      "source_sha256": "fb94906458c5a2033ccb4697058c07035a64bd131a283d1359afed3b43b3f2fc",
+      "dna_path": "dna-v101/chat/rand_chinese/m-0f7beea535abe0d675abd067a29094ef7931c3c9d27a2ab48b082d9ab6bc8e26/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-0f7beea535abe0d675abd067a29094ef7931c3c9d27a2ab48b082d9ab6bc8e26/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "openai/gpt-6.1-sol",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "anthropic/claude-sonnet-5.5",
+      "storage_id": "m-3215ce67cc8ba97581612d8893fc2e2ac7b2694f63ec6901f42455038bebf106",
+      "source_sha256": "4ac579678bf0fdaa17ecff3c5e5fb75430f354c3157d034500730098251da6db",
+      "dna_path": "dna-v101/chat/rand_chinese/m-3215ce67cc8ba97581612d8893fc2e2ac7b2694f63ec6901f42455038bebf106/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-3215ce67cc8ba97581612d8893fc2e2ac7b2694f63ec6901f42455038bebf106/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "anthropic/claude-sonnet-5.5",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "google/gemini-4-argon",
+      "storage_id": "m-7ff6a9f995dcaa1ccf49484e75ac001f9ff08bdf4e9c87470e581740e949f526",
+      "source_sha256": "fb798b31f6312822ead5465617b367e4295a500761dee1ffcfa90ee3e2cc758d",
+      "dna_path": "dna-v101/chat/rand_chinese/m-7ff6a9f995dcaa1ccf49484e75ac001f9ff08bdf4e9c87470e581740e949f526/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-7ff6a9f995dcaa1ccf49484e75ac001f9ff08bdf4e9c87470e581740e949f526/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "google/gemini-4-argon",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "moonshotai/kimi-k3",
+      "storage_id": "m-9e460c49820cbe4ed2d3ca3f73a72cfb6c45c1249cf9902db5fd518cf05c80c3",
+      "source_sha256": "d9f27031f3f98931cc7b9b8701a13aaa9379467823a5a968b0c97479357ce5d7",
+      "dna_path": "dna-v101/chat/rand_chinese/m-9e460c49820cbe4ed2d3ca3f73a72cfb6c45c1249cf9902db5fd518cf05c80c3/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-9e460c49820cbe4ed2d3ca3f73a72cfb6c45c1249cf9902db5fd518cf05c80c3/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 39,
+      "generation_config": {
+        "model": "moonshotai/kimi-k3",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "anthropic/claude-opus-5.5",
+      "storage_id": "m-0a9d29c4ba3e27c864ef5a11fb861eca7b96cd47b7c21760dbd975602db01c21",
+      "source_sha256": "160f679528721cd914994d6589f725ce5f4732d548f68709f750a4fab1fb9aba",
+      "dna_path": "dna-v101/chat/rand_chinese/m-0a9d29c4ba3e27c864ef5a11fb861eca7b96cd47b7c21760dbd975602db01c21/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-0a9d29c4ba3e27c864ef5a11fb861eca7b96cd47b7c21760dbd975602db01c21/summary.json",
+      "empty_indices": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        24,
+        26,
+        29,
+        32,
+        34,
+        36,
+        37,
+        39,
+        40,
+        41,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        55,
+        56,
+        58,
+        59,
+        60,
+        61,
+        62,
+        64,
+        71,
+        72,
+        73,
+        74,
+        78,
+        80,
+        82,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        93,
+        97,
+        99
+      ],
+      "known_refusal_indices": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        24,
+        26,
+        29,
+        32,
+        34,
+        36,
+        37,
+        39,
+        40,
+        41,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        55,
+        56,
+        58,
+        59,
+        60,
+        61,
+        62,
+        64,
+        71,
+        72,
+        73,
+        74,
+        78,
+        80,
+        82,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        93,
+        97,
+        99
+      ],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "anthropic/claude-opus-5.5",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "openai/gpt-6-astra",
+      "storage_id": "m-5553b7ca5f3e748a4828c5252ca69f95670f0f5064bf256b7070c063c1dacf93",
+      "source_sha256": "0c58662d5c8057daf3a060ecd5de7b82135fd4315baaeaf0263d688cf325a7fc",
+      "dna_path": "dna-v101/chat/rand_chinese/m-5553b7ca5f3e748a4828c5252ca69f95670f0f5064bf256b7070c063c1dacf93/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-5553b7ca5f3e748a4828c5252ca69f95670f0f5064bf256b7070c063c1dacf93/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "openai/gpt-6-astra",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "anthropic/claude-fable-5.1",
+      "storage_id": "m-52b37df64315b05ec8d0d34bc541272baab35f8508f66e70c26833a855a877b2",
+      "source_sha256": "3fdca857cc19e51e9e5106f40302708ef751a0909f8b8ad3b7709f5ecf8a1d26",
+      "dna_path": "dna-v101/chat/rand_chinese/m-52b37df64315b05ec8d0d34bc541272baab35f8508f66e70c26833a855a877b2/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-52b37df64315b05ec8d0d34bc541272baab35f8508f66e70c26833a855a877b2/summary.json",
+      "empty_indices": [
+        0,
+        4,
+        5,
+        6,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17,
+        24,
+        27,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        39,
+        41,
+        48,
+        49,
+        50,
+        51,
+        52,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66,
+        68,
+        75,
+        76,
+        78,
+        80,
+        81,
+        82,
+        84,
+        85,
+        90,
+        91,
+        94,
+        98
+      ],
+      "known_refusal_indices": [
+        0,
+        4,
+        5,
+        6,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17,
+        24,
+        27,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        39,
+        41,
+        48,
+        49,
+        50,
+        51,
+        52,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66,
+        68,
+        75,
+        76,
+        78,
+        80,
+        81,
+        82,
+        84,
+        85,
+        90,
+        91,
+        94,
+        98
+      ],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "anthropic/claude-fable-5.1",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "storage_id": "m-26f56e65693b0c6fb1e60caf73347f20f69fce3d68a58b72da2c9840866a03f7",
+      "source_sha256": "eba9f3514a4d958ed99f4b78ff488f9ca972b0226620bb01b302b590239f4e52",
+      "dna_path": "dna-v101/chat/rand_chinese/m-26f56e65693b0c6fb1e60caf73347f20f69fce3d68a58b72da2c9840866a03f7/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-26f56e65693b0c6fb1e60caf73347f20f69fce3d68a58b72da2c9840866a03f7/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "z-ai/glm-5.3-flash",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning",
+      "storage_id": "m-9ff6170077842b964832e9c5a620c3d94112338bbe3ea77927bcb59a8aefd127",
+      "source_sha256": "a5bf4923253efd641bbbd404726365556ba98567cd107da325b7675ced082610",
+      "dna_path": "dna-v101/chat/rand_chinese/m-9ff6170077842b964832e9c5a620c3d94112338bbe3ea77927bcb59a8aefd127/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-9ff6170077842b964832e9c5a620c3d94112338bbe3ea77927bcb59a8aefd127/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 98,
+      "generation_config": {
+        "model": "nvidia/nemotron-3.5-lightning",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "nvidia/nemotron-3.5-super-vl",
+      "storage_id": "m-5075871206dc21796aea65d1e0cfbde72354c461b5dbc0429a4072c6573f2252",
+      "source_sha256": "be2086bd1994ee93389510e142aadd7fba211a22793248d89025925eddf93fa8",
+      "dna_path": "dna-v101/chat/rand_chinese/m-5075871206dc21796aea65d1e0cfbde72354c461b5dbc0429a4072c6573f2252/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-5075871206dc21796aea65d1e0cfbde72354c461b5dbc0429a4072c6573f2252/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 72,
+      "generation_config": {
+        "model": "nvidia/nemotron-3.5-super-vl",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-flash",
+      "storage_id": "m-1d04f82b2a591a9d3bbd7827c80732fa4efc2bb335149cc849c4b2f2df8d63a1",
+      "source_sha256": "2d568b3c8eb1783fe04be1d8788e39a0c4f378308f9de4bd214bffdb86ad3f48",
+      "dna_path": "dna-v101/chat/rand_chinese/m-1d04f82b2a591a9d3bbd7827c80732fa4efc2bb335149cc849c4b2f2df8d63a1/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-1d04f82b2a591a9d3bbd7827c80732fa4efc2bb335149cc849c4b2f2df8d63a1/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 39,
+      "generation_config": {
+        "model": "qwen/qwen3.8-flash",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-omni-flash",
+      "storage_id": "m-46f7ae128ae4fc43b05f44e99ff47f815018940a7957be105c0b651dbdb5bb9f",
+      "source_sha256": "754d84c97fdcfa30c95487734cdf20005500eb1e59d17c75ebb97d5bec9252bf",
+      "dna_path": "dna-v101/chat/rand_chinese/m-46f7ae128ae4fc43b05f44e99ff47f815018940a7957be105c0b651dbdb5bb9f/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-46f7ae128ae4fc43b05f44e99ff47f815018940a7957be105c0b651dbdb5bb9f/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 49,
+      "generation_config": {
+        "model": "qwen/qwen3.8-omni-flash",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "storage_id": "m-e5d076977e9516070ad7d81b629c01fa2b74609bf7af89d086efd4b908310d3a",
+      "source_sha256": "8653d08e9a0a8af71a7cafa811f5a59b4c2526557a7cf722925821be2e86fad1",
+      "dna_path": "dna-v101/chat/rand_chinese/m-e5d076977e9516070ad7d81b629c01fa2b74609bf7af89d086efd4b908310d3a/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-e5d076977e9516070ad7d81b629c01fa2b74609bf7af89d086efd4b908310d3a/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "openai/gpt-6-luna",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "anthropic/claude-haiku-5.5",
+      "storage_id": "m-a3fa969e9aa16e635915675f11cec62c9cab37350259922a1627a17d49253e2e",
+      "source_sha256": "07d93d3ce3cf1a16c14766484c83b3a07fc584706e6f694044f7184e9b0a9588",
+      "dna_path": "dna-v101/chat/rand_chinese/m-a3fa969e9aa16e635915675f11cec62c9cab37350259922a1627a17d49253e2e/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-a3fa969e9aa16e635915675f11cec62c9cab37350259922a1627a17d49253e2e/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "anthropic/claude-haiku-5.5",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "cohere/command-a-plus",
+      "storage_id": "m-fb1e08e1a886ab382d7d968cc5d19327d824728971da79df20dfd34a480fb885",
+      "source_sha256": "7aad852fa37243b71b0ab194ef9446b2d5f02c46fe491d546e76f19a2da4e27a",
+      "dna_path": "dna-v101/chat/rand_chinese/m-fb1e08e1a886ab382d7d968cc5d19327d824728971da79df20dfd34a480fb885/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-fb1e08e1a886ab382d7d968cc5d19327d824728971da79df20dfd34a480fb885/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 13,
+      "generation_config": {
+        "model": "cohere/command-a-plus",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "bytedance-seed/seed-2-1-turbo",
+      "storage_id": "m-2d7fb16abd3686f898685332c9cd67b12c01da8d1e6cd88b9cb1ec550f1a36fa",
+      "source_sha256": "bd110b736e544b11b1d4da70d7a6f1ca5fae24ed2af437b0abf935c16305abc6",
+      "dna_path": "dna-v101/chat/rand_chinese/m-2d7fb16abd3686f898685332c9cd67b12c01da8d1e6cd88b9cb1ec550f1a36fa/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-2d7fb16abd3686f898685332c9cd67b12c01da8d1e6cd88b9cb1ec550f1a36fa/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 8,
+      "generation_config": {
+        "model": "bytedance-seed/seed-2-1-turbo",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-max-0902",
+      "storage_id": "m-74277771bfd26228fa4b020d5816a9837c25f383d9fe16005064508f0a092994",
+      "source_sha256": "86e41ce2a81baa30009616c69e5e1261b92f6bd51bd9c9e979d000b20a51dbf2",
+      "dna_path": "dna-v101/chat/rand_chinese/m-74277771bfd26228fa4b020d5816a9837c25f383d9fe16005064508f0a092994/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-74277771bfd26228fa4b020d5816a9837c25f383d9fe16005064508f0a092994/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 0,
+      "generation_config": {
+        "model": "qwen/qwen3.8-max-0902",
+        "max_tokens": 4096,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "effort": "low"
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    },
+    {
+      "model": "mistralai/mistral-medium-3-5",
+      "storage_id": "m-8b7aef7297b5adb9bee2bb3929fa4d675969b4a67168072502f22a2918342dc1",
+      "source_sha256": "03f031abf020ae7e24f095ac7be5b1fe1b730db92371a852f85d8c5ac0edbe10",
+      "dna_path": "dna-v101/chat/rand_chinese/m-8b7aef7297b5adb9bee2bb3929fa4d675969b4a67168072502f22a2918342dc1/dna.json",
+      "summary_path": "dna-v101/chat/rand_chinese/m-8b7aef7297b5adb9bee2bb3929fa4d675969b4a67168072502f22a2918342dc1/summary.json",
+      "empty_indices": [],
+      "known_refusal_indices": [],
+      "output_capped_count": 97,
+      "generation_config": {
+        "model": "mistralai/mistral-medium-3-5",
+        "max_tokens": 1024,
+        "stream": false,
+        "provider": {
+          "require_parameters": true
+        },
+        "temperature": 0,
+        "top_p": 1,
+        "seed": 42,
+        "reasoning": {
+          "enabled": false
+        },
+        "per_probe_max_tokens_overrides": {}
+      }
+    }
+  ],
+  "withheld": [],
+  "coordinate_system": {
+    "pipeline_version": "text-dna-concat-v1",
+    "encoder": "Qwen/Qwen3-Embedding-8B",
+    "encoder_revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "encoder_dtype": "torch.float32",
+    "encoder_max_seq_length": 40960,
+    "encoder_encode_normalize_embeddings": false,
+    "raw_embedding_dimension": 4096,
+    "pre_agg_embed_dim": 64,
+    "pre_agg_method": "matryoshka_prefix",
+    "normalize_embeddings": false,
+    "pre_projection_normalization": "none",
+    "aggregation_method": "concat",
+    "reduction_method": "random_projection",
+    "dna_dim": 128,
+    "random_seed": 42,
+    "projection_rng": "numpy.random.RandomState(MT19937).randn",
+    "projection_dtype": "float32",
+    "projection_column_normalization": "l2",
+    "projection_shape": [
+      6400,
+      128
+    ],
+    "projection_sha256": "08d4233dd9c1fb58e4c35a1035df063e3adb5b72e14c5566139824941e2c793a",
+    "probe_order": "provided_probe_inputs",
+    "probe_order_sha256": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+    "probe_count": 100,
+    "final_dna_normalization": "none"
+  },
+  "storage_layout": "sha256-v1",
+  "generation": "New OpenRouter text generations, raw responses cached locally per request; no optional models.",
+  "limitations": "Same historical 100 text probes, not 600. No visual/audio evaluation. Generation parameters differ where APIs require reasoning or omit sampling controls; capped outputs and documented refusals are counted explicitly. Catalog presence is not a SOTA ranking.",
+  "sanitized_evidence_url": "/provenance/chat_sota_20261019_evidence.json"
+}

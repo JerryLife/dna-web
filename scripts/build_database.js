@@ -9,7 +9,7 @@
  *   node scripts/build_database.js chat     # Build chat only
  */
 
-import { readdir, readFile, writeFile, mkdir } from 'fs/promises';
+import { readdir, readFile, writeFile, mkdir, copyFile } from 'fs/promises';
 import { join, basename } from 'path';
 import { existsSync } from 'fs';
 import { createRequire } from 'module';
@@ -18,6 +18,8 @@ import config from '../config.json' with { type: 'json' };
 import legacyStorageAliases from './legacy_storage_aliases.json' with { type: 'json' };
 import { validateCoordinateSystem } from './validate_coordinate_system.js';
 import { validateStorageEntry } from './model_storage.js';
+
+import { chatProvenance } from './chat_provenance.js';
 
 const require = createRequire(import.meta.url);
 const TSNE = require('tsne-js');
@@ -47,6 +49,12 @@ function resolveProjectionMethod(datasetConfig) {
 async function buildDatabase(mode, datasetConfig) {
     console.log(`\n🧬 Building ${mode.toUpperCase()} DNA Database...`);
 
+    if (mode === 'chat') {
+        await mkdir('public/provenance', { recursive: true });
+        for (const name of ['chat_sota_20261019.json', 'chat_sota_20261019_evidence.json']) {
+            await copyFile(`docs/dna-v101/${name}`, `public/provenance/${name}`);
+        }
+    }
     const models = [];
     const errors = [];
     const seenStorage = new Map();
@@ -128,6 +136,7 @@ async function buildDatabase(mode, datasetConfig) {
                     x: 0, // Will be updated with t-SNE
                     y: 0,
                     metadata: {
+                        ...(mode === 'chat' ? chatProvenance(originalModel || parsed.fullName) : {}),
                         dna_dimension: dnaData.metadata?.dna_dimension || 128,
                         extraction_time: dnaData.metadata?.extraction_time,
                         probe_count: dnaData.metadata?.probe_count,

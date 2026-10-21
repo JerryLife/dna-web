@@ -13,8 +13,12 @@ it('builds portable IDs without losing model names and refuses to overwrite outp
         await mkdir(join(directory, 'scripts'));
         await symlink(join(root, 'node_modules'), join(directory, 'node_modules'), 'junction');
         await writeFile(join(directory, 'package.json'), JSON.stringify({ type: 'module' }));
-        for (const name of ['build_database.js', 'validate_coordinate_system.js', 'model_storage.js', 'legacy_storage_aliases.json']) {
+        for (const name of ['build_database.js', 'validate_coordinate_system.js', 'model_storage.js', 'legacy_storage_aliases.json', 'chat_provenance.js']) {
             await copyFile(join(root, 'scripts', name), join(directory, 'scripts', name));
+        }
+        await mkdir(join(directory, 'docs/dna-v101'), { recursive: true });
+        for (const name of ['chat_sota_20261019.json', 'chat_sota_20261019_evidence.json']) {
+            await copyFile(join(root, 'docs/dna-v101', name), join(directory, 'docs/dna-v101', name));
         }
         const config = JSON.parse(await readFile(join(root, 'config.json'), 'utf8'));
         const current = config.datasets.chat;

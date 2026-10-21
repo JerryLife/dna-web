@@ -27,6 +27,9 @@ import {
 import { useData, useDualData, type DnaMode } from '@/contexts/DataContext';
 import type { ModelData, RankedModel } from '@/utils/data';
 
+import { ResponseCoverage } from '@/components/ResponseCoverage';
+import { sharedCoverageText } from '@/utils/coverage';
+
 // Model Combobox Component
 interface ModelComboboxProps {
     placeholder?: string;
@@ -158,12 +161,13 @@ function MiniBarcode({ signature, dataLoader }: { signature: number[] | null; da
 // Result Card Component
 interface ResultCardProps {
     result: RankedModel;
+    reference: ModelData;
     rank: number;
     dataLoader: ReturnType<typeof useData>;
     onCompare: () => void;
 }
 
-function ResultCard({ result, rank, dataLoader, onCompare }: ResultCardProps) {
+function ResultCard({ result, reference, rank, dataLoader, onCompare }: ResultCardProps) {
     // For non-negative DNA signatures, cosine similarity is in [0,1], so distance is in [0,1]
     // Map distance [0,1] to percent [100,0]: similarity = (1 - distance) * 100
     const getSimilarityPercent = (distance: number) => {
@@ -219,6 +223,8 @@ function ResultCard({ result, rank, dataLoader, onCompare }: ResultCardProps) {
                     </Group>
                     <div className="workbench-mini-barcode-wrap">
                         <MiniBarcode signature={result.signature} dataLoader={dataLoader} />
+                        <ResponseCoverage model={result} />
+                        <Text size="xs" c="dimmed">{sharedCoverageText(reference, result)}</Text>
                     </div>
                 </Stack>
             </Group>
@@ -343,6 +349,7 @@ function ComparisonDetailContent({ refModel, compModel, dataLoader }: Omit<Compa
                     <Text fw={600} size="sm" mb="xs" className="model-title-truncate">{refModel.name}</Text>
                     <div className="workbench-barcode-wrap">
                         <FullBarcode signature={refModel.signature} dataLoader={dataLoader} />
+                        <ResponseCoverage model={refModel} />
                     </div>
                 </div>
 
@@ -360,6 +367,8 @@ function ComparisonDetailContent({ refModel, compModel, dataLoader }: Omit<Compa
                     <Text fw={600} size="sm" mb="xs" className="model-title-truncate">{compModel.name}</Text>
                     <div className="workbench-barcode-wrap">
                         <FullBarcode signature={compModel.signature} dataLoader={dataLoader} />
+                        <ResponseCoverage model={compModel} />
+                        <Text size="xs" c="dimmed">{sharedCoverageText(refModel, compModel)}</Text>
                     </div>
                 </div>
             </Stack>
@@ -453,12 +462,13 @@ function WorkbenchContent({ mode }: WorkbenchContentProps) {
                             <ModelCombobox
                                 placeholder="Choose anchor model..."
                                 value={referenceModel}
-                                onChange={setReferenceModel}
+                                onChange={(id) => { setReferenceModel(id); setResults([]); setCompareDetailId(null); }}
                                 clearable
                                 mode={mode}
                             />
                         </div>
 
+                        {refModelData && <ResponseCoverage model={refModelData} />}
                         <div>
                             <Text size="sm" fw={500} mb="xs" className="workbench-label">Compare against (optional)</Text>
                             <ModelCombobox
@@ -536,6 +546,7 @@ function WorkbenchContent({ mode }: WorkbenchContentProps) {
                                     <ResultCard
                                         key={result.id}
                                         result={result}
+                                        reference={refModelData!}
                                         rank={index}
                                         dataLoader={dataLoader}
                                         onCompare={() => setCompareDetailId(result.id)}

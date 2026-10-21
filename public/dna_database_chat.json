@@ -1614,7 +1614,72 @@
         "extraction_time": "2026-10-19T03:28:37.945792+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 56
+        "empty_answer_count": 56,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 56,
+          "zero_slot_indices": [
+            0,
+            2,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            14,
+            16,
+            17,
+            18,
+            19,
+            24,
+            26,
+            29,
+            32,
+            34,
+            36,
+            37,
+            39,
+            40,
+            41,
+            44,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            55,
+            56,
+            58,
+            59,
+            60,
+            61,
+            62,
+            64,
+            71,
+            72,
+            73,
+            74,
+            78,
+            80,
+            82,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            93,
+            97,
+            99
+          ],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -2496,7 +2561,15 @@
         "extraction_time": "2026-10-19T03:23:43.630603+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -4407,7 +4480,15 @@
         "extraction_time": "2026-10-19T03:33:17.435545+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 39,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -5877,7 +5958,15 @@
         "extraction_time": "2026-10-19T03:29:46.212415+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -6612,7 +6701,15 @@
         "extraction_time": "2026-10-19T03:37:03.563047+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 8,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -7200,7 +7297,15 @@
         "extraction_time": "2026-10-19T03:24:50.666743+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -7935,7 +8040,15 @@
         "extraction_time": "2026-10-19T03:19:31.686076+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 20,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -9258,7 +9371,15 @@
         "extraction_time": "2026-10-19T03:21:43.820091+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -10728,7 +10849,15 @@
         "extraction_time": "2026-10-19T03:34:32.251916+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 49,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -11757,7 +11886,15 @@
         "extraction_time": "2026-10-19T03:32:00.286739+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 72,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -12051,7 +12188,64 @@
         "extraction_time": "2026-10-19T03:29:14.428586+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 48
+        "empty_answer_count": 48,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 48,
+          "zero_slot_indices": [
+            0,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            14,
+            16,
+            17,
+            24,
+            27,
+            28,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            39,
+            41,
+            48,
+            49,
+            50,
+            51,
+            52,
+            56,
+            57,
+            58,
+            60,
+            61,
+            62,
+            63,
+            64,
+            66,
+            68,
+            75,
+            76,
+            78,
+            80,
+            81,
+            82,
+            84,
+            85,
+            90,
+            91,
+            94,
+            98
+          ],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -12492,7 +12686,15 @@
         "extraction_time": "2026-10-19T03:28:54.322313+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -13521,7 +13723,15 @@
         "extraction_time": "2026-10-19T03:22:19.588734+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -15726,7 +15936,15 @@
         "extraction_time": "2026-10-19T03:37:42.721100+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -17343,7 +17561,15 @@
         "extraction_time": "2026-10-19T03:26:47.008993+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -18078,7 +18304,15 @@
         "extraction_time": "2026-10-19T03:38:53.992789+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 97,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -20283,7 +20517,15 @@
         "extraction_time": "2026-10-19T03:28:10.630890+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 39,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -20430,7 +20672,15 @@
         "extraction_time": "2026-10-19T03:30:54.331620+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 98,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -21018,7 +21268,15 @@
         "extraction_time": "2026-10-19T03:35:13.865700+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -23517,7 +23775,15 @@
         "extraction_time": "2026-10-19T03:17:56.331237+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 6,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -25134,7 +25400,15 @@
         "extraction_time": "2026-10-19T03:16:56.964673+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 10,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -25575,7 +25849,15 @@
         "extraction_time": "2026-10-19T03:23:19.033479+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -27633,7 +27915,15 @@
         "extraction_time": "2026-10-19T03:34:45.051792+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 0,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
@@ -30132,7 +30422,15 @@
         "extraction_time": "2026-10-19T03:35:58.847968+00:00",
         "probe_count": 100,
         "extraction_version": "1.0.1",
-        "empty_answer_count": 0
+        "empty_answer_count": 0,
+        "response_coverage": {
+          "probe_count": 100,
+          "capped_output_count": 13,
+          "documented_refusal_count": 0,
+          "zero_slot_indices": [],
+          "probe_set": "8e01e69df865b3123c9242ff0d6dd39761e21e5e87e7e3c6b17e4a139c7c1c09",
+          "provenance_url": "/provenance/chat_sota_20261019.json"
+        }
       }
     },
     {
