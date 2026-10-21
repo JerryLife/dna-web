@@ -20,6 +20,11 @@ import { useDebouncedValue, useResizeObserver, useMediaQuery } from '@mantine/ho
 import { useData, type DnaMode } from '@/contexts/DataContext';
 import type { ModelData } from '@/utils/data';
 import config from '@/config';
+import { coverageText, provenanceUrl } from '@/utils/coverage';
+
+function escapeTooltip(value: unknown): string {
+    return String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
+}
 
 // Per-mode visualization config: falls back to top-level `visualization` if a dataset block omits it.
 function getVizConfig(mode: DnaMode) {
@@ -211,6 +216,7 @@ export default function GalaxyPage() {
     const [containerRef, containerRect] = useResizeObserver();
     const svgRef = useRef<SVGSVGElement>(null);
     const tooltipRef = useRef<HTMLDivElement>(null);
+    const tooltipHideTimer = useRef<ReturnType<typeof setTimeout>>();
 
     // Dimensions from ResizeObserver (triggers re-render on resize)
     const containerWidth = containerRect.width;
@@ -607,15 +613,21 @@ export default function GalaxyPage() {
                 .attr('stroke-opacity', HULL_STROKE_OPACITY)
                 .style('cursor', 'pointer')
                 .on('mouseenter', function (event) {
+                    clearTimeout(tooltipHideTimer.current);
                     tooltip.innerHTML = `
-                        <div style="font-weight: 600">${org}</div>
+                        <div style="font-weight: 600">${escapeTooltip(org)}</div>
                         <div style="color: #888">${cluster.length} of ${orgModels.length} models</div>
                     `;
                     tooltip.style.display = 'block';
                     updateTooltipPosition(event);
                 })
                 .on('mousemove', updateTooltipPosition)
-                .on('mouseleave', () => { tooltip.style.display = 'none'; });
+                .on('mouseleave', () => {
+                    clearTimeout(tooltipHideTimer.current);
+                    tooltipHideTimer.current = setTimeout(() => {
+                        if (!tooltip.matches(':hover')) tooltip.style.display = 'none';
+                    }, 250);
+                });
         }
 
         // Draw dots
@@ -643,18 +655,35 @@ export default function GalaxyPage() {
             .on('mouseenter', function (event, d) {
                 const count = orgCounts.get(d.organization || 'Others') || 0;
                 const color = generateOrgColor(d.organization || 'Others', count);
+                clearTimeout(tooltipHideTimer.current);
                 tooltip.innerHTML = `
-                    <div style="font-weight: 600">${d.name}</div>
+                    <div style="font-weight: 600">${escapeTooltip(d.name)}</div>
                     <div style="display: flex; gap: 6px; margin-top: 4px;">
-                        <span style="background: ${color}44; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 12px;">${d.organization}</span>
-                        ${d.parameters ? `<span style="background: #6b728044; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 12px;">${d.parameters}</span>` : ''}
+                        <span style="background: ${color}44; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 12px;">${escapeTooltip(d.organization)}</span>
+                        ${d.parameters ? `<span style="background: #6b728044; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 12px;">${escapeTooltip(d.parameters)}</span>` : ''}
                     </div>
                 `;
+                const coverage = document.createElement('div');
+                coverage.style.cssText = 'font-size:12px;margin-top:6px;line-height:1.5';
+                coverage.textContent = coverageText(d);
+                tooltip.appendChild(coverage);
+                const url = provenanceUrl(d);
+                if (url) {
+                    const link = document.createElement('a');
+                    link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+                    link.textContent = 'Provenance and sanitized evidence'; link.style.color = '#c4b5fd';
+                    tooltip.appendChild(link);
+                }
                 tooltip.style.display = 'block';
                 updateTooltipPosition(event);
             })
             .on('mousemove', updateTooltipPosition)
-            .on('mouseleave', () => { tooltip.style.display = 'none'; });
+            .on('mouseleave', () => {
+                clearTimeout(tooltipHideTimer.current);
+                tooltipHideTimer.current = setTimeout(() => {
+                    if (!tooltip.matches(':hover')) tooltip.style.display = 'none';
+                }, 250);
+            });
 
         if (showModelText) {
             dotGroup.selectAll('.model-label')
@@ -701,6 +730,8 @@ export default function GalaxyPage() {
         document.addEventListener('keydown', handleKeydown);
 
         return () => {
+            clearTimeout(tooltipHideTimer.current);
+            tooltip.style.display = 'none';
             document.removeEventListener('keydown', handleKeydown);
         };
     }, [models, activeOrgs, filterModel, containerWidth, containerHeight, showModelText, galaxyMode]);
@@ -882,6 +913,8 @@ export default function GalaxyPage() {
 
                 <div
                     ref={tooltipRef}
+                    onMouseEnter={() => clearTimeout(tooltipHideTimer.current)}
+                    onMouseLeave={() => { if (tooltipRef.current) tooltipRef.current.style.display = 'none'; }}
                     style={{
                         position: 'fixed',
                         display: 'none',
@@ -890,7 +923,7 @@ export default function GalaxyPage() {
                         padding: '8px 12px',
                         borderRadius: 8,
                         fontSize: 14,
-                        pointerEvents: 'none',
+                        pointerEvents: 'auto',
                         zIndex: 1000,
                         maxWidth: 300,
                         boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
